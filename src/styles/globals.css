@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: var(--font-barlow), sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    background-color: #0F1A40;
+    color: #8A94B0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-barlow-condensed), sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+}
+
+@layer components {
+  /* Layout utilities */
+  .section-pad {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @media (max-width: 768px) {
+    .section-pad {
+      padding-top: 72px;
+      padding-bottom: 72px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .content-container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Typography utilities */
+  .text-eyebrow {
+    font-family: var(--font-barlow-condensed), sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #6BB52E;
+  }
+
+  /* Button utilities */
+  .btn-primary {
+    font-family: var(--font-barlow-condensed), sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    background-color: #6BB52E;
+    color: #1B2D6B;
+    padding: 16px 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    border-radius: 0;
+  }
+  .btn-primary:hover {
+    background-color: #7FCC37;
+  }
+
+  .btn-ghost {
+    font-family: var(--font-barlow-condensed), sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 16px 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    border-radius: 0;
+  }
+  .btn-ghost:hover {
+    border-color: #6BB52E;
+  }
+
+  /* Shared components */
+  .section-eyebrow-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .section-eyebrow-line {
+    width: 24px;
+    height: 1px;
+    background-color: #6BB52E;
+  }
+
+  .deliverable-indicator {
+    border-left: 3px solid #5B7A3A;
+    background-color: rgba(27, 45, 107, 0.05); /* slightly darker/lighter based on context */
+    padding: 16px;
+  }
+}
