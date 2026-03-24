@@ -332,7 +332,7 @@ export default function HomePage() {
               <p style={{
                 fontFamily: 'var(--font-barlow-condensed), sans-serif',
                 fontWeight: 700,
-                fontSize: '12px',
+                fontSize: '14px',
                 letterSpacing: '0.16em',
                 textTransform: 'uppercase',
                 color: '#6BB52E',

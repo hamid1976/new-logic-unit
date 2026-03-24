@@ -68,7 +68,7 @@ export function Navigation() {
                 style={{
                   fontFamily: 'var(--font-barlow-condensed), sans-serif',
                   fontWeight: 700,
-                  fontSize: '12px',
+                  fontSize: '14px',
                   textTransform: 'uppercase',
                   letterSpacing: '0.06em',
                   color: pathname === link.href ? '#6BB52E' : 'rgba(255, 255, 255, 1)',
