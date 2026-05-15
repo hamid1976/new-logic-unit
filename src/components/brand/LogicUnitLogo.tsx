@@ -7,8 +7,11 @@ export function LogicUnitLogo({ className = '' }: LogicUnitLogoProps) {
     <img
       src="/logic-unit-logo.png"
       alt="Logic Unit"
+      width="600"
+      height="158"
+      decoding="async"
       className={className}
-      style={{ display: 'block', objectFit: 'contain' }}
+      style={{ display: 'block', height: 'auto', objectFit: 'contain' }}
     />
   )
 }

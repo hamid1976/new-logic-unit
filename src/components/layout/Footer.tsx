@@ -41,8 +41,8 @@ export function Footer() {
     <footer className="border-t border-[rgba(255,255,255,0.08)] bg-[#071330] px-6 py-14 text-white lg:px-12">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.1fr_2fr]">
         <div>
-          <Link href="/" className="inline-flex bg-white p-3 text-white no-underline">
-            <LogicUnitLogo className="h-[54px] w-[270px]" />
+          <Link href="/" className="inline-flex bg-white p-4 text-white no-underline">
+            <LogicUnitLogo className="w-[220px]" />
           </Link>
           <p className="mt-5 max-w-sm text-sm leading-6 text-slate-400">
             A product engineering and operating company that builds and runs SaaS ecosystems for real industries.

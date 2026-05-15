@@ -4,6 +4,7 @@ import '../styles/globals.css'
 import { SchemaOrg } from '@/components/ui/SchemaOrg'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
+import { ogImagePath, siteUrl } from '@/lib/site'
 
 const barlow = Barlow({
   subsets: ['latin'],
@@ -18,7 +19,7 @@ const barlowCondensed = Barlow_Condensed({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://logicunit.co'),
+  metadataBase: new URL(siteUrl),
   title: {
     default: 'Logic Unit | Product Engineering & SaaS Operating Company',
     template: '%s | Logic Unit',
@@ -37,12 +38,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://logicunit.co',
+    url: siteUrl,
     siteName: 'Logic Unit',
     title: 'Logic Unit | Product Engineering & SaaS Operating Company',
     description:
       'Logic Unit builds and operates software platforms that run real industries.',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Logic Unit' }],
+    images: [{ url: ogImagePath, width: 1200, height: 630, alt: 'Logic Unit' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   alternates: {
-    canonical: 'https://logicunit.co',
+    canonical: siteUrl,
   },
 }
 
@@ -65,7 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
       </head>
       <body className="relative">
-        <SchemaOrg type="organization" />
+        <SchemaOrg />
         <Navigation />
         {children}
         <Footer />

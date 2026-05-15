@@ -5,6 +5,23 @@ const nextConfig = {
   },
   compress: true,
   poweredByHeader: false,
+  redirects: async () => [
+    {
+      source: '/services',
+      destination: '/partnerships',
+      permanent: true,
+    },
+    {
+      source: '/case-studies',
+      destination: '/about',
+      permanent: true,
+    },
+    {
+      source: '/industry/:slug',
+      destination: '/industry',
+      permanent: true,
+    },
+  ],
   headers: async () => [
     {
       source: '/(.*)',

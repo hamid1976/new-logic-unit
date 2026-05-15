@@ -96,7 +96,7 @@ export default function HomePage() {
           </div>
           <div className="border border-white/15 bg-white/[0.06] p-8 shadow-[0_30px_90px_rgba(0,0,0,0.25)] backdrop-blur-sm">
             <div className="mb-12 bg-white p-6 shadow-[0_18px_50px_rgba(0,0,0,0.18)]">
-              <LogicUnitLogo className="h-auto w-full" />
+              <LogicUnitLogo className="mx-auto w-full max-w-[300px]" />
             </div>
             <div className="grid gap-px bg-white/15">
               {[
