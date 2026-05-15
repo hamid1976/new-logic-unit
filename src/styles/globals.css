@@ -126,8 +126,8 @@
 @layer utilities {
   .lu-shell {
     background:
-      radial-gradient(circle at 82% 10%, rgba(123, 215, 47, 0.16), transparent 28rem),
-      linear-gradient(135deg, var(--lu-blue-deep) 0%, #0a1f58 54%, var(--lu-blue) 100%);
+      linear-gradient(120deg, rgba(123, 215, 47, 0.12), transparent 38%),
+      linear-gradient(135deg, var(--lu-blue-deep) 0%, #0a1f58 56%, var(--lu-blue) 100%);
   }
 
   .lu-grid {
@@ -139,8 +139,12 @@
 
   .lu-card {
     border: 1px solid var(--lu-line);
-    background: rgba(255, 255, 255, 0.86);
-    box-shadow: 0 24px 70px rgba(7, 19, 48, 0.08);
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 20px 56px rgba(7, 19, 48, 0.07);
+  }
+
+  .lu-rule-top {
+    border-top: 4px solid var(--lu-green);
   }
 
   .lu-section {

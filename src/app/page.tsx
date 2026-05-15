@@ -71,15 +71,15 @@ const partnershipRoutes = ['Strategic Partnerships', 'System Integrators', 'Ente
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#fbfaf6] text-[#111827]">
-      <section className="lu-shell relative overflow-hidden px-6 py-24 text-white lg:px-12 lg:py-32">
+      <section className="lu-shell relative overflow-hidden px-6 py-28 text-white lg:px-12 lg:py-36">
         <div className="lu-grid absolute inset-0 opacity-30" aria-hidden="true" />
-        <div className="absolute bottom-0 right-0 h-72 w-72 translate-x-16 translate-y-16 border-[28px] border-[#7bd72f]/20" aria-hidden="true" />
-        <div className="relative mx-auto grid max-w-7xl gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+        <div className="absolute bottom-0 right-0 h-80 w-80 translate-x-20 translate-y-20 border-[34px] border-[#7bd72f]/15" aria-hidden="true" />
+        <div className="relative mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1.08fr_0.92fr] lg:items-end">
           <div className="max-w-5xl">
             <p className="mb-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#7bd72f]">
               Product Engineering & Operating Company
             </p>
-            <h1 className="max-w-5xl text-5xl font-semibold leading-tight tracking-tight md:text-7xl">
+            <h1 className="max-w-5xl text-5xl font-semibold leading-[1.02] tracking-tight md:text-7xl">
               We Build and Operate Software Platforms That Run Real Industries
             </h1>
             <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">
@@ -94,12 +94,19 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="lu-card border-white/10 bg-white/8 p-8 backdrop-blur-sm">
-            <LogicUnitLogo light className="mb-12 h-auto w-full" />
+          <div className="border border-white/15 bg-white/[0.06] p-8 shadow-[0_30px_90px_rgba(0,0,0,0.25)] backdrop-blur-sm">
+            <div className="mb-12 bg-white p-6 shadow-[0_18px_50px_rgba(0,0,0,0.18)]">
+              <LogicUnitLogo className="h-auto w-full" />
+            </div>
             <div className="grid gap-px bg-white/15">
-              {['Engineering Platforms', 'Operating Ecosystems', 'Digitizing Industries'].map((item) => (
-                <div key={item} className="bg-[#071330]/80 p-5 text-lg font-semibold text-white">
-                  {item}
+              {[
+                ['2013', 'Founded with a long-term engineering mindset'],
+                ['3', 'Independent SaaS platforms in operation'],
+                ['6', 'Industry categories served through products'],
+              ].map(([metric, label]) => (
+                <div key={metric} className="grid grid-cols-[92px_1fr] items-center bg-[#071330]/80 p-5">
+                  <span className="text-3xl font-semibold text-[#7bd72f]">{metric}</span>
+                  <span className="text-sm leading-6 text-slate-200">{label}</span>
                 </div>
               ))}
             </div>
@@ -136,7 +143,7 @@ export default function HomePage() {
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {workModel.map((item) => (
-              <div key={item.step} className="lu-card p-8">
+              <div key={item.step} className="lu-card lu-rule-top p-8">
                 <p className="mb-10 text-sm font-bold text-[#7bd72f]">{item.step}</p>
                 <h3 className="mb-4 text-xl font-semibold text-[#071330]">{item.title}</h3>
                 <p className="leading-7 text-slate-600">{item.body}</p>
@@ -157,7 +164,7 @@ export default function HomePage() {
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {ecosystem.map((product) => (
-              <article key={product.name} className="lu-card flex min-h-72 flex-col p-8">
+              <article key={product.name} className="lu-card lu-rule-top flex min-h-72 flex-col p-8">
                 <p className="mb-4 text-sm font-medium text-slate-500">{product.category}</p>
                 <h3 className="mb-5 text-2xl font-semibold text-[#10277a]">{product.name}</h3>
                 <p className="mb-10 leading-7 text-slate-600">{product.description}</p>

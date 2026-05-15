@@ -23,10 +23,10 @@ export function Navigation() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-[rgba(16,39,122,0.12)] bg-[#fbfaf6]/95 backdrop-blur">
-        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-12">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-[rgba(16,39,122,0.10)] bg-white/95 backdrop-blur">
+        <div className="mx-auto flex h-[86px] max-w-7xl items-center justify-between px-6 lg:px-12">
           <Link href="/" className="flex items-center text-slate-950 no-underline">
-            <LogicUnitLogo className="h-11 w-[226px]" />
+            <LogicUnitLogo className="h-[52px] w-[260px]" />
           </Link>
 
           <nav className="hidden items-center gap-7 text-sm font-semibold text-slate-500 md:flex">
@@ -37,7 +37,7 @@ export function Navigation() {
             ))}
           </nav>
 
-          <Link href="/contact" className="hidden bg-[#10277a] px-5 py-3 text-sm font-semibold text-white hover:bg-[#071330] md:block">
+          <Link href="/contact" className="hidden bg-[#10277a] px-5 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(16,39,122,0.22)] hover:bg-[#071330] md:block">
             Partner With Us
           </Link>
 
@@ -60,14 +60,14 @@ export function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Link href="/contact" className="mt-6 bg-slate-950 px-5 py-3 text-center text-base text-white no-underline">
+            <Link href="/contact" className="mt-6 bg-[#10277a] px-5 py-3 text-center text-base text-white no-underline">
               Partner With Us
             </Link>
           </div>
         </div>
       )}
 
-      <div className="h-20" />
+      <div className="h-[86px]" />
     </>
   )
 }
