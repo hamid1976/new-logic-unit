@@ -3,18 +3,30 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --lu-blue: #10277a;
+    --lu-blue-deep: #071330;
+    --lu-green: #7bd72f;
+    --lu-green-dark: #4fa51f;
+    --lu-ink: #111827;
+    --lu-muted: #64748b;
+    --lu-line: rgba(16, 39, 122, 0.14);
+    --lu-mist: #f4f7fb;
+    --lu-cream: #fbfaf6;
+  }
+
   body {
     font-family: var(--font-barlow), sans-serif;
-    font-weight: 300;
-    line-height: 1.8;
-    background-color: #0F1A40;
-    color: #8A94B0;
+    font-weight: 400;
+    line-height: 1.7;
+    background-color: var(--lu-cream);
+    color: var(--lu-muted);
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-barlow-condensed), sans-serif;
-    text-transform: uppercase;
     font-weight: 800;
+    letter-spacing: 0;
   }
 }
 
@@ -46,10 +58,10 @@
   .text-eyebrow {
     font-family: var(--font-barlow-condensed), sans-serif;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 0.24em;
     text-transform: uppercase;
-    color: #6BB52E;
+    color: var(--lu-green-dark);
   }
 
   /* Button utilities */
@@ -58,8 +70,8 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.10em;
-    background-color: #6BB52E;
-    color: #1B2D6B;
+    background-color: var(--lu-green);
+    color: var(--lu-blue-deep);
     padding: 16px 32px;
     display: inline-flex;
     align-items: center;
@@ -68,7 +80,7 @@
     border-radius: 0;
   }
   .btn-primary:hover {
-    background-color: #7FCC37;
+    background-color: #93e74e;
   }
 
   .btn-ghost {
@@ -87,7 +99,7 @@
     border-radius: 0;
   }
   .btn-ghost:hover {
-    border-color: #6BB52E;
+    border-color: var(--lu-green);
   }
 
   /* Shared components */
@@ -101,12 +113,45 @@
   .section-eyebrow-line {
     width: 24px;
     height: 1px;
-    background-color: #6BB52E;
+    background-color: var(--lu-green);
   }
 
   .deliverable-indicator {
     border-left: 3px solid #5B7A3A;
     background-color: rgba(27, 45, 107, 0.05); /* slightly darker/lighter based on context */
     padding: 16px;
+  }
+}
+
+@layer utilities {
+  .lu-shell {
+    background:
+      radial-gradient(circle at 82% 10%, rgba(123, 215, 47, 0.16), transparent 28rem),
+      linear-gradient(135deg, var(--lu-blue-deep) 0%, #0a1f58 54%, var(--lu-blue) 100%);
+  }
+
+  .lu-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 52px 52px;
+  }
+
+  .lu-card {
+    border: 1px solid var(--lu-line);
+    background: rgba(255, 255, 255, 0.86);
+    box-shadow: 0 24px 70px rgba(7, 19, 48, 0.08);
+  }
+
+  .lu-section {
+    border-bottom: 1px solid var(--lu-line);
+  }
+
+  .lu-eyebrow {
+    color: var(--lu-green-dark);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
   }
 }

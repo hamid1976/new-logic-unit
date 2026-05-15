@@ -1,96 +1,70 @@
 import Link from 'next/link'
-import LUlogo from "@/assets/logoLU.png";
-import Image from 'next/image';
+import { LogicUnitLogo } from '@/components/brand/LogicUnitLogo'
 
-const footerLinks = [
-  { href: '/services', label: 'What We Do' },
-  { href: '/#approach', label: 'Approach' },
-  { href: '/industry', label: 'Industries' },
-  { href: '/case-studies', label: 'Case Studies' },
-  { href: '/ifs-partner', label: 'IFS Partner' },
-  { href: '/about', label: 'About' },
+const groups = [
+  {
+    title: 'Company',
+    links: [
+      { href: '/about', label: 'About' },
+      { href: '/contact', label: 'Contact' },
+      { href: '/partnerships', label: 'Partnerships' },
+    ],
+  },
+  {
+    title: 'Ecosystem',
+    links: [
+      { href: 'https://hulmsolutions.com', label: 'Hulm Solutions' },
+      { href: 'https://titanmms.com', label: 'Titan MMS' },
+      { href: 'https://animalcare360.com', label: 'AnimalCare360' },
+    ],
+  },
+  {
+    title: 'Capabilities',
+    links: [
+      { href: '/#technology', label: 'SaaS Architecture' },
+      { href: '/#technology', label: 'Data Infrastructure' },
+      { href: '/#technology', label: 'AI & IoT Integration' },
+    ],
+  },
+  {
+    title: 'Partnerships',
+    links: [
+      { href: '/partnerships', label: 'Strategic Partnerships' },
+      { href: '/partnerships', label: 'System Integrators' },
+      { href: '/partnerships', label: 'Enterprise Collaboration' },
+    ],
+  },
 ]
 
 export function Footer() {
   return (
-    <footer
-      style={{
-        backgroundColor: '#070E1F',
-        borderTop: '1px solid rgba(255, 255, 255, 0.05)',
-        padding: '44px 0',
-      }}
-    >
-      <div
-        className="content-container px-[24px] md:px-[48px] flex flex-col md:flex-row justify-between items-start md:items-center gap-10"
-      >
-        {/* Left: Logo */}
-        <div className="flex-1 w-full flex items-start md:items-center justify-start">
-          <Link href="/" className="flex items-center gap-3 no-underline">
-            {/* Logo SVG (Light version) */}
-            <div className="flex flex-col justify-center">
-              <Image
-                src={LUlogo}
-                alt="Logic Unit Logo"
-                className="h-10 w-auto object-contain"
-              />
-            </div>
+    <footer className="border-t border-[rgba(255,255,255,0.08)] bg-[#071330] px-6 py-14 text-white lg:px-12">
+      <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.1fr_2fr]">
+        <div>
+          <Link href="/" className="flex items-center text-white no-underline">
+            <LogicUnitLogo light className="h-12 w-[240px]" />
           </Link>
-        </div>
-
-        {/* Centre: Nav links */}
-        <div className="flex-1 w-full flex justify-start md:justify-center">
-          <nav className="flex flex-wrap gap-x-6 gap-y-4">
-            {footerLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                style={{
-                  fontFamily: 'var(--font-barlow-condensed), sans-serif',
-                  fontWeight: 700,
-                  fontSize: '11px',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.06em',
-                  textDecoration: 'none',
-                  transition: 'color 0.2s',
-                }}
-                className="text-[rgba(255,255,255,1)] hover:text-[#6BB52E]"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
-
-        {/* Right: Address + email + phone + copyright */}
-        <div className="flex-1 w-full flex flex-col items-start md:items-end gap-1">
-          <p style={{
-            fontFamily: 'var(--font-barlow), sans-serif',
-            fontWeight: 300,
-            fontSize: '12px',
-            color: 'rgba(255, 255, 255, 1)',
-            margin: 0
-          }}>
-            aamir.khan@logic-unit.com
-          </p>
-          <p style={{
-            fontFamily: 'var(--font-barlow), sans-serif',
-            fontWeight: 300,
-            fontSize: '12px',
-            color: 'rgba(255, 255, 255, 1)',
-            margin: 0
-          }}>
-            WhatsApp: +92 346 2765118
-          </p>
-          <p style={{
-            fontFamily: 'var(--font-barlow), sans-serif',
-            fontWeight: 300,
-            fontSize: '12px',
-            color: 'rgba(255, 255, 255, 1)',
-            margin: '8px 0 0 0'
-          }}>
-            © {new Date().getFullYear()} Logic Unit. All rights reserved.
+          <p className="mt-5 max-w-sm text-sm leading-6 text-slate-400">
+            A product engineering and operating company that builds and runs SaaS ecosystems for real industries.
           </p>
         </div>
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {groups.map((group) => (
+            <div key={group.title}>
+              <h2 className="mb-4 text-sm font-semibold text-white">{group.title}</h2>
+              <div className="flex flex-col gap-3">
+                {group.links.map((link) => (
+                  <Link key={`${group.title}-${link.label}`} href={link.href} className="text-sm text-slate-400 no-underline hover:text-white">
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="mx-auto mt-10 max-w-7xl border-t border-slate-800 pt-6 text-sm text-slate-500">
+        © {new Date().getFullYear()} Logic Unit. All rights reserved.
       </div>
     </footer>
   )

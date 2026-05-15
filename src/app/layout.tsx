@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import { Barlow, Barlow_Condensed } from 'next/font/google'
 import '../styles/globals.css'
+import { SchemaOrg } from '@/components/ui/SchemaOrg'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
-import { SchemaOrg } from '@/components/ui/SchemaOrg'
 
 const barlow = Barlow({
   subsets: ['latin'],
@@ -20,39 +20,34 @@ const barlowCondensed = Barlow_Condensed({
 export const metadata: Metadata = {
   metadataBase: new URL('https://logicunit.co'),
   title: {
-    default: 'Logic Unit — Operational Control for Distribution & Trading Businesses',
+    default: 'Logic Unit | Product Engineering & SaaS Operating Company',
     template: '%s | Logic Unit',
   },
   description:
-    'Logic Unit rebuilds the operational structure of distribution and trading businesses. IFS Business Partner. ERP implementation, inventory control, and operational transformation in Pakistan and UAE.',
+    'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities across emerging markets.',
   keywords: [
-    'ERP for distribution Pakistan',
-    'ERP consultant Karachi',
-    'IFS ERP partner Pakistan',
-    'operational transformation Pakistan',
-    'inventory control system Pakistan',
-    'distribution business ERP',
-    'trading company ERP Pakistan',
-    'ERP implementation UAE',
-    'operational consulting Karachi',
-    'stock management software Pakistan',
-    'supply chain ERP Pakistan',
-    'distribution ERP UAE',
+    'product engineering company',
+    'SaaS operating company',
+    'industry-specific SaaS platforms',
+    'software platforms for real industries',
+    'SaaS ecosystem company',
+    'emerging market digital infrastructure',
+    'multi-industry software platforms',
   ],
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://logicunit.co',
     siteName: 'Logic Unit',
-    title: 'Logic Unit — Operational Control for Distribution & Trading Businesses',
+    title: 'Logic Unit | Product Engineering & SaaS Operating Company',
     description:
-      'IFS Business Partner. Enterprise ERP at Karachi Shipyard. Operational transformation for distribution and trading SMEs in Pakistan and UAE.',
+      'Logic Unit builds and operates software platforms that run real industries.',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Logic Unit' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Logic Unit — Operational Control for Distribution & Trading Businesses',
-    description: 'IFS Business Partner. ERP and operational transformation for distribution businesses in Pakistan and UAE.',
+    title: 'Logic Unit | Product Engineering & SaaS Operating Company',
+    description: 'Logic Unit builds and operates software platforms that run real industries.',
   },
   robots: {
     index: true,
@@ -69,11 +64,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${barlow.variable} ${barlowCondensed.variable}`}>
       <head>
       </head>
-      <body>
+      <body className="relative">
         <SchemaOrg type="organization" />
-        <SchemaOrg type="localBusiness" />
         <Navigation />
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>

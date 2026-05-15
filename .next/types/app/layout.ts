@@ -1,4 +1,4 @@
-// File: C:\Users\logic-unit\Desktop\latest LU site\new-logic-unit\src\app\layout.tsx
+// File: C:\Users\Aamir Khan\Downloads\website LU operation\files\src\app\layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

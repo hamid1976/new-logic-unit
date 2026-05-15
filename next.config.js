@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    optimizePackageImports: ['react', 'react-dom'],
-  },
   images: {
     formats: ['image/avif', 'image/webp'],
   },

@@ -1,199 +1,68 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { PageHero, Eyebrow, Heading, Deliverable } from '@/components/ui'
 
 export const metadata: Metadata = {
-  title: 'Operational Transformation Program',
+  title: 'Partnerships | Strategic SaaS Ecosystem Partnerships',
   description:
-    'A structured engagement for distribution and trading businesses that have outgrown their current operating model. ERP implementation done in the right order.',
-  keywords: [
-    'operational transformation',
-    'ERP implementation distribution',
-    'inventory control',
-    'operational restructuring',
-    'distribution ERP consulting',
-  ],
+    'Partner with Logic Unit through strategic partnerships, system integrator relationships, enterprise collaboration, and ecosystem expansion.',
 }
 
-const stages = [
+const routes = [
   {
-    number: '01',
-    name: 'Operational Mapping',
-    timing: 'Weeks 1–3',
-    body: 'We document how your business actually operates. Order flow, purchasing process, stock management, customer fulfilment, financial reporting — and how decisions get made at every level. We interview your team, not just your management. We follow transactions through the system from origin to close. We identify every point where information breaks, where decisions get made in the wrong place, and where your people have built workarounds that have become invisible infrastructure.',
-    deliverable: 'Operational map with annotated breakdown points and root cause analysis',
+    title: 'Strategic Partnerships',
+    body: 'For organizations interested in market expansion, product ecosystem collaboration, or long-term industry digitization.',
   },
   {
-    number: '02',
-    name: 'Structural Redesign',
-    timing: 'Weeks 4–6',
-    body: 'We redesign the operating model — redefining process flows, clarifying decision rights, restructuring how information moves between functions, and establishing the data standards that will make the system trustworthy. We do this with your team, not for them. A structure your people didn\'t participate in designing will not survive first contact with operational reality.',
-    deliverable: 'Redesigned operating model with process documentation, role clarity, and system requirements',
+    title: 'System Integrators',
+    body: 'For implementation, deployment, and integration partners working across operational industries.',
   },
   {
-    number: '03',
-    name: 'System Design and Build',
-    timing: 'Weeks 7–14',
-    body: 'We design and configure the technology layer — ERP setup, data architecture, reporting structure, integrations, and where appropriate, AI-assisted decision tools embedded into operational workflows. The system is built to the redesigned operating model, not the legacy one. Configuration decisions are made by us in collaboration with your team, not delegated to a vendor.',
-    deliverable: 'Configured, tested operational system ready for phased go-live',
+    title: 'Enterprise Collaboration',
+    body: 'For enterprises seeking platform partnerships, infrastructure collaboration, or industry-specific digital transformation.',
   },
   {
-    number: '04',
-    name: 'Go-Live and Stabilisation',
-    timing: 'Weeks 15–20',
-    body: 'We manage the transition from old operating model to new. Phased rollout, parallel running where necessary, staff training delivered in operational context rather than classroom settings, and daily availability during the critical first weeks. We do not declare success at go-live. We declare success when the business is running through the new system consistently and your team no longer needs us for routine questions.',
-    deliverable: 'Fully operational system with stable adoption across functions',
-  },
-  {
-    number: '05',
-    name: 'Control Review',
-    timing: 'Month 6',
-    body: 'A structured review at six months post-implementation to assess system performance, identify any structural drift, and make adjustments. This is included in the program — not billed as a separate engagement.',
-    deliverable: 'Performance assessment and adjustment plan',
+    title: 'Investment & Expansion',
+    body: 'For investors and institutional partners interested in Logic Unit’s product ecosystem and long-term platform strategy.',
   },
 ]
 
-const capabilities = [
-  {
-    title: 'Inventory & stock management',
-    items: ['Real-time stock visibility across locations', 'Accurate landed cost calculation', 'Dynamic reorder triggers', 'Batch and serial tracking'],
-  },
-  {
-    title: 'Procurement & supplier management',
-    items: ['Structured PO workflow with approvals', 'Supplier performance tracking', 'Three-way matching', 'Elimination of maverick purchasing'],
-  },
-  {
-    title: 'Sales & customer fulfilment',
-    items: ['Real-time stock confirmation at order entry', 'Automated credit limit enforcement', 'Delivery scheduling and dispatch', 'Customer-level profitability'],
-  },
-  {
-    title: 'Financial operations',
-    items: ['Distribution-structured chart of accounts', 'Automated COGS calculation', 'Product-line P&L reporting', 'Cash flow integrated with procurement'],
-  },
-]
-
-export default function ServicesPage() {
+export default function PartnershipsPage() {
   return (
-    <>
-      <PageHero
-        eyebrow="What we do"
-        heading="The Operational Transformation Program"
-        subheading="A structured engagement for distribution and trading businesses that have outgrown their current operating model — and need to rebuild it correctly, not quickly."
-      />
-
-      {/* -- WHO IT'S FOR ---------------------------------- */}
-      <section style={{ background: '#F4F2EC' }} className="section-pad">
-        <div
-          className="content-container two-col"
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '80px',
-            alignItems: 'start',
-          }}
-        >
-          <div>
-            <Eyebrow>Who this is for</Eyebrow>
-            <Heading as="h2" maxWidth="480px">
-              NOT A GENERAL RETAINER. A SPECIFIC PROGRAM FOR A SPECIFIC SITUATION.
-            </Heading>
-          </div>
-          <div>
-            <p style={{ fontFamily: 'var(--font-barlow), sans-serif', fontSize: '16px', fontWeight: 300, color: '#8A94B0', lineHeight: '1.8', marginBottom: '32px' }}>
-              You are running a distribution or trading business with between 15 and 60 people.
-              The business is generating revenue — possibly significant revenue — but operational
-              control has not kept pace with operational complexity.
-            </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              {[
-                'Your growth has created complexity you cannot manage',
-                'A previous system or consultant didn\'t solve it',
-                'You are the bottleneck in your own business',
-              ].map((signal) => (
-                <div key={signal} style={{ display: 'flex', gap: '16px', alignItems: 'start' }}>
-                  <div style={{ width: '24px', height: '2px', background: '#6BB52E', marginTop: '10px', flexShrink: 0 }} />
-                  <p style={{ fontFamily: 'var(--font-barlow), sans-serif', fontSize: '15px', fontWeight: 500, color: '#1B2D6B', lineHeight: '1.6' }}>{signal}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+    <main className="min-h-screen bg-[#fbfaf6] text-[#111827]">
+      <section className="lu-shell relative overflow-hidden px-6 py-24 text-white lg:px-12 lg:py-32">
+        <div className="lu-grid absolute inset-0 opacity-25" aria-hidden="true" />
+        <div className="mx-auto max-w-7xl">
+          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#7bd72f]">Partnerships</p>
+          <h1 className="max-w-5xl text-5xl font-semibold leading-tight tracking-tight md:text-7xl">
+            Partner with Logic Unit.
+          </h1>
+          <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">
+            Logic Unit works with strategic partners, system integrators, enterprises, and ecosystem collaborators who share our goal of building stronger software infrastructure for real industries.
+          </p>
         </div>
       </section>
 
-      {/* ── PROGRAM STAGES ──────────────────────────────── */}
-      <section style={{ background: '#FDFCF9', borderTop: '1px solid rgba(27, 45, 107, 0.10)' }} className="section-pad">
-        <div className="content-container">
-          <Eyebrow>Program structure</Eyebrow>
-          <Heading as="h2" maxWidth="600px">
-            WHAT THE ENGAGEMENT COVERS — AND IN WHAT ORDER.
-          </Heading>
-          <div style={{ marginTop: '64px', display: 'flex', flexDirection: 'column', gap: '1px', background: 'rgba(27, 45, 107, 0.10)' }}>
-            {stages.map((stage) => (
-              <div key={stage.number} style={{ background: '#FDFCF9', padding: '48px 40px', display: 'grid', gridTemplateColumns: '80px 1fr', gap: '40px' }} className="stage-row">
-                <div>
-                  <p style={{ fontFamily: 'var(--font-barlow-condensed), sans-serif', fontSize: '42px', fontWeight: 800, color: 'rgba(27, 45, 107, 0.15)', lineHeight: 1 }}>{stage.number}</p>
-                  <span style={{ display: 'inline-block', marginTop: '12px', fontFamily: 'var(--font-barlow-condensed), sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.24em', textTransform: 'uppercase', color: '#6BB52E', border: '1px solid #6BB52E', padding: '4px 10px' }}>
-                    {stage.timing}
-                  </span>
-                </div>
-                <div>
-                  <h3 style={{ fontFamily: 'var(--font-barlow-condensed), sans-serif', fontSize: '28px', fontWeight: 800, textTransform: 'uppercase', color: '#1B2D6B', marginBottom: '16px' }}>{stage.name}</h3>
-                  <p style={{ fontFamily: 'var(--font-barlow), sans-serif', fontSize: '16px', fontWeight: 300, color: '#8A94B0', lineHeight: '1.8', marginBottom: '32px', maxWidth: '700px' }}>{stage.body}</p>
-                  <Deliverable text={stage.deliverable} />
-                </div>
-              </div>
-            ))}
-          </div>
+      <section className="lu-section bg-[#f4f7fb] px-6 py-24 lg:px-12">
+        <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2">
+          {routes.map((route) => (
+            <article key={route.title} className="lu-card p-8">
+              <h2 className="mb-4 text-2xl font-semibold text-[#10277a]">{route.title}</h2>
+              <p className="leading-7 text-slate-600">{route.body}</p>
+            </article>
+          ))}
         </div>
       </section>
 
-      {/* ── CAPABILITIES GRID ───────────────────────────── */}
-      <section style={{ background: '#F4F2EC', borderTop: '1px solid rgba(27, 45, 107, 0.10)' }} className="section-pad">
-        <div className="content-container">
-          <Eyebrow>Systems & capabilities</Eyebrow>
-          <Heading as="h2" maxWidth="500px">WHAT WE IMPLEMENT INSIDE THE PROGRAM.</Heading>
-          <div style={{ marginTop: '64px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: 'rgba(27, 45, 107, 0.10)' }} className="two-col-grid">
-            {capabilities.map((cap) => (
-              <div key={cap.title} style={{ background: '#FDFCF9', padding: '40px 32px' }}>
-                <h3 style={{ fontFamily: 'var(--font-barlow-condensed), sans-serif', fontSize: '20px', fontWeight: 800, textTransform: 'uppercase', color: '#1B2D6B', marginBottom: '24px', letterSpacing: '0.05em' }}>
-                  {cap.title}
-                </h3>
-                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                  {cap.items.map((item) => (
-                    <li key={item} style={{ display: 'flex', gap: '16px', alignItems: 'start' }}>
-                      <div style={{ width: '20px', height: '2px', background: '#6BB52E', marginTop: '10px', flexShrink: 0 }} />
-                      <span style={{ fontFamily: 'var(--font-barlow), sans-serif', fontSize: '15px', color: '#8A94B0', fontWeight: 500, lineHeight: '1.6' }}>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+      <section className="bg-white px-6 py-24 lg:px-12">
+        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 md:flex-row md:items-center">
+          <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-[#071330] md:text-5xl">
+            Start with a corporate partnership inquiry.
+          </h2>
+          <Link href="/contact" className="bg-[#10277a] px-6 py-3 text-center text-sm font-bold text-white hover:bg-[#071330]">
+            Contact Logic Unit
+          </Link>
         </div>
       </section>
-
-      {/* ── CTA ─────────────────────────────────────────── */}
-      <section style={{ background: '#0F1A40' }} className="section-pad">
-        <div className="content-container flex flex-col md:flex-row justify-between items-center gap-12">
-          <div>
-            <h2 style={{ fontFamily: 'var(--font-barlow-condensed), sans-serif', fontSize: '36px', fontWeight: 800, textTransform: 'uppercase', color: '#F0EEE8', lineHeight: '1.1', marginBottom: '16px' }}>
-              ENGAGEMENTS ARE SCOPED INDIVIDUALLY.
-            </h2>
-            <p style={{ fontFamily: 'var(--font-barlow), sans-serif', fontSize: '16px', fontWeight: 300, color: '#8A94B0', maxWidth: '600px', lineHeight: '1.7' }}>
-              The cost of the program is consistently lower than one more year of operational inefficiency, stock errors, and margin leakage in a business of this size.
-            </p>
-          </div>
-          <Link href="/contact" className="btn-primary whitespace-nowrap">DISCUSS YOUR SITUATION →</Link>
-        </div>
-      </section>
-
-      <style dangerouslySetInnerHTML={{ __html: `
-        @media (max-width: 768px) {
-          .two-col { grid-template-columns: 1fr !important; gap: 40px !important; }
-          .two-col-grid { grid-template-columns: 1fr !important; }
-          .stage-row { grid-template-columns: 1fr !important; gap: 24px !important; padding: 32px 24px !important; }
-        }
-      ` }} />
-    </>
+    </main>
   )
 }

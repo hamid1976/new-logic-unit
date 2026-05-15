@@ -1,12 +1,5 @@
-// Schema.org JSON-LD structured data
-// Renders inline script tags for Google rich results
-
 interface OrganizationSchemaProps {
   type: 'organization'
-}
-
-interface LocalBusinessSchemaProps {
-  type: 'localBusiness'
 }
 
 interface PersonSchemaProps {
@@ -24,11 +17,7 @@ interface ArticleSchemaProps {
   url: string
 }
 
-type SchemaProps =
-  | OrganizationSchemaProps
-  | LocalBusinessSchemaProps
-  | PersonSchemaProps
-  | ArticleSchemaProps
+type SchemaProps = OrganizationSchemaProps | PersonSchemaProps | ArticleSchemaProps
 
 export function SchemaOrg(props: SchemaProps) {
   let schema: object = {}
@@ -36,86 +25,35 @@ export function SchemaOrg(props: SchemaProps) {
   if (props.type === 'organization') {
     schema = {
       '@context': 'https://schema.org',
-      '@type': 'ProfessionalService',
+      '@type': 'Organization',
       name: 'Logic Unit',
       url: 'https://logicunit.co',
       logo: 'https://logicunit.co/logo.png',
       description:
-        'Operational Control & AI-Enabled Transformation Partner for Distribution & Trading SMEs in Pakistan and UAE.',
-      foundingDate: '2014',
-      founders: [
-        { '@type': 'Person', name: 'Aamir Khan' },
-        { '@type': 'Person', name: 'Khurram Ali Shams' },
-      ],
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'C-27 Block 14, Gulistan-e-Johar',
-        addressLocality: 'Karachi',
-        addressCountry: 'PK',
-      },
+        'Logic Unit is a product engineering and operating company that builds and runs industry-specific SaaS platforms.',
+      foundingDate: '2013',
       contactPoint: [
         {
           '@type': 'ContactPoint',
           email: 'info@logic-unit.com',
-          contactType: 'customer service',
-        },
-        {
-          '@type': 'ContactPoint',
-          telephone: '+92-346-2765118',
-          contactType: 'sales',
-          availableLanguage: ['English', 'Urdu'],
+          contactType: 'corporate inquiries',
         },
       ],
-      sameAs: ['https://www.linkedin.com/in/aamirkhanmuhammad/'],
       areaServed: ['PK', 'AE'],
-      serviceType: [
-        'ERP Implementation',
-        'Operational Transformation',
-        'Distribution Business Consulting',
-        'Inventory Management Systems',
-        'IFS ERP Partner',
+      owns: [
+        { '@type': 'Organization', name: 'Hulm Solutions' },
+        { '@type': 'Organization', name: 'Titan MMS' },
+        { '@type': 'Organization', name: 'AnimalCare360' },
       ],
       knowsAbout: [
-        'ERP for distribution businesses',
-        'Operational control systems',
-        'IFS Applications',
-        'Supply chain management',
-        'Distribution and trading SME consulting',
+        'Product engineering',
+        'SaaS architecture',
+        'Multi-tenant systems',
+        'AI integration',
+        'IoT integration',
+        'Data infrastructure',
+        'Industry software platforms',
       ],
-    }
-  }
-
-  if (props.type === 'localBusiness') {
-    schema = {
-      '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
-      name: 'Logic Unit',
-      image: 'https://logicunit.co/logo.png',
-      url: 'https://logicunit.co',
-      telephone: '+92-21-3729-0150',
-      email: 'info@logic-unit.com',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'C-27 Block 14, Gulistan-e-Johar',
-        addressLocality: 'Karachi',
-        addressRegion: 'Sindh',
-        postalCode: '75300',
-        addressCountry: 'PK',
-      },
-      geo: {
-        '@type': 'GeoCoordinates',
-        latitude: '24.9056',
-        longitude: '67.1322',
-      },
-      openingHoursSpecification: {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '09:00',
-        closes: '18:00',
-      },
-      priceRange: '$$$$',
-      description:
-        'ERP implementation and operational transformation specialists for distribution and trading businesses in Pakistan and UAE. IFS Business Partner.',
     }
   }
 
@@ -130,18 +68,6 @@ export function SchemaOrg(props: SchemaProps) {
         '@type': 'Organization',
         name: 'Logic Unit',
         url: 'https://logicunit.co',
-      },
-      knowsAbout: [
-        'ERP Implementation',
-        'Operational Transformation',
-        'Distribution Business Operations',
-        'IFS Applications',
-        'Supply Chain Management',
-      ],
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Karachi',
-        addressCountry: 'PK',
       },
     }
   }
@@ -167,7 +93,6 @@ export function SchemaOrg(props: SchemaProps) {
         '@type': 'Organization',
         name: props.clientName,
       },
-      keywords: 'ERP implementation, operational transformation, case study',
     }
   }
 

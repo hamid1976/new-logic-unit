@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import ContactForm from './ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Book an Operational Audit',
+  title: 'Contact Logic Unit | Corporate Inquiries',
   description:
-    '30-minute operational audit for distribution and trading business owners. No proposal. No pitch. A direct assessment of where your operations are breaking down.',
+    'Contact Logic Unit for strategic partnerships, system integrator relationships, enterprise collaboration, investor relations, and talent inquiries.',
 }
 
 export default function ContactPage() {
