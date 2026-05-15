@@ -1,6 +1,12 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
+  "/industry/[slug]/page": "app/industry/[slug]/page.js",
   "/partnerships/page": "app/partnerships/page.js",
-  "/about/page": "app/about/page.js"
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/case-studies/page": "app/case-studies/page.js",
+  "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/industry/page": "app/industry/page.js",
+  "/page": "app/page.js",
+  "/services/page": "app/services/page.js"
 }
