@@ -15,18 +15,32 @@ const navLinks = [
 
 export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
 
   useEffect(() => {
     setMobileOpen(false)
   }, [pathname])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-[rgba(16,39,122,0.10)] bg-white/95">
-        <div className="mx-auto flex h-[86px] max-w-7xl items-center justify-between px-6 lg:px-12">
+      <header className={`fixed inset-x-0 top-0 z-50 border-b border-[rgba(16,39,122,0.10)] bg-white/95 px-6 lg:px-12 transition-all duration-300 ${scrolled ? 'shadow-md bg-white/98' : ''}`}>
+        <div className={`mx-auto flex max-w-7xl items-center justify-between transition-all duration-300 ${scrolled ? 'h-[64px]' : 'h-[86px]'}`}>
           <Link href="/" className="flex items-center text-slate-950 no-underline">
-            <LogicUnitLogo className="w-[198px] sm:w-[214px]" />
+            <LogicUnitLogo className={`transition-all duration-300 ${scrolled ? 'w-[150px] sm:w-[160px]' : 'w-[198px] sm:w-[214px]'}`} />
           </Link>
 
           <nav className="hidden items-center gap-7 text-sm font-semibold text-slate-500 md:flex">
