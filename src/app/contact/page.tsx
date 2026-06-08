@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import ContactForm from './ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contact Logic Unit | Corporate Inquiries',
+  title: 'Contact Logic Unit | Corporate & Partnership Inquiries',
   description:
     'Contact Logic Unit for strategic partnerships, system integrator relationships, enterprise collaboration, investor relations, and talent inquiries.',
 }

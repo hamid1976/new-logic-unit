@@ -85,6 +85,9 @@ export default function AboutPage() {
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
               Expanding digital infrastructure across industries that need stronger software foundations.
             </h2>
+            <p className="mt-6 text-lg leading-8 text-slate-300">
+              Logic Unit continues to build and operate software platforms for industries where long-term digital infrastructure can improve operational visibility, coordination, and scale.
+            </p>
           </div>
           <Link href="/contact" className="border border-white/40 px-6 py-3 text-center text-sm font-semibold text-white hover:border-[#7bd72f]">
             Corporate Inquiry

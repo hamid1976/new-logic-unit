@@ -44,49 +44,57 @@ export default function ContactForm() {
                 </p>
               </div>
             ) : (
-              <form
-                className="grid gap-6"
-                onSubmit={(event) => {
-                  event.preventDefault()
-                  setSubmitted(true)
-                }}
-              >
-                <div className="grid gap-6 md:grid-cols-2">
-                  <div>
-                    <label className={labelClass} htmlFor="name">Name</label>
-                    <input className={fieldClass} id="name" name="name" required type="text" />
+              <div>
+                <h2 className="text-3xl font-semibold tracking-tight text-[#071330] mb-4">
+                  Send a corporate inquiry.
+                </h2>
+                <p className="text-slate-600 mb-8 leading-7">
+                  Share your inquiry type, organization, and message so the Logic Unit team can route the conversation appropriately.
+                </p>
+                <form
+                  className="grid gap-6"
+                  onSubmit={(event) => {
+                    event.preventDefault()
+                    setSubmitted(true)
+                  }}
+                >
+                  <div className="grid gap-6 md:grid-cols-2">
+                    <div>
+                      <label className={labelClass} htmlFor="name">Name</label>
+                      <input className={fieldClass} id="name" name="name" required type="text" />
+                    </div>
+                    <div>
+                      <label className={labelClass} htmlFor="organization">Organization</label>
+                      <input className={fieldClass} id="organization" name="organization" required type="text" />
+                    </div>
                   </div>
-                  <div>
-                    <label className={labelClass} htmlFor="organization">Organization</label>
-                    <input className={fieldClass} id="organization" name="organization" required type="text" />
-                  </div>
-                </div>
 
-                <div className="grid gap-6 md:grid-cols-2">
-                  <div>
-                    <label className={labelClass} htmlFor="email">Email</label>
-                    <input className={fieldClass} id="email" name="email" required type="email" />
+                  <div className="grid gap-6 md:grid-cols-2">
+                    <div>
+                      <label className={labelClass} htmlFor="email">Email</label>
+                      <input className={fieldClass} id="email" name="email" required type="email" />
+                    </div>
+                    <div>
+                      <label className={labelClass} htmlFor="inquiryType">Inquiry type</label>
+                      <select className={fieldClass} id="inquiryType" name="inquiryType" required defaultValue="">
+                        <option value="" disabled>Select one</option>
+                        {inquiryTypes.map((type) => (
+                          <option key={type} value={type}>{type}</option>
+                        ))}
+                      </select>
+                    </div>
                   </div>
+
                   <div>
-                    <label className={labelClass} htmlFor="inquiryType">Inquiry type</label>
-                    <select className={fieldClass} id="inquiryType" name="inquiryType" required defaultValue="">
-                      <option value="" disabled>Select one</option>
-                      {inquiryTypes.map((type) => (
-                        <option key={type} value={type}>{type}</option>
-                      ))}
-                    </select>
+                    <label className={labelClass} htmlFor="message">Message</label>
+                    <textarea className={fieldClass} id="message" name="message" required rows={6} />
                   </div>
-                </div>
 
-                <div>
-                  <label className={labelClass} htmlFor="message">Message</label>
-                  <textarea className={fieldClass} id="message" name="message" required rows={6} />
-                </div>
-
-                <button className="bg-[#10277a] px-6 py-3 text-sm font-bold text-white hover:bg-[#071330]" type="submit">
-                  Send Corporate Inquiry
-                </button>
-              </form>
+                  <button className="bg-[#10277a] px-6 py-3 text-sm font-bold text-white hover:bg-[#071330]" type="submit">
+                    Send Corporate Inquiry
+                  </button>
+                </form>
+              </div>
             )}
           </div>
 
