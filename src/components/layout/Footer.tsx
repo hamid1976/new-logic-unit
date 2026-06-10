@@ -21,17 +21,17 @@ const groups = [
   {
     title: 'Capabilities',
     links: [
-      { href: '/#technology', label: 'SaaS Architecture' },
-      { href: '/#technology', label: 'Data Infrastructure' },
-      { href: '/#technology', label: 'AI & IoT Integration' },
+      { href: '/technology', label: 'SaaS Architecture' },
+      { href: '/technology', label: 'Data Infrastructure' },
+      { href: '/technology', label: 'AI & IoT Integration' },
     ],
   },
   {
     title: 'Partnerships',
     links: [
-      { href: '/partnerships', label: 'Strategic Partnerships' },
-      { href: '/partnerships', label: 'System Integrators' },
-      { href: '/partnerships', label: 'Enterprise Collaboration' },
+      { href: '/partnerships/strategic-partnerships', label: 'Strategic Partnerships' },
+      { href: '/partnerships/system-integrators', label: 'System Integrators' },
+      { href: '/partnerships/enterprise-collaboration', label: 'Enterprise Collaboration' },
     ],
   },
 ]

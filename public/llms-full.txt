@@ -1,0 +1,148 @@
+# Logic Unit Full Website Content
+
+This file contains the complete plain text content of the Logic Unit website, designed for ingestion by LLMs and AI search engines.
+
+---
+
+## Page: Home (/)
+
+### Positioning & Hero
+- **Eyebrow:** Product Engineering & Operating Company
+- **H1:** We Build and Operate Software Platforms That Run Real Industries
+- **Summary:** Logic Unit is a product engineering and SaaS operating company building industry-specific SaaS platforms for real industries. Our platforms support retail, healthcare, livestock, manufacturing, logistics, and facilities through software built for operational use.
+
+### Company Metrics
+- Founded: 2013 (Founded with a long-term engineering mindset)
+- Platforms: 3 (Independent SaaS platforms in operation)
+- Categories: 6 (Industry categories served through products)
+
+### Company Positioning
+A product engineering and operating company founded in 2013. Logic Unit builds independent SaaS platforms designed for industries where digital infrastructure is still evolving. We are not a software agency or a single-product SaaS company. We develop long-term product ecosystems, engineer scalable platforms, and operate them with a deep understanding of the industries they serve.
+
+### How We Work
+1. **Identify Industry Gaps:** We study operational inefficiencies in real-world industries and look for gaps where dedicated SaaS platforms can create stronger digital infrastructure.
+2. **Build Dedicated Platforms:** We engineer SaaS systems tailored to industry needs, with architecture and product direction shaped around real operating environments.
+3. **Operate & Scale:** We continuously evolve and manage these platforms long-term, supporting product growth through engineering, data infrastructure, and practical automation.
+
+---
+
+## Page: About (/about)
+
+### Overview
+Building software infrastructure for real industries. Logic Unit was founded in 2013 with a clear belief: many essential industries need software built around how they actually operate.
+
+### Why Logic Unit Exists
+Across emerging markets, sectors such as retail, healthcare, livestock, manufacturing, logistics, and facilities management often rely on fragmented tools, manual processes, and disconnected systems. Logic Unit exists to close that gap through dedicated SaaS platforms designed for long-term operational use. These platforms are not short-term experiments or client projects. They are continuously engineered, improved, and operated as long-term software ecosystems. Our role is to identify industry gaps, design scalable SaaS systems, build the underlying technology, and support the long-term growth of each product company.
+
+### Operating Philosophy
+- **Long-term platform ownership:** We build product ecosystems with the expectation that they will be operated, improved, and supported over many years.
+- **Industry-specific architecture:** Each platform is shaped around a real operating environment rather than a generic software category.
+- **Practical innovation:** AI, IoT, automation, and data systems are introduced where they improve concrete platform capability.
+- **Product company separation:** Logic Unit builds and operates the ecosystem. Product companies own customer adoption, pricing, onboarding, and product-specific sales.
+
+---
+
+## Page: Ecosystem (/ecosystem)
+
+### Overview
+A growing ecosystem of independent SaaS platforms. Logic Unit operates a growing ecosystem of independent software platforms. Each product company serves a specific industry, with its own product architecture, roadmap, and customer adoption strategy.
+
+### Product Portfolio
+1. **Hulm Solutions (Business Operating System):** A SaaS platform for managing business operations across retail, healthcare, and service environments.
+2. **Titan MMS (Maintenance Management Platform):** A platform for managing maintenance operations, assets, service activity, and industrial reliability.
+3. **AnimalCare360 (Veterinary & Livestock Platform):** A digital platform supporting veterinary, livestock, and animal care operations.
+
+---
+
+## Page: Technology (/technology)
+
+### Overview
+The R&D and engineering backbone behind industry SaaS. Logic Unit designs multi-tenant platforms, data infrastructure, integration layers, and practical automation capabilities that support long-term product growth. Our approach to innovation is grounded in real operational use, not technology hype.
+
+### Core Capabilities
+- **SaaS Architecture & Multi-Tenant Systems:** We design robust, secure, and scalable multi-tenant architectures. Our platforms ensure absolute database separation, data safety, and optimized resource allocation to handle enterprise-level scale.
+- **Data Infrastructure & Real-Time Analytics:** Our systems are built on high-performance data infrastructure capable of processing high-volume transactional logs, operation metrics, and reporting analytics for real-world industries.
+- **Practical AI & Machine Learning Integration:** We integrate AI capabilities directly into operational workflows where they solve concrete business problems, such as predictive asset reliability in facilities or veterinary health insights in livestock.
+- **IoT & Device System Integration:** We connect physical operations to cloud environments. Our IoT layers integrate device diagnostics, telemetry, and tracking networks directly into SaaS platform dashboards.
+- **Practical Operational Automation:** Reducing operational overhead is central to our platforms. We automate repetitive industrial and logistical workflows, reducing manual errors and enhancing speed across organizations.
+
+---
+
+## Page: Industries (/industry)
+
+### Overview
+Industries served through Logic Unit platforms. Logic Unit builds platforms for industries where operational software can improve visibility, coordination, and long-term efficiency.
+
+### Industries Served
+- **Retail:** Logic Unit platforms support retail environments through SaaS systems built around business operations and operational visibility.
+- **Healthcare:** Logic Unit platforms support healthcare and service environments through industry-specific software designed for operational use.
+- **Livestock:** Logic Unit platforms support livestock, veterinary, and animal care operations through digital systems built for real industry workflows.
+- **Manufacturing:** Logic Unit platforms support manufacturing and industrial operations through software that improves visibility across assets, maintenance, and operational activity.
+- **Logistics:** Logic Unit platforms support logistics operations where coordination, operational visibility, and scalable systems matter.
+- **Facilities:** Logic Unit platforms support facilities and maintenance environments through software designed for service activity, assets, and operational reliability.
+
+---
+
+## Page: Partnerships (/partnerships)
+
+### Overview
+Partnership routes for long-term ecosystem growth. Logic Unit works with strategic partners, system integrators, enterprises, and ecosystem collaborators who share our goal of building stronger software infrastructure for real industries.
+
+### Collaboration Routes
+1. **Strategic Partnerships:** Market expansion, product ecosystem collaboration, and long-term industry digitization.
+2. **System Integrators:** Direct platform implementation, system integration, and joint enterprise deployments.
+3. **Enterprise Collaboration:** Custom enterprise integrations, dedicated platform instances, and corporate digital infrastructure.
+4. **Investor & Expansion Relations:** Long-term platform expansion and product ecosystem scaling.
+
+---
+
+## Industry Detail Pages
+
+### Retail Software Platforms (/industry/retail)
+SaaS platform solutions for retail business operations.
+- **Core Operations:** Managing multi-location business operations, inventory flows, and daily operational visibility.
+- **Ecosystem Connection:** The Logic Unit ecosystem includes Hulm Solutions, a SaaS platform for managing business operations across retail, healthcare, and service environments.
+
+### Healthcare Software Platforms (/industry/healthcare)
+Operational software for clinics and healthcare environments.
+- **SaaS Workflows:** Supporting medical service scheduling, patient flow management, and clinic operations.
+- **Ecosystem Integration:** Healthcare is one of the industry categories served through the current Logic Unit ecosystem, utilizing Hulm Solutions modules.
+
+### Livestock Software Platforms (/industry/livestock)
+Digital tools for livestock, animal care, and veterinary management.
+- **Field Operations:** Managing animal records, veterinary treatment tracking, and livestock metrics.
+- **Ecosystem Platform:** Logic Unit develops the AnimalCare360 platform to support veterinary, livestock, and animal care workflows.
+
+### Manufacturing Software Platforms (/industry/manufacturing)
+Operations management for industrial assets and reliability.
+- **Reliability Engineering:** Tracking machine uptime, maintenance cycles, and asset health.
+- **Ecosystem Integration:** The Logic Unit ecosystem includes Titan MMS, a platform for managing maintenance operations, assets, service activity, and industrial reliability.
+
+### Logistics Software Platforms (/industry/logistics)
+Operations and coordination software for supply chains.
+- **Fleet and Dispatch:** Optimizing delivery dispatch, driver workflows, and cargo status tracking.
+- **Data Integrity:** Keeping logs secure and multi-tenant structures isolated for logistics operators.
+
+### Facilities Software Platforms (/industry/facilities)
+Asset and maintenance management systems.
+- **Facilities Workflows:** Automating maintenance requests, service activities, and facility asset reliability.
+- **Ecosystem Platform:** Utilizes Titan MMS modules for property and infrastructure maintenance tracking.
+
+---
+
+## Partnership Detail Pages
+
+### Strategic Partnerships (/partnerships/strategic-partnerships)
+Product collaboration and market expansion.
+- **Co-development:** Collaborating on shared technology and joint product capabilities.
+- **Market Expansion:** Accessing new markets and industry sectors through strategic alignments.
+
+### System Integrators (/partnerships/system-integrators)
+Joint implementations and integration partnerships.
+- **Deployment Control:** Supporting integrators with APIs, documentation, and technical support.
+- **Ecosystem Scale:** Easing implementation across enterprise environments.
+
+### Enterprise Collaboration (/partnerships/enterprise-collaboration)
+Platforms built for enterprise infrastructure.
+- **Scale Requirements:** Custom telemetry, dedicated resources, and enterprise security compliance.
+- **Infrastructure Integrations:** Hooking into legacy ERPs and operational frameworks.

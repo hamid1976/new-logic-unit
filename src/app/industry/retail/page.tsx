@@ -26,6 +26,8 @@ export default function RetailPage() {
       heroBody="Logic Unit builds and operates SaaS platforms for industries where digital infrastructure is still evolving. Retail is one of the industry categories served through the Logic Unit product ecosystem."
       sections={sections}
       ctaTitle="Discuss retail platform collaboration."
+      backText="Back to Industries"
+      backHref="/industry"
     />
   )
 }

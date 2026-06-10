@@ -26,6 +26,8 @@ export default function StrategicPartnershipsPage() {
       heroBody="Logic Unit works with strategic partners aligned with its goal of building stronger software infrastructure for real industries."
       sections={sections}
       ctaTitle="Start a strategic partnership conversation."
+      backText="Back to Partnerships"
+      backHref="/partnerships"
     />
   )
 }

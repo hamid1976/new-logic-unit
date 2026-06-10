@@ -11,6 +11,8 @@ interface SubPageTemplateProps {
   heroBody: string
   sections: Section[]
   ctaTitle: string
+  backText: string
+  backHref: string
 }
 
 export function SubPageTemplate({
@@ -19,6 +21,8 @@ export function SubPageTemplate({
   heroBody,
   sections,
   ctaTitle,
+  backText,
+  backHref,
 }: SubPageTemplateProps) {
   return (
     <main className="min-h-screen bg-[#fbfaf6] text-[#111827]">
@@ -56,12 +60,20 @@ export function SubPageTemplate({
           <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-[#071330] md:text-5xl">
             {ctaTitle}
           </h2>
-          <Link
-            href="/contact"
-            className="bg-[#10277a] px-6 py-3 text-center text-sm font-bold text-white hover:bg-[#071330] whitespace-nowrap"
-          >
-            Contact Logic Unit
-          </Link>
+          <div className="flex flex-col gap-4 sm:flex-row flex-shrink-0">
+            <Link
+              href={backHref}
+              className="border border-[#10277a] px-6 py-3 text-center text-sm font-semibold text-[#10277a] hover:bg-[#f4f7fb] whitespace-nowrap no-underline"
+            >
+              {backText}
+            </Link>
+            <Link
+              href="/contact"
+              className="bg-[#10277a] px-6 py-3 text-center text-sm font-bold text-white hover:bg-[#071330] whitespace-nowrap"
+            >
+              Contact Logic Unit
+            </Link>
+          </div>
         </div>
       </section>
     </main>

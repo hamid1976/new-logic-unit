@@ -26,6 +26,8 @@ export default function LivestockPage() {
       heroBody="Logic Unit builds and operates industry-specific SaaS platforms for real operational environments. Livestock is one of the industry categories served through the current product ecosystem."
       sections={sections}
       ctaTitle="Discuss livestock platform collaboration."
+      backText="Back to Industries"
+      backHref="/industry"
     />
   )
 }

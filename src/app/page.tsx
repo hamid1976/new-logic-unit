@@ -56,7 +56,14 @@ const workModel = [
   },
 ]
 
-const industries = ['Retail', 'Healthcare', 'Livestock', 'Manufacturing', 'Logistics', 'Facilities']
+const industries = [
+  { name: 'Retail', href: '/industry/retail' },
+  { name: 'Healthcare', href: '/industry/healthcare' },
+  { name: 'Livestock', href: '/industry/livestock' },
+  { name: 'Manufacturing', href: '/industry/manufacturing' },
+  { name: 'Logistics', href: '/industry/logistics' },
+  { name: 'Facilities', href: '/industry/facilities' },
+]
 
 const capabilities = [
   'SaaS architecture capability',
@@ -90,7 +97,7 @@ export default function HomePage() {
               Logic Unit is a product engineering and SaaS operating company building industry-specific SaaS platforms for real industries. Our platforms support retail, healthcare, livestock, manufacturing, logistics, and facilities through software built for operational use.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Link href="#ecosystem" className="bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e]">
+              <Link href="/ecosystem" className="bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e]">
                 Explore Ecosystem
               </Link>
               <Link href="/contact" className="border border-white/35 px-6 py-3 text-center text-sm font-semibold text-white hover:border-[#7bd72f]">
@@ -191,15 +198,25 @@ export default function HomePage() {
           <p className="mt-6 text-lg leading-8 text-slate-600">
             Logic Unit platforms serve retail, healthcare, livestock, manufacturing, logistics, and facilities through industry-specific SaaS products built for real operational environments.
           </p>
+          <Link
+            href="/industry"
+            className="inline-block mt-8 text-sm font-bold text-[#10277a] underline decoration-[#7bd72f] decoration-2 underline-offset-4 hover:text-[#071330]"
+          >
+            Explore Industries
+          </Link>
         </div>
-          <div className="grid grid-cols-2 gap-px bg-[rgba(16,39,122,0.14)] md:grid-cols-3">
-            {industries.map((industry) => (
-              <div key={industry} className="bg-[#fbfaf6] p-8 text-lg font-bold text-[#10277a]">
-                {industry}
-              </div>
-            ))}
-          </div>
+        <div className="grid grid-cols-2 gap-px bg-[rgba(16,39,122,0.14)] md:grid-cols-3">
+          {industries.map((industry) => (
+            <Link
+              key={industry.name}
+              href={industry.href}
+              className="bg-[#fbfaf6] p-8 text-lg font-bold text-[#10277a] hover:bg-[#10277a] hover:text-white transition-all duration-200 no-underline"
+            >
+              {industry.name}
+            </Link>
+          ))}
         </div>
+      </div>
       </section>
 
       <section id="technology" className="lu-shell px-6 py-24 text-white lg:px-12">
@@ -233,6 +250,12 @@ export default function HomePage() {
           <p className="mt-5 text-lg leading-8 text-slate-600">
             Logic Unit works with partners that support industry SaaS growth, platform expansion, enterprise collaboration, and system integration.
           </p>
+          <Link
+            href="/partnerships"
+            className="inline-block mt-6 text-sm font-bold text-[#10277a] underline decoration-[#7bd72f] decoration-2 underline-offset-4 hover:text-[#071330]"
+          >
+            Explore Partnerships
+          </Link>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {partnershipRoutes.map((route) => (

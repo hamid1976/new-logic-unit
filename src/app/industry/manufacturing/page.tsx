@@ -26,6 +26,8 @@ export default function ManufacturingPage() {
       heroBody="Logic Unit builds software platforms for industries where operational visibility, coordination, and long-term digital infrastructure matter. Manufacturing is one of the industry categories named in the current Logic Unit website."
       sections={sections}
       ctaTitle="Discuss manufacturing platform collaboration."
+      backText="Back to Industries"
+      backHref="/industry"
     />
   )
 }

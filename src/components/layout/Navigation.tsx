@@ -7,9 +7,9 @@ import { LogicUnitLogo } from '@/components/brand/LogicUnitLogo'
 
 const navLinks = [
   { href: '/about', label: 'Company' },
-  { href: '/#ecosystem', label: 'Ecosystem' },
-  { href: '/#technology', label: 'Technology' },
-  { href: '/#industries', label: 'Industries' },
+  { href: '/ecosystem', label: 'Ecosystem' },
+  { href: '/technology', label: 'Technology' },
+  { href: '/industry', label: 'Industries' },
   { href: '/partnerships', label: 'Partnerships' },
 ]
 

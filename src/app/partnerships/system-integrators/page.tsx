@@ -26,6 +26,8 @@ export default function SystemIntegratorsPage() {
       heroBody="Logic Unit works with system integrators connected to operational industries, implementation needs, deployment relationships, and integration conversations."
       sections={sections}
       ctaTitle="Start a system integrator conversation."
+      backText="Back to Partnerships"
+      backHref="/partnerships"
     />
   )
 }

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 const inquiryTypes = [
   'Strategic partnership',
@@ -90,9 +91,14 @@ export default function ContactForm() {
                     <textarea className={fieldClass} id="message" name="message" required rows={6} />
                   </div>
 
-                  <button className="bg-[#10277a] px-6 py-3 text-sm font-bold text-white hover:bg-[#071330]" type="submit">
-                    Send Corporate Inquiry
-                  </button>
+                  <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+                    <button className="bg-[#10277a] px-6 py-3 text-sm font-bold text-white hover:bg-[#071330]" type="submit">
+                      Send Corporate Inquiry
+                    </button>
+                    <Link href="/partnerships" className="text-sm font-semibold text-[#10277a] hover:underline text-center sm:text-left no-underline">
+                      Back to Partnerships
+                    </Link>
+                  </div>
                 </form>
               </div>
             )}
@@ -100,14 +106,14 @@ export default function ContactForm() {
 
           <aside className="space-y-6">
             {[
-              ['Strategic Partnerships', 'Market expansion, product ecosystem collaboration, and long-term industry digitization.'],
-              ['System Integrators', 'Implementation, deployment, and integration relationships across operational industries.'],
-              ['Enterprise Collaboration', 'Platform partnerships and digital infrastructure collaboration.'],
-            ].map(([title, body]) => (
-              <div key={title} className="lu-card p-6">
-                <h2 className="mb-3 text-xl font-semibold text-[#10277a]">{title}</h2>
-                <p className="leading-7 text-slate-600">{body}</p>
-              </div>
+              { title: 'Strategic Partnerships', body: 'Market expansion, product ecosystem collaboration, and long-term industry digitization.', href: '/partnerships/strategic-partnerships' },
+              { title: 'System Integrators', body: 'Implementation, deployment, and integration relationships across operational industries.', href: '/partnerships/system-integrators' },
+              { title: 'Enterprise Collaboration', body: 'Platform partnerships and digital infrastructure collaboration.', href: '/partnerships/enterprise-collaboration' },
+            ].map((card) => (
+              <Link key={card.title} href={card.href} className="lu-card p-6 block no-underline hover:border-[#10277a] transition-colors">
+                <h2 className="mb-3 text-xl font-semibold text-[#10277a]">{card.title}</h2>
+                <p className="leading-7 text-slate-600">{card.body}</p>
+              </Link>
             ))}
           </aside>
         </div>

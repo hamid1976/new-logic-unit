@@ -26,6 +26,8 @@ export default function EnterpriseCollaborationPage() {
       heroBody="Logic Unit works with enterprises seeking platform partnerships, infrastructure collaboration, and industry-specific digital transformation."
       sections={sections}
       ctaTitle="Start an enterprise collaboration inquiry."
+      backText="Back to Partnerships"
+      backHref="/partnerships"
     />
   )
 }

@@ -26,6 +26,8 @@ export default function LogisticsPage() {
       heroBody="Logic Unit builds industry software platforms for real operating environments. Logistics is one of the industry categories served through the current Logic Unit positioning."
       sections={sections}
       ctaTitle="Discuss logistics platform collaboration."
+      backText="Back to Industries"
+      backHref="/industry"
     />
   )
 }

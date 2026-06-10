@@ -79,7 +79,7 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-[#071330] px-6 py-24 text-white lg:px-12">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 md:flex-row md:items-center">
+        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 lg:flex-row lg:items-center">
           <div className="max-w-2xl">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-[#7bd72f]">Corporate Direction</p>
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
@@ -89,9 +89,26 @@ export default function AboutPage() {
               Logic Unit continues to build and operate software platforms for industries where long-term digital infrastructure can improve operational visibility, coordination, and scale.
             </p>
           </div>
-          <Link href="/contact" className="border border-white/40 px-6 py-3 text-center text-sm font-semibold text-white hover:border-[#7bd72f]">
-            Corporate Inquiry
-          </Link>
+          <div className="flex flex-col gap-4 sm:flex-row lg:flex-shrink-0">
+            <Link
+              href="/industry"
+              className="bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e] whitespace-nowrap no-underline"
+            >
+              Explore Industries
+            </Link>
+            <Link
+              href="/partnerships"
+              className="border border-white/40 px-6 py-3 text-center text-sm font-semibold text-white hover:border-[#7bd72f] whitespace-nowrap"
+            >
+              Explore Partnerships
+            </Link>
+            <Link
+              href="/contact"
+              className="border border-white/40 px-6 py-3 text-center text-sm font-semibold text-white hover:border-[#7bd72f] whitespace-nowrap"
+            >
+              Corporate Inquiry
+            </Link>
+          </div>
         </div>
       </section>
     </main>

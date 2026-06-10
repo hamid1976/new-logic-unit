@@ -26,6 +26,8 @@ export default function FacilitiesPage() {
       heroBody="Logic Unit builds software platforms for industries where maintenance, service activity, and operational reliability matter. Facilities is one of the industry categories named in the current website."
       sections={sections}
       ctaTitle="Discuss facilities platform collaboration."
+      backText="Back to Industries"
+      backHref="/industry"
     />
   )
 }

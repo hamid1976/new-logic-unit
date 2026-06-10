@@ -112,12 +112,20 @@ export default function IndustryPage() {
               For partnerships, system integrator relationships, and enterprise collaboration around industry software platforms, contact Logic Unit.
             </p>
           </div>
-          <Link
-            href="/contact"
-            className="bg-[#10277a] px-6 py-3 text-center text-sm font-bold text-white hover:bg-[#071330] whitespace-nowrap"
-          >
-            Contact Logic Unit
-          </Link>
+          <div className="flex flex-col gap-4 sm:flex-row flex-shrink-0">
+            <Link
+              href="/partnerships"
+              className="border border-[#10277a] px-6 py-3 text-center text-sm font-semibold text-[#10277a] hover:bg-[#f4f7fb] whitespace-nowrap no-underline"
+            >
+              Explore Partnerships
+            </Link>
+            <Link
+              href="/contact"
+              className="bg-[#10277a] px-6 py-3 text-center text-sm font-bold text-white hover:bg-[#071330] whitespace-nowrap"
+            >
+              Contact Logic Unit
+            </Link>
+          </div>
         </div>
       </section>
     </main>

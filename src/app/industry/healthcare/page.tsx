@@ -26,6 +26,8 @@ export default function HealthcarePage() {
       heroBody="Logic Unit builds SaaS platforms for industries where operational software can improve visibility, coordination, and long-term efficiency. Healthcare is one of the industry categories served through the current Logic Unit ecosystem."
       sections={sections}
       ctaTitle="Discuss healthcare platform collaboration."
+      backText="Back to Industries"
+      backHref="/industry"
     />
   )
 }
