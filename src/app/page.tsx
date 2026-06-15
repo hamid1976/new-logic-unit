@@ -5,7 +5,7 @@ import { LogicUnitLogo } from '@/components/brand/LogicUnitLogo'
 export const metadata: Metadata = {
   title: 'SaaS Operating & Product Engineering Company',
   description:
-    'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities.',
+    'As product engineering company Logic Unit builds and operates industry-specific SaaS for retail, healthcare, livestock, manufacturing & more!',
   keywords: [
     'product engineering company',
     'SaaS operating company',
@@ -91,10 +91,10 @@ export default function HomePage() {
               Product Engineering & Operating Company
             </p>
             <h1 className="max-w-5xl text-5xl font-semibold leading-[1.02] tracking-tight md:text-7xl">
-              We Build and Operate Software Platforms That Run Real Industries
+              Product Engineering Company
             </h1>
             <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">
-              Logic Unit is a product engineering and SaaS operating company building industry-specific SaaS platforms for real industries. Our platforms support retail, healthcare, livestock, manufacturing, logistics, and facilities through software built for operational use.
+              Logic Unit is a product engineering company. building & operating industry-specific SaaS platforms for real industries. Our platforms support retail, healthcare, livestock, manufacturing, logistics, and facilities through software built for operational use.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Link href="/ecosystem" className="bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e]">

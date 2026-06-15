@@ -8,8 +8,8 @@ This file contains the complete plain text content of the Logic Unit website, de
 
 ### Positioning & Hero
 - **Eyebrow:** Product Engineering & Operating Company
-- **H1:** We Build and Operate Software Platforms That Run Real Industries
-- **Summary:** Logic Unit is a product engineering and SaaS operating company building industry-specific SaaS platforms for real industries. Our platforms support retail, healthcare, livestock, manufacturing, logistics, and facilities through software built for operational use.
+- **H1:** Product Engineering Company
+- **Summary:** Logic Unit is a product engineering company. building & operating industry-specific SaaS platforms for real industries. Our platforms support retail, healthcare, livestock, manufacturing, logistics, and facilities through software built for operational use.
 
 ### Company Metrics
 - Founded: 2013 (Founded with a long-term engineering mindset)

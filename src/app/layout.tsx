@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: '%s | Logic Unit',
   },
   description:
-    'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities.',
+    'As product engineering company Logic Unit builds and operates industry-specific SaaS for retail, healthcare, livestock, manufacturing & more!',
   keywords: [
     'product engineering company',
     'SaaS operating company',
@@ -43,14 +43,14 @@ export const metadata: Metadata = {
     siteName: 'Logic Unit',
     title: 'SaaS Operating & Product Engineering Company',
     description:
-      'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities.',
+      'As product engineering company Logic Unit builds and operates industry-specific SaaS for retail, healthcare, livestock, manufacturing & more!',
     images: [{ url: ogImagePath, width: 1200, height: 630, alt: 'Logic Unit' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'SaaS Operating & Product Engineering Company',
     description:
-      'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities.',
+      'As product engineering company Logic Unit builds and operates industry-specific SaaS for retail, healthcare, livestock, manufacturing & more!',
   },
   robots: {
     index: false,
