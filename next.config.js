@@ -16,11 +16,6 @@ const nextConfig = {
       destination: '/about',
       permanent: true,
     },
-    {
-      source: '/industry/:slug',
-      destination: '/industry',
-      permanent: true,
-    },
   ],
   headers: async () => [
     {
