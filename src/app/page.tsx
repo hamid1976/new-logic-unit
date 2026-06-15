@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { LogicUnitLogo } from '@/components/brand/LogicUnitLogo'
 
 export const metadata: Metadata = {
-  title: 'Logic Unit | Product Engineering & SaaS Operating Company',
+  title: 'SaaS Operating & Product Engineering Company',
   description:
-    'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities across emerging markets.',
+    'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities.',
   keywords: [
     'product engineering company',
     'SaaS operating company',

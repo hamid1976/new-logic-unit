@@ -22,11 +22,11 @@ const barlowCondensed = Barlow_Condensed({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Logic Unit | Product Engineering & SaaS Operating Company',
+    default: 'SaaS Operating & Product Engineering Company',
     template: '%s | Logic Unit',
   },
   description:
-    'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities across emerging markets.',
+    'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities.',
   keywords: [
     'product engineering company',
     'SaaS operating company',
@@ -41,15 +41,16 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteUrl,
     siteName: 'Logic Unit',
-    title: 'Logic Unit | Product Engineering & SaaS Operating Company',
+    title: 'SaaS Operating & Product Engineering Company',
     description:
-      'Logic Unit builds and operates software platforms that run real industries.',
+      'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities.',
     images: [{ url: ogImagePath, width: 1200, height: 630, alt: 'Logic Unit' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Logic Unit | Product Engineering & SaaS Operating Company',
-    description: 'Logic Unit builds and operates software platforms that run real industries.',
+    title: 'SaaS Operating & Product Engineering Company',
+    description:
+      'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities.',
   },
   robots: {
     index: false,
