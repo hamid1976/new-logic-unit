@@ -26,3 +26,9 @@
 - [Strategic Partnerships](https://logic-unit.com/partnerships/strategic-partnerships): Product collaboration and market expansion.
 - [System Integrators](https://logic-unit.com/partnerships/system-integrators): Joint implementations and integration partnerships.
 - [Enterprise Collaboration](https://logic-unit.com/partnerships/enterprise-collaboration): Platforms built for enterprise infrastructure.
+
+## Ecosystem Product Pages
+
+- [Hulm Solutions](https://logic-unit.com/ecosystem/hulm-solutions): Cloud POS and business operating system for retail and wholesale.
+- [Titan MMS](https://logic-unit.com/ecosystem/titan-mms): Computerized Maintenance Management System (CMMS) for asset uptime and work orders.
+- [AnimalCare360](https://logic-unit.com/ecosystem/animalcare360): Livestock ERP and clinical veterinary management software.

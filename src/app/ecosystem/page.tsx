@@ -23,6 +23,7 @@ const products = [
     description:
       'A SaaS platform for managing business operations across retail, healthcare, and service environments.',
     href: 'https://hulmsolutions.com',
+    internalHref: '/ecosystem/hulm-solutions',
   },
   {
     name: 'Titan MMS',
@@ -30,6 +31,7 @@ const products = [
     description:
       'A platform for managing maintenance operations, assets, service activity, and industrial reliability.',
     href: 'https://titanmms.com',
+    internalHref: '/ecosystem/titan-mms',
   },
   {
     name: 'AnimalCare360',
@@ -37,6 +39,7 @@ const products = [
     description:
       'A digital platform supporting veterinary, livestock, and animal care operations.',
     href: 'https://animalcare360.com',
+    internalHref: '/ecosystem/animalcare360',
   },
 ]
 
@@ -81,18 +84,28 @@ export default function EcosystemPage() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-6 md:grid-cols-3">
             {products.map((product) => (
-              <article key={product.name} className="lu-card lu-rule-top flex min-h-72 flex-col p-8 bg-white">
-                <p className="mb-4 text-sm font-medium text-slate-500">{product.category}</p>
-                <h3 className="mb-5 text-2xl font-semibold text-[#10277a]">{product.name}</h3>
-                <p className="mb-10 leading-7 text-slate-600">{product.description}</p>
-                <a
-                  href={product.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-auto text-sm font-bold text-[#10277a] underline decoration-[#7bd72f] decoration-2 underline-offset-4 hover:text-[#071330]"
-                >
-                  Visit Product Website
-                </a>
+              <article key={product.name} className="lu-card lu-rule-top flex min-h-[340px] flex-col p-8 bg-white justify-between">
+                <div>
+                  <p className="mb-4 text-sm font-medium text-slate-500">{product.category}</p>
+                  <h3 className="mb-5 text-2xl font-semibold text-[#10277a]">{product.name}</h3>
+                  <p className="mb-10 leading-7 text-slate-600">{product.description}</p>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <Link
+                    href={product.internalHref}
+                    className="text-sm font-bold text-[#10277a] underline decoration-[#7bd72f] decoration-2 underline-offset-4 hover:text-[#071330] no-underline"
+                  >
+                    Explore Product Details →
+                  </Link>
+                  <a
+                    href={product.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-semibold text-slate-500 hover:text-slate-800"
+                  >
+                    Visit official website
+                  </a>
+                </div>
               </article>
             ))}
           </div>

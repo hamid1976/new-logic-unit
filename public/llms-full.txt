@@ -146,3 +146,32 @@ Joint implementations and integration partnerships.
 Platforms built for enterprise infrastructure.
 - **Scale Requirements:** Custom telemetry, dedicated resources, and enterprise security compliance.
 - **Infrastructure Integrations:** Hooking into legacy ERPs and operational frameworks.
+
+---
+
+## Ecosystem Product Pages
+
+### Hulm Solutions (/ecosystem/hulm-solutions)
+Cloud POS & Business Operating System.
+- **Point of Sale (POS):** A core billing, sales, and checkout system designed for retail outlets, restaurants, hospitality, and service-oriented businesses to manage high-speed daily operational transactions.
+- **Inventory & Multi-Warehouse Management:** Real-time stock level synchronization, warehouse transfer systems, barcode tracking, and automatic notifications for low-stock thresholds across multiple physical locations.
+- **Order & Vendor Operations:** Centralized order tracking for retail channels, vendor purchase order automation, supplier payment logs, and supplier credit balance reporting.
+- **Finance & Compliance Analytics:** Integrated invoice printing (FBR-compliant), daily sales margin tracking, tax compliance tools, and automated profit-and-loss reports.
+- **Website link:** https://hulmsolutions.com
+
+### Titan MMS (/ecosystem/titan-mms)
+Computerized Maintenance Management System.
+- **Asset & Lifecycle Operations:** Centrally register company equipment and physical assets, document technical specifications, store warranty dates, and log repairs to minimize lifetime depreciation.
+- **Automated Work Orders:** Log, schedule, dispatch, and track daily maintenance tasks. Transition technicians from reactive fixes to efficient preventive workflows with detailed completion logs.
+- **Preventive Maintenance Scheduling:** Automate inspection and service schedules based on elapsed time or usage metrics, ensuring regular equipment upkeep and preventing sudden operational breakdowns.
+- **Reliability & Uptime Reporting:** Real-time performance analytics measuring equipment downtime, maintenance overheads, technician productivity, and spare part usage metrics.
+- **Website link:** https://titanmms.com
+
+### AnimalCare360 (/ecosystem/animalcare360)
+Livestock ERP & Veterinary Management.
+- **Herd & Cattle Tracking:** Digitize complete animal profiles including breed, vaccination status, breeding cycles, weight records, milk yield logs, and detailed parent histories.
+- **Veterinary Electronic Medical Records (EMR):** Centralized patient histories, surgery documentation, treatment schedules, clinical notes, appointment calendars, and integrated pharmacy inventory.
+- **Inventory & Retail Feed POS:** Operate FBR-compliant billing for wanda and feed retailers. Manage pharmaceutical stock with expiration alerts, batch controls, and minimum-quantity thresholds.
+- **Trading & Broker Contracts:** Custom ERP workflows designed to manage livestock sales contracts, transport billing calculations, broker commissions, and investor account ledger statements.
+- **Website link:** https://animalcare360.com
+

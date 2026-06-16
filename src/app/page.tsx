@@ -92,7 +92,7 @@ export default function HomePage() {
               Product Engineering & Operating Company
             </p>
             <h1 className="max-w-4xl text-5xl font-semibold leading-[1.02] tracking-tight md:text-7xl">
-              Product Engineering Company
+              SaaS Operating & Product Engineering Company
             </h1>
             <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">
               Logic Unit is a product engineering company. building & operating industry-specific SaaS platforms for real industries. Our platforms support retail, healthcare, livestock, manufacturing, logistics, and facilities through software built for operational use.
@@ -152,7 +152,7 @@ export default function HomePage() {
 
               {/* Orbiting Platforms */}
               {/* Node 1: Hulm Solutions */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/3 group cursor-pointer">
+              <Link href="/ecosystem/hulm-solutions" className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/3 group cursor-pointer no-underline block">
                 <div className="flex flex-col items-center">
                   <div className="bg-[#071330] border border-white/10 group-hover:border-[#7bd72f] p-3 shadow-lg rounded-xl transition-all duration-300">
                     <span className="text-xs font-bold text-slate-400 group-hover:text-white uppercase tracking-wider block text-center">Hulm</span>
@@ -160,10 +160,10 @@ export default function HomePage() {
                   </div>
                   <div className="w-2 h-2 rounded-full bg-[#7bd72f] mt-1 animate-pulse" />
                 </div>
-              </div>
+              </Link>
 
               {/* Node 2: Titan MMS */}
-              <div className="absolute bottom-[10%] left-0 -translate-x-1/4 group cursor-pointer">
+              <Link href="/ecosystem/titan-mms" className="absolute bottom-[10%] left-0 -translate-x-1/4 group cursor-pointer no-underline block">
                 <div className="flex flex-col items-center">
                   <div className="bg-[#071330] border border-white/10 group-hover:border-[#7bd72f] p-3 shadow-lg rounded-xl transition-all duration-300">
                     <span className="text-xs font-bold text-slate-400 group-hover:text-white uppercase tracking-wider block text-center">Titan MMS</span>
@@ -171,10 +171,10 @@ export default function HomePage() {
                   </div>
                   <div className="w-2 h-2 rounded-full bg-[#7bd72f] mt-1 animate-pulse" />
                 </div>
-              </div>
+              </Link>
 
               {/* Node 3: AnimalCare360 */}
-              <div className="absolute bottom-[10%] right-0 translate-x-1/4 group cursor-pointer">
+              <Link href="/ecosystem/animalcare360" className="absolute bottom-[10%] right-0 translate-x-1/4 group cursor-pointer no-underline block">
                 <div className="flex flex-col items-center">
                   <div className="bg-[#071330] border border-white/10 group-hover:border-[#7bd72f] p-3 shadow-lg rounded-xl transition-all duration-300">
                     <span className="text-xs font-bold text-slate-400 group-hover:text-white uppercase tracking-wider block text-center">AnimalCare</span>
@@ -182,12 +182,12 @@ export default function HomePage() {
                   </div>
                   <div className="w-2 h-2 rounded-full bg-[#7bd72f] mt-1 animate-pulse" />
                 </div>
-              </div>
+              </Link>
 
               {/* Central Core: Logic Unit Engine */}
               <div className="absolute inset-[30%] flex flex-col items-center justify-center bg-[#071330]/90 border-2 border-[#7bd72f] rounded-full shadow-[0_0_30px_rgba(123,215,47,0.3)] p-4 text-center">
                 <span className="text-sm font-extrabold text-[#7bd72f] tracking-widest uppercase">Logic Unit</span>
-                <span className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider mt-1">R&D Core</span>
+                <span className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider mt-1">Ecosystem</span>
               </div>
             </div>
           </div>

@@ -13,6 +13,8 @@ interface SubPageTemplateProps {
   ctaTitle: string
   backText: string
   backHref: string
+  externalHref?: string
+  externalText?: string
 }
 
 export function SubPageTemplate({
@@ -23,6 +25,8 @@ export function SubPageTemplate({
   ctaTitle,
   backText,
   backHref,
+  externalHref,
+  externalText,
 }: SubPageTemplateProps) {
   return (
     <main className="min-h-screen bg-[#fbfaf6] text-[#111827]">
@@ -67,6 +71,16 @@ export function SubPageTemplate({
             >
               {backText}
             </Link>
+            {externalHref && externalText && (
+              <a
+                href={externalHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e] whitespace-nowrap no-underline"
+              >
+                {externalText}
+              </a>
+            )}
             <Link
               href="/contact"
               className="bg-[#10277a] px-6 py-3 text-center text-sm font-bold text-white hover:bg-[#071330] whitespace-nowrap"
