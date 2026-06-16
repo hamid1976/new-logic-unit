@@ -53,8 +53,8 @@ export const metadata: Metadata = {
       'As product engineering company Logic Unit builds and operates industry-specific SaaS for retail, healthcare, livestock, manufacturing & more!',
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
   alternates: {
     canonical: '/',

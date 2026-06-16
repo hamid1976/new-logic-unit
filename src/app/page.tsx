@@ -85,12 +85,13 @@ export default function HomePage() {
       <section className="lu-shell relative overflow-hidden px-6 py-28 text-white lg:px-12 lg:py-36">
         <div className="lu-grid absolute inset-0 opacity-30" aria-hidden="true" />
         <div className="absolute bottom-0 right-0 h-80 w-80 translate-x-20 translate-y-20 border-[34px] border-[#7bd72f]/15" aria-hidden="true" />
-        <div className="relative mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1.08fr_0.92fr] lg:items-end">
-          <div className="max-w-5xl">
+        <div className="relative mx-auto grid max-w-7xl gap-16 lg:grid-cols-12 lg:items-center">
+          {/* Left Column - Core Text & Stats */}
+          <div className="max-w-5xl lg:col-span-7">
             <p className="mb-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#7bd72f]">
               Product Engineering & Operating Company
             </p>
-            <h1 className="max-w-5xl text-5xl font-semibold leading-[1.02] tracking-tight md:text-7xl">
+            <h1 className="max-w-4xl text-5xl font-semibold leading-[1.02] tracking-tight md:text-7xl">
               Product Engineering Company
             </h1>
             <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">
@@ -104,22 +105,90 @@ export default function HomePage() {
                 Partner With Us
               </Link>
             </div>
-          </div>
-          <div className="border border-white/15 bg-white/[0.06] p-8 shadow-[0_30px_90px_rgba(0,0,0,0.25)] backdrop-blur-sm">
-            <div className="mb-12 bg-white p-6 shadow-[0_18px_50px_rgba(0,0,0,0.18)]">
-              <LogicUnitLogo className="mx-auto w-full max-w-[300px]" />
-            </div>
-            <div className="grid gap-px bg-white/15">
+
+            {/* Sleek horizontal metrics bar */}
+            <div className="mt-14 grid gap-6 sm:grid-cols-3 max-w-3xl border-t border-white/10 pt-8">
               {[
                 ['2013', 'Founded with a long-term engineering mindset'],
-                ['3', 'Independent SaaS platforms in operation'],
-                ['6', 'Industry categories served through products'],
+                ['3 Platforms', 'Independent SaaS platforms in operation'],
+                ['6 Industries', 'Industry categories served through products'],
               ].map(([metric, label]) => (
-                <div key={metric} className="grid grid-cols-[92px_1fr] items-center bg-[#071330]/80 p-5">
-                  <span className="text-3xl font-semibold text-[#7bd72f]">{metric}</span>
-                  <span className="text-sm leading-6 text-slate-200">{label}</span>
+                <div key={metric} className="flex flex-col border-l-2 border-[#7bd72f] pl-4">
+                  <span className="text-2xl font-bold text-[#7bd72f]">{metric}</span>
+                  <span className="text-xs leading-5 text-slate-300 mt-1">{label}</span>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* Right Column - Interactive Platform Diagram */}
+          <div className="relative flex items-center justify-center p-4 lg:p-0 lg:col-span-5">
+            {/* Ambient background glow */}
+            <div className="absolute inset-0 bg-radial-gradient from-[#7bd72f]/10 to-transparent blur-3xl opacity-60" aria-hidden="true" />
+            
+            <div className="relative w-full max-w-[420px] aspect-square rounded-full border border-white/5 bg-white/[0.02] p-8 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] backdrop-blur-md">
+              {/* Spinning outer rings */}
+              <div className="absolute inset-4 rounded-full border border-dashed border-white/10 animate-[spin_60s_linear_infinite]" />
+              <div className="absolute inset-12 rounded-full border border-dashed border-[#7bd72f]/20 animate-[spin_40s_linear_infinite_reverse]" />
+              
+              {/* SVG connection lines with flow particles */}
+              <svg className="absolute inset-0 w-full h-full animate-pulse" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/* Connection lines */}
+                <line x1="200" y1="200" x2="200" y2="80" stroke="rgba(123, 215, 47, 0.4)" strokeWidth="2" strokeDasharray="4 4" />
+                <line x1="200" y1="200" x2="80" y2="280" stroke="rgba(123, 215, 47, 0.4)" strokeWidth="2" strokeDasharray="4 4" />
+                <line x1="200" y1="200" x2="320" y2="280" stroke="rgba(123, 215, 47, 0.4)" strokeWidth="2" strokeDasharray="4 4" />
+                
+                {/* Moving particles */}
+                <circle r="4" fill="#7bd72f">
+                  <animateMotion dur="3s" repeatCount="indefinite" path="M 200 200 L 200 80" />
+                </circle>
+                <circle r="4" fill="#7bd72f">
+                  <animateMotion dur="3.5s" repeatCount="indefinite" path="M 200 200 L 80 280" />
+                </circle>
+                <circle r="4" fill="#7bd72f">
+                  <animateMotion dur="4s" repeatCount="indefinite" path="M 200 200 L 320 280" />
+                </circle>
+              </svg>
+
+              {/* Orbiting Platforms */}
+              {/* Node 1: Hulm Solutions */}
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/3 group cursor-pointer">
+                <div className="flex flex-col items-center">
+                  <div className="bg-[#071330] border border-white/10 group-hover:border-[#7bd72f] p-3 shadow-lg rounded-xl transition-all duration-300">
+                    <span className="text-xs font-bold text-slate-400 group-hover:text-white uppercase tracking-wider block text-center">Hulm</span>
+                    <span className="text-[9px] text-slate-500 block text-center">Business OS</span>
+                  </div>
+                  <div className="w-2 h-2 rounded-full bg-[#7bd72f] mt-1 animate-pulse" />
+                </div>
+              </div>
+
+              {/* Node 2: Titan MMS */}
+              <div className="absolute bottom-[10%] left-0 -translate-x-1/4 group cursor-pointer">
+                <div className="flex flex-col items-center">
+                  <div className="bg-[#071330] border border-white/10 group-hover:border-[#7bd72f] p-3 shadow-lg rounded-xl transition-all duration-300">
+                    <span className="text-xs font-bold text-slate-400 group-hover:text-white uppercase tracking-wider block text-center">Titan MMS</span>
+                    <span className="text-[9px] text-slate-500 block text-center">Maintenance</span>
+                  </div>
+                  <div className="w-2 h-2 rounded-full bg-[#7bd72f] mt-1 animate-pulse" />
+                </div>
+              </div>
+
+              {/* Node 3: AnimalCare360 */}
+              <div className="absolute bottom-[10%] right-0 translate-x-1/4 group cursor-pointer">
+                <div className="flex flex-col items-center">
+                  <div className="bg-[#071330] border border-white/10 group-hover:border-[#7bd72f] p-3 shadow-lg rounded-xl transition-all duration-300">
+                    <span className="text-xs font-bold text-slate-400 group-hover:text-white uppercase tracking-wider block text-center">AnimalCare</span>
+                    <span className="text-[9px] text-slate-500 block text-center">Livestock</span>
+                  </div>
+                  <div className="w-2 h-2 rounded-full bg-[#7bd72f] mt-1 animate-pulse" />
+                </div>
+              </div>
+
+              {/* Central Core: Logic Unit Engine */}
+              <div className="absolute inset-[30%] flex flex-col items-center justify-center bg-[#071330]/90 border-2 border-[#7bd72f] rounded-full shadow-[0_0_30px_rgba(123,215,47,0.3)] p-4 text-center">
+                <span className="text-sm font-extrabold text-[#7bd72f] tracking-widest uppercase">Logic Unit</span>
+                <span className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider mt-1">R&D Core</span>
+              </div>
             </div>
           </div>
         </div>
