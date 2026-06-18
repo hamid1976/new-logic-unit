@@ -14,10 +14,47 @@ const inquiryTypes = [
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const fieldClass =
-    'w-full border border-[rgba(16,39,122,0.18)] bg-white px-4 py-3 text-[#071330] outline-none transition focus:border-[#10277a]'
+    'w-full border border-[rgba(16,39,122,0.18)] bg-white px-4 py-3 text-[#071330] outline-none transition focus:border-[#10277a] disabled:bg-slate-50 disabled:text-slate-500'
   const labelClass = 'mb-2 block text-sm font-semibold text-slate-700'
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    setIsSubmitting(true)
+    setError(null)
+
+    const formData = new FormData(event.currentTarget)
+    const payload = {
+      name: formData.get('name'),
+      organization: formData.get('organization'),
+      email: formData.get('email'),
+      inquiryType: formData.get('inquiryType'),
+      message: formData.get('message'),
+    }
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+
+      const result = await response.json()
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Something went wrong. Please try again.')
+      }
+
+      setSubmitted(true)
+    } catch (err: any) {
+      setError(err.message || 'Failed to send inquiry. Please try again later.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   return (
     <main className="min-h-screen bg-[#fbfaf6] text-[#111827]">
@@ -54,30 +91,33 @@ export default function ContactForm() {
                 </p>
                 <form
                   className="grid gap-6"
-                  onSubmit={(event) => {
-                    event.preventDefault()
-                    setSubmitted(true)
-                  }}
+                  onSubmit={handleSubmit}
                 >
+                  {error && (
+                    <div className="bg-red-50 border-l-4 border-red-500 p-4 text-sm text-red-700">
+                      {error}
+                    </div>
+                  )}
+
                   <div className="grid gap-6 md:grid-cols-2">
                     <div>
                       <label className={labelClass} htmlFor="name">Name</label>
-                      <input className={fieldClass} id="name" name="name" required type="text" />
+                      <input className={fieldClass} id="name" name="name" required type="text" disabled={isSubmitting} />
                     </div>
                     <div>
                       <label className={labelClass} htmlFor="organization">Organization</label>
-                      <input className={fieldClass} id="organization" name="organization" required type="text" />
+                      <input className={fieldClass} id="organization" name="organization" required type="text" disabled={isSubmitting} />
                     </div>
                   </div>
 
                   <div className="grid gap-6 md:grid-cols-2">
                     <div>
                       <label className={labelClass} htmlFor="email">Email</label>
-                      <input className={fieldClass} id="email" name="email" required type="email" />
+                      <input className={fieldClass} id="email" name="email" required type="email" disabled={isSubmitting} />
                     </div>
                     <div>
                       <label className={labelClass} htmlFor="inquiryType">Inquiry type</label>
-                      <select className={fieldClass} id="inquiryType" name="inquiryType" required defaultValue="">
+                      <select className={fieldClass} id="inquiryType" name="inquiryType" required defaultValue="" disabled={isSubmitting}>
                         <option value="" disabled>Select one</option>
                         {inquiryTypes.map((type) => (
                           <option key={type} value={type}>{type}</option>
@@ -88,12 +128,16 @@ export default function ContactForm() {
 
                   <div>
                     <label className={labelClass} htmlFor="message">Message</label>
-                    <textarea className={fieldClass} id="message" name="message" required rows={6} />
+                    <textarea className={fieldClass} id="message" name="message" required rows={6} disabled={isSubmitting} />
                   </div>
 
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-                    <button className="bg-[#10277a] px-6 py-3 text-sm font-bold text-white hover:bg-[#071330]" type="submit">
-                      Send Corporate Inquiry
+                    <button
+                      className="bg-[#10277a] px-6 py-3 text-sm font-bold text-white hover:bg-[#071330] disabled:opacity-50 disabled:cursor-not-allowed"
+                      type="submit"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? 'Sending...' : 'Send Corporate Inquiry'}
                     </button>
                     <Link href="/partnerships" className="text-sm font-semibold text-[#10277a] hover:underline text-center sm:text-left no-underline">
                       Back to Partnerships

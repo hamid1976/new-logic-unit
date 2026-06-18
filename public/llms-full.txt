@@ -195,12 +195,41 @@ Hulm Solutions: Cloud POS & Business Management Software.
 
 
 ### Titan MMS (/ecosystem/titan-mms)
-Computerized Maintenance Management System.
-- **Asset & Lifecycle Operations:** Centrally register company equipment and physical assets, document technical specifications, store warranty dates, and log repairs to minimize lifetime depreciation.
-- **Automated Work Orders:** Log, schedule, dispatch, and track daily maintenance tasks. Transition technicians from reactive fixes to efficient preventive workflows with detailed completion logs.
-- **Preventive Maintenance Scheduling:** Automate inspection and service schedules based on elapsed time or usage metrics, ensuring regular equipment upkeep and preventing sudden operational breakdowns.
-- **Reliability & Uptime Reporting:** Real-time performance analytics measuring equipment downtime, maintenance overheads, technician productivity, and spare part usage metrics.
+Titan MMS: Enterprise Maintenance Management Software (CMMS) & Asset Management.
+- **Overview:** A cloud-based CMMS and Asset Management platform engineered by Logic Unit to reduce downtime, automate work orders, track equipment lifecycle, and coordinate maintenance operations cross-site.
+- **Core Maintenance Challenges Solved:** Unplanned production losses, poor asset visibility, manual compliance tracking, missed preventive schedules, delayed work order updates, inventory parts stockouts, high break-fix expenses, and data reporting blind spots.
+- **Software Modules Suite:**
+  - **Asset Management:** Single register for every asset with full lifecycle tracking — history, warranties, and depreciation logs.
+  - **Preventive Maintenance (PM):** Automated calendar-based and meter-based trigger-driven PM schedules.
+  - **Work Order Management:** Dispatch, prioritize, and track technician orders with mobile photos and time logs.
+  - **Downtime Monitoring:** Log and analyze machinery downtime duration and root causes to improve OEE.
+  - **Inventory & Spare Parts:** Sync work orders to parts stock with auto-reorder alerts to avoid repair delays.
+  - **Facility Management:** Building, HVAC, electrical, and security compliance inspections.
+  - **Mobile Maintenance Operations:** Complete field operations on smartphones or tablets, working offline.
+  - **Reporting & Analytics:** Dashboard showing cost-per-asset, mean time between failures (MTBF), and resource metrics.
+- **Technology & Engineering Architecture:**
+  - True multi-tenant SaaS architecture (no local server installations needed).
+  - Cloud-based deployment with built-in disaster recovery.
+  - Linear scaling to support enterprise asset volume growth.
+  - Encrypted transmission and role-based permissions.
+  - Workflow automation engines for routing approvals and notifications.
+- **Measurable Business Impact:** Shift from reactive break-fix to planned preventive operations, extending equipment life, minimizing production stops, reducing administrative overhead, and maintaining compliance.
+- **Industry Solutions & Workflows:**
+  - **Manufacturing:** High OEE, downtime monitoring, PM automation.
+  - **Healthcare:** Patient safety, inspection compliance, audit-ready records.
+  - **Hospitality:** Facility maintenance workflows, fewer guest failures.
+  - **Construction:** Mobile work orders, tracking tool dispatch.
+  - **Education:** Lower multi-building operating costs, scheduling logs.
+  - **Warehousing:** Fleet/forklift PM schedules, parts sync.
+  - **Commercial Facilities:** Vendor coordination, compliance logs.
+- **FAQs:**
+  - **What is Titan MMS?** A cloud-based CMMS and Asset Management platform developed by Logic Unit to streamline operations and ensure compliance.
+  - **Difference between CMMS and EAM:** CMMS manages work orders and schedules; EAM manages the full asset lifecycle. Titan MMS integrates both capabilities.
+  - **Cloud and Multi-site:** True SaaS solution with consolidated multi-site views and permissions.
+  - **Preventive Maintenance Compliance:** Automates scheduling and logs photographic evidence/checklists for audits.
+  - **API Integrations:** Built with open APIs to connect with ERP platforms, IoT, and BMS systems.
 - **Website link:** https://titanmms.com
+
 
 ### AnimalCare360 (/ecosystem/animalcare360)
 Livestock ERP & Veterinary Management.
