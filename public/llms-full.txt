@@ -152,12 +152,47 @@ Platforms built for enterprise infrastructure.
 ## Ecosystem Product Pages
 
 ### Hulm Solutions (/ecosystem/hulm-solutions)
-Cloud POS & Business Operating System.
-- **Point of Sale (POS):** A core billing, sales, and checkout system designed for retail outlets, restaurants, hospitality, and service-oriented businesses to manage high-speed daily operational transactions.
-- **Inventory & Multi-Warehouse Management:** Real-time stock level synchronization, warehouse transfer systems, barcode tracking, and automatic notifications for low-stock thresholds across multiple physical locations.
-- **Order & Vendor Operations:** Centralized order tracking for retail channels, vendor purchase order automation, supplier payment logs, and supplier credit balance reporting.
-- **Finance & Compliance Analytics:** Integrated invoice printing (FBR-compliant), daily sales margin tracking, tax compliance tools, and automated profit-and-loss reports.
+Hulm Solutions: Cloud POS & Business Management Software.
+- **Overview:** An integrated cloud business operating system connecting sales floor, stockroom, purchasing team, vendors, and analytics into one unified, cloud-based platform. Built with 15+ years of product engineering experience.
+- **Core Operational Leaks Solved:** Billing errors and manual disputes, delayed inventory logs causing stockouts, complex FBR compliance/tax tracking, scattered purchase spreadsheets, invisible customer credit, paper-based logistics, and belated reports.
+- **Software Modules Suite:**
+  - **Point of Sale (POS):** Fast, accurate billing for any outlet — retail, restaurant, salon, bakery, pharmacy, etc.
+  - **One-Click Retail Website:** Launch a fully functional ecommerce storefront integrated with live inventory.
+  - **Live Stock Management:** Real-time inventory tracking across multiple warehouses with barcode scanning and auto-reorder alerts.
+  - **Purchase Management:** Automate purchase orders, supplier payments, and vendor credit balances in one workflow.
+  - **Order Management:** Track every sales order from placement to delivery with status updates and customer notifications.
+  - **Customer Management:** Maintain customer profiles, purchase history, loyalty points, and receivable balances.
+  - **Vendor Management:** Manage supplier contracts, PO history, credit terms, and performance reports.
+  - **Logistics Management:** Control driver assignments, delivery routes, vehicle tracking, and dispatch records.
+  - **Reporting & Analytics:** Daily P&L, tax reports, sales margins, inventory valuation, and FBR-compliant invoicing.
+- **Industry Solutions & Workflows:**
+  - **Retail Store:** POS + live inventory sync + low-stock alerts.
+  - **Restaurant / Cafe:** Table-linked POS, kitchen display, one-click billing.
+  - **Pharmacy / Medical:** Batch/expiry tracking, FBR-ready invoicing, analytics.
+  - **Salon & Beauty:** Service-based POS, stylist reporting, booking integration.
+  - **Bakery:** Production-linked inventory, daily P&L, cash reconciliation.
+  - **Clothing Store:** SKU-level variant tracking, seasonal reports, easy returns.
+  - **Electric Shop:** Serial number tracking, warranty logs, customer ledger.
+  - **Manufacturing:** BOM-linked purchasing, vendor order tracking, cost reports.
+- **Built for Pakistan / Localization:**
+  - FBR-compliant invoicing built into POS.
+  - PKR currency formatting & multi-currency support.
+  - Low-bandwidth/offline capability.
+  - Cloud architecture globally ready for international regions.
+  - Arabic and Urdu label support.
+- **Key Capabilities:**
+  - **One-Click Retail Website Builder:** Any retail business can launch a fully functional online store in one click pulling live inventory data from POS without double entry or sync errors.
+  - **Live Stack Management:** Real-time stock movement tracking across multiple locations, threshold-triggered purchase requests, warehouse transfers, and live physical stock visibility.
+  - **Reporting & Analytics Dashboard:** Daily sales margins, profit analysis, vendor balances, acquisition trends, and FBR-ready tax reports on demand.
+- **FAQs:**
+  - **What types of businesses can use Hulm Solutions?** Designed for retail, restaurants, cafes, pharmacies, salons, bakeries, clothing, electric, and manufacturing. Configurable workflows for each category.
+  - **Is Hulm Solutions FBR compliant?** Yes, all invoicing and billing modules meet FBR (Federal Board of Revenue) requirements in Pakistan.
+  - **Can I manage multiple branches?** Yes, supports multi-location management with branch-level tracking and consolidated group reporting.
+  - **Does it work on mobile devices?** Yes, includes a mobile POS interface for smartphones/tablets.
+  - **Difference from standard POS:** A standard POS only handles billing; Hulm is a full business operating system combining POS, inventory, purchasing, vendors, logistics, e-commerce, and analytics.
+  - **Is it available internationally?** Yes, built Pakistan-first but globally deployable with region-specific configurations.
 - **Website link:** https://hulmsolutions.com
+
 
 ### Titan MMS (/ecosystem/titan-mms)
 Computerized Maintenance Management System.
