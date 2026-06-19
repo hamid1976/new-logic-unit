@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { SubPageTemplate } from '@/components/ui/SubPageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Enterprise Collaboration for SaaS Platforms | Logic Unit',
+  title: 'Enterprise Collaboration for SaaS Platforms',
   description:
     'Contact Logic Unit for enterprise collaboration around industry-specific SaaS platforms and digital infrastructure.',
   alternates: {

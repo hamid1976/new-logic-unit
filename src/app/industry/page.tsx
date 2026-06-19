@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Industry-Specific SaaS Platforms | Logic Unit',
+  title: 'Industry-Specific SaaS Platforms',
   description:
     'Logic Unit builds and operates SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities.',
   alternates: {

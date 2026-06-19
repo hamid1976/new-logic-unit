@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { SubPageTemplate } from '@/components/ui/SubPageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Strategic SaaS Partnerships | Logic Unit',
+  title: 'Strategic SaaS Partnerships',
   description:
     'Partner with Logic Unit through strategic SaaS partnerships focused on product ecosystem collaboration and industry platform growth.',
   alternates: {

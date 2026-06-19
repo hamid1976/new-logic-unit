@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { SubPageTemplate } from '@/components/ui/SubPageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Retail Software Platforms | Logic Unit',
+  title: 'Retail Software Platforms',
   description:
     'Logic Unit builds and operates industry-specific SaaS platforms that support retail and business operating environments.',
   alternates: {

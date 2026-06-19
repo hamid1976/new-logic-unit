@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Technology & R&D Backbone | Logic Unit',
+  title: 'Technology & R&D Backbone',
   description: 'R&D and engineering backbone behind Logic Unit SaaS platforms, including multi-tenant systems, data, AI, and IoT integrations.',
   alternates: {
     canonical: '/technology',
