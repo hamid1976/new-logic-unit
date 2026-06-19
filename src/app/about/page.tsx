@@ -2,9 +2,11 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'About Logic Unit | Product Engineering & Operating Company',
-  description:
-    'Logic Unit is a product engineering and operating company founded in 2013 to build and run industry-specific SaaS platforms.',
+  title: 'About Logic Unit: Product Engineering Services Company',
+  description: 'Logic Unit is Product Engineering Services Company building software platforms for real industries with scalable, innovative solutions.',
+  alternates: {
+    canonical: '/about',
+  },
 }
 
 const principles = [

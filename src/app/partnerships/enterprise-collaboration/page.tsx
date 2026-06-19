@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Enterprise Collaboration for SaaS Platforms | Logic Unit',
   description:
     'Contact Logic Unit for enterprise collaboration around industry-specific SaaS platforms and digital infrastructure.',
+  alternates: {
+    canonical: '/partnerships/enterprise-collaboration',
+  },
 }
 
 export default function EnterpriseCollaborationPage() {

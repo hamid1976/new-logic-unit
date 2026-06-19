@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Industry-Specific SaaS Platforms | Logic Unit',
   description:
     'Logic Unit builds and operates SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities.',
+  alternates: {
+    canonical: '/industry',
+  },
 }
 
 const industries = [

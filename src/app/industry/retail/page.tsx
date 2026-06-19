@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Retail Software Platforms | Logic Unit',
   description:
     'Logic Unit builds and operates industry-specific SaaS platforms that support retail and business operating environments.',
+  alternates: {
+    canonical: '/industry/retail',
+  },
 }
 
 export default function RetailPage() {

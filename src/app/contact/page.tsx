@@ -2,9 +2,11 @@ import type { Metadata } from 'next'
 import ContactForm from './ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contact Logic Unit | Corporate & Partnership Inquiries',
-  description:
-    'Contact Logic Unit for strategic partnerships, system integrator relationships, enterprise collaboration, investor relations, and talent inquiries.',
+  title: 'Contact Us | Software Product Engineering Services Company',
+  description: 'Connect with software product engineering services company. Explore our product ecosystem & strategic partnerships to drive growth.',
+  alternates: {
+    canonical: '/contact',
+  },
 }
 
 export default function ContactPage() {

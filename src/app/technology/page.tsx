@@ -3,8 +3,10 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Technology & R&D Backbone | Logic Unit',
-  description:
-    'Discover the R&D and engineering backbone behind Logic Unit SaaS platforms, including multi-tenant systems, data infrastructure, AI, and IoT integrations.',
+  description: 'R&D and engineering backbone behind Logic Unit SaaS platforms, including multi-tenant systems, data, AI, and IoT integrations.',
+  alternates: {
+    canonical: '/technology',
+  },
   keywords: [
     'SaaS architecture',
     'product engineering',

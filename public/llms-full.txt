@@ -232,10 +232,26 @@ Titan MMS: Enterprise Maintenance Management Software (CMMS) & Asset Management.
 
 
 ### AnimalCare360 (/ecosystem/animalcare360)
-Livestock ERP & Veterinary Management.
-- **Herd & Cattle Tracking:** Digitize complete animal profiles including breed, vaccination status, breeding cycles, weight records, milk yield logs, and detailed parent histories.
-- **Veterinary Electronic Medical Records (EMR):** Centralized patient histories, surgery documentation, treatment schedules, clinical notes, appointment calendars, and integrated pharmacy inventory.
-- **Inventory & Retail Feed POS:** Operate FBR-compliant billing for wanda and feed retailers. Manage pharmaceutical stock with expiration alerts, batch controls, and minimum-quantity thresholds.
-- **Trading & Broker Contracts:** Custom ERP workflows designed to manage livestock sales contracts, transport billing calculations, broker commissions, and investor account ledger statements.
+AnimalCare360: Livestock ERP & Veterinary Management.
+- **Overview:** Pakistan's #1 cloud ERP developed by Logic Unit for cattle farms, wanda feed retailers, animal traders, and pet clinics. Purpose-built, FBR-compliant, and WhatsApp-integrated.
+- **Core Gaps Solved:** Informal animal tags, manual milk yield records, missed vaccinations, opaque palai ROI Cost-sharing, wanda khata credit deficits, FBR invoice non-compliance, untracked trade commissions, and clinic appointment scheduling no-shows.
+- **Software Modules Suite:**
+  - **Cattle & Dairy Farm ERP (CattlePro):** Animal lifecycle tagging, daily milk logs, fattening weight ADG/FCR trends, vaccine schedules, and palai cost-sharing calculations.
+  - **Wanda & Feed Retail ERP:** POS checkout, multi-warehouse stock sync, customer khata credit limits, purchase orders, and FBR QR code invoices.
+  - **Animal Trading & Maweshi Mandi ERP:** Per-deal costing (commissions, transport), lot ownership transfer logs, and net profit dashboards.
+  - **Pet Hospital & Veterinary Clinic ERP:** Patient EMR history, doctor multi-calendar scheduling with WhatsApp reminders, surgery notes, lab tests, and integrated pharmacy billing.
+- **Technology & Product Engineering:** SaaS multi-branch support, Android app for field teams, WhatsApp-native reminders and support, FBR compliance, secure encrypted daily backups. Optimized for low-bandwidth environments.
+- **Industry Solutions & Outcomes:**
+  - **Cattle & Dairy Farms:** Zero herd data loss, reduced mortality rates, and dispute-free palai shares.
+  - **Feed & Wanda Shops:** 99.9% inventory accuracy, reduced batch expirations, and improved khata collections.
+  - **Trading & Maweshi Mandi:** Clear margin calculations on every transaction, and faster animal lot transfers.
+  - **Pet Clinic & Veterinary Hospitals:** 40% reduction in clinic administrative overhead (e.g. Lahore Pet Clinic).
+- **FAQs:**
+  - **What is AnimalCare360?** An integrated livestock and veterinary ERP built by Logic Unit to digitize animal records, inventory, and billing.
+  - **FBR Compliance:** Yes, automatically generates QR-coded invoices and audits suitable for FBR regulations.
+  - **Is there an Android app?** Yes, field mobile app download-ready for farm managers and traders.
+  - **CattlePro capabilities:** 16 operating modules covering tagging, milk logs, weight ADG, vaccines, and palai shares.
+  - **Pet Clinic workflows:** Digital patient EMR history, appointment reminders, surgery logs, and pharmacy integration.
 - **Website link:** https://animalcare360.com
+
 

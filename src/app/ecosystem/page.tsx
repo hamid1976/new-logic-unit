@@ -4,7 +4,10 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Our SaaS Product Ecosystem | Logic Unit',
   description:
-    'Logic Unit operates a growing ecosystem of independent SaaS platforms, including Hulm Solutions, Titan MMS, and AnimalCare360, built for operational industries.',
+    'Logic Unit operates a growing ecosystem of independent SaaS platforms built for operational industries.',
+  alternates: {
+    canonical: '/ecosystem',
+  },
   keywords: [
     'product ecosystem',
     'SaaS operating company',

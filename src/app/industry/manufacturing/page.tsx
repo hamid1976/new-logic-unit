@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Manufacturing Software Platforms | Logic Unit',
   description:
     'Logic Unit builds and operates industry-specific SaaS platforms for manufacturing and industrial operations.',
+  alternates: {
+    canonical: '/industry/manufacturing',
+  },
 }
 
 export default function ManufacturingPage() {

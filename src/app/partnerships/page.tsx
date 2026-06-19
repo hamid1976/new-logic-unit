@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Strategic SaaS Ecosystem Partnerships | Logic Unit',
   description:
     'Partner with Logic Unit through strategic partnerships, system integrator relationships, enterprise collaboration, and ecosystem expansion.',
+  alternates: {
+    canonical: '/partnerships',
+  },
 }
 
 const partners = [

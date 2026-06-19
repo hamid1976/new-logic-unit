@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'System Integrator Partnerships | Logic Unit',
   description:
     'Logic Unit works with system integrators for implementation, deployment, and integration relationships across operational industries.',
+  alternates: {
+    canonical: '/partnerships/system-integrators',
+  },
 }
 
 export default function SystemIntegratorsPage() {
