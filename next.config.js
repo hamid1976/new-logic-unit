@@ -16,6 +16,16 @@ const nextConfig = {
       destination: '/about',
       permanent: true,
     },
+    {
+      source: '/ecosystem/titan-mms',
+      destination: '/ecosystem/titan-mms-maintenance-management-software',
+      permanent: true,
+    },
+    {
+      source: '/ecosystem/animalcare360',
+      destination: '/ecosystem/animalcare360-livestock-animal-care-software',
+      permanent: true,
+    },
   ],
   headers: async () => [
     {

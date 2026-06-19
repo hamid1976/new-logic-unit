@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'AnimalCare360 | Livestock & Animal Care ERP by Logic Unit',
   description: 'AnimalCare360 by Logic Unit is Pakistan\'s #1 cloud ERP for cattle farms, wanda retailers, animal traders & pet hospitals. FBR-compliant. Start free trial.',
   alternates: {
-    canonical: '/ecosystem/animalcare360',
+    canonical: '/ecosystem/animalcare360-livestock-animal-care-software',
   },
 }
 

@@ -30,5 +30,5 @@
 ## Ecosystem Product Pages
 
 - [Hulm Solutions](https://logic-unit.com/ecosystem/hulm-solutions): Cloud POS and business operating system for retail and wholesale.
-- [Titan MMS](https://logic-unit.com/ecosystem/titan-mms): Computerized Maintenance Management System (CMMS) for asset uptime and work orders.
-- [AnimalCare360](https://logic-unit.com/ecosystem/animalcare360): Livestock ERP and clinical veterinary management software.
+- [Titan MMS](https://logic-unit.com/ecosystem/titan-mms-maintenance-management-software): Computerized Maintenance Management System (CMMS) for asset uptime and work orders.
+- [AnimalCare360](https://logic-unit.com/ecosystem/animalcare360-livestock-animal-care-software): Livestock ERP and clinical veterinary management software.

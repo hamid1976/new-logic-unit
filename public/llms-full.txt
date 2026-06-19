@@ -194,7 +194,7 @@ Hulm Solutions: Cloud POS & Business Management Software.
 - **Website link:** https://hulmsolutions.com
 
 
-### Titan MMS (/ecosystem/titan-mms)
+### Titan MMS (/ecosystem/titan-mms-maintenance-management-software)
 Titan MMS: Enterprise Maintenance Management Software (CMMS) & Asset Management.
 - **Overview:** A cloud-based CMMS and Asset Management platform engineered by Logic Unit to reduce downtime, automate work orders, track equipment lifecycle, and coordinate maintenance operations cross-site.
 - **Core Maintenance Challenges Solved:** Unplanned production losses, poor asset visibility, manual compliance tracking, missed preventive schedules, delayed work order updates, inventory parts stockouts, high break-fix expenses, and data reporting blind spots.
@@ -231,7 +231,7 @@ Titan MMS: Enterprise Maintenance Management Software (CMMS) & Asset Management.
 - **Website link:** https://titanmms.com
 
 
-### AnimalCare360 (/ecosystem/animalcare360)
+### AnimalCare360 (/ecosystem/animalcare360-livestock-animal-care-software)
 AnimalCare360: Livestock ERP & Veterinary Management.
 - **Overview:** Pakistan's #1 cloud ERP developed by Logic Unit for cattle farms, wanda feed retailers, animal traders, and pet clinics. Purpose-built, FBR-compliant, and WhatsApp-integrated.
 - **Core Gaps Solved:** Informal animal tags, manual milk yield records, missed vaccinations, opaque palai ROI Cost-sharing, wanda khata credit deficits, FBR invoice non-compliance, untracked trade commissions, and clinic appointment scheduling no-shows.

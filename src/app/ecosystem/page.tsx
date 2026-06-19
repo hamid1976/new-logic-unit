@@ -34,7 +34,7 @@ const products = [
     description:
       'A platform for managing maintenance operations, assets, service activity, and industrial reliability.',
     href: 'https://titanmms.com',
-    internalHref: '/ecosystem/titan-mms',
+    internalHref: '/ecosystem/titan-mms-maintenance-management-software',
   },
   {
     name: 'AnimalCare360',
@@ -42,7 +42,7 @@ const products = [
     description:
       'A digital platform supporting veterinary, livestock, and animal care operations.',
     href: 'https://animalcare360.com',
-    internalHref: '/ecosystem/animalcare360',
+    internalHref: '/ecosystem/animalcare360-livestock-animal-care-software',
   },
 ]
 

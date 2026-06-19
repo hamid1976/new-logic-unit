@@ -165,7 +165,7 @@ export default function HomePage() {
               </Link>
 
               {/* Node 2: Titan MMS */}
-              <Link href="/ecosystem/titan-mms" className="absolute bottom-[10%] left-0 -translate-x-1/4 group cursor-pointer no-underline block">
+              <Link href="/ecosystem/titan-mms-maintenance-management-software" className="absolute bottom-[10%] left-0 -translate-x-1/4 group cursor-pointer no-underline block">
                 <div className="flex flex-col items-center">
                   <div className="bg-[#071330] border border-white/10 group-hover:border-[#7bd72f] p-3 shadow-lg rounded-xl transition-all duration-300">
                     <span className="text-xs font-bold text-slate-400 group-hover:text-white uppercase tracking-wider block text-center">Titan MMS</span>
@@ -176,7 +176,7 @@ export default function HomePage() {
               </Link>
 
               {/* Node 3: AnimalCare360 */}
-              <Link href="/ecosystem/animalcare360" className="absolute bottom-[10%] right-0 translate-x-1/4 group cursor-pointer no-underline block">
+              <Link href="/ecosystem/animalcare360-livestock-animal-care-software" className="absolute bottom-[10%] right-0 translate-x-1/4 group cursor-pointer no-underline block">
                 <div className="flex flex-col items-center">
                   <div className="bg-[#071330] border border-white/10 group-hover:border-[#7bd72f] p-3 shadow-lg rounded-xl transition-all duration-300">
                     <span className="text-xs font-bold text-slate-400 group-hover:text-white uppercase tracking-wider block text-center">AnimalCare</span>
