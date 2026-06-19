@@ -21,10 +21,7 @@ const barlowCondensed = Barlow_Condensed({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: {
-    default: 'SaaS Operating & Product Engineering Company',
-    template: '%s | Logic Unit',
-  },
+  title: 'SaaS Operating & Product Engineering Company',
   description: 'A SaaS operating & product engineering company founded in 2013.',
   keywords: [
     'product engineering company',
