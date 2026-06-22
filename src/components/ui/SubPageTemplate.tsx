@@ -1,8 +1,9 @@
 import Link from 'next/link'
+import type { ReactNode } from 'react'
 
 interface Section {
   title: string
-  body: string
+  body: ReactNode
 }
 
 interface SubPageTemplateProps {
@@ -51,7 +52,7 @@ export function SubPageTemplate({
             {sections.map((section, index) => (
               <article key={index} className="lu-card p-8 bg-white">
                 <h2 className="mb-4 text-2xl font-semibold text-[#10277a]">{section.title}</h2>
-                <p className="leading-7 text-slate-600">{section.body}</p>
+                <div className="leading-7 text-slate-600">{section.body}</div>
               </article>
             ))}
           </div>

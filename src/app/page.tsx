@@ -25,18 +25,21 @@ const ecosystem = [
     category: 'Business Operating System',
     description: 'A SaaS platform for managing business operations across retail, healthcare, and service environments.',
     href: 'https://hulmsolutions.com',
+    internalHref: '/ecosystem/hulm-solutions',
   },
   {
     name: 'Titan MMS',
     category: 'Maintenance Management Platform',
     description: 'A platform for managing maintenance operations, assets, service activity, and industrial reliability.',
     href: 'https://titanmms.com',
+    internalHref: '/ecosystem/titan-mms-maintenance-management-software',
   },
   {
     name: 'AnimalCare360',
     category: 'Veterinary & Livestock Platform',
     description: 'A digital platform supporting veterinary, livestock, and animal care operations.',
     href: 'https://animalcare360.com',
+    internalHref: '/ecosystem/animalcare360-livestock-animal-care-software',
   },
 ]
 
@@ -250,9 +253,22 @@ export default function HomePage() {
                 <p className="mb-4 text-sm font-medium text-slate-500">{product.category}</p>
                 <h3 className="mb-5 text-2xl font-semibold text-[#10277a]">{product.name}</h3>
                 <p className="mb-10 leading-7 text-slate-600">{product.description}</p>
-                <a href={product.href} className="mt-auto text-sm font-bold text-[#10277a] underline decoration-[#7bd72f] decoration-2 underline-offset-4">
-                  Visit Product Website
-                </a>
+                <div className="mt-auto flex flex-col gap-3">
+                  <Link
+                    href={product.internalHref}
+                    className="text-sm font-bold text-[#10277a] underline decoration-[#7bd72f] decoration-2 underline-offset-4 hover:text-[#071330] no-underline"
+                  >
+                    Explore Product Details →
+                  </Link>
+                  <a
+                    href={product.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-semibold text-slate-500 hover:text-slate-800"
+                  >
+                    Visit official website
+                  </a>
+                </div>
               </article>
             ))}
           </div>
