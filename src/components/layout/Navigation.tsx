@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { LogicUnitLogo } from '@/components/brand/LogicUnitLogo'
+import { trackHubspotEvent } from '@/lib/hubspot'
 
 const navLinks = [
   { href: '/about', label: 'Company' },
@@ -51,7 +52,11 @@ export function Navigation() {
             ))}
           </nav>
 
-          <Link href="/contact" className="hidden bg-[#10277a] px-5 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(16,39,122,0.22)] hover:bg-[#071330] md:block">
+          <Link
+            href="/contact"
+            onClick={() => trackHubspotEvent('partner_with_us_clicked')}
+            className="hidden bg-[#10277a] px-5 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(16,39,122,0.22)] hover:bg-[#071330] md:block"
+          >
             Partner With Us
           </Link>
 
@@ -74,7 +79,11 @@ export function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Link href="/contact" className="mt-6 bg-[#10277a] px-5 py-3 text-center text-base text-white no-underline">
+            <Link
+              href="/contact"
+              onClick={() => trackHubspotEvent('partner_with_us_clicked')}
+              className="mt-6 bg-[#10277a] px-5 py-3 text-center text-base text-white no-underline"
+            >
               Partner With Us
             </Link>
           </div>

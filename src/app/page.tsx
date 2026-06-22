@@ -4,7 +4,7 @@ import { LogicUnitLogo } from '@/components/brand/LogicUnitLogo'
 
 export const metadata: Metadata = {
   title: 'SaaS Operating & Product Engineering Company',
-  description: 'A SaaS operating & product engineering company founded in 2013.',
+  description: 'As product engineering company Logic Unit builds and operates industry-specific SaaS for retail, healthcare, livestock, manufacturing & more!',
   alternates: {
     canonical: '/',
   },

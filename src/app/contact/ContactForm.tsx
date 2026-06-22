@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { submitToHubspot, trackHubspotEvent, trackGtmEvent } from '@/lib/hubspot'
 
 const inquiryTypes = [
   'Strategic partnership',
@@ -28,14 +29,15 @@ export default function ContactForm() {
 
     const formData = new FormData(event.currentTarget)
     const payload = {
-      name: formData.get('name'),
-      organization: formData.get('organization'),
-      email: formData.get('email'),
-      inquiryType: formData.get('inquiryType'),
-      message: formData.get('message'),
+      name: formData.get('name') as string,
+      organization: formData.get('organization') as string,
+      email: formData.get('email') as string,
+      inquiryType: formData.get('inquiryType') as string,
+      message: formData.get('message') as string,
     }
 
     try {
+      // 1. Submit to local API for Resend email forwarding
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -46,6 +48,23 @@ export default function ContactForm() {
 
       if (!response.ok) {
         throw new Error(result.error || 'Something went wrong. Please try again.')
+      }
+
+      // 2. Submit to HubSpot Forms API
+      const hubspotResult = await submitToHubspot({
+        name: payload.name,
+        email: payload.email,
+        organization: payload.organization,
+        inquiryType: payload.inquiryType,
+        message: payload.message,
+      })
+
+      if (hubspotResult.success) {
+        // Trigger HubSpot custom event & push to GTM dataLayer
+        trackHubspotEvent('contact_form_submitted')
+        trackGtmEvent('hubspot_form_submission')
+      } else {
+        console.error('HubSpot submission error:', hubspotResult.error)
       }
 
       setSubmitted(true)

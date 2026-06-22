@@ -6,6 +6,7 @@ import { SchemaOrg } from '@/components/ui/SchemaOrg'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
 import { ogImagePath, siteUrl } from '@/lib/site'
+import HubSpotProvider from '@/components/HubSpotProvider'
 
 const barlow = Barlow({
   subsets: ['latin'],
@@ -83,6 +84,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </Script>
 
+        <HubSpotProvider />
         <SchemaOrg />
         <Navigation />
         {children}
