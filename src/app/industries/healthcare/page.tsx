@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     'Logic Unit builds and operates industry-specific SaaS platforms for healthcare and service operating environments.',
   alternates: {
-    canonical: '/industry/healthcare',
+    canonical: '/industries/healthcare',
   },
 }
 
@@ -30,7 +30,7 @@ export default function HealthcarePage() {
       sections={sections}
       ctaTitle="Discuss healthcare platform collaboration."
       backText="Back to Industries"
-      backHref="/industry"
+      backHref="/industries"
     />
   )
 }

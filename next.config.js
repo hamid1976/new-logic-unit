@@ -26,6 +26,16 @@ const nextConfig = {
       destination: '/ecosystem/animalcare360-livestock-animal-care-software',
       permanent: true,
     },
+    {
+      source: '/industry',
+      destination: '/industries',
+      permanent: true,
+    },
+    {
+      source: '/industry/:slug',
+      destination: '/industries/:slug',
+      permanent: true,
+    },
   ],
   headers: async () => [
     {

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Logic Unit builds and operates SaaS platforms for livestock, veterinary, and animal care operations.',
   alternates: {
-    canonical: '/industry/livestock',
+    canonical: '/industries/livestock',
   },
 }
 
@@ -57,7 +57,7 @@ export default function LivestockPage() {
       sections={sections}
       ctaTitle="Discuss livestock platform collaboration."
       backText="Back to Industries"
-      backHref="/industry"
+      backHref="/industries"
     />
   )
 }

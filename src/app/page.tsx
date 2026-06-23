@@ -62,12 +62,12 @@ const workModel = [
 ]
 
 const industries = [
-  { name: 'Retail', href: '/industry/retail' },
-  { name: 'Healthcare', href: '/industry/healthcare' },
-  { name: 'Livestock', href: '/industry/livestock' },
-  { name: 'Manufacturing', href: '/industry/manufacturing' },
-  { name: 'Logistics', href: '/industry/logistics' },
-  { name: 'Facilities', href: '/industry/facilities' },
+  { name: 'Retail', href: '/industries/retail' },
+  { name: 'Healthcare', href: '/industries/healthcare' },
+  { name: 'Livestock', href: '/industries/livestock' },
+  { name: 'Manufacturing', href: '/industries/manufacturing' },
+  { name: 'Logistics', href: '/industries/logistics' },
+  { name: 'Facilities', href: '/industries/facilities' },
 ]
 
 const capabilities = [
@@ -286,7 +286,7 @@ export default function HomePage() {
             Logic Unit platforms serve retail, healthcare, livestock, manufacturing, logistics, and facilities through industry-specific SaaS products built for real operational environments.
           </p>
           <Link
-            href="/industry"
+            href="/industries"
             className="inline-block mt-8 text-sm font-bold text-[#10277a] underline decoration-[#7bd72f] decoration-2 underline-offset-4 hover:text-[#071330]"
           >
             Explore Industries

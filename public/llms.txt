@@ -8,18 +8,18 @@
 - [About](https://logic-unit.com/about): Corporate overview, philosophy, and history since 2013.
 - [Ecosystem](https://logic-unit.com/ecosystem): Our product companies including Hulm Solutions, Titan MMS, and AnimalCare360.
 - [Technology](https://logic-unit.com/technology): R&D capability, SaaS architecture, data infrastructure, AI, and IoT integrations.
-- [Industries](https://logic-unit.com/industry): Categories served by Logic Unit software platforms.
+- [Industries](https://logic-unit.com/industries): Categories served by Logic Unit software platforms.
 - [Partnerships](https://logic-unit.com/partnerships): Funnels for strategic partnerships, system integrators, and enterprise collaboration.
 - [Contact](https://logic-unit.com/contact): Corporate inquiry form (partnerships, investors, talent).
 
 ## Industry Detail Pages
 
-- [Retail Software Platforms](https://logic-unit.com/industry/retail): SaaS platform solutions for retail business operations.
-- [Healthcare Software Platforms](https://logic-unit.com/industry/healthcare): Operational software for clinics and healthcare environments.
-- [Livestock Software Platforms](https://logic-unit.com/industry/livestock): Digital tools for livestock, animal care, and veterinary management.
-- [Manufacturing Software Platforms](https://logic-unit.com/industry/manufacturing): Operations management for industrial assets and reliability.
-- [Logistics Software Platforms](https://logic-unit.com/industry/logistics): Operations and coordination software for supply chains.
-- [Facilities Software Platforms](https://logic-unit.com/industry/facilities): Asset and maintenance management systems.
+- [Retail Software Platforms](https://logic-unit.com/industries/retail): SaaS platform solutions for retail business operations.
+- [Healthcare Software Platforms](https://logic-unit.com/industries/healthcare): Operational software for clinics and healthcare environments.
+- [Livestock Software Platforms](https://logic-unit.com/industries/livestock): Digital tools for livestock, animal care, and veterinary management.
+- [Manufacturing Software Platforms](https://logic-unit.com/industries/manufacturing): Operations management for industrial assets and reliability.
+- [Logistics Software Platforms](https://logic-unit.com/industries/logistics): Operations and coordination software for supply chains.
+- [Facilities Software Platforms](https://logic-unit.com/industries/facilities): Asset and maintenance management systems.
 
 ## Partnership Detail Pages
 

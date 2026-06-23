@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Logic Unit builds and operates industry-specific SaaS platforms for facilities, maintenance, and service activity.',
   alternates: {
-    canonical: '/industry/facilities',
+    canonical: '/industries/facilities',
   },
 }
 
@@ -57,7 +57,7 @@ export default function FacilitiesPage() {
       sections={sections}
       ctaTitle="Discuss facilities platform collaboration."
       backText="Back to Industries"
-      backHref="/industry"
+      backHref="/industries"
     />
   )
 }

@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Industry-Specific SaaS Platforms',
+  title: 'Industry-Specific Software Solutions by Logic Unit',
   description:
-    'Logic Unit builds and operates SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities.',
+    'Explore industrial software solutions designed to improve operations, efficiency, and growth. Connect with logic-unit for building industry software',
   alternates: {
-    canonical: '/industry',
+    canonical: '/industries',
   },
 }
 
@@ -15,37 +15,37 @@ const industries = [
     name: 'Retail',
     description:
       'Logic Unit platforms support retail environments through SaaS systems built around business operations and operational visibility.',
-    href: '/industry/retail',
+    href: '/industries/retail',
   },
   {
     name: 'Healthcare',
     description:
       'Logic Unit platforms support healthcare and service environments through industry-specific software designed for operational use.',
-    href: '/industry/healthcare',
+    href: '/industries/healthcare',
   },
   {
     name: 'Livestock',
     description:
       'Logic Unit platforms support livestock, veterinary, and animal care operations through digital systems built for real industry workflows.',
-    href: '/industry/livestock',
+    href: '/industries/livestock',
   },
   {
     name: 'Manufacturing',
     description:
       'Logic Unit platforms support manufacturing and industrial operations through software that improves visibility across assets, maintenance, and operational activity.',
-    href: '/industry/manufacturing',
+    href: '/industries/manufacturing',
   },
   {
     name: 'Logistics',
     description:
       'Logic Unit platforms support logistics operations where coordination, operational visibility, and scalable systems matter.',
-    href: '/industry/logistics',
+    href: '/industries/logistics',
   },
   {
     name: 'Facilities',
     description:
       'Logic Unit platforms support facilities and maintenance environments through software designed for service activity, assets, and operational reliability.',
-    href: '/industry/facilities',
+    href: '/industries/facilities',
   },
 ]
 

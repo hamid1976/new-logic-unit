@@ -93,7 +93,7 @@ export default function AboutPage() {
           </div>
           <div className="flex flex-col gap-4 sm:flex-row lg:flex-shrink-0">
             <Link
-              href="/industry"
+              href="/industries"
               className="bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e] whitespace-nowrap no-underline"
             >
               Explore Industries

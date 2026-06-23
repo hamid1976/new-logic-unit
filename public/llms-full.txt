@@ -68,7 +68,7 @@ The R&D and engineering backbone behind industry SaaS. Logic Unit designs multi-
 
 ---
 
-## Page: Industries (/industry)
+## Page: Industries (/industries)
 
 ### Overview
 Industries served through Logic Unit platforms. Logic Unit builds platforms for industries where operational software can improve visibility, coordination, and long-term efficiency.
@@ -98,32 +98,32 @@ Partnership routes for long-term ecosystem growth. Logic Unit works with strateg
 
 ## Industry Detail Pages
 
-### Retail Software Platforms (/industry/retail)
+### Retail Software Platforms (/industries/retail)
 SaaS platform solutions for retail business operations.
 - **Core Operations:** Managing multi-location business operations, inventory flows, and daily operational visibility.
 - **Ecosystem Connection:** The Logic Unit ecosystem includes Hulm Solutions, a SaaS platform for managing business operations across retail, healthcare, and service environments.
 
-### Healthcare Software Platforms (/industry/healthcare)
+### Healthcare Software Platforms (/industries/healthcare)
 Operational software for clinics and healthcare environments.
 - **SaaS Workflows:** Supporting medical service scheduling, patient flow management, and clinic operations.
 - **Ecosystem Integration:** Healthcare is one of the industry categories served through the current Logic Unit ecosystem, utilizing Hulm Solutions modules.
 
-### Livestock Software Platforms (/industry/livestock)
+### Livestock Software Platforms (/industries/livestock)
 Digital tools for livestock, animal care, and veterinary management.
 - **Field Operations:** Managing animal records, veterinary treatment tracking, and livestock metrics.
 - **Ecosystem Platform:** Logic Unit develops the AnimalCare360 platform to support veterinary, livestock, and animal care workflows.
 
-### Manufacturing Software Platforms (/industry/manufacturing)
+### Manufacturing Software Platforms (/industries/manufacturing)
 Operations management for industrial assets and reliability.
 - **Reliability Engineering:** Tracking machine uptime, maintenance cycles, and asset health.
 - **Ecosystem Integration:** The Logic Unit ecosystem includes Titan MMS, a platform for managing maintenance operations, assets, service activity, and industrial reliability.
 
-### Logistics Software Platforms (/industry/logistics)
+### Logistics Software Platforms (/industries/logistics)
 Operations and coordination software for supply chains.
 - **Fleet and Dispatch:** Optimizing delivery dispatch, driver workflows, and cargo status tracking.
 - **Data Integrity:** Keeping logs secure and multi-tenant structures isolated for logistics operators.
 
-### Facilities Software Platforms (/industry/facilities)
+### Facilities Software Platforms (/industries/facilities)
 Asset and maintenance management systems.
 - **Facilities Workflows:** Automating maintenance requests, service activities, and facility asset reliability.
 - **Ecosystem Platform:** Utilizes Titan MMS modules for property and infrastructure maintenance tracking.

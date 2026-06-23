@@ -10,7 +10,7 @@ const navLinks = [
   { href: '/about', label: 'Company' },
   { href: '/ecosystem', label: 'Ecosystem' },
   { href: '/technology', label: 'Technology' },
-  { href: '/industry', label: 'Industries' },
+  { href: '/industries', label: 'Industries' },
   { href: '/partnerships', label: 'Partnerships' },
 ]
 
