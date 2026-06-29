@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'SaaS Platform Engineering & Technology Infrastructure',
@@ -54,6 +55,7 @@ export default function TechnologyPage() {
       <section className="lu-shell relative overflow-hidden px-6 py-24 text-white lg:px-12 lg:py-32">
         <div className="lu-grid absolute inset-0 opacity-25" aria-hidden="true" />
         <div className="mx-auto max-w-7xl">
+          <Breadcrumbs />
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#7bd72f]">
             Technology & Innovation
           </p>

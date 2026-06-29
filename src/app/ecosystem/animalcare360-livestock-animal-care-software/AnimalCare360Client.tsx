@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 
 // FAQs Data
 const faqs = [
@@ -68,12 +69,33 @@ const techFeatures = [
 export function AnimalCare360Client() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
+  // Construct FAQPage Schema Markup
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  }
+
   return (
     <>
+      {/* FAQ Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* Hero Section */}
       <section className="lu-shell relative overflow-hidden px-6 py-28 text-white lg:px-12 lg:py-36">
         <div className="lu-grid absolute inset-0 opacity-25" aria-hidden="true" />
         <div className="relative mx-auto max-w-7xl">
+          <Breadcrumbs />
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#7bd72f]">
             Ecosystem Product
           </p>
