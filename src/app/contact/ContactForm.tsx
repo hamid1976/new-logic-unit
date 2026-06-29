@@ -6,12 +6,13 @@ import { submitToHubspot, trackHubspotEvent, trackGtmEvent } from '@/lib/hubspot
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 
 const inquiryTypes = [
-  'Strategic partnership',
+  'Product ecosystem inquiry',
+  'Case study or portfolio inquiry',
+  'Strategic SaaS partnership',
   'System integrator relationship',
   'Enterprise collaboration',
   'Investor relations',
   'Talent conversation',
-  'General corporate inquiry',
 ]
 
 export default function ContactForm() {
@@ -84,10 +85,10 @@ export default function ContactForm() {
           <Breadcrumbs />
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#7bd72f]">Contact</p>
           <h1 className="max-w-4xl text-5xl font-semibold leading-tight tracking-tight md:text-7xl">
-            Corporate inquiries for the Logic Unit ecosystem.
+            Contact Logic Unit
           </h1>
           <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">
-            Use this channel for partnerships, enterprise collaboration, investor relations, system integrator conversations, and talent inquiries.
+            Talk to Logic Unit about product ecosystem inquiries, strategic SaaS partnerships, system integrator relationships, enterprise collaboration, investor relations, talent conversations, or software platforms for real industry operations.
           </p>
         </div>
       </section>
@@ -107,9 +108,17 @@ export default function ContactForm() {
                 <h2 className="text-3xl font-semibold tracking-tight text-[#071330] mb-4">
                   Send a corporate inquiry.
                 </h2>
-                <p className="text-slate-600 mb-8 leading-7">
+                <p className="text-slate-600 mb-4 leading-7">
                   Share your inquiry type, organization, and message so the Logic Unit team can route the conversation appropriately.
                 </p>
+                <div className="bg-[#fbfaf6] border border-[rgba(16,39,122,0.1)] p-4 text-xs text-slate-500 mb-8 space-y-2 leading-relaxed">
+                  <p>
+                    <strong>Product inquiries:</strong> Please include the product name in your message: HULM POS, Titan CMMS, AnalyzeQuran, Hospitello, Bike Tour Pro, MFCC, or AnimalCare360.
+                  </p>
+                  <p>
+                    <strong>Case study inquiries:</strong> Please mention the relevant area: logistics, healthcare, retail, government digital services, enterprise ERP, fintech, or augmented reality.
+                  </p>
+                </div>
                 <form
                   className="grid gap-6"
                   onSubmit={handleSubmit}

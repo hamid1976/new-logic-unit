@@ -11,6 +11,7 @@ const navLinks = [
   { href: '/ecosystem', label: 'Ecosystem' },
   { href: '/technology', label: 'Technology' },
   { href: '/industries', label: 'Industries' },
+  { href: '/case-studies', label: 'Case Studies' },
   { href: '/partnerships', label: 'Partnerships' },
 ]
 

@@ -1,0 +1,1419 @@
+﻿Product 01
+HULM POS – Unified Retail & Business Management Platform
+Product Overview
+HULM POS is a comprehensive business management platform developed by Logic-Unit to help retailers, restaurants, franchises, and multi-location businesses streamline operations through a single centralized system.
+Unlike traditional POS systems that focus solely on billing, HULM provides a complete operational ecosystem covering sales, inventory, procurement, CRM, employee management, reporting, and regulatory compliance.
+Built for growing businesses, HULM enables organizations to gain real-time visibility into their operations while reducing manual work and improving decision-making.
+________________
+
+
+The Business Problem
+Many businesses continue to operate using disconnected systems for:
+* Billing
+* Inventory
+* Procurement
+* Customer Management
+* Reporting
+* Accounting
+This results in:
+* Inventory discrepancies
+* Manual reporting
+* Poor customer visibility
+* Delayed decision-making
+* Compliance challenges
+* Revenue leakage
+HULM was designed to eliminate these inefficiencies through a unified business platform.
+________________
+
+
+Core Modules
+Point of Sale (POS)
+Fast and intuitive billing system supporting:
+* Barcode scanning
+* Multiple payment methods
+* Discounts and promotions
+* Refund management
+* Receipt generation
+Inventory Management
+Real-time stock control including:
+* Product tracking
+* Multi-location inventory
+* Batch management
+* Stock transfers
+* Low-stock alerts
+Purchase & Vendor Management
+Businesses can:
+* Create purchase orders
+* Manage vendors
+* Track supplier performance
+* Monitor procurement activities
+Customer Relationship Management
+Built-in CRM features include:
+* Customer profiles
+* Purchase history
+* Loyalty programs
+* Customer segmentation
+* Marketing campaigns
+Employee Management
+Track:
+* Employee activity
+* Shift performance
+* Sales performance
+* Access permissions
+Reporting & Analytics
+Real-time dashboards providing:
+* Sales trends
+* Inventory insights
+* Profitability analysis
+* Business KPIs
+FBR Integration
+Supports Pakistan's regulatory requirements through:
+* Tax-compliant invoicing
+* FBR integration
+* Digital record keeping
+________________
+
+
+Industries Served
+* Retail Stores
+* Restaurants
+* Bakeries
+* Pharmacies
+* Supermarkets
+* Fashion Retailers
+* Electronics Stores
+* Franchise Networks
+________________
+
+
+Business Benefits
+Increase Operational Efficiency
+Automate repetitive tasks and reduce manual effort.
+Improve Inventory Accuracy
+Gain real-time visibility across all stock locations.
+Enhance Customer Retention
+Leverage customer insights and loyalty programs.
+Make Better Decisions
+Access actionable data through intelligent reporting.
+Ensure Regulatory Compliance
+Meet tax and invoicing requirements with confidence.
+________________
+
+
+Deployment Options
+* Cloud-Based
+* On-Premise
+* Hybrid Deployment
+________________
+
+
+Integrations
+* FBR Systems
+* Payment Gateways
+* ERP Systems
+* Accounting Platforms
+* eCommerce Platforms
+* Mobile Applications
+________________
+
+
+Why HULM
+HULM is more than a POS system—it is a complete business operating platform designed to support growth, visibility, and operational excellence.
+________________
+
+
+Product 02
+Titan CMMS – Computerized Maintenance Management System
+Product Overview
+Titan CMMS is Pakistan's first locally developed enterprise-grade maintenance management platform designed to help organizations optimize asset performance, reduce downtime, and improve maintenance efficiency.
+Developed by Logic-Unit, Titan enables organizations to move from reactive maintenance practices to data-driven preventive and predictive maintenance strategies.
+________________
+
+
+The Business Problem
+Industrial organizations often struggle with:
+* Unplanned equipment failures
+* Paper-based maintenance records
+* Poor spare parts visibility
+* Maintenance cost overruns
+* Lack of asset lifecycle visibility
+These issues directly impact profitability and productivity.
+________________
+
+
+Core Capabilities
+Asset Management
+Maintain complete visibility into:
+* Asset inventory
+* Asset history
+* Maintenance schedules
+* Lifecycle tracking
+Preventive Maintenance
+Automate:
+* Maintenance planning
+* Job scheduling
+* Work order generation
+* Inspection routines
+Predictive Maintenance
+Monitor equipment conditions using:
+* IoT integrations
+* Sensor data
+* Performance indicators
+Work Order Management
+Track:
+* Requests
+* Assignments
+* Completion status
+* Resource allocation
+Spare Parts Management
+Manage:
+* Inventory levels
+* Consumption patterns
+* Procurement planning
+* Stock forecasting
+Maintenance Analytics
+Visualize:
+* MTTR
+* MTBF
+* Downtime trends
+* Maintenance costs
+________________
+
+
+Industries Served
+* Manufacturing
+* Textile
+* Energy
+* Utilities
+* Oil & Gas
+* Healthcare
+* Logistics
+* Public Sector
+________________
+
+
+Business Benefits
+* Reduce downtime
+* Extend asset lifespan
+* Lower maintenance costs
+* Improve workforce productivity
+* Increase operational reliability
+________________
+
+
+Technology Highlights
+* Cloud & On-Premise Deployment
+* Mobile Access
+* IoT Integration
+* ERP Integration
+* Real-Time Dashboards
+* Predictive Analytics
+________________
+
+
+Why Titan CMMS
+Titan transforms maintenance from a cost center into a strategic business function.
+________________
+
+
+Product 03
+AnalyzeQuran – AI-Powered Quranic Research & Learning Platform
+Product Overview
+AnalyzeQuran is a next-generation Quran study platform developed by Logic-Unit to help users understand the Quran through linguistic analysis, thematic exploration, and intelligent search capabilities.
+Rather than focusing solely on recitation, AnalyzeQuran enables deeper engagement with Quranic content through advanced research and learning tools.
+________________
+
+
+The Challenge
+Most Quran applications provide:
+* Reading
+* Listening
+* Translation
+Few offer tools for:
+* Root-word analysis
+* Thematic research
+* Cross-referencing
+* Concept exploration
+AnalyzeQuran was created to bridge this gap.
+________________
+
+
+Core Features
+AI-Powered Search
+Search by:
+* Arabic roots
+* Keywords
+* Topics
+* Concepts
+* Themes
+Word-by-Word Analysis
+Users can explore:
+* Word meanings
+* Root structures
+* Usage patterns
+* Related verses
+Translation Comparison
+Compare multiple translations simultaneously for deeper understanding.
+Learning Tools
+Includes:
+* Notes
+* Bookmarks
+* Study history
+* Personal references
+Cross-Referencing
+Discover relationships between concepts throughout the Quran.
+________________
+
+
+Audience
+* Students
+* Scholars
+* Researchers
+* Teachers
+* General Readers
+________________
+
+
+Business Impact
+AnalyzeQuran demonstrates how technology can improve access to knowledge while preserving linguistic accuracy and scholarly depth.
+________________
+
+
+Technology Stack
+* Mobile Applications
+* AI Search Engine
+* NLP Processing
+* Cloud Infrastructure
+* Translation Databases
+________________
+
+
+Why AnalyzeQuran
+AnalyzeQuran transforms Quran study into an interactive learning experience.
+________________
+
+
+Product 04
+Hospitello – Digital Patient Engagement Platform
+Product Overview
+Hospitello is a healthcare engagement platform developed by Logic-Unit to help hospitals improve patient experience, increase operational efficiency, and strengthen communication between patients and healthcare providers.
+The platform brings essential hospital services directly to patients through an intuitive mobile application.
+________________
+
+
+Challenges in Healthcare
+Hospitals often face:
+* Appointment management issues
+* High call volumes
+* Poor patient engagement
+* Limited communication channels
+* Administrative inefficiencies
+Hospitello addresses these challenges through digital self-service.
+________________
+
+
+Core Features
+Appointment Booking
+Patients can:
+* Search doctors
+* Book appointments
+* Reschedule visits
+* Receive reminders
+Specialist Discovery
+Find healthcare professionals based on:
+* Specialty
+* Department
+* Availability
+Department Navigation
+Help patients navigate large healthcare facilities.
+Patient Education
+Deliver:
+* Health tips
+* Medical information
+* Awareness campaigns
+Notifications
+Send:
+* Appointment reminders
+* Announcements
+* Health alerts
+Hospital Dashboard
+Administrators can monitor:
+* Patient engagement
+* Appointment trends
+* User activity
+________________
+
+
+Benefits
+For Patients
+* Improved convenience
+* Faster access to services
+* Better healthcare communication
+For Hospitals
+* Reduced administrative workload
+* Increased efficiency
+* Better patient satisfaction
+________________
+
+
+Technology Highlights
+* Mobile Applications
+* Push Notifications
+* Analytics Dashboard
+* Appointment Management
+* Secure Data Handling
+________________
+
+
+Why Hospitello
+Hospitello helps healthcare organizations deliver modern patient experiences while improving operational performance.
+________________
+
+
+Product 05
+Bike Tour Pro – White-Label Tour Operator Platform
+Product Overview
+Bike Tour Pro is a specialized SaaS platform built for bicycle tour operators, travel companies, and adventure tourism businesses.
+The platform enables tour operators to manage bookings, customers, payments, communications, and mobile experiences through a single integrated system.
+________________
+
+
+Industry Challenge
+Tour operators often rely on:
+* Spreadsheets
+* Multiple booking tools
+* Separate payment systems
+* Manual communication
+This fragmentation limits scalability.
+________________
+
+
+Core Features
+Tour Management
+Manage:
+* Tour packages
+* Itineraries
+* Guides
+* Availability
+Booking Management
+Track:
+* Reservations
+* Payments
+* Customer information
+Customer Mobile App
+Travelers can:
+* Book tours
+* View itineraries
+* Chat with guides
+* Share experiences
+Communication Hub
+Supports:
+* Group chats
+* Announcements
+* Real-time updates
+Analytics Dashboard
+Provides insights into:
+* Revenue
+* Occupancy
+* Customer behavior
+White-Label Platform
+Operators can launch fully branded solutions under their own identity.
+________________
+
+
+Business Benefits
+* Faster market entry
+* Lower development costs
+* Improved customer engagement
+* Centralized operations
+________________
+
+
+Technology Highlights
+* Mobile Apps
+* Web Portal
+* Payment Integrations
+* Navigation Integrations
+* Cloud Infrastructure
+________________
+
+
+Why Bike Tour Pro
+Bike Tour Pro gives tour operators enterprise-level technology without enterprise-level development costs.
+________________
+
+
+Product 06
+MFCC – Multi-Function Command & Control Console
+Product Overview
+The Multi-Function Console (MFCC) is a mission-critical command and control workstation designed for maritime, defense, and surveillance environments.
+Developed by Logic-Unit for demanding operational conditions, MFCC combines ergonomic design, ruggedized hardware, and advanced system integration capabilities into a single operator platform.
+________________
+
+
+Operational Challenge
+Operators in defense and maritime environments require:
+* Continuous monitoring capabilities
+* Rapid decision-making tools
+* Comfortable long-duration operation
+* Integration with multiple mission systems
+Standard commercial workstations are often unsuitable for these environments.
+________________
+
+
+Key Features
+Dual 24-Inch Marine Displays
+Support simultaneous monitoring of:
+* Radar
+* Sonar
+* Navigation
+* Video feeds
+Touch Input Display (TID)
+Provides dedicated operational controls and mission interaction.
+Ergonomic Design
+Designed to reduce:
+* Operator fatigue
+* Physical strain
+* Performance degradation
+Ruggedized Construction
+Built for:
+* Marine environments
+* Vibration resistance
+* Humidity resistance
+* Continuous operation
+Mission Flexibility
+Suitable for:
+* Maritime Operations
+* Surveillance Systems
+* Command Centers
+* Defense Applications
+________________
+
+
+Integration Capabilities
+Supports integration with:
+* C4I Systems
+* Navigation Platforms
+* Video Systems
+* Sensor Networks
+* Mission Management Systems
+________________
+
+
+Business Benefits
+* Improved operator effectiveness
+* Reduced fatigue
+* Enhanced situational awareness
+* Future-ready architecture
+________________
+
+
+Why MFCC
+MFCC demonstrates Logic-Unit's ability to deliver complete hardware-software ecosystems, extending beyond traditional software development into mission-critical operational technologies.
+Case Study 01
+Seagold Logistics Management & Shipment Tracking Platform
+Executive Summary
+Seagold (Private) Limited is a leading freight forwarding and logistics company serving local and international clients across multiple shipping routes and supply chain networks. As shipment volumes increased, traditional communication methods and manual tracking processes created operational bottlenecks, limiting visibility for customers and reducing internal efficiency.
+Logic-Unit designed and developed a centralized logistics management platform that digitized shipment tracking, streamlined operational workflows, and provided real-time visibility across the entire logistics lifecycle.
+The result was a modern logistics ecosystem that improved customer experience, reduced operational overhead, and positioned Seagold for scalable growth.
+________________
+
+
+Client Overview
+Seagold operates in the freight forwarding and logistics sector, managing cargo movement across multiple transportation channels and international destinations.
+The company handles complex logistics operations involving shipment tracking, documentation management, customer communication, and operational coordination between multiple stakeholders.
+As customer expectations evolved, Seagold recognized the need to modernize its digital infrastructure and provide a self-service experience comparable to global logistics providers.
+________________
+
+
+Business Challenge
+Prior to implementation, shipment management relied heavily on manual processes, spreadsheets, email communication, and telephone follow-ups.
+This created several operational challenges:
+* Customers had limited visibility into shipment progress.
+* Internal teams spent significant time responding to tracking inquiries.
+* Documentation was distributed across multiple systems and communication channels.
+* Shipment updates were difficult to synchronize across departments.
+* Operational reporting lacked real-time accuracy.
+* Growth placed increasing pressure on existing processes.
+The company needed a centralized platform capable of supporting both operational teams and customers through a single digital environment.
+________________
+
+
+Logic-Unit Solution
+Logic-Unit developed a custom web-based logistics management platform designed specifically for freight forwarding operations.
+The solution consolidated shipment data, customer communication, document management, and operational workflows into a single platform accessible by both customers and internal teams.
+The platform was built with scalability in mind, allowing Seagold to expand operations without increasing administrative complexity.
+________________
+
+
+Key Features
+Real-Time Shipment Tracking
+Customers can monitor shipment status through an intuitive tracking dashboard that provides:
+* Shipment progress
+* Current cargo location
+* Transit milestones
+* Expected delivery dates
+* Historical shipment activity
+Customer Self-Service Portal
+Clients receive secure access to:
+* Active shipments
+* Shipment history
+* Logistics documents
+* Notifications and alerts
+* Delivery updates
+Centralized Document Management
+The platform digitizes logistics documentation including:
+* Bills of Lading
+* Commercial Invoices
+* Packing Lists
+* Certificates
+* Customs Documentation
+* Shipping Manifests
+Operations Management Dashboard
+Internal users can:
+* Create shipment records
+* Update milestones
+* Manage customer accounts
+* Upload documentation
+* Generate operational reports
+Automated Notifications
+Customers receive automated alerts through email and SMS regarding:
+* Cargo departure
+* Port arrivals
+* Customs clearance
+* Delivery status updates
+* Operational exceptions
+Advanced Search & Filtering
+Users can quickly locate shipments using:
+* Booking Number
+* Container Number
+* BL Number
+* Vessel Information
+* Customer References
+________________
+
+
+Technical Highlights
+* Web-based enterprise platform
+* Cloud-hosted deployment
+* Role-based access control
+* API-ready architecture
+* Scalable database design
+* Mobile-responsive interface
+* Secure document storage
+* Automated notification engine
+________________
+
+
+Business Impact
+The implementation transformed Seagold's operational model by introducing transparency, automation, and centralized control.
+Customers gained immediate access to shipment information without relying on manual support requests.
+Operational teams benefited from streamlined workflows and a single source of truth for shipment data.
+The platform significantly improved collaboration across departments while strengthening Seagold's professional image within the logistics industry.
+________________
+
+
+Results
+Before Implementation
+* Manual shipment inquiries
+* Distributed documentation
+* Limited visibility
+* Fragmented communication
+* Time-consuming updates
+After Implementation
+* Real-time shipment tracking
+* Centralized document repository
+* Self-service customer portal
+* Automated notifications
+* Unified operational workflows
+________________
+
+
+Technology Stack
+* Modern Web Frameworks
+* Cloud Infrastructure
+* Secure Authentication Systems
+* Notification Services
+* API Integrations
+* Relational Database Architecture
+________________
+
+
+Why Logic-Unit
+Logic-Unit combined logistics domain knowledge with enterprise software expertise to create a platform tailored to real-world freight forwarding operations.
+The solution was designed not only to solve immediate operational challenges but also to provide a scalable foundation for future growth and digital transformation initiatives.
+________________
+
+
+Case Study 02
+Novo Nordisk Healthcare Professional Sample Ordering Application
+Executive Summary
+Novo Nordisk required a secure and compliant mobile application to modernize the distribution of medical product samples while educating healthcare professionals on responsibilities, compliance requirements, and approved procedures.
+Logic-Unit developed a native iOS application that streamlined sample requests, improved compliance adherence, and delivered a consistent digital experience aligned with pharmaceutical industry standards.
+The application reduced manual processes, increased transparency, and provided healthcare professionals with immediate access to educational resources and sample request workflows.
+________________
+
+
+Client Overview
+Novo Nordisk is a global pharmaceutical company specializing in treatments related to diabetes, obesity, and chronic health conditions.
+Operating within a highly regulated industry, the company requires strict governance around sample distribution, compliance monitoring, and healthcare professional engagement.
+________________
+
+
+Business Challenge
+Traditional sample ordering workflows involved multiple manual steps, creating challenges in both efficiency and compliance.
+Key objectives included:
+* Standardizing sample request processes
+* Educating healthcare professionals on responsibilities
+* Maintaining regulatory compliance
+* Improving traceability
+* Reducing administrative workload
+* Delivering a secure digital experience
+The organization required a mobile-first solution capable of meeting strict pharmaceutical governance standards.
+________________
+
+
+Logic-Unit Solution
+Logic-Unit developed a native iOS application using Swift that combined education, compliance, and operational workflows into a unified mobile platform.
+The application guides healthcare professionals through approved procedures before allowing sample requests, ensuring adherence to company policies and industry regulations.
+________________
+
+
+Key Features
+Responsibilities & Compliance Module
+Interactive educational content covering:
+* Sample handling procedures
+* Compliance guidelines
+* Corporate policies
+* Professional responsibilities
+Digital Sample Ordering
+Guided workflows enabling users to:
+* Browse available products
+* Submit sample requests
+* Track approval status
+* Review request history
+Secure Authentication
+Industry-standard authentication ensuring:
+* Authorized user access
+* Data protection
+* Secure communication
+Content Delivery System
+Educational resources including:
+* Documentation
+* Visual guides
+* Training materials
+* Product information
+Push Notifications
+Users receive updates regarding:
+* Request approvals
+* Compliance updates
+* Product announcements
+* Policy changes
+Role-Based Access Control
+Different user groups receive access according to permissions and responsibilities.
+________________
+
+
+Technical Highlights
+* Native iOS Application
+* Swift Development Framework
+* Secure API Integration
+* Role-Based Authentication
+* Offline Content Support
+* Enterprise Architecture
+* Compliance-Oriented Design
+________________
+
+
+Business Impact
+The application transformed how healthcare professionals interact with Novo Nordisk's sample distribution ecosystem.
+By digitizing the process, the company reduced administrative burden while improving transparency and compliance.
+Healthcare professionals gained a faster and more convenient method for accessing information and requesting product samples.
+________________
+
+
+Results
+* Reduced manual processing
+* Improved compliance monitoring
+* Increased process transparency
+* Enhanced user experience
+* Faster sample request workflows
+* Improved traceability
+________________
+
+
+Technology Stack
+* Swift
+* Native iOS
+* Enterprise APIs
+* Push Notification Services
+* Secure Authentication Frameworks
+________________
+
+
+Why Logic-Unit
+Logic-Unit's experience in regulated industries enabled the delivery of a secure, scalable, and compliance-focused solution that balanced usability with governance requirements.
+________________
+
+
+Case Study 03
+GiftWifts by Leopards Courier
+Executive Summary
+Leopards Courier sought to expand beyond logistics and enter Pakistan's growing digital gifting market through a technology-driven platform that combined eCommerce convenience with nationwide delivery capabilities.
+Logic-Unit partnered with Leopards Courier to design, develop, and launch GiftWifts, a nationwide gifting platform enabling customers to browse, personalize, purchase, and deliver gifts anywhere in Pakistan.
+The project created a new digital business channel while leveraging Leopards' existing logistics network.
+________________
+
+
+Client Overview
+Leopards Courier is one of Pakistan's largest logistics and courier companies with nationwide delivery infrastructure and extensive operational coverage.
+To diversify its service portfolio, the company sought to establish a scalable digital gifting ecosystem.
+________________
+
+
+Business Challenge
+Launching an entirely new business vertical required overcoming several challenges:
+* Building a consumer-facing digital platform
+* Integrating logistics and delivery operations
+* Supporting corporate gifting workflows
+* Managing personalization requirements
+* Handling seasonal demand spikes
+* Creating a seamless customer experience
+________________
+
+
+Logic-Unit Solution
+Logic-Unit developed a complete gifting ecosystem covering:
+* Customer experience
+* Order management
+* Personalization workflows
+* Delivery tracking
+* Corporate gifting
+* Administrative management
+The platform integrated directly with Leopards' logistics operations to provide end-to-end visibility.
+________________
+
+
+Key Features
+eCommerce Platform
+* Product catalog management
+* Category management
+* Dynamic promotions
+* Product discovery
+Personalization Engine
+Customers can:
+* Add gift messages
+* Select packaging options
+* Schedule deliveries
+* Customize gifting experiences
+Corporate Gifting Portal
+Businesses can:
+* Place bulk orders
+* Manage recipients
+* Track deliveries
+* Generate invoices
+Payment Integration
+Secure checkout supporting:
+* Online payments
+* Digital wallets
+* Cash on Delivery
+Real-Time Delivery Tracking
+Integrated logistics tracking provides visibility throughout the delivery lifecycle.
+________________
+
+
+Business Impact
+GiftWifts successfully positioned Leopards as more than a logistics company, creating a new digital commerce channel backed by trusted delivery infrastructure.
+The platform improved customer convenience while opening opportunities in both retail and corporate gifting segments.
+________________
+
+
+Case Study 04
+AGP Drug Verifier Platform
+Executive Summary
+To combat counterfeit medicines and comply with evolving pharmaceutical regulations, AGP partnered with Logic-Unit to develop a comprehensive drug authentication ecosystem.
+The solution enables consumers to verify medicine authenticity through barcode scanning while providing AGP with supply chain visibility and scan analytics.
+________________
+
+
+Business Challenge
+* Counterfeit medicine risks
+* Regulatory compliance requirements
+* Product traceability demands
+* Consumer trust concerns
+* Supply chain visibility limitations
+________________
+
+
+Logic-Unit Solution
+A complete verification ecosystem including:
+* Unique product serialization
+* 2D barcode generation
+* Consumer verification app
+* Manufacturer dashboard
+* Analytics platform
+* Compliance reporting
+________________
+
+
+Key Features
+* Instant medicine verification
+* Product authentication
+* Scan tracking
+* Geographic analytics
+* Counterfeit detection
+* Regulatory compliance support
+________________
+
+
+Results
+* Improved consumer confidence
+* Enhanced supply chain visibility
+* Better counterfeit monitoring
+* Regulatory readiness
+* Stronger brand protection
+________________
+
+
+Case Study 05
+KS&EW Enterprise ERP Transformation
+Executive Summary
+Karachi Shipyard & Engineering Works embarked on a major digital transformation initiative to modernize operations across engineering, procurement, project management, manufacturing, and finance.
+Logic-Unit participated in the implementation of an enterprise-wide ERP platform designed to unify operations and improve visibility across complex shipbuilding and engineering projects.
+________________
+
+
+Business Challenge
+KS&EW operated multiple functions including:
+* Shipbuilding
+* Engineering
+* Procurement
+* Maintenance
+* Construction
+* Finance
+Managing these operations across disconnected systems limited visibility and operational efficiency.
+________________
+
+
+Logic-Unit Solution
+Implementation of a comprehensive ERP ecosystem covering:
+Project Management
+* Budgeting
+* Scheduling
+* Forecasting
+* Risk Management
+Procurement Management
+* Purchasing
+* RFQs
+* Supplier Management
+* Material Tracking
+Engineering Integration
+* CAD integration
+* Design workflows
+* Document management
+Contract Management
+* Variations
+* Retentions
+* Payments
+* Certificates
+Financial Management
+* Project accounting
+* Revenue recognition
+* Financial reporting
+________________
+
+
+Technical Highlights
+* IFS Applications ERP
+* Enterprise Integrations
+* Engineering Data Integration
+* Reporting Dashboards
+* Workflow Automation
+* Project Controls
+________________
+
+
+Business Impact
+The ERP transformation established a foundation for:
+* Better project visibility
+* Improved cost control
+* Stronger governance
+* Integrated workflows
+* Faster decision-making
+* Digital modernization
+________________
+
+
+Results
+* Unified operational processes
+* Improved reporting accuracy
+* Enhanced project controls
+* Greater procurement visibility
+* Reduced information silos
+* Scalable enterprise architecture
+
+
+________________
+
+
+Case Study 06
+Goodments – Ethical Investing Platform for the Next Generation
+Executive Summary
+Goodments was created to address a growing gap in the investment market: helping individuals invest according to their environmental, social, and ethical values without sacrificing access to modern investment tools.
+Partnering with the Goodments team in Australia, Logic-Unit designed and developed a mobile-first fintech platform that combines investment research, ESG screening, portfolio management, and user-friendly financial insights into a single experience.
+The result was a purpose-driven investment platform that quickly gained traction in the Australian fintech market and ultimately contributed to the company's acquisition by Douugh Ltd.
+________________
+
+
+Client Overview
+Goodments is an Australian fintech startup focused on ethical and sustainable investing.
+The company's mission was to empower investors to align their portfolios with their personal values by making ESG-focused investment research accessible and understandable.
+Rather than focusing solely on financial returns, Goodments aimed to provide transparency into how companies perform across environmental, social, and governance metrics.
+________________
+
+
+Business Challenge
+Traditional investment platforms largely focus on financial performance while offering limited visibility into the social and environmental impact of investments.
+The founders wanted to create a solution that would:
+* Simplify ethical investing
+* Make ESG data accessible
+* Appeal to younger investors
+* Improve financial literacy
+* Deliver real-time market insights
+* Create a highly intuitive mobile experience
+The challenge was combining sophisticated investment data with a user experience simple enough for first-time investors.
+________________
+
+
+Logic-Unit Solution
+Logic-Unit collaborated closely with the founders to design and develop a mobile application that translated complex investment and ESG data into actionable insights.
+The platform was built to support both novice and experienced investors through personalized research tools and simplified portfolio management capabilities.
+________________
+
+
+Key Features
+Ethical Investment Screening
+Users can discover companies aligned with their values through filters covering:
+* Environmental impact
+* Sustainability initiatives
+* Diversity and inclusion
+* Renewable energy
+* Social responsibility
+* Governance standards
+Portfolio Management
+Investors can:
+* Track holdings
+* Monitor performance
+* Analyze diversification
+* Review ESG alignment
+Practice Portfolio
+New users can explore investment strategies without financial risk through a simulated investment environment.
+Personalized Research Tools
+The platform provides:
+* Company profiles
+* ESG ratings
+* Market trends
+* Investment insights
+* Ethical scoring metrics
+Real-Time Market Data
+Users receive access to:
+* Market performance
+* Stock movements
+* Portfolio changes
+* Financial news
+Notifications & Insights
+The application delivers:
+* Market alerts
+* Portfolio updates
+* ESG changes
+* Research recommendations
+________________
+
+
+Technical Highlights
+* Cross-platform mobile application
+* Financial market data integrations
+* ESG data aggregation
+* Secure user authentication
+* Real-time analytics
+* Scalable cloud infrastructure
+* Data visualization tools
+________________
+
+
+Business Impact
+Goodments successfully transformed ethical investing from a niche concept into an accessible digital experience.
+The platform enabled investors to make informed decisions based not only on financial performance but also on personal values.
+Its user-centric design helped attract a growing audience of socially conscious investors.
+________________
+
+
+Results
+* Successful Australian market launch
+* Rapid user acquisition
+* National media recognition
+* Strong investor engagement
+* Acquisition by Douugh Ltd.
+* Expanded access to ethical investing
+________________
+
+
+Technology Stack
+* iOS & Android
+* Financial Data APIs
+* ESG Data Integrations
+* Cloud Infrastructure
+* Analytics & Reporting Tools
+________________
+
+
+Why Logic-Unit
+Logic-Unit helped transform a fintech vision into a scalable digital platform by combining technical expertise, strong UX design, and deep experience in mobile product development.
+________________
+
+
+Case Study 07
+Smart Salik – Digital Toll Management Platform for Dubai's RTA
+Executive Summary
+As part of Dubai's Smart City vision, the Roads and Transport Authority (RTA) sought to improve how motorists interact with the Salik electronic toll system.
+Logic-Unit collaborated on the development of the Smart Salik mobile application, providing users with real-time access to account balances, vehicle management, trip history, recharge services, and violation tracking.
+The application transformed a traditionally administrative process into a convenient self-service mobile experience.
+________________
+
+
+Client Overview
+The Roads and Transport Authority (RTA) manages Dubai's transportation infrastructure, including the Salik electronic toll collection system.
+Serving millions of vehicle transactions each day, the organization required a modern mobile platform capable of supporting large-scale user adoption.
+________________
+
+
+Business Challenge
+Prior to the mobile application, users faced several challenges:
+* Limited account visibility
+* Inconvenient balance checks
+* Manual recharge processes
+* Poor access to trip history
+* Difficulty managing violations
+* Dependence on customer service channels
+The objective was to provide a secure, user-friendly platform that simplified toll account management.
+________________
+
+
+Logic-Unit Solution
+Logic-Unit contributed to the development of a mobile application that centralizes all Salik-related activities within a single digital experience.
+The application enables users to manage accounts, vehicles, payments, and toll activity from anywhere.
+________________
+
+
+Key Features
+Account Management
+Users can:
+* View balances
+* Manage account information
+* Update profiles
+* Access account history
+Instant Recharge
+Secure payment processing allows users to:
+* Add funds
+* Recharge accounts
+* Pay on behalf of others
+Vehicle Management
+Users can:
+* Add vehicles
+* Manage registrations
+* Activate tags
+* Review vehicle details
+Trip History
+Complete visibility into:
+* Toll crossings
+* Charges
+* Account activity
+* Transaction records
+Violation Management
+Drivers can:
+* View violations
+* Track outstanding charges
+* Resolve issues quickly
+Notifications
+Real-time alerts for:
+* Low balances
+* Violations
+* Successful payments
+* System announcements
+________________
+
+
+Technical Highlights
+* iOS & Android Applications
+* Government System Integrations
+* Secure Payment Gateway
+* Real-Time Synchronization
+* OCR Capabilities
+* Push Notification Services
+________________
+
+
+Results
+* 1M+ downloads
+* Increased digital adoption
+* Reduced customer service dependency
+* Improved user satisfaction
+* Enhanced self-service capabilities
+________________
+
+
+Why Logic-Unit
+The project demonstrated Logic-Unit's ability to participate in large-scale government technology initiatives requiring reliability, security, and exceptional user experience.
+________________
+
+
+Case Study 08
+mPay – Unified Government Payment Platform for Dubai Smart Government
+Executive Summary
+Dubai Smart Government launched mPay to simplify how residents pay utility bills and government service fees.
+Logic-Unit contributed to the development of a unified mobile payment platform that allows citizens to pay for multiple services through a single application.
+The platform became an important component of Dubai's digital transformation strategy, supporting the city's Smart Government initiatives.
+________________
+
+
+Client Overview
+Dubai Smart Government is responsible for driving digital transformation across public services, improving accessibility and convenience for residents.
+The mPay initiative was designed to eliminate fragmentation across payment channels and create a single point of access for government transactions.
+________________
+
+
+Business Challenge
+Residents previously needed multiple systems and portals to pay for services such as:
+* Utility bills
+* Telecommunications
+* Road tolls
+* Traffic fines
+* Municipality fees
+This fragmented experience created unnecessary complexity and reduced convenience.
+________________
+
+
+Logic-Unit Solution
+Logic-Unit contributed to the creation of a centralized mobile payment ecosystem supporting multiple government entities through a unified interface.
+________________
+
+
+Key Features
+Unified Payments
+Users can pay:
+* DEWA bills
+* DU services
+* Etisalat services
+* Salik charges
+* RTA fines
+* Municipality fees
+Smart Dashboard
+Displays:
+* Outstanding balances
+* Due dates
+* Payment history
+* Service summaries
+Voice Payments
+Supports voice-driven actions for selected payment activities.
+Saved Accounts
+Users can securely store frequently used account information.
+Notifications
+Automated reminders help users avoid missed payments.
+Bilingual Experience
+Arabic and English support ensures accessibility across Dubai's diverse population.
+________________
+
+
+Technical Highlights
+* Government API Integrations
+* Secure Payment Processing
+* Cloud-Based Infrastructure
+* Arabic NLP Support
+* Mobile Applications
+* Enterprise Security Controls
+________________
+
+
+Results
+* High citizen adoption
+* Reduced physical service center visits
+* Increased digital transaction volume
+* Improved public satisfaction
+* Strong contribution to Smart Government initiatives
+________________
+
+
+Why Logic-Unit
+The project reinforced Logic-Unit's capability to contribute to citizen-facing digital platforms operating at government scale.
+________________
+
+
+Case Study 09
+Dunkin' Donuts Pakistan – Retail Operations & Sales Management Platform
+Executive Summary
+Managing multiple retail outlets requires real-time visibility into sales, operations, inventory, and performance metrics.
+Dunkin' Donuts Pakistan partnered with Logic-Unit to develop a mobile-first operational platform that digitized reporting, standardized workflows, and improved communication between branches and management.
+The result was a centralized operational ecosystem that enabled faster decision-making and improved overall retail efficiency.
+________________
+
+
+Business Challenge
+As the organization expanded across multiple locations, operational management became increasingly complex.
+Key challenges included:
+* Delayed sales reporting
+* Manual data collection
+* Inconsistent branch processes
+* Limited operational visibility
+* Communication inefficiencies
+Management required real-time access to operational information across all locations.
+________________
+
+
+Logic-Unit Solution
+Logic-Unit developed a hybrid mobile application enabling branch teams and management to collaborate through a centralized digital platform.
+The solution streamlined reporting, communication, and performance monitoring across the organization.
+________________
+
+
+Key Features
+Sales Reporting
+* Daily sales submissions
+* Performance monitoring
+* Branch comparisons
+* Revenue tracking
+Operations Dashboard
+Visibility into:
+* Store performance
+* Equipment status
+* Operational issues
+* Compliance monitoring
+Task Management
+Managers can:
+* Assign tasks
+* Track progress
+* Monitor completion
+* Improve accountability
+Internal Communication
+Centralized messaging enables:
+* Faster communication
+* Branch coordination
+* Operational updates
+* Issue resolution
+Analytics & Reporting
+Management receives actionable insights through:
+* KPI dashboards
+* Trend analysis
+* Performance reports
+________________
+
+
+Results
+* Faster reporting cycles
+* Improved operational visibility
+* Better communication
+* Increased accountability
+* Data-driven decision-making
+________________
+
+
+Technology Stack
+* Ionic
+* Angular
+* Mobile APIs
+* Cloud Infrastructure
+* Secure Authentication
+________________
+
+
+Why Logic-Unit
+Logic-Unit delivered a scalable mobile solution that aligned with the fast-paced operational requirements of a nationwide retail brand.
+________________
+
+
+Case Study 10
+Qatar Airways – Augmented Reality Brand Engagement Experience
+Executive Summary
+In an increasingly competitive travel market, Qatar Airways sought a memorable and innovative way to engage travelers through interactive marketing experiences.
+Logic-Unit partnered on an augmented reality campaign that transformed traditional advertising materials into immersive digital experiences, allowing users to interact with Qatar Airways content directly through their smartphones.
+The campaign blended physical advertising with digital engagement to create stronger brand recall and measurable user interaction.
+________________
+
+
+Client Overview
+Qatar Airways is one of the world's leading airlines, recognized for premium service, innovation, and global connectivity.
+To strengthen brand engagement within Saudi Arabia, the airline explored emerging technologies capable of delivering memorable customer experiences.
+________________
+
+
+Business Challenge
+Traditional advertising channels often struggle to create meaningful engagement.
+The airline required a campaign that would:
+* Increase customer interaction
+* Differentiate from competitors
+* Drive digital engagement
+* Support measurable marketing outcomes
+* Connect physical and digital experiences
+________________
+
+
+Logic-Unit Solution
+Logic-Unit helped develop an AR-powered marketing experience allowing users to scan physical campaign assets and instantly unlock interactive digital content.
+The solution transformed posters and displays into dynamic brand experiences.
+________________
+
+
+Key Features
+Augmented Reality Experiences
+Users could access:
+* Interactive content
+* Destination showcases
+* Airline features
+* Promotional campaigns
+Mobile Engagement
+Simple interactions enabled users to:
+* Scan campaign visuals
+* Explore digital content
+* Access booking information
+* Share experiences
+Campaign Analytics
+Marketing teams gained visibility into:
+* User engagement
+* Scan activity
+* Content interactions
+* Conversion opportunities
+Content Management
+Administrators could:
+* Update campaigns
+* Manage assets
+* Track performance
+* Optimize experiences
+________________
+
+
+Technical Highlights
+* AR Technology Integration
+* Mobile Application Development
+* Analytics Tracking
+* Campaign Management Tools
+* Cross-Platform Compatibility
+________________
+
+
+Business Impact
+The campaign demonstrated how immersive technologies can strengthen brand engagement while providing measurable marketing insights.
+By combining physical advertising with digital interaction, Qatar Airways delivered a memorable customer experience that differentiated the brand in a highly competitive market.
+________________
+
+
+Results
+* Increased campaign engagement
+* Higher interaction rates
+* Improved brand recall
+* Measurable user analytics
+* Enhanced customer experience
+________________
+
+
+Why Logic-Unit
+The project showcased Logic-Unit's ability to combine emerging technologies, user experience design, and enterprise-grade execution to create innovative digital marketing solutions for globally recognized brands.
+________________

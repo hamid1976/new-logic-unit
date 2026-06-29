@@ -1,15 +1,14 @@
-import type { Metadata } from 'next'
-import { SubPageTemplate } from '@/components/ui/SubPageTemplate'
-import Link from 'next/link'
+import type { Metadata } from 'next';
+import { SubPageTemplate } from '@/components/ui/SubPageTemplate';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Manufacturing Software Platforms',
-  description:
-    'Logic Unit builds and operates industry-specific SaaS platforms for manufacturing and industrial operations.',
+  title: 'Manufacturing Software Platforms | Logic Unit',
+  description: 'Logic Unit builds and operates industry-specific SaaS platforms for manufacturing and industrial operations.',
   alternates: {
     canonical: '/industries/manufacturing',
   },
-}
+};
 
 export default function ManufacturingPage() {
   const sections = [
@@ -17,37 +16,47 @@ export default function ManufacturingPage() {
       title: 'SaaS platforms for manufacturing environments',
       body: (
         <p>
-          Current source content connects manufacturing with industrial operations, assets, service activity, and maintenance reliability. Manufacturing content should focus on operational software, platform infrastructure, and long-term system support.
+          Manufacturing and engineering organizations need maintenance visibility, asset control, procurement workflows, engineering integration, and enterprise reporting. Logic Unit builds software that unifies assets, maintenance logs, and inventory systems.
         </p>
       ),
     },
     {
-      title: 'Connected to maintenance and industrial reliability',
+      title: 'Connected to the Logic Unit product ecosystem',
       body: (
         <div>
           <p className="mb-4">
-            The Logic Unit ecosystem includes Titan MMS, described in source content as a platform for managing maintenance operations, assets, service activity, and industrial reliability.
+            The Logic Unit ecosystem includes Titan CMMS, an enterprise-grade maintenance management system designed to optimize asset performance, schedule preventive maintenance, and track spare parts inventory.
           </p>
           <div className="flex flex-col gap-3 mt-4">
             <Link
-              href="/ecosystem/titan-mms-maintenance-management-software"
-              className="text-sm font-bold text-[#10277a] underline decoration-[#7bd72f] decoration-2 underline-offset-4 hover:text-[#071330] no-underline"
+              href="/ecosystem/titan-cmms"
+              className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
             >
-              Explore Product Details →
+              Explore Titan CMMS Details &rarr;
             </Link>
-            <a
-              href="https://titanmms.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-semibold text-slate-500 hover:text-slate-800"
-            >
-              Visit official website
-            </a>
           </div>
         </div>
       ),
     },
-  ]
+    {
+      title: 'Industrial & ERP Case Studies',
+      body: (
+        <div>
+          <p className="mb-4">
+            See our proven experience in shipyard digital transformation and enterprise resource planning:
+          </p>
+          <div className="flex flex-col gap-3">
+            <Link
+              href="/case-studies/ksew-enterprise-erp-transformation"
+              className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
+            >
+              &bull; KS&amp;EW Enterprise ERP Transformation &rarr;
+            </Link>
+          </div>
+        </div>
+      ),
+    },
+  ];
 
   return (
     <SubPageTemplate
@@ -59,5 +68,5 @@ export default function ManufacturingPage() {
       backText="Back to Industries"
       backHref="/industries"
     />
-  )
+  );
 }

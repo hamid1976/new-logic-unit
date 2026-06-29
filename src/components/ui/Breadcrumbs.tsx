@@ -23,6 +23,23 @@ const segmentLabelMap: Record<string, string> = {
   'hulm-solutions': 'Hulm Solutions',
   'titan-mms-maintenance-management-software': 'Titan MMS',
   'animalcare360-livestock-animal-care-software': 'AnimalCare360',
+  'hulm-pos': 'HULM POS',
+  'titan-cmms': 'Titan CMMS',
+  'analyzequran': 'AnalyzeQuran',
+  'hospitello': 'Hospitello',
+  'bike-tour-pro': 'Bike Tour Pro',
+  'mfcc-command-control-console': 'MFCC Console',
+  'case-studies': 'Case Studies',
+  'seagold-logistics-management-platform': 'Seagold Logistics',
+  'novo-nordisk-sample-ordering-application': 'Novo Nordisk App',
+  'giftwifts-leopards-courier': 'GiftWifts',
+  'agp-drug-verifier-platform': 'AGP Drug Verifier',
+  'ksew-enterprise-erp-transformation': 'KS&EW ERP',
+  'goodments-ethical-investing-platform': 'Goodments',
+  'smart-salik-digital-toll-management': 'Smart Salik',
+  'mpay-government-payment-platform': 'mPay',
+  'dunkin-donuts-retail-operations-platform': "Dunkin' Donuts",
+  'qatar-airways-augmented-reality-campaign': 'Qatar Airways AR',
 };
 
 export function Breadcrumbs() {

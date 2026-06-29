@@ -7,15 +7,17 @@ const groups = [
     links: [
       { href: '/about', label: 'About' },
       { href: '/contact', label: 'Contact' },
+      { href: '/case-studies', label: 'Case Studies' },
       { href: '/partnerships', label: 'Partnerships' },
     ],
   },
   {
     title: 'Ecosystem',
     links: [
-      { href: 'https://hulmsolutions.com', label: 'Hulm Solutions' },
-      { href: 'https://titanmms.com', label: 'Titan MMS' },
-      { href: 'https://animalcare360.com', label: 'AnimalCare360' },
+      { href: '/ecosystem/hulm-pos', label: 'HULM POS' },
+      { href: '/ecosystem/titan-cmms', label: 'Titan CMMS' },
+      { href: '/ecosystem/animalcare360-livestock-animal-care-software', label: 'AnimalCare360' },
+      { href: '/ecosystem', label: 'View All Products' },
     ],
   },
   {

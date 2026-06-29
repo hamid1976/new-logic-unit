@@ -1,24 +1,26 @@
-import type { Metadata } from 'next'
-import Link from 'next/link'
-import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'SaaS Platform Engineering & Technology Infrastructure',
-  description:
-    'Discover the technology we use to build SaaS system, including multi-tenant architecture, AI integration, IoT systems, and data infrastructure.',
+  title: 'Technology & R&D Backbone | Logic Unit',
+  description: "Explore Logic Unit's SaaS architecture, data infrastructure, mobile platforms, AI integration, IoT integration, and enterprise system experience.",
   alternates: {
     canonical: '/technology',
   },
   keywords: [
     'SaaS architecture',
-    'product engineering',
-    'multi-tenant systems',
     'data infrastructure',
+    'multi-tenant systems',
     'AI integration',
-    'IoT system integration',
-    'operational software backbone',
+    'IoT integration',
+    'cloud infrastructure',
+    'mobile applications',
+    'enterprise integrations',
+    'secure authentication',
+    'payment integrations',
   ],
-}
+};
 
 const capabilities = [
   {
@@ -46,13 +48,40 @@ const capabilities = [
     description:
       'Reducing operational overhead is central to our platforms. We automate repetitive industrial and logistical workflows, reducing manual errors and enhancing speed across organizations.',
   },
-]
+];
+
+const productProof = [
+  {
+    name: 'HULM POS',
+    tech: 'POS, inventory, procurement, CRM, reporting, FBR integration, payment gateways, ERP systems, accounting platforms, and eCommerce platforms.',
+  },
+  {
+    name: 'Titan CMMS',
+    tech: 'Asset management, preventive maintenance, predictive maintenance, IoT integration, ERP integration, dashboards, and maintenance analytics.',
+  },
+  {
+    name: 'AnalyzeQuran',
+    tech: 'AI search engine, NLP processing, mobile applications, cloud infrastructure, and translation databases.',
+  },
+  {
+    name: 'Hospitello',
+    tech: 'Mobile applications, push notifications, analytics dashboard, appointment management, and secure data handling.',
+  },
+  {
+    name: 'Bike Tour Pro',
+    tech: 'Mobile apps, web portal, payment integrations, navigation integrations, and cloud infrastructure.',
+  },
+  {
+    name: 'MFCC',
+    tech: 'Ruggedized hardware, mission systems integration, sensor networks, C4I systems, navigation platforms, and video systems.',
+  },
+];
 
 export default function TechnologyPage() {
   return (
     <main className="min-h-screen bg-[#fbfaf6] text-[#111827]">
       {/* Hero Shell */}
-      <section className="lu-shell relative overflow-hidden px-6 py-24 text-white lg:px-12 lg:py-32">
+      <section className="lu-shell relative overflow-hidden px-6 py-28 text-white lg:px-12 lg:py-36">
         <div className="lu-grid absolute inset-0 opacity-25" aria-hidden="true" />
         <div className="mx-auto max-w-7xl">
           <Breadcrumbs />
@@ -96,7 +125,7 @@ export default function TechnologyPage() {
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {capabilities.map((cap) => (
-              <article key={cap.name} className="lu-card lu-rule-top p-8 bg-white">
+              <article key={cap.name} className="lu-card lu-rule-top p-8 bg-white border border-[rgba(16,39,122,0.06)] shadow-sm">
                 <h3 className="mb-4 text-xl font-semibold text-[#10277a]">{cap.name}</h3>
                 <p className="leading-7 text-slate-600">{cap.description}</p>
               </article>
@@ -105,8 +134,50 @@ export default function TechnologyPage() {
         </div>
       </section>
 
+      {/* Technology Proven Through Product Platforms */}
+      <section className="lu-section bg-white px-6 py-24 lg:px-12">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 max-w-3xl">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Proven in Production</span>
+            <h2 className="text-3xl font-semibold tracking-tight text-[#071330] md:text-5xl mt-2">
+              Technology Proven Through Product Platforms
+            </h2>
+            <p className="mt-4 text-slate-600">
+              Logic Unit's technology backbone supports software platforms for real industries, including POS and business management, maintenance management, healthcare engagement, AI-powered research, travel operations, and mission-critical command environments.
+            </p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {productProof.map((pp) => (
+              <article key={pp.name} className="lu-card p-6 bg-[#fbfaf6] border border-[rgba(16,39,122,0.04)] shadow-sm">
+                <h3 className="text-lg font-bold text-[#10277a] mb-3">{pp.name}</h3>
+                <p className="text-xs leading-5 text-slate-600">{pp.tech}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Case Studies Proof Section */}
+      <section className="lu-section bg-[#f4f7fb] px-6 py-24 lg:px-12">
+        <div className="mx-auto max-w-3xl text-center">
+          <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Proven Delivery</span>
+          <h2 className="text-3xl font-semibold tracking-tight text-[#071330] md:text-5xl mt-2 mb-4">
+            Enterprise, Government, Healthcare, And Retail Delivery Experience
+          </h2>
+          <p className="text-slate-600 text-lg mb-8">
+            Logic Unit's case studies show delivery across logistics management, pharmaceutical compliance, eCommerce, drug authentication, ERP transformation, ethical investing, government toll management, government payments, retail operations, and augmented reality engagement.
+          </p>
+          <Link
+            href="/case-studies"
+            className="inline-block bg-[#10277a] px-8 py-3 text-sm font-bold text-white hover:bg-[#071330] no-underline"
+          >
+            View Case Studies
+          </Link>
+        </div>
+      </section>
+
       {/* Final CTA */}
-      <section className="bg-white px-6 py-24 lg:px-12">
+      <section className="bg-white px-6 py-24 lg:px-12 border-t border-[rgba(16,39,122,0.06)]">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 md:flex-row md:items-center">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-semibold tracking-tight text-[#071330] md:text-5xl">
@@ -133,5 +204,5 @@ export default function TechnologyPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

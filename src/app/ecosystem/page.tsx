@@ -1,57 +1,79 @@
-import type { Metadata } from 'next'
-import Link from 'next/link'
-import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Software Product Ecosystem | SaaS Solutions Portfolio',
-  description:
-    'Discover our portfolio of SaaS products and cloud-based software platforms designed to solve industry challenges and accelerate business success.',
+  title: 'Product Ecosystem | Industry SaaS Platforms By Logic Unit',
+  description: "Explore Logic Unit's SaaS product ecosystem, including HULM POS, Titan CMMS, Hospitello, Bike Tour Pro, AnalyzeQuran, MFCC, and AnimalCare360.",
   alternates: {
     canonical: '/ecosystem',
   },
   keywords: [
     'product ecosystem',
+    'SaaS product ecosystem',
     'SaaS operating company',
-    'Hulm Solutions',
-    'Titan MMS',
+    'HULM POS',
+    'Titan CMMS',
     'AnimalCare360',
+    'Hospitello',
+    'Bike Tour Pro',
+    'AnalyzeQuran',
+    'MFCC',
     'independent software platforms',
     'industry-specific SaaS platforms',
   ],
-}
+};
 
 const products = [
   {
-    name: 'Hulm Solutions',
-    category: 'Business Operating System',
-    description:
-      'A SaaS platform for managing business operations across retail, healthcare, and service environments.',
-    href: 'https://hulmsolutions.com',
-    internalHref: '/ecosystem/hulm-solutions',
+    name: 'HULM POS',
+    category: 'Retail POS & Business OS',
+    description: 'Unified retail and business management platform for POS, inventory, procurement, CRM, reporting, employee management, and FBR integration.',
+    internalHref: '/ecosystem/hulm-pos',
   },
   {
-    name: 'Titan MMS',
-    category: 'Maintenance Management Platform',
-    description:
-      'A platform for managing maintenance operations, assets, service activity, and industrial reliability.',
-    href: 'https://titanmms.com',
-    internalHref: '/ecosystem/titan-mms-maintenance-management-software',
+    name: 'Titan CMMS',
+    category: 'Computerized Maintenance Management System',
+    description: 'Enterprise-grade maintenance management platform for asset management, preventive maintenance, work orders, spare parts, and analytics.',
+    internalHref: '/ecosystem/titan-cmms',
+  },
+  {
+    name: 'Hospitello',
+    category: 'Digital Patient Engagement',
+    description: 'Digital patient engagement platform for appointment booking, specialist discovery, patient education, notifications, and hospital dashboards.',
+    internalHref: '/ecosystem/hospitello',
+  },
+  {
+    name: 'Bike Tour Pro',
+    category: 'White-Label Tour Operator Platform',
+    description: 'White-label tour operator SaaS platform for booking management, customer mobile apps, payments, communications, and analytics.',
+    internalHref: '/ecosystem/bike-tour-pro',
+  },
+  {
+    name: 'AnalyzeQuran',
+    category: 'AI Quranic Research Platform',
+    description: 'AI-powered Quranic research and learning platform for root-word analysis, thematic search, translation comparison, notes, bookmarks, and cross-referencing.',
+    internalHref: '/ecosystem/analyzequran',
+  },
+  {
+    name: 'MFCC',
+    category: 'Mission-Critical Command & Control',
+    description: 'Mission-critical command and control workstation for maritime, defense, surveillance, and integrated operational monitoring environments.',
+    internalHref: '/ecosystem/mfcc-command-control-console',
   },
   {
     name: 'AnimalCare360',
     category: 'Veterinary & Livestock Platform',
-    description:
-      'A digital platform supporting veterinary, livestock, and animal care operations.',
-    href: 'https://animalcare360.com',
+    description: 'A digital platform supporting veterinary, livestock, and animal care operations.',
     internalHref: '/ecosystem/animalcare360-livestock-animal-care-software',
   },
-]
+];
 
 export default function EcosystemPage() {
   return (
     <main className="min-h-screen bg-[#fbfaf6] text-[#111827]">
       {/* Hero Shell */}
-      <section className="lu-shell relative overflow-hidden px-6 py-24 text-white lg:px-12 lg:py-32">
+      <section className="lu-shell relative overflow-hidden px-6 py-28 text-white lg:px-12 lg:py-36">
         <div className="lu-grid absolute inset-0 opacity-25" aria-hidden="true" />
         <div className="mx-auto max-w-7xl">
           <Breadcrumbs />
@@ -59,57 +81,41 @@ export default function EcosystemPage() {
             Product Ecosystem
           </p>
           <h1 className="max-w-5xl text-5xl font-semibold leading-tight tracking-tight md:text-7xl">
-            A growing ecosystem of independent SaaS platforms.
+            A Product Ecosystem For Real Industry Operations
           </h1>
           <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">
-            Logic Unit operates a growing ecosystem of independent software platforms. Each product company serves a specific industry, with its own product architecture, roadmap, and customer adoption strategy.
+            Logic Unit is a product engineering and SaaS operating company building software platforms for real industries. Its product ecosystem brings together independent platforms for retail operations, maintenance management, healthcare engagement, livestock and animal care, Quranic research, travel operations, and mission-critical command environments.
           </p>
-        </div>
-      </section>
-
-      {/* Philosophy Section */}
-      <section className="lu-section bg-[#fbfaf6] px-6 py-24 lg:px-12">
-        <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-[0.85fr_1.15fr]">
-          <h2 className="text-3xl font-semibold tracking-tight text-[#071330] md:text-5xl">
-            Built, operated, and scaled by Logic Unit.
-          </h2>
-          <div className="space-y-6 text-lg leading-8 text-slate-600">
-            <p>
-              We are not a single-product company or a short-term software agency. We identify key operational inefficiencies in real-world industries and engineer dedicated SaaS platforms to close those gaps.
-            </p>
-            <p>
-              Logic Unit provides the R&D, core SaaS architecture, and technology backbone, while each product company focuses on customer-facing onboarding, industry adoption, and dedicated customer success.
-            </p>
-          </div>
         </div>
       </section>
 
       {/* Product Grid */}
       <section className="lu-section bg-[#f4f7fb] px-6 py-24 lg:px-12">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {products.map((product) => (
-              <article key={product.name} className="lu-card lu-rule-top flex min-h-[340px] flex-col p-8 bg-white justify-between">
+              <article
+                key={product.name}
+                className="lu-card lu-rule-top flex min-h-[300px] flex-col p-8 bg-white justify-between"
+              >
                 <div>
-                  <p className="mb-4 text-sm font-medium text-slate-500">{product.category}</p>
-                  <h3 className="mb-5 text-2xl font-semibold text-[#10277a]">{product.name}</h3>
-                  <p className="mb-10 leading-7 text-slate-600">{product.description}</p>
+                  <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-400">
+                    {product.category}
+                  </p>
+                  <h3 className="mb-5 text-2xl font-semibold text-[#10277a]">
+                    {product.name}
+                  </h3>
+                  <p className="mb-10 text-sm leading-6 text-slate-600">
+                    {product.description}
+                  </p>
                 </div>
-                <div className="flex flex-col gap-3">
+                <div>
                   <Link
                     href={product.internalHref}
-                    className="text-sm font-bold text-[#10277a] underline decoration-[#7bd72f] decoration-2 underline-offset-4 hover:text-[#071330] no-underline"
+                    className="inline-block text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
                   >
-                    Explore Product Details →
+                    Explore Product Details &rarr;
                   </Link>
-                  <a
-                    href={product.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs font-semibold text-slate-500 hover:text-slate-800"
-                  >
-                    Visit official website
-                  </a>
                 </div>
               </article>
             ))}
@@ -118,32 +124,26 @@ export default function EcosystemPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-white px-6 py-24 lg:px-12">
+      <section className="bg-white px-6 py-24 lg:px-12 border-t border-[rgba(16,39,122,0.06)]">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 md:flex-row md:items-center">
           <div className="max-w-2xl">
-            <h2 className="text-3xl font-semibold tracking-tight text-[#071330] md:text-5xl">
-              Collaborate on our SaaS ecosystem.
+            <h2 className="text-3xl font-semibold tracking-tight text-[#071330] md:text-5xl mb-4">
+              Explore Partnership Routes Into The Logic Unit Ecosystem
             </h2>
-            <p className="mt-4 text-lg leading-7 text-slate-600">
-              For corporate inquiries, system integrator discussions, and strategic partnerships surrounding our industry platforms, reach out to Logic Unit.
+            <p className="text-slate-600 text-lg">
+              Logic Unit works with strategic partners, system integrators, and enterprise collaborators to expand industry-specific SaaS platforms and software infrastructure for real operating environments.
             </p>
           </div>
-          <div className="flex flex-col gap-4 sm:flex-row flex-shrink-0">
+          <div className="flex-shrink-0">
             <Link
               href="/partnerships"
-              className="border border-[#10277a] px-6 py-3 text-center text-sm font-semibold text-[#10277a] hover:bg-[#f4f7fb] whitespace-nowrap no-underline"
+              className="inline-block bg-[#10277a] px-8 py-4 text-center text-sm font-bold text-white hover:bg-[#071330] no-underline transition-colors"
             >
-              Explore Partnerships
-            </Link>
-            <Link
-              href="/contact"
-              className="bg-[#10277a] px-6 py-3 text-center text-sm font-bold text-white hover:bg-[#071330] whitespace-nowrap"
-            >
-              Contact Logic Unit
+              Partner With Logic Unit
             </Link>
           </div>
         </div>
       </section>
     </main>
-  )
+  );
 }

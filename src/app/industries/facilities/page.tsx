@@ -1,15 +1,14 @@
-import type { Metadata } from 'next'
-import { SubPageTemplate } from '@/components/ui/SubPageTemplate'
-import Link from 'next/link'
+import type { Metadata } from 'next';
+import { SubPageTemplate } from '@/components/ui/SubPageTemplate';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Facilities Software Platforms',
-  description:
-    'Logic Unit builds and operates industry-specific SaaS platforms for facilities, maintenance, and service activity.',
+  title: 'Facilities Software Platforms | Logic Unit',
+  description: 'Logic Unit builds and operates industry-specific SaaS platforms for facilities, maintenance, and service activity.',
   alternates: {
     canonical: '/industries/facilities',
   },
-}
+};
 
 export default function FacilitiesPage() {
   const sections = [
@@ -17,37 +16,40 @@ export default function FacilitiesPage() {
       title: 'SaaS platforms for facilities environments',
       body: (
         <p>
-          Current source content connects facilities with maintenance operations, assets, service activity, and industrial reliability. Facilities content should focus on software infrastructure for operational coordination and long-term platform use.
+          Facilities and maintenance operations need work order visibility, asset history, spare parts management, preventive maintenance, and reliable operational monitoring. Logic Unit builds software for command environments, surveillance, and computerized maintenance management.
         </p>
       ),
     },
     {
-      title: 'Connected to maintenance management',
+      title: 'Connected to the Logic Unit product ecosystem',
       body: (
-        <div>
-          <p className="mb-4">
-            The Logic Unit ecosystem includes Titan MMS, described in source content as a maintenance management platform for managing maintenance operations, assets, service activity, and industrial reliability.
-          </p>
-          <div className="flex flex-col gap-3 mt-4">
+        <div className="space-y-6">
+          <div>
+            <p className="mb-2">
+              <strong>Titan CMMS</strong>: An enterprise-grade computerized maintenance management system that unifies asset records, preventive schedules, work requests, and parts inventory.
+            </p>
             <Link
-              href="/ecosystem/titan-mms-maintenance-management-software"
-              className="text-sm font-bold text-[#10277a] underline decoration-[#7bd72f] decoration-2 underline-offset-4 hover:text-[#071330] no-underline"
+              href="/ecosystem/titan-cmms"
+              className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
             >
-              Explore Product Details →
+              Explore Titan CMMS Details &rarr;
             </Link>
-            <a
-              href="https://titanmms.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-semibold text-slate-500 hover:text-slate-800"
+          </div>
+          <div className="border-t border-[rgba(16,39,122,0.08)] pt-4">
+            <p className="mb-2">
+              <strong>MFCC Console</strong>: A mission-critical command and control workstation designed for marine displays, surveillance inputs, C4I system protocols, and maritime operations environments.
+            </p>
+            <Link
+              href="/ecosystem/mfcc-command-control-console"
+              className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
             >
-              Visit official website
-            </a>
+              Explore MFCC Console Details &rarr;
+            </Link>
           </div>
         </div>
       ),
     },
-  ]
+  ];
 
   return (
     <SubPageTemplate
@@ -59,5 +61,5 @@ export default function FacilitiesPage() {
       backText="Back to Industries"
       backHref="/industries"
     />
-  )
+  );
 }
