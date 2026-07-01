@@ -157,6 +157,116 @@ export default function TechnologyPage() {
         </div>
       </section>
 
+      {/* Mapped Capabilities Proof Section */}
+      <section className="lu-section bg-white px-6 py-24 lg:px-12 border-t border-[rgba(16,39,122,0.06)]">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 max-w-3xl">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Capability Mapping</span>
+            <h2 className="text-3xl font-semibold tracking-tight text-[#071330] md:text-5xl mt-2">
+              Technology Capabilities Proven In Delivered Platforms
+            </h2>
+            <p className="mt-4 text-slate-600 text-lg">
+              We verify and demonstrate our technical capabilities through real-world ecosystem and case study deliveries.
+            </p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                capability: 'Cloud Infrastructure',
+                caseStudies: [
+                  { name: 'Seagold Logistics', href: '/case-studies/seagold-logistics-management-platform' },
+                  { name: 'Goodments', href: '/case-studies/goodments-ethical-investing-platform' },
+                  { name: 'Bike Tour Pro', href: '/ecosystem/bike-tour-pro' }
+                ]
+              },
+              {
+                capability: 'Secure Authentication',
+                caseStudies: [
+                  { name: 'Seagold Logistics', href: '/case-studies/seagold-logistics-management-platform' },
+                  { name: 'Goodments', href: '/case-studies/goodments-ethical-investing-platform' },
+                  { name: "Dunkin' Donuts Pakistan", href: '/case-studies/dunkin-donuts-retail-operations-platform' }
+                ]
+              },
+              {
+                capability: 'Payment Integration',
+                caseStudies: [
+                  { name: 'mPay Government Payment', href: '/case-studies/mpay-government-payment-platform' },
+                  { name: 'Smart Salik Toll', href: '/case-studies/smart-salik-digital-toll-management' },
+                  { name: 'GiftWifts Leopards', href: '/case-studies/giftwifts-leopards-courier' }
+                ]
+              },
+              {
+                capability: 'Mobile Applications',
+                caseStudies: [
+                  { name: 'Novo Nordisk App', href: '/case-studies/novo-nordisk-sample-ordering-application' },
+                  { name: 'Smart Salik Toll', href: '/case-studies/smart-salik-digital-toll-management' },
+                  { name: 'mPay Government Payment', href: '/case-studies/mpay-government-payment-platform' },
+                  { name: 'Goodments', href: '/case-studies/goodments-ethical-investing-platform' },
+                  { name: "Dunkin' Donuts Pakistan", href: '/case-studies/dunkin-donuts-retail-operations-platform' }
+                ]
+              },
+              {
+                capability: 'API & External Integrations',
+                caseStudies: [
+                  { name: 'Seagold Logistics', href: '/case-studies/seagold-logistics-management-platform' },
+                  { name: 'mPay Government Payment', href: '/case-studies/mpay-government-payment-platform' },
+                  { name: 'Smart Salik Toll', href: '/case-studies/smart-salik-digital-toll-management' },
+                  { name: 'KS&EW ERP Transformation', href: '/case-studies/ksew-enterprise-erp-transformation' }
+                ]
+              },
+              {
+                capability: 'ERP & Enterprise Integration',
+                caseStudies: [
+                  { name: 'KS&EW ERP Transformation', href: '/case-studies/ksew-enterprise-erp-transformation' },
+                  { name: 'Titan CMMS', href: '/ecosystem/titan-cmms' }
+                ]
+              },
+              {
+                capability: 'Analytics & Reporting',
+                caseStudies: [
+                  { name: 'Seagold Logistics', href: '/case-studies/seagold-logistics-management-platform' },
+                  { name: 'GiftWifts Leopards', href: '/case-studies/giftwifts-leopards-courier' },
+                  { name: "Dunkin' Donuts Pakistan", href: '/case-studies/dunkin-donuts-retail-operations-platform' },
+                  { name: 'AGP Drug Verifier', href: '/case-studies/agp-drug-verifier-platform' },
+                  { name: 'Qatar Airways AR', href: '/case-studies/qatar-airways-augmented-reality-campaign' }
+                ]
+              },
+              {
+                capability: 'AI / NLP Engineering',
+                caseStudies: [
+                  { name: 'AnalyzeQuran AI Search', href: '/ecosystem/analyzequran' },
+                  { name: 'mPay Arabic NLP', href: '/case-studies/mpay-government-payment-platform' }
+                ]
+              },
+              {
+                capability: 'AR Technology',
+                caseStudies: [
+                  { name: 'Qatar Airways AR Campaign', href: '/case-studies/qatar-airways-augmented-reality-campaign' }
+                ]
+              }
+            ].map((item) => (
+              <article key={item.capability} className="lu-card p-6 bg-[#fbfaf6] border border-[rgba(16,39,122,0.06)] shadow-sm hover:border-[#10277a] transition-colors flex flex-col justify-between">
+                <div>
+                  <h3 className="text-lg font-bold text-[#10277a] mb-4">{item.capability}</h3>
+                </div>
+                <div className="space-y-2 border-t border-[rgba(16,39,122,0.08)] pt-4 mt-auto">
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400 mb-1">Delivered Proof</p>
+                  {item.caseStudies.map((cs) => (
+                    <Link
+                      key={cs.name}
+                      href={cs.href}
+                      className="block text-xs font-bold text-[#10277a] hover:text-[#071330] no-underline"
+                    >
+                      &bull; {cs.name} &rarr;
+                    </Link>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Case Studies Proof Section */}
       <section className="lu-section bg-[#f4f7fb] px-6 py-24 lg:px-12">
         <div className="mx-auto max-w-3xl text-center">

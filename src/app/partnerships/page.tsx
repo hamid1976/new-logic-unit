@@ -82,6 +82,63 @@ export default function PartnershipsPage() {
         </div>
       </section>
 
+      {/* Enterprise Collaboration Proof Section */}
+      <section className="lu-section bg-white px-6 py-24 lg:px-12 border-t border-[rgba(16,39,122,0.06)]">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 max-w-3xl">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Enterprise Proof</span>
+            <h2 className="text-3xl font-semibold tracking-tight text-[#071330] md:text-5xl mt-2">
+              Enterprise Collaboration Backed By Platform Delivery
+            </h2>
+            <p className="mt-4 text-slate-600 text-lg">
+              See how Logic Unit has contributed to enterprise, government, fintech, and operational platforms.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                name: 'KS&EW ERP Transformation',
+                desc: 'Karachi Shipyard ERP migration covering planning, finance, procurement, and manufacturing.',
+                href: '/case-studies/ksew-enterprise-erp-transformation'
+              },
+              {
+                name: 'Goodments Ethical Investing',
+                desc: 'Specialized fintech mobile platform matching client portfolios with ethical ESG criteria.',
+                href: '/case-studies/goodments-ethical-investing-platform'
+              },
+              {
+                name: 'Smart Salik Toll App',
+                desc: 'Dubai RTA self-service portal supporting toll top-ups, accounts, and vehicle logs.',
+                href: '/case-studies/smart-salik-digital-toll-management'
+              },
+              {
+                name: 'mPay Government Payment',
+                desc: 'High-security mobile and web billing portal for unified municipal payments.',
+                href: '/case-studies/mpay-government-payment-platform'
+              }
+            ].map((cs) => (
+              <article key={cs.name} className="lu-card flex flex-col justify-between p-6 bg-[#fbfaf6] border border-[rgba(16,39,122,0.06)] shadow-sm hover:border-[#10277a] transition-all">
+                <div>
+                  <h3 className="mb-3 text-lg font-bold text-[#10277a]">{cs.name}</h3>
+                  <p className="mb-6 text-xs leading-5 text-slate-600">{cs.desc}</p>
+                </div>
+                <Link href={cs.href} className="text-xs font-bold text-[#10277a] hover:text-[#071330] no-underline">
+                  Read Case Study &rarr;
+                </Link>
+              </article>
+            ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Link
+              href="/contact"
+              className="inline-block bg-[#10277a] px-8 py-3 text-sm font-bold text-white hover:bg-[#071330] no-underline"
+            >
+              Discuss Enterprise Collaboration
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="bg-white px-6 py-24 lg:px-12">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 md:flex-row md:items-center">

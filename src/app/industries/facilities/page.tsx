@@ -49,6 +49,24 @@ export default function FacilitiesPage() {
         </div>
       ),
     },
+    {
+      title: 'Facilities & Maintenance Case Studies',
+      body: (
+        <div>
+          <p className="mb-4">
+            See our operational systems and ERP integration work in facility-related environments:
+          </p>
+          <div className="flex flex-col gap-3">
+            <Link
+              href="/case-studies/ksew-enterprise-erp-transformation"
+              className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
+            >
+              &bull; KS&amp;EW Enterprise ERP Transformation &rarr;
+            </Link>
+          </div>
+        </div>
+      ),
+    },
   ];
 
   return (

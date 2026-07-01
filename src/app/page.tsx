@@ -76,11 +76,6 @@ const caseStudies = [
     href: '/case-studies/novo-nordisk-sample-ordering-application',
   },
   {
-    name: 'AGP Drug Verifier',
-    description: 'Secure pharmaceutical authentication and serialization verifier platform.',
-    href: '/case-studies/agp-drug-verifier-platform',
-  },
-  {
     name: "Dunkin' Donuts Operations",
     description: "Mobile-first retail operations and sales management platform for Dunkin' Donuts.",
     href: '/case-studies/dunkin-donuts-retail-operations-platform',
@@ -89,21 +84,6 @@ const caseStudies = [
     name: 'Smart Salik Toll App',
     description: 'Digital toll account management, vehicle registration, and payments portal.',
     href: '/case-studies/smart-salik-digital-toll-management',
-  },
-  {
-    name: 'mPay Government Payment',
-    description: 'Unified billing and fee payments portal for municipal services.',
-    href: '/case-studies/mpay-government-payment-platform',
-  },
-  {
-    name: 'Goodments Ethical Investing',
-    description: 'Mobile fintech application matching portfolios to ESG and ethical values.',
-    href: '/case-studies/goodments-ethical-investing-platform',
-  },
-  {
-    name: 'Qatar Airways AR Campaign',
-    description: 'Mobile augmented reality engagement and interactive marketing campaign.',
-    href: '/case-studies/qatar-airways-augmented-reality-campaign',
   },
 ];
 
@@ -337,7 +317,7 @@ export default function HomePage() {
           <div className="mb-12 max-w-3xl">
             <p className="lu-eyebrow mb-4">Case Studies</p>
             <h2 className="text-3xl font-semibold tracking-tight text-[#071330] md:text-5xl">
-              Proof Across Logistics, Healthcare, Retail, Government, And Enterprise Platforms
+              Proof Across Real Industry Platforms
             </h2>
             <p className="mt-5 text-lg leading-8 text-slate-600">
               Logic Unit's product engineering work includes logistics management platforms, healthcare applications, retail operations systems, government digital services, fintech platforms, ERP transformation, and augmented reality engagement experiences.
@@ -361,7 +341,7 @@ export default function HomePage() {
               href="/case-studies"
               className="inline-block bg-[#10277a] px-8 py-3 text-sm font-bold text-white hover:bg-[#071330] no-underline"
             >
-              View Case Studies
+              View All Case Studies
             </Link>
           </div>
         </div>
