@@ -12,11 +12,6 @@ const nextConfig = {
       permanent: true,
     },
     {
-      source: '/case-studies',
-      destination: '/about',
-      permanent: true,
-    },
-    {
       source: '/ecosystem/titan-mms',
       destination: '/ecosystem/titan-mms-maintenance-management-software',
       permanent: true,
