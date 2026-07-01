@@ -24,24 +24,48 @@ export const metadata: Metadata = {
   ],
 };
 
-const products = [
+interface RelatedCaseStudy {
+  name: string;
+  href: string;
+}
+
+interface Product {
+  name: string;
+  category: string;
+  description: string;
+  internalHref: string;
+  relatedCaseStudies?: RelatedCaseStudy[];
+}
+
+const products: Product[] = [
   {
     name: 'HULM POS',
     category: 'Retail POS & Business OS',
     description: 'Unified retail and business management platform for POS, inventory, procurement, CRM, reporting, employee management, and FBR integration.',
     internalHref: '/ecosystem/hulm-pos',
+    relatedCaseStudies: [
+      { name: "Dunkin' Donuts Pakistan", href: '/case-studies/dunkin-donuts-retail-operations-platform' },
+      { name: 'GiftWifts Leopards', href: '/case-studies/giftwifts-leopards-courier' },
+    ],
   },
   {
     name: 'Titan CMMS',
     category: 'Computerized Maintenance Management System',
     description: 'Enterprise-grade maintenance management platform for asset management, preventive maintenance, work orders, spare parts, and analytics.',
     internalHref: '/ecosystem/titan-cmms',
+    relatedCaseStudies: [
+      { name: 'KS&EW ERP', href: '/case-studies/ksew-enterprise-erp-transformation' },
+    ],
   },
   {
     name: 'Hospitello',
     category: 'Digital Patient Engagement',
     description: 'Digital patient engagement platform for appointment booking, specialist discovery, patient education, notifications, and hospital dashboards.',
     internalHref: '/ecosystem/hospitello',
+    relatedCaseStudies: [
+      { name: 'Novo Nordisk App', href: '/case-studies/novo-nordisk-sample-ordering-application' },
+      { name: 'AGP Drug Verifier', href: '/case-studies/agp-drug-verifier-platform' },
+    ],
   },
   {
     name: 'Bike Tour Pro',
@@ -96,7 +120,7 @@ export default function EcosystemPage() {
             {products.map((product) => (
               <article
                 key={product.name}
-                className="lu-card lu-rule-top flex min-h-[300px] flex-col p-8 bg-white justify-between"
+                className="lu-card lu-rule-top flex min-h-[320px] flex-col p-8 bg-white justify-between"
               >
                 <div>
                   <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-400">
@@ -105,11 +129,29 @@ export default function EcosystemPage() {
                   <h3 className="mb-5 text-2xl font-semibold text-[#10277a]">
                     {product.name}
                   </h3>
-                  <p className="mb-10 text-sm leading-6 text-slate-600">
+                  <p className="mb-6 text-sm leading-6 text-slate-600">
                     {product.description}
                   </p>
+
+                  {/* Inline related case study links to prevent confusion */}
+                  {product.relatedCaseStudies && (
+                    <div className="mt-4 border-t border-[rgba(16,39,122,0.08)] pt-3">
+                      <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-2">Related Proof</p>
+                      <div className="flex flex-col gap-2">
+                        {product.relatedCaseStudies.map((cs) => (
+                          <Link
+                            key={cs.name}
+                            href={cs.href}
+                            className="block text-xs font-bold text-[#10277a] hover:text-[#071330] no-underline"
+                          >
+                            &bull; {cs.name} &rarr;
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
-                <div>
+                <div className="mt-8">
                   <Link
                     href={product.internalHref}
                     className="inline-block text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
@@ -119,86 +161,6 @@ export default function EcosystemPage() {
                 </div>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-      {/* Proof Strip Section */}
-      <section className="lu-section bg-white px-6 py-24 lg:px-12 border-t border-[rgba(16,39,122,0.06)]">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 max-w-3xl">
-            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Ecosystem Proof</span>
-            <h2 className="text-3xl font-semibold tracking-tight text-[#071330] md:text-5xl mt-2">
-              Products And Platforms Proven Across Industries
-            </h2>
-            <p className="mt-4 text-slate-600 text-lg">
-              Our product ecosystem is backed by operational implementations and delivered platforms.
-            </p>
-          </div>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="bg-[#fbfaf6] border border-[rgba(16,39,122,0.08)] p-6 rounded-xl flex flex-col justify-between shadow-sm">
-              <div>
-                <h3 className="text-lg font-bold text-[#10277a] mb-2">HULM POS Proof</h3>
-                <p className="text-xs leading-5 text-slate-600 mb-6">
-                  Retail operations and digital commerce proven through multi-location brand deployments.
-                </p>
-              </div>
-              <div className="space-y-2 border-t border-[rgba(16,39,122,0.08)] pt-4">
-                <Link href="/case-studies/dunkin-donuts-retail-operations-platform" className="block text-xs font-bold text-[#10277a] hover:text-[#071330] no-underline">
-                  &bull; Dunkin&apos; Donuts Pakistan &rarr;
-                </Link>
-                <Link href="/case-studies/giftwifts-leopards-courier" className="block text-xs font-bold text-[#10277a] hover:text-[#071330] no-underline">
-                  &bull; GiftWifts Leopards Courier &rarr;
-                </Link>
-              </div>
-            </div>
-
-            <div className="bg-[#fbfaf6] border border-[rgba(16,39,122,0.08)] p-6 rounded-xl flex flex-col justify-between shadow-sm">
-              <div>
-                <h3 className="text-lg font-bold text-[#10277a] mb-2">Titan CMMS Proof</h3>
-                <p className="text-xs leading-5 text-slate-600 mb-6">
-                  Computerized maintenance management and asset scheduling integrated in complex industrial environments.
-                </p>
-              </div>
-              <div className="space-y-2 border-t border-[rgba(16,39,122,0.08)] pt-4">
-                <Link href="/case-studies/ksew-enterprise-erp-transformation" className="block text-xs font-bold text-[#10277a] hover:text-[#071330] no-underline">
-                  &bull; KS&amp;EW ERP Transformation &rarr;
-                </Link>
-              </div>
-            </div>
-
-            <div className="bg-[#fbfaf6] border border-[rgba(16,39,122,0.08)] p-6 rounded-xl flex flex-col justify-between shadow-sm">
-              <div>
-                <h3 className="text-lg font-bold text-[#10277a] mb-2">Healthcare Proof</h3>
-                <p className="text-xs leading-5 text-slate-600 mb-6">
-                  Digital patient engagement and pharmaceutical compliance platforms tested in clinical networks.
-                </p>
-              </div>
-              <div className="space-y-2 border-t border-[rgba(16,39,122,0.08)] pt-4">
-                <Link href="/case-studies/novo-nordisk-sample-ordering-application" className="block text-xs font-bold text-[#10277a] hover:text-[#071330] no-underline">
-                  &bull; Novo Nordisk App &rarr;
-                </Link>
-                <Link href="/case-studies/agp-drug-verifier-platform" className="block text-xs font-bold text-[#10277a] hover:text-[#071330] no-underline">
-                  &bull; AGP Drug Verifier Platform &rarr;
-                </Link>
-              </div>
-            </div>
-
-            <div className="bg-[#fbfaf6] border border-[rgba(16,39,122,0.08)] p-6 rounded-xl flex flex-col justify-between shadow-sm">
-              <div>
-                <h3 className="text-lg font-bold text-[#10277a] mb-2">Platform Engineering</h3>
-                <p className="text-xs leading-5 text-slate-600 mb-6">
-                  High-scale cloud infrastructure, data pipelines, and secure transaction systems.
-                </p>
-              </div>
-              <div className="space-y-2 border-t border-[rgba(16,39,122,0.08)] pt-4">
-                <Link href="/case-studies/seagold-logistics-management-platform" className="block text-xs font-bold text-[#10277a] hover:text-[#071330] no-underline">
-                  &bull; Seagold Logistics &rarr;
-                </Link>
-                <Link href="/case-studies/goodments-ethical-investing-platform" className="block text-xs font-bold text-[#10277a] hover:text-[#071330] no-underline">
-                  &bull; Goodments Ethical Investing &rarr;
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </section>
