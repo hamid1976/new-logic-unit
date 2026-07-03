@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Retail Software Platforms | Logic Unit',
-  description: 'Logic Unit builds and operates industry-specific SaaS platforms that support retail and business operating environments.',
+  description: 'Logic Unit builds and operates industry-specific SaaS platforms that support retail, franchise operations, and multi-location business management.',
   alternates: {
     canonical: '/industries/retail',
   },
@@ -13,21 +13,29 @@ export const metadata: Metadata = {
 export default function RetailPage() {
   const sections = [
     {
-      title: 'SaaS platforms for retail operations',
+      title: 'SaaS Platforms for Retail Operations',
       body: (
-        <p>
-          Logic Unit&apos;s retail platforms support businesses through billing, inventory, procurement, customer relationship management, and regulatory compliance. Our retail software platform content focuses on operational visibility, business process efficiency, and long-term SaaS infrastructure.
-        </p>
+        <div className="space-y-4">
+          <p>
+            Modern retail environments demand seamless orchestration across multiple locations, channels, and operational departments. Traditional legacy systems and disconnected point-of-sale machines create information silos, resulting in inventory discrepancies, revenue leakage, and delayed decision-making.
+          </p>
+          <p>
+            Logic Unit design-engineers retail operating platforms built to unify billing, inventory, procurement, customer relationship management, and regulatory compliance into a centralized cloud database. Our systems provide real-time sales visibility, automate stock replenishment, and support local tax integration, empowering retail leaders to scale operations efficiently.
+          </p>
+        </div>
       ),
     },
     {
-      title: 'Connected to the Logic Unit product ecosystem',
+      title: 'Connected Product: HULM POS Business OS',
       body: (
-        <div>
-          <p className="mb-4">
-            The Logic Unit ecosystem includes HULM POS, a comprehensive business management and POS platform for retail networks, supermarkets, and franchises.
+        <div className="space-y-4">
+          <p>
+            At the center of our retail capabilities is HULM POS, a unified retail and business management platform designed by Logic Unit. HULM POS goes beyond simple checkout billing, serving as a comprehensive business operating system for franchise networks, bakeries, pharmacies, supermarkets, and fashion retailers.
           </p>
-          <div className="flex flex-col gap-3 mt-4">
+          <p>
+            HULM POS supports multi-tenant cloud and on-premise hybrid deployments. Key modules include fast barcode scanning, automated purchase orders, vendor performance tracking, customer loyalty segmentation, shift scheduling, and FBR tax-compliant invoice reporting.
+          </p>
+          <div className="pt-2">
             <Link
               href="/ecosystem/hulm-pos"
               className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
@@ -39,24 +47,42 @@ export default function RetailPage() {
       ),
     },
     {
-      title: 'Retail Operations Case Studies',
+      title: 'Case Study: Dunkin\' Donuts Pakistan Operations',
       body: (
-        <div>
-          <p className="mb-4">
-            See our proven delivery experience in retail and digital commerce platforms:
+        <div className="space-y-4">
+          <p>
+            To manage operational visibility across nationwide retail outlets, Dunkin&apos; Donuts Pakistan partnered with Logic Unit. We developed a mobile-first sales management and task management platform that digitizes daily branch reporting, standardizes opening/closing checklists, and connects on-the-ground store teams directly with management.
           </p>
-          <div className="flex flex-col gap-3">
+          <p>
+            The hybrid mobile solution ensures instant sales data consolidation, branch-by-branch performance comparisons, inventory alerts, and accountability tracking, allowing regional managers to make data-driven decisions that improve efficiency.
+          </p>
+          <div className="pt-2">
             <Link
               href="/case-studies/dunkin-donuts-retail-operations-platform"
               className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
             >
-              &bull; Dunkin&apos; Donuts Pakistan Retail Operations &rarr;
+              Read Dunkin&apos; Donuts Case Study &rarr;
             </Link>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: 'Case Study: GiftWifts Gifting & Delivery Platform',
+      body: (
+        <div className="space-y-4">
+          <p>
+            Logic Unit partnered with Leopards Courier to launch GiftWifts, a nationwide digital gifting and corporate gifting platform. This project transformed a logistics giant into an eCommerce player by building a catalog system, personalization engine, and checkout interface backed by Leopards&apos; nationwide delivery network.
+          </p>
+          <p>
+            GiftWifts features bulk recipient management, scheduled delivery dispatching, secure digital wallets, and automated cargo status notifications, providing high scalability for seasonal retail spikes and corporate gifting operations.
+          </p>
+          <div className="pt-2">
             <Link
               href="/case-studies/giftwifts-leopards-courier"
               className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
             >
-              &bull; GiftWifts Leopards Digital Gifting Platform &rarr;
+              Read GiftWifts Case Study &rarr;
             </Link>
           </div>
         </div>

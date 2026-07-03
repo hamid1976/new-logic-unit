@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { CaseStudyPageTemplate } from '@/components/ui/CaseStudyPageTemplate';
 
 export const metadata: Metadata = {
-  title: 'GiftWifts Digital Commerce Platform Case Study',
-  description: 'Logic Unit helped build GiftWifts, a digital commerce and corporate gifting platform backed by Leopards Courier logistics operations.',
+  title: 'GiftWifts by Leopards Courier | Logic Unit',
+  description: 'Logic Unit helped build GiftWifts, a digital gifting and eCommerce platform powered by Leopards Courier\'s logistics network.',
   alternates: {
     canonical: '/case-studies/giftwifts-leopards-courier',
   },
@@ -14,7 +14,7 @@ export default function Page() {
     '@context': 'https://schema.org',
     '@type': 'Article',
     'headline': 'GiftWifts Digital Commerce Platform Case Study',
-    'description': 'Logic Unit helped build GiftWifts, a digital commerce and corporate gifting platform backed by Leopards Courier logistics operations.',
+    'description': 'Logic Unit helped build GiftWifts, a digital gifting and eCommerce platform powered by Leopards Courier\'s logistics network.',
     'publisher': {
       '@type': 'Organization',
       'name': 'Logic Unit',
@@ -34,11 +34,11 @@ export default function Page() {
     <CaseStudyPageTemplate
       title="GiftWifts Case Study"
       h1="GiftWifts By Leopards Courier"
-      summaryText="GiftWifts positioned Leopards as more than a logistics company by creating a new digital commerce channel for gifting, delivery tracking, and corporate ordering. Logic Unit supported the platform with eCommerce workflows, personalization, payment integration, real-time delivery tracking, and administrative management."
-      challengeText="The opportunity was to build a digital gifting experience that combined product discovery, personalization, checkout, and delivery visibility with Leopards' logistics operations."
-      solutionText="The platform integrated commerce, personalization, corporate gifting, payment processing, and delivery tracking into one customer-facing digital experience."
+      summaryText="GiftWifts was launched as a strategic corporate gifting platform and consumer eCommerce channel for Leopards Courier, one of Pakistan's largest logistics networks. Logic Unit designed, developed, and launched the end-to-end platform, integrating eCommerce storefront capabilities, personalized gifting workflows, and automated delivery tracking directly with Leopards' existing logistics infrastructure."
+      challengeText="To diversify its core logistics business and capture the growing digital gifting market, Leopards Courier needed a consumer-facing eCommerce solution. Launching a new retail vertical required overcoming several challenges: building a product catalog system, managing personalization workflows (like custom messages and gift packaging), handling bulk orders for corporate accounts, and connecting order checkout with courier dispatch and cargo tracking databases to support delivery updates."
+      solutionText="Logic Unit engineered a custom eCommerce and gifting platform. The solution features a product catalog dashboard, an interactive gift customization engine, a secure checkout supporting online card payments, digital wallets, and Cash on Delivery, a dedicated portal for corporate clients to manage bulk recipient lists, and direct integration with Leopards' core tracking APIs to provide real-time delivery status updates."
       features={features}
-      impactText="GiftWifts opened a digital commerce channel for Leopards while improving convenience for retail and corporate gifting customers."
+      impactText="The launch of GiftWifts successfully positioned Leopards Courier in the digital gifting market, opening a new revenue channel. By combining digital commerce with their established nationwide delivery network, Leopards provided clients with a seamless experience, simplifying personal and corporate gifting while maintaining complete tracking visibility."
       ctaText="Discuss A Commerce Platform"
       schemaJson={schemaJson}
     />

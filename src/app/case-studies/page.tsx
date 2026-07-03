@@ -26,6 +26,11 @@ const categories = [
         description: 'Logic Unit built an integrated logistics platform for Seagold with dynamic shipment tracking, operations management, customer portals, and analytics.',
         href: '/case-studies/seagold-logistics-management-platform',
       },
+      {
+        name: 'Bike Tour Pro: White-Label Tour Operator Platform',
+        description: 'A specialized tour operator SaaS platform built to manage bookings, guides, schedules, routes, payments, and customer mobile apps.',
+        href: '/ecosystem/bike-tour-pro',
+      },
     ],
   },
   {
@@ -33,14 +38,19 @@ const categories = [
     description: 'Patient engagement, clinical workflows, and pharmaceutical supply chain trust.',
     items: [
       {
-        name: 'Novo Nordisk Professional Sample Ordering Application',
+        name: 'Nova Nordisk Professional Sample Ordering Application',
         description: 'Logic Unit developed a sample ordering and tracking portal to connect pharmaceutical teams with certified healthcare professionals.',
-        href: '/case-studies/novo-nordisk-sample-ordering-application',
+        href: '/case-studies/nova-nordisk-sample-ordering-application',
       },
       {
         name: 'AGP Drug Verifier Platform',
         description: 'Logic Unit built a secure pharmaceutical authentication platform to combat counterfeit drugs through digital validation workflows.',
         href: '/case-studies/agp-drug-verifier-platform',
+      },
+      {
+        name: 'Hospitello: Digital Patient Engagement Platform',
+        description: 'A comprehensive healthcare application supporting secure appointment booking, specialist discovery, clinic alerts, and patient communications.',
+        href: '/ecosystem/hospitello',
       },
     ],
   },
@@ -57,6 +67,11 @@ const categories = [
         name: 'GiftWifts By Leopards Courier',
         description: 'Logic Unit supported a digital commerce and corporate gifting platform integrated with Leopard Courier logistics operations.',
         href: '/case-studies/giftwifts-leopards-courier',
+      },
+      {
+        name: 'HULM POS: Unified Retail & Business OS',
+        description: 'A multi-tenant retail operating platform consolidating billing, inventory control, purchase/vendor tracking, CRM, and regulatory tax compliance.',
+        href: '/ecosystem/hulm-pos',
       },
     ],
   },
@@ -78,7 +93,7 @@ const categories = [
   },
   {
     title: 'Enterprise & Emerging Technology',
-    description: 'ERP transformation, ethical investing, and immersive brand experiences.',
+    description: 'ERP transformation, asset management, and mission-critical consoles.',
     items: [
       {
         name: 'KS&EW Enterprise ERP Transformation',
@@ -95,6 +110,21 @@ const categories = [
         description: 'Logic Unit designed and built a mobile augmented reality campaign to drive interactive customer experiences and brand engagement.',
         href: '/case-studies/qatar-airways-augmented-reality-campaign',
       },
+      {
+        name: 'Titan CMMS: Enterprise Asset Maintenance Management',
+        description: 'Pakistan’s first locally developed enterprise-grade CMMS designed to optimize asset performance, track lifecycle costs, and manage work orders.',
+        href: '/ecosystem/titan-cmms',
+      },
+      {
+        name: 'AnalyzeQuran: AI-Powered Quranic Research Platform',
+        description: 'A linguistic study platform supporting morphological analysis, thematic root search, concept cross-referencing, and translation matrices.',
+        href: '/ecosystem/analyzequran',
+      },
+      {
+        name: 'MFCC: Mission-Critical Command & Control Console',
+        description: 'A ruggedized maritime and defense operator workstation integrating radar, sonar, navigation parameters, and video surveillance feeds.',
+        href: '/ecosystem/mfcc-command-control-console',
+      },
     ],
   },
 ];
@@ -107,10 +137,7 @@ export default function CaseStudiesPage() {
         <div className="lu-grid absolute inset-0 opacity-25" aria-hidden="true" />
         <div className="relative mx-auto max-w-7xl">
           <Breadcrumbs />
-          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#7bd72f]">
-            Case Studies
-          </p>
-          <h1 className="max-w-5xl text-5xl font-semibold leading-[1.08] tracking-tight md:text-7xl">
+          <h1 className="max-w-5xl text-5xl font-semibold leading-[1.08] tracking-tight md:text-7xl mt-6">
             Case Studies: Software Platforms For Real Industries
           </h1>
           <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">

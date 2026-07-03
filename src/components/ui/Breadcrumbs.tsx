@@ -31,7 +31,7 @@ const segmentLabelMap: Record<string, string> = {
   'mfcc-command-control-console': 'MFCC Console',
   'case-studies': 'Case Studies',
   'seagold-logistics-management-platform': 'Seagold Logistics',
-  'novo-nordisk-sample-ordering-application': 'Novo Nordisk App',
+  'nova-nordisk-sample-ordering-application': 'Nova Nordisk App',
   'giftwifts-leopards-courier': 'GiftWifts',
   'agp-drug-verifier-platform': 'AGP Drug Verifier',
   'ksew-enterprise-erp-transformation': 'KS&EW ERP',

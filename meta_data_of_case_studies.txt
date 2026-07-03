@@ -1,0 +1,45 @@
+Here are optimized meta titles (≤60 chars) and meta descriptions (≤160 chars) for all 10 case study pages, based on what's actually on each page:
+#
+Page
+Meta Title (chars)
+Meta Description (chars)
+1
+Seagold Logistics
+Seagold Logistics Platform Case Study | Logic Unit (50)
+See how Logic Unit built a real-time logistics and shipment tracking platform with customer self-service for Seagold. (117)
+2
+Novo Nordisk Sample Ordering App
+Novo Nordisk Sample Ordering App | Logic Unit (45)
+Logic Unit built a secure iOS sample ordering app for healthcare professionals with compliance and education workflows. (119)
+3
+AGP Drug Verifier Platform
+AGP Drug Verifier Platform Case Study | Logic Unit (50)
+Logic Unit built AGP's drug authentication platform with barcode verification, scan analytics, and compliance reporting. (120)
+4
+Dunkin' Donuts Retail Operations
+Dunkin' Donuts Retail Operations | Logic Unit (45)
+Logic Unit built a mobile-first retail operations platform giving Dunkin' Donuts Pakistan real-time sales and branch visibility. (129)
+5
+GiftWifts (Leopards Courier)
+GiftWifts by Leopards Courier | Logic Unit (42)
+Logic Unit helped build GiftWifts, a digital gifting and eCommerce platform powered by Leopards Courier's logistics network. (124)
+6
+Smart Salik Toll Management
+Smart Salik Digital Toll App | Logic Unit (41)
+Logic Unit contributed to Smart Salik, Dubai's toll management app for balance, recharge, vehicles, and violation tracking. (123)
+7
+mPay Government Payment
+mPay Government Payment App | Logic Unit (40)
+Logic Unit contributed to mPay, a unified mobile payment platform for Dubai Smart Government utility and service fees. (118)
+8
+KS&EW Enterprise ERP
+KS&EW Enterprise ERP Case Study | Logic Unit (44)
+Logic Unit contributed to KS&EW's enterprise ERP transformation across project management, procurement, engineering, and finance. (129)
+9
+Goodments Ethical Investing
+Goodments Ethical Investing App | Logic Unit (44)
+Logic Unit built Goodments, a mobile-first fintech app for ESG screening, portfolio management, and ethical investing. (118)
+10
+Qatar Airways AR Campaign
+Qatar Airways AR Campaign | Logic Unit (38)
+Logic Unit helped create an augmented reality brand campaign for Qatar Airways with mobile interaction and analytics. (117)

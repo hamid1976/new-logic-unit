@@ -37,10 +37,7 @@ export function SubPageTemplate({
         <div className="lu-grid absolute inset-0 opacity-25" aria-hidden="true" />
         <div className="mx-auto max-w-7xl">
           <Breadcrumbs />
-          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#7bd72f]">
-            {eyebrow}
-          </p>
-          <h1 className="max-w-5xl text-5xl font-semibold leading-tight tracking-tight md:text-7xl">
+          <h1 className="max-w-5xl text-5xl font-semibold leading-tight tracking-tight md:text-7xl mt-6">
             {h1}
           </h1>
           <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">{heroBody}</p>

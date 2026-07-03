@@ -60,7 +60,7 @@ export default function Page() {
     <ProductPageTemplate
       title="Bike Tour Pro"
       h1="Bike Tour Pro: White-Label Tour Operator Platform"
-      heroBody="Bike Tour Pro is a specialized SaaS platform built for bicycle tour operators, travel companies, and adventure tourism businesses."
+      heroBody="Bike Tour Pro is a specialized tour operator SaaS platform built for bicycle tour operators, travel companies, and adventure tourism businesses."
       challengeTitle="The Tour Operator Challenge"
       challengeText="Tour operators often rely on spreadsheets, multiple booking tools, separate payment systems, and manual communication. This fragmented operating model limits scalability and customer experience. Bike Tour Pro centralizes tour operations and gives operators a branded digital platform without enterprise-level development cost."
       sidebar={sidebar}

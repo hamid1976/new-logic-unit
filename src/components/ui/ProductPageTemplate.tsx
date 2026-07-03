@@ -69,10 +69,7 @@ export function ProductPageTemplate({
               />
             </div>
           )}
-          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#7bd72f]">
-            {eyebrow}
-          </p>
-          <h1 className="max-w-5xl text-5xl font-semibold leading-[1.08] tracking-tight md:text-7xl">
+          <h1 className="max-w-5xl text-5xl font-semibold leading-[1.08] tracking-tight md:text-7xl mt-6">
             {h1}
           </h1>
           <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">

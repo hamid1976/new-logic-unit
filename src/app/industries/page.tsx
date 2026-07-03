@@ -4,7 +4,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Industry-Specific SaaS Platforms | Logic Unit',
-  description: 'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, facilities, and enterprise operations.',
+  description: 'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities.',
   alternates: {
     canonical: '/industries',
   },
@@ -24,12 +24,12 @@ const industries = [
   },
   {
     name: 'Healthcare Software Platforms',
-    description: "Healthcare organizations need secure, compliant, patient-facing and professional-facing digital workflows. Logic Unit's healthcare source includes Hospitello, Novo Nordisk's sample ordering application, and AGP's drug verifier platform.",
+    description: "Healthcare organizations need secure, compliant, patient-facing and professional-facing digital workflows. Logic Unit's healthcare source includes Hospitello, Nova Nordisk's sample ordering application, and AGP's drug verifier platform.",
     hubHref: '/industries/healthcare',
     links: [
       { label: 'Healthcare Industry Hub', href: '/industries/healthcare' },
       { label: 'Hospitello Product Details', href: '/ecosystem/hospitello' },
-      { label: 'Novo Nordisk Case Study', href: '/case-studies/novo-nordisk-sample-ordering-application' },
+      { label: 'Nova Nordisk Case Study', href: '/case-studies/nova-nordisk-sample-ordering-application' },
       { label: 'AGP Drug Verifier Case Study', href: '/case-studies/agp-drug-verifier-platform' },
     ],
   },
@@ -83,10 +83,7 @@ export default function IndustryPage() {
         <div className="lu-grid absolute inset-0 opacity-25" aria-hidden="true" />
         <div className="mx-auto max-w-7xl">
           <Breadcrumbs />
-          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#7bd72f]">
-            Industries
-          </p>
-          <h1 className="max-w-5xl text-5xl font-semibold leading-tight tracking-tight md:text-7xl">
+          <h1 className="max-w-5xl text-5xl font-semibold leading-tight tracking-tight md:text-7xl mt-6">
             Industry-Specific SaaS Platforms For Real Operations
           </h1>
           <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">

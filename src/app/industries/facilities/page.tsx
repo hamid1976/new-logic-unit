@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Facilities Software Platforms | Logic Unit',
-  description: 'Logic Unit builds and operates industry-specific SaaS platforms for facilities, maintenance, and service activity.',
+  description: 'Logic Unit builds and operates SaaS platforms for facility maintenance, computerized work orders, and command-and-control monitoring.',
   alternates: {
     canonical: '/industries/facilities',
   },
@@ -13,21 +13,29 @@ export const metadata: Metadata = {
 export default function FacilitiesPage() {
   const sections = [
     {
-      title: 'SaaS platforms for facilities environments',
+      title: 'Facility Operations & Asset Maintenance Challenges',
       body: (
-        <p>
-          Facilities and maintenance operations need work order visibility, asset history, spare parts management, preventive maintenance, and reliable operational monitoring. Logic Unit builds software for command environments, surveillance, and computerized maintenance management.
-        </p>
+        <div className="space-y-4">
+          <p>
+            Property managers, facility directors, and corporate campus operators manage diverse physical assets, including HVAC systems, power grids, elevators, plumbing, and structural components. Managing daily service requests, scheduling preventative fire inspections, and coordinating technician workloads without a unified platform leads to high repair costs, premature asset degradation, and safety audit failures.
+          </p>
+          <p>
+            Logic Unit designs facilities software systems that streamline work request dispatching, track complete asset service history, monitor spare parts consumption, and generate auditable compliance logs. This approach ensures maximum building uptime and lower capital expenditure.
+          </p>
+        </div>
       ),
     },
     {
-      title: 'Connected to the Logic Unit product ecosystem',
+      title: 'Ecosystem Product: Titan CMMS Work Order System',
       body: (
-        <div className="space-y-6">
-          <div>
-            <p className="mb-2">
-              <strong>Titan CMMS</strong>: An enterprise-grade computerized maintenance management system that unifies asset records, preventive schedules, work requests, and parts inventory.
-            </p>
+        <div className="space-y-4">
+          <p>
+            At the core of our facility management capabilities is Titan CMMS (Computerized Maintenance Management System), an enterprise platform built by Logic Unit. Titan CMMS unifies building maintenance, technician dispatching, and inventory tracking.
+          </p>
+          <p>
+            Facility teams can submit digital maintenance requests, track job completion milestones in real time, monitor spare parts inventory levels, receive automatic reorder alerts, and use mobile interfaces on-site to reduce administrative overhead.
+          </p>
+          <div className="pt-2">
             <Link
               href="/ecosystem/titan-cmms"
               className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
@@ -35,10 +43,20 @@ export default function FacilitiesPage() {
               Explore Titan CMMS Details &rarr;
             </Link>
           </div>
-          <div className="border-t border-[rgba(16,39,122,0.08)] pt-4">
-            <p className="mb-2">
-              <strong>MFCC Console</strong>: A mission-critical command and control workstation designed for marine displays, surveillance inputs, C4I system protocols, and maritime operations environments.
-            </p>
+        </div>
+      ),
+    },
+    {
+      title: 'Ecosystem Product: MFCC Command & Control Workstation',
+      body: (
+        <div className="space-y-4">
+          <p>
+            For high-security facilities, critical infrastructure, and large command centers, Logic Unit designs the Multi-Function Console (MFCC). This ruggedized hardware-software console integrates multiple surveillance feeds and navigation parameters.
+          </p>
+          <p>
+            Featuring dual marine-grade displays, Touch Input Displays (TID), and continuous operational availability, the console integrates radar, CCTV systems, and C4I protocols, demonstrating our expertise in hardware-software integrations.
+          </p>
+          <div className="pt-2">
             <Link
               href="/ecosystem/mfcc-command-control-console"
               className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
@@ -50,18 +68,21 @@ export default function FacilitiesPage() {
       ),
     },
     {
-      title: 'Facilities & Maintenance Case Studies',
+      title: 'Case Study: Shipyard ERP Facility Tracking',
       body: (
-        <div>
-          <p className="mb-4">
-            See our operational systems and ERP integration work in facility-related environments:
+        <div className="space-y-4">
+          <p>
+            Our experience in large industrial facilities includes our contribution to Karachi Shipyard & Engineering Works (KS&EW)&apos;s enterprise ERP transformation. Shipyard maintenance operations require tracking dry-docks, slipways, cranes, and heavy machining tools.
           </p>
-          <div className="flex flex-col gap-3">
+          <p>
+            By integrating engineering workflows, purchasing logistics, and asset tracking into a unified ERP database, the system ensures complete visibility and planning control for large industrial operations.
+          </p>
+          <div className="pt-2 flex gap-4">
             <Link
               href="/case-studies/ksew-enterprise-erp-transformation"
               className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
             >
-              &bull; KS&amp;EW Enterprise ERP Transformation &rarr;
+              Read KS&EW ERP Case Study &rarr;
             </Link>
           </div>
         </div>

@@ -20,33 +20,33 @@ export default function Page() {
   const features = [
     {
       name: 'Dual 24-Inch Marine Displays',
-      description: 'Support simultaneous monitoring of radar, sonar, navigation, and video feeds.',
+      description: 'Provides high-brightness, anti-reflective, and dimmable screens designed to display radar, sonar, ECDIS electronic charting, and live video surveillance feeds side-by-side without operator eye strain.',
     },
     {
-      name: 'Touch Input Display',
-      description: 'Provide dedicated operational controls and mission interaction.',
+      name: 'Dedicated Touch Input Display (TID)',
+      description: 'Features a customized lower touchscreen control console that hosts mission interaction controls, quick-access function maps, system diagnostics, and communication shortcuts.',
     },
     {
-      name: 'Ergonomic Design',
-      description: 'Designed to reduce operator fatigue, physical strain, and performance degradation during long operating periods.',
+      name: 'Ergonomic Physical Form Factor',
+      description: 'Engineered in compliance with ISO ergonomics standards to minimize physical fatigue during extended 12-hour operator shifts. Features adjustable keyboard trays, optimal display viewing angles, and reach-zones.',
     },
     {
-      name: 'Ruggedized Construction',
-      description: 'Built for marine environments, vibration resistance, humidity resistance, and continuous operation.',
+      name: 'Ruggedized Industrial Enclosure',
+      description: 'Constructed using marine-grade aluminum alloy and powder coating to resist saltwater corrosion, high humidity, and extreme temperatures. Features shock absorbers to withstand heavy naval vessel vibration.',
     },
     {
-      name: 'Mission Flexibility',
-      description: 'Suitable for maritime operations, surveillance systems, command centers, and defense applications.',
+      name: 'C4I & Sensor Fusion Architecture',
+      description: 'Integrates and displays data streams from multiple sensors, including maritime radars, sonar arrays, AIS tracking systems, and thermal imaging cameras into a single, unified operational view.',
     },
   ];
 
   const sidebar = {
-    title: 'Operational Challenge',
+    title: 'Tactical Operational Challenges',
     items: [
-      'Continuous monitoring requirements in harsh conditions',
-      'Operator fatigue and physical strain during long shifts',
-      'Fragmented feeds (radar, sonar, navigation, video)',
-      'High standards for marine vibration and humidity resistance',
+      'Unforgiving marine conditions (vibration, shock, salinity)',
+      'Severe operator fatigue from long surveillance watch shifts',
+      'Data fragmentation across isolated radar and sonar computers',
+      'Requirement for absolute continuous uptime (zero-failure rate)',
     ],
     type: 'cross' as const,
   };
@@ -54,27 +54,25 @@ export default function Page() {
   return (
     <ProductPageTemplate
       title="MFCC"
-      eyebrow="Mission-Critical Workstation"
       h1="MFCC: Multi-Function Command & Control Console"
-      heroBody="The Multi-Function Console, or MFCC, is a mission-critical command and control workstation designed for maritime, defense, and surveillance environments."
-      challengeEyebrow="The Tactical Challenge"
-      challengeTitle="Operational Challenge"
-      challengeText="Operators in defense and maritime environments require continuous monitoring, rapid decision-making tools, long-duration comfort, and integration with multiple mission systems. Standard commercial workstations are often unsuitable for these operating conditions."
+      heroBody="The Multi-Function Console (MFCC) is a ruggedized, high-integrity command and control workstation engineered by Logic Unit for maritime navigation, coastal surveillance, and defense operations."
+      challengeTitle="The Challenges of Harsh Operational Environments"
+      challengeText="Command and control operators in naval ships, harbor control offices, and strategic defense stations work in demanding environments. Standard commercial computer workstations fail under these conditions due to constant mechanical vibration, thermal fluctuations, and saline air. Furthermore, operators must monitor multiple systems—including radars, sonar feeds, navigation charts, and CCTV displays—leading to interface fatigue and delayed response times during critical operations. The MFCC was developed to solve these issues, integrating ruggedized hardware chassis design with an ergonomic dual-display console and unified sensor aggregation software."
       sidebar={sidebar}
       featuresTitle="Workstation Capabilities"
       features={features}
       audience={[
-        'Maritime & Naval Operators',
-        'Defense Surveillance Teams',
-        'Strategic Command Centers',
-        'Integrated Security Monitoring Units',
+        'Naval Operators & Coast Guard Crews',
+        'Harbor Control & Vessel Traffic Service (VTS) Officers',
+        'Tactical Security & Surveillance Personnel',
+        'Defense Operations & C4I Coordination Units',
       ]}
       techStack={[
-        'Ruggedized Marine Hardware Integration',
-        'C4I Systems Communication Protocol',
-        'Real-Time Navigation Platforms',
-        'Multisensor Network Processing',
-        'Video Surveillance Matrix Interfaces',
+        'Ruggedized Marine Enclosures & Shock Mounts',
+        'ECDIS & Maritime Radar System Protocols',
+        'S57 / S63 Digital Vector Chart Engines',
+        'Multisensor Data Fusion APIs (NMEA 0183 / 2000)',
+        'Touchscreen Human-Machine Interfaces (HMI)',
       ]}
       schemaJson={schemaJson}
     />

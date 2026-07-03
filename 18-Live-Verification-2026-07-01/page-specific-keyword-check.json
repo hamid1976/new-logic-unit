@@ -1,0 +1,218 @@
+[
+  {
+    "url": "https://logic-unit.com/ecosystem/hulm-pos",
+    "hits": [
+      "HULM POS",
+      "retail POS",
+      "business management platform",
+      "inventory management",
+      "FBR integration"
+    ],
+    "missing": [],
+    "hitCount": 5,
+    "missingCount": 0
+  },
+  {
+    "url": "https://logic-unit.com/ecosystem/titan-cmms",
+    "hits": [
+      "Titan CMMS",
+      "computerized maintenance management system",
+      "maintenance management platform",
+      "preventive maintenance",
+      "work order management"
+    ],
+    "missing": [],
+    "hitCount": 5,
+    "missingCount": 0
+  },
+  {
+    "url": "https://logic-unit.com/ecosystem/analyzequran",
+    "hits": [
+      "AnalyzeQuran",
+      "AI-powered Quranic research",
+      "Quran study platform",
+      "root-word analysis",
+      "thematic research"
+    ],
+    "missing": [],
+    "hitCount": 5,
+    "missingCount": 0
+  },
+  {
+    "url": "https://logic-unit.com/ecosystem/hospitello",
+    "hits": [
+      "Hospitello",
+      "digital patient engagement platform",
+      "healthcare engagement platform",
+      "appointment booking",
+      "patient education"
+    ],
+    "missing": [],
+    "hitCount": 5,
+    "missingCount": 0
+  },
+  {
+    "url": "https://logic-unit.com/ecosystem/bike-tour-pro",
+    "hits": [
+      "Bike Tour Pro",
+      "white-label tour operator platform",
+      "booking management",
+      "customer mobile app"
+    ],
+    "missing": [
+      "tour operator SaaS platform"
+    ],
+    "hitCount": 4,
+    "missingCount": 1
+  },
+  {
+    "url": "https://logic-unit.com/ecosystem/mfcc-command-control-console",
+    "hits": [
+      "MFCC",
+      "Multi-Function Command",
+      "command and control workstation",
+      "maritime",
+      "surveillance"
+    ],
+    "missing": [],
+    "hitCount": 5,
+    "missingCount": 0
+  },
+  {
+    "url": "https://logic-unit.com/case-studies/seagold-logistics-management-platform",
+    "hits": [
+      "Seagold",
+      "logistics management platform",
+      "shipment tracking platform",
+      "freight forwarding"
+    ],
+    "missing": [
+      "customer self-service portal"
+    ],
+    "hitCount": 4,
+    "missingCount": 1
+  },
+  {
+    "url": "https://logic-unit.com/case-studies/novo-nordisk-sample-ordering-application",
+    "hits": [
+      "Novo Nordisk",
+      "sample ordering application",
+      "healthcare professional",
+      "native iOS"
+    ],
+    "missing": [
+      "pharmaceutical compliance"
+    ],
+    "hitCount": 4,
+    "missingCount": 1
+  },
+  {
+    "url": "https://logic-unit.com/case-studies/giftwifts-leopards-courier",
+    "hits": [
+      "GiftWifts",
+      "Leopards Courier",
+      "digital commerce platform",
+      "delivery tracking"
+    ],
+    "missing": [
+      "corporate gifting platform"
+    ],
+    "hitCount": 4,
+    "missingCount": 1
+  },
+  {
+    "url": "https://logic-unit.com/case-studies/agp-drug-verifier-platform",
+    "hits": [
+      "AGP",
+      "drug verifier platform",
+      "medicine verification",
+      "product authentication",
+      "counterfeit"
+    ],
+    "missing": [],
+    "hitCount": 5,
+    "missingCount": 0
+  },
+  {
+    "url": "https://logic-unit.com/case-studies/ksew-enterprise-erp-transformation",
+    "hits": [
+      "KS&EW",
+      "enterprise ERP transformation",
+      "ERP ecosystem",
+      "project management",
+      "procurement management"
+    ],
+    "missing": [],
+    "hitCount": 5,
+    "missingCount": 0
+  },
+  {
+    "url": "https://logic-unit.com/case-studies/goodments-ethical-investing-platform",
+    "hits": [
+      "Goodments",
+      "ethical investing platform",
+      "ESG screening",
+      "portfolio management"
+    ],
+    "missing": [
+      "fintech mobile platform"
+    ],
+    "hitCount": 4,
+    "missingCount": 1
+  },
+  {
+    "url": "https://logic-unit.com/case-studies/smart-salik-digital-toll-management",
+    "hits": [
+      "Smart Salik",
+      "digital toll management platform"
+    ],
+    "missing": [
+      "toll account management",
+      "RTA",
+      "violation management"
+    ],
+    "hitCount": 2,
+    "missingCount": 3
+  },
+  {
+    "url": "https://logic-unit.com/case-studies/mpay-government-payment-platform",
+    "hits": [
+      "mPay",
+      "government payment platform",
+      "mobile payment platform",
+      "Dubai Smart Government",
+      "Arabic NLP"
+    ],
+    "missing": [],
+    "hitCount": 5,
+    "missingCount": 0
+  },
+  {
+    "url": "https://logic-unit.com/case-studies/dunkin-donuts-retail-operations-platform",
+    "hits": [
+      "Dunkin' Donuts",
+      "retail operations platform",
+      "sales reporting"
+    ],
+    "missing": [
+      "sales management platform",
+      "task management"
+    ],
+    "hitCount": 3,
+    "missingCount": 2
+  },
+  {
+    "url": "https://logic-unit.com/case-studies/qatar-airways-augmented-reality-campaign",
+    "hits": [
+      "Qatar Airways",
+      "augmented reality campaign",
+      "interactive marketing"
+    ],
+    "missing": [
+      "AR brand engagement",
+      "campaign analytics"
+    ],
+    "hitCount": 3,
+    "missingCount": 2
+  }
+]
