@@ -62,6 +62,13 @@ const ecosystem = [
     internalHref: '/ecosystem/mfcc-command-control-console',
     href: '/ecosystem/mfcc-command-control-console',
   },
+  {
+    name: 'AnimalCare360',
+    category: 'Veterinary & Livestock Platform',
+    description: 'AnimalCare360: livestock, feed retail, animal trading, and pet hospital software for farms, veterinary clinics, and animal care businesses.',
+    internalHref: '/ecosystem/animalcare360-livestock-animal-care-software',
+    href: '/ecosystem/animalcare360-livestock-animal-care-software',
+  },
 ];
 
 const caseStudies = [

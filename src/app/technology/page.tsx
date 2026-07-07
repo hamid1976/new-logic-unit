@@ -75,6 +75,10 @@ const productProof = [
     name: 'MFCC',
     tech: 'Ruggedized hardware, mission systems integration, sensor networks, C4I systems, navigation platforms, and video systems.',
   },
+  {
+    name: 'AnimalCare360',
+    tech: 'Livestock tracking, breeding lifecycle profiles, average daily gain (ADG) logs, milk production journals, veterinary electronic medical records (EMR), FBR compliance invoicing, retail POS, and Android mobile applications.',
+  },
 ];
 
 export default function TechnologyPage() {
@@ -173,7 +177,8 @@ export default function TechnologyPage() {
                 caseStudies: [
                   { name: 'Seagold Logistics', href: '/case-studies/seagold-logistics-management-platform' },
                   { name: 'Goodments', href: '/case-studies/goodments-ethical-investing-platform' },
-                  { name: 'Bike Tour Pro', href: '/ecosystem/bike-tour-pro' }
+                  { name: 'Bike Tour Pro', href: '/ecosystem/bike-tour-pro' },
+                  { name: 'AnimalCare360 Platform', href: '/ecosystem/animalcare360-livestock-animal-care-software' }
                 ]
               },
               {
@@ -199,7 +204,15 @@ export default function TechnologyPage() {
                   { name: 'Smart Salik Toll', href: '/case-studies/smart-salik-digital-toll-management' },
                   { name: 'mPay Government Payment', href: '/case-studies/mpay-government-payment-platform' },
                   { name: 'Goodments', href: '/case-studies/goodments-ethical-investing-platform' },
-                  { name: "Dunkin' Donuts Pakistan", href: '/case-studies/dunkin-donuts-retail-operations-platform' }
+                  { name: "Dunkin' Donuts Pakistan", href: '/case-studies/dunkin-donuts-retail-operations-platform' },
+                  { name: 'AnimalCare360 Android App', href: 'https://animalcare360.com/download-app' }
+                ]
+              },
+              {
+                capability: 'Inventory & POS Systems',
+                caseStudies: [
+                  { name: 'HULM Retail POS', href: '/ecosystem/hulm-pos' },
+                  { name: 'AnimalCare360 Wanda POS', href: 'https://animalcare360.com/feed-retail' }
                 ]
               },
               {
@@ -226,6 +239,13 @@ export default function TechnologyPage() {
                   { name: "Dunkin' Donuts Pakistan", href: '/case-studies/dunkin-donuts-retail-operations-platform' },
                   { name: 'AGP Drug Verifier', href: '/case-studies/agp-drug-verifier-platform' },
                   { name: 'Qatar Airways AR', href: '/case-studies/qatar-airways-augmented-reality-campaign' }
+                ]
+              },
+              {
+                capability: 'Health Records Tracking',
+                caseStudies: [
+                  { name: 'Hospitello Patient Engagement', href: '/ecosystem/hospitello' },
+                  { name: 'AnimalCare360 EMR & Health', href: 'https://animalcare360.com/features/health-tracking' }
                 ]
               },
               {
@@ -259,7 +279,7 @@ export default function TechnologyPage() {
                   ))}
                 </div>
               </article>
-            ))}
+            )) }
           </div>
         </div>
       </section>

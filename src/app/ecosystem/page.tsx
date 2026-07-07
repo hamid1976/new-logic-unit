@@ -34,6 +34,8 @@ interface Product {
   category: string;
   description: string;
   internalHref: string;
+  externalHref?: string;
+  externalText?: string;
   relatedCaseStudies?: RelatedCaseStudy[];
 }
 
@@ -88,8 +90,10 @@ const products: Product[] = [
   {
     name: 'AnimalCare360',
     category: 'Veterinary & Livestock Platform',
-    description: 'A digital platform supporting veterinary, livestock, and animal care operations.',
+    description: 'Livestock, feed retail, animal trading, and pet hospital software for farms, wanda shops, veterinary clinics, and animal care businesses.',
     internalHref: '/ecosystem/animalcare360-livestock-animal-care-software',
+    externalHref: 'https://animalcare360.com',
+    externalText: 'Visit AnimalCare360',
   },
 ];
 
@@ -147,13 +151,23 @@ export default function EcosystemPage() {
                     </div>
                   )}
                 </div>
-                <div className="mt-8">
+                <div className="mt-8 flex flex-col gap-2">
                   <Link
                     href={product.internalHref}
                     className="inline-block text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
                   >
-                    Explore Product Details &rarr;
+                    {product.name === 'AnimalCare360' ? 'View Logic Unit Product Page \u2192' : 'Explore Product Details \u2192'}
                   </Link>
+                  {product.externalHref && product.externalText && (
+                    <a
+                      href={product.externalHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-xs font-bold text-slate-500 hover:text-slate-800 no-underline"
+                    >
+                      {product.externalText} &rarr;
+                    </a>
+                  )}
                 </div>
               </article>
             ))}

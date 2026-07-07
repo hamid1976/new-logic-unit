@@ -3,8 +3,8 @@ import { SubPageTemplate } from '@/components/ui/SubPageTemplate';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Livestock & Veterinary Software Platforms | Logic Unit',
-  description: 'Logic Unit builds and operates SaaS platforms for livestock management, veterinary operations, and animal care infrastructure.',
+  title: 'Livestock Software Platform | AnimalCare360 By Logic Unit',
+  description: "AnimalCare360 is Logic Unit's livestock software platform for cattle farms, feed retailers, animal traders, pet hospitals, and veterinary clinics.",
   alternates: {
     canonical: '/industries/livestock',
   },
@@ -13,57 +13,127 @@ export const metadata: Metadata = {
 export default function LivestockPage() {
   const sections = [
     {
-      title: 'Livestock & Veterinary Operational Challenges',
+      title: 'Cattle & Dairy Farm Management',
       body: (
         <div className="space-y-4">
           <p>
-            Agricultural operations, commercial dairy farms, livestock cooperatives, and large-scale veterinary clinics face significant operational complexity. Tracking individual animal health logs, weight gains, pedigree lineages, milk/meat yields, vaccine schedules, and feed efficiency using paper sheets or basic spreadsheets leads to data silos and reduced farm productivity.
+            AnimalCare360 supports cattle and dairy farm management workflows, including milk yield, breeding, animal health, vaccination schedules, feed costs, and farm operations.
           </p>
-          <p>
-            In addition, regulatory compliance for food safety and disease control requires complete traceability. Logic Unit develops specialized SaaS platforms that digitize livestock and veterinary data, giving farmers and clinicians real-time visibility and tools to optimize animal welfare and yield.
-          </p>
+          <a
+            href="https://animalcare360.com/cattle-management"
+            className="inline-block text-sm font-semibold text-[#10277a] hover:text-[#7bd72f]"
+          >
+            Explore Cattle Management &rarr;
+          </a>
         </div>
       ),
     },
     {
-      title: 'Ecosystem Product: AnimalCare360',
+      title: 'Feed Retail & Wanda Shop Software',
       body: (
         <div className="space-y-4">
           <p>
-            At the forefront of our agricultural tech portfolio is AnimalCare360, a digital software platform built by Logic Unit to support comprehensive livestock monitoring and veterinary operations. AnimalCare360 streamlines farm tracking, health compliance, and breeding programs.
+            AnimalCare360 supports wanda and feed retailers with POS, stock tracking, customer credit, pharmacy expiry dates, and FBR invoices.
           </p>
+          <a
+            href="https://animalcare360.com/feed-retail"
+            className="inline-block text-sm font-semibold text-[#10277a] hover:text-[#7bd72f]"
+          >
+            Explore Feed Retail POS &rarr;
+          </a>
+        </div>
+      ),
+    },
+    {
+      title: 'Animal Trading Software',
+      body: (
+        <div className="space-y-4">
           <p>
-            The software features a centralized repository for animal profiles, medical history timelines, vaccination schedules, feed consumption tracking, breeding logs, and clinical audit reporting. AnimalCare360 provides a single source of truth for veterinary teams and enterprise farm operators alike.
+            AnimalCare360 supports animal trading and commission workflows, including purchase and sale deals, commissions, buyer/seller ledgers, transport costs, and profitability.
           </p>
-          <div className="pt-2 flex flex-col gap-3">
-            <Link
-              href="/ecosystem/animalcare360-livestock-animal-care-software"
-              className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
-            >
-              Explore AnimalCare360 Product Details &rarr;
-            </Link>
+          <a
+            href="https://animalcare360.com/animal-trading"
+            className="inline-block text-sm font-semibold text-[#10277a] hover:text-[#7bd72f]"
+          >
+            Explore Animal Trading &rarr;
+          </a>
+        </div>
+      ),
+    },
+    {
+      title: 'Pet Hospital & Vet Clinic Software',
+      body: (
+        <div className="space-y-4">
+          <p>
+            AnimalCare360 supports pet hospitals and veterinary clinics with EMR, appointments, veterinary notes, pharmacy inventory, billing, and alerts.
+          </p>
+          <div className="flex flex-col gap-1">
             <a
-              href="https://animalcare360.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-semibold text-slate-500 hover:text-slate-800"
+              href="https://animalcare360.com/pet-hospital"
+              className="text-sm font-semibold text-[#10277a] hover:text-[#7bd72f]"
             >
-              Visit AnimalCare360 Website &rarr;
+              Explore Pet Hospital ERP &rarr;
+            </a>
+            <a
+              href="https://animalcare360.com/solutions/veterinary-clinic-software"
+              className="text-sm font-semibold text-[#10277a] hover:text-[#7bd72f]"
+            >
+              Explore Vet Clinic Software &rarr;
             </a>
           </div>
         </div>
       ),
     },
     {
-      title: 'Agriculture SaaS & Enterprise Support',
+      title: 'CattlePro operations system',
       body: (
         <div className="space-y-4">
           <p>
-            Logic Unit does not just build standalone software; we engineer and operate entire SaaS ecosystems designed for long-term ownership and operation. Our livestock software platform integrates cloud infrastructure, offline capability for remote field workers, and mobile interfaces to ensure seamless data entry directly on the farm floor.
+            CattlePro is AnimalCare360's livestock operations and finance system with detailed modules for animals, inventory, finances, health, breeding, operations, and advisory workflows.
           </p>
+          <div className="flex flex-col gap-1">
+            <a
+              href="https://animalcare360.com/cattlepro"
+              className="text-sm font-semibold text-[#10277a] hover:text-[#7bd72f]"
+            >
+              Explore CattlePro Overview &rarr;
+            </a>
+            <a
+              href="https://animalcare360.com/cattlepro/features"
+              className="text-sm font-semibold text-[#10277a] hover:text-[#7bd72f]"
+            >
+              Explore CattlePro Features &rarr;
+            </a>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Logic Unit's Product Ecosystem Bridge",
+      body: (
+        <div className="space-y-4">
           <p>
-            By separating platform operation (handled by Logic Unit) from customer management and distribution, we ensure that our agricultural technology continues to evolve and scale with global agricultural standards.
+            AnimalCare360 gives Logic Unit a dedicated livestock and animal care software platform inside its wider product ecosystem. It strengthens the company's positioning as a SaaS operating company building industry-specific software platforms for real operational environments.
           </p>
+          <Link
+            href="/ecosystem/animalcare360-livestock-animal-care-software"
+            className="inline-block text-sm font-semibold text-[#10277a] hover:text-[#7bd72f]"
+          >
+            View Logic Unit Product Page &rarr;
+          </Link>
+        </div>
+      ),
+    },
+    {
+      title: 'Related Product Resources',
+      body: (
+        <div className="grid grid-cols-2 gap-2 text-xs font-semibold text-slate-500">
+          <a href="https://animalcare360.com" className="hover:text-slate-800">Website &rarr;</a>
+          <a href="https://animalcare360.com/solutions" className="hover:text-slate-800">Solutions &rarr;</a>
+          <a href="https://animalcare360.com/features" className="hover:text-slate-800">Features &rarr;</a>
+          <a href="https://animalcare360.com/pricing" className="hover:text-slate-800">Pricing Plans &rarr;</a>
+          <a href="https://animalcare360.com/resources" className="hover:text-slate-800">Resources &rarr;</a>
+          <a href="https://animalcare360.com/download-app" className="hover:text-slate-800">Download App &rarr;</a>
         </div>
       ),
     },
@@ -72,12 +142,14 @@ export default function LivestockPage() {
   return (
     <SubPageTemplate
       eyebrow="Livestock"
-      h1="Livestock software platforms for animal care operations."
-      heroBody="Logic Unit builds and operates industry-specific SaaS platforms for real operational environments. Livestock is one of the industry categories served through the current product ecosystem."
+      h1="Livestock Software Platforms For Animal Care Operations"
+      heroBody="Logic Unit supports livestock and animal care operations through AnimalCare360, a dedicated software platform for farms, feed retailers, animal traders, pet hospitals, and veterinary clinics. AnimalCare360 helps animal care businesses manage livestock records, cattle and dairy farm workflows, feed and medicine inventory, animal health tracking, billing/POS, FBR invoicing, and mobile access through the AnimalCare360 Android app."
       sections={sections}
-      ctaTitle="Discuss livestock platform collaboration."
-      backText="Back to Industries"
-      backHref="/industries"
+      ctaTitle="Explore Livestock And Animal Care Software"
+      backText="Explore Logic Unit Ecosystem"
+      backHref="/ecosystem/animalcare360-livestock-animal-care-software"
+      externalHref="https://animalcare360.com"
+      externalText="Visit AnimalCare360"
     />
   );
 }

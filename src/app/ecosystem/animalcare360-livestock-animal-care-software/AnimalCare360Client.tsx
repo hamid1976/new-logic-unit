@@ -100,11 +100,47 @@ export function AnimalCare360Client() {
             Ecosystem Product
           </p>
           <h1 className="max-w-6xl text-5xl font-semibold leading-[1.08] tracking-tight md:text-7xl">
-            AnimalCare360: Pakistan's Most Complete Animal Care & Livestock ERP
+            AnimalCare360: Livestock & Animal Care Software
           </h1>
           <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">
-            Pakistan's #1 Cloud ERP for cattle farms, feed retailers, livestock trading, and pet clinics. Purpose-built, FBR-compliant, and WhatsApp-integrated.
+            Cloud software platform for cattle farms, feed retailers, livestock trading, and pet clinics. Purpose-built, FBR-compliant, and WhatsApp-integrated.
           </p>
+        </div>
+      </section>
+
+      {/* Dedicated AnimalCare360 Product Journeys */}
+      <section className="bg-white px-6 py-16 lg:px-12 border-b border-[rgba(16,39,122,0.08)]">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-10 max-w-4xl">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Product Ecosystem</span>
+            <h2 className="text-3xl font-semibold tracking-tight text-[#071330] md:text-4xl mt-2">
+              Dedicated AnimalCare360 Product Journeys
+            </h2>
+            <p className="mt-4 text-slate-600 leading-7">
+              AnimalCare360 has its own product website for livestock, feed retail, animal trading, pet hospital, and veterinary clinic workflows. Logic Unit's ecosystem page explains the platform at company level; AnimalCare360.com provides product-specific pages, pricing, resources, and app download details.
+            </p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+            {[
+              { name: "Livestock & Farm Management", path: "https://animalcare360.com/cattle-management", desc: "Detailed herd tracking, breeding, health, and milk logs." },
+              { name: "Feed Retail & FBR POS", path: "https://animalcare360.com/feed-retail", desc: "POS billing, inventory batch tracking, and customer credit." },
+              { name: "Veterinary Clinic Software", path: "https://animalcare360.com/solutions/veterinary-clinic-software", desc: "Digital EMR scheduling, appointments, and pharmacy records." },
+              { name: "CattlePro Feature Catalog", path: "https://animalcare360.com/cattlepro/features", desc: "Deep catalog of modules for livestock operations." },
+              { name: "Product Pricing", path: "https://animalcare360.com/pricing", desc: "Farming, retail shop, trader, and clinic plans." },
+              { name: "Download App", path: "https://animalcare360.com/download-app", desc: "Get the AnimalCare360 Android application." }
+            ].map((journey) => (
+              <a
+                key={journey.name}
+                href={journey.path}
+                className="group block p-6 bg-[#fbfaf6] hover:bg-[#f4f7fb] border border-[rgba(16,39,122,0.08)] rounded-xl transition-all duration-200"
+              >
+                <h4 className="text-sm font-bold text-[#10277a] group-hover:text-[#071330] flex items-center gap-1.5">
+                  {journey.name} <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
+                </h4>
+                <p className="text-xs text-slate-500 mt-2 font-medium leading-relaxed">{journey.desc}</p>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 

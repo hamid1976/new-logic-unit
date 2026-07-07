@@ -7,6 +7,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 
 const inquiryTypes = [
   'Product ecosystem inquiry',
+  'AnimalCare360 / livestock platform inquiry',
   'Case study or portfolio inquiry',
   'Strategic SaaS partnership',
   'System integrator relationship',
@@ -113,6 +114,9 @@ export default function ContactForm() {
                 <div className="bg-[#fbfaf6] border border-[rgba(16,39,122,0.1)] p-4 text-xs text-slate-500 mb-8 space-y-2 leading-relaxed">
                   <p>
                     <strong>Product inquiries:</strong> Please include the product name in your message: HULM POS, Titan CMMS, AnalyzeQuran, Hospitello, Bike Tour Pro, MFCC, or AnimalCare360.
+                  </p>
+                  <p>
+                    <strong>AnimalCare360 Support:</strong> For AnimalCare360 product usage, pricing, app download, cattle management, feed retail, animal trading, pet hospital, or veterinary clinic workflows, visit <a href="https://animalcare360.com" target="_blank" rel="noopener noreferrer" className="text-[#10277a] font-bold hover:underline">AnimalCare360.com</a> or select the "AnimalCare360 / livestock platform inquiry" option below.
                   </p>
                   <p>
                     <strong>Case study inquiries:</strong> Please mention the relevant area: logistics, healthcare, retail, government digital services, enterprise ERP, fintech, or augmented reality.
