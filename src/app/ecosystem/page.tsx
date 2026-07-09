@@ -34,6 +34,7 @@ interface Product {
   category: string;
   description: string;
   internalHref: string;
+  internalText?: string;
   externalHref?: string;
   externalText?: string;
   relatedCaseStudies?: RelatedCaseStudy[];
@@ -92,6 +93,7 @@ const products: Product[] = [
     category: 'Veterinary & Livestock Platform',
     description: 'Livestock, feed retail, animal trading, and pet hospital software for farms, wanda shops, veterinary clinics, and animal care businesses.',
     internalHref: '/ecosystem/animalcare360-livestock-animal-care-software',
+    internalText: 'View Logic Unit Product Page',
     externalHref: 'https://animalcare360.com',
     externalText: 'Visit AnimalCare360',
   },
@@ -103,7 +105,7 @@ export default function EcosystemPage() {
       {/* Hero Shell */}
       <section className="lu-shell relative overflow-hidden px-6 py-28 text-white lg:px-12 lg:py-36">
         <div className="lu-grid absolute inset-0 opacity-25" aria-hidden="true" />
-        <div className="mx-auto max-w-7xl">
+        <div className="relative mx-auto max-w-7xl">
           <h1 className="max-w-5xl text-5xl font-semibold leading-tight tracking-tight md:text-7xl mt-6">
             A Product Ecosystem For Real Industry Operations
           </h1>
@@ -156,14 +158,14 @@ export default function EcosystemPage() {
                     href={product.internalHref}
                     className="inline-block text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
                   >
-                    {product.name === 'AnimalCare360' ? 'View Logic Unit Product Page \u2192' : 'Explore Product Details \u2192'}
+                    {product.internalText || 'Explore Product Details'} &rarr;
                   </Link>
-                  {product.externalHref && product.externalText && (
+                  {product.externalHref && (
                     <a
                       href={product.externalHref}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block text-xs font-bold text-slate-500 hover:text-slate-800 no-underline"
+                      className="inline-block text-xs font-semibold text-slate-500 hover:text-slate-800"
                     >
                       {product.externalText} &rarr;
                     </a>

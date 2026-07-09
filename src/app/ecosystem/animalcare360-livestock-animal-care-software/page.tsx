@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/ecosystem/animalcare360-livestock-animal-care-software',
   },
-}
+};
 
 export default function Page() {
   return <AnimalCare360Client />

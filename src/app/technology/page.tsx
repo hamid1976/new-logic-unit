@@ -77,7 +77,7 @@ const productProof = [
   },
   {
     name: 'AnimalCare360',
-    tech: 'Livestock tracking, breeding lifecycle profiles, average daily gain (ADG) logs, milk production journals, veterinary electronic medical records (EMR), FBR compliance invoicing, retail POS, and Android mobile applications.',
+    tech: 'CattlePro livestock operations, dairy farm management, feed/wanda retail software, animal trading, pet hospital EMR, inventory management, POS billing, and FBR integration.',
   },
 ];
 

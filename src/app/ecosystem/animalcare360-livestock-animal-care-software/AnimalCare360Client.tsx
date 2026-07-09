@@ -103,44 +103,8 @@ export function AnimalCare360Client() {
             AnimalCare360: Livestock & Animal Care Software
           </h1>
           <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">
-            Cloud software platform for cattle farms, feed retailers, livestock trading, and pet clinics. Purpose-built, FBR-compliant, and WhatsApp-integrated.
+            Pakistan's #1 Cloud ERP for cattle farms, feed retailers, livestock trading, and pet clinics. Purpose-built, FBR-compliant, and WhatsApp-integrated.
           </p>
-        </div>
-      </section>
-
-      {/* Dedicated AnimalCare360 Product Journeys */}
-      <section className="bg-white px-6 py-16 lg:px-12 border-b border-[rgba(16,39,122,0.08)]">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-10 max-w-4xl">
-            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Product Ecosystem</span>
-            <h2 className="text-3xl font-semibold tracking-tight text-[#071330] md:text-4xl mt-2">
-              Dedicated AnimalCare360 Product Journeys
-            </h2>
-            <p className="mt-4 text-slate-600 leading-7">
-              AnimalCare360 has its own product website for livestock, feed retail, animal trading, pet hospital, and veterinary clinic workflows. Logic Unit's ecosystem page explains the platform at company level; AnimalCare360.com provides product-specific pages, pricing, resources, and app download details.
-            </p>
-          </div>
-          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-            {[
-              { name: "Livestock & Farm Management", path: "https://animalcare360.com/cattle-management", desc: "Detailed herd tracking, breeding, health, and milk logs." },
-              { name: "Feed Retail & FBR POS", path: "https://animalcare360.com/feed-retail", desc: "POS billing, inventory batch tracking, and customer credit." },
-              { name: "Veterinary Clinic Software", path: "https://animalcare360.com/solutions/veterinary-clinic-software", desc: "Digital EMR scheduling, appointments, and pharmacy records." },
-              { name: "CattlePro Feature Catalog", path: "https://animalcare360.com/cattlepro/features", desc: "Deep catalog of modules for livestock operations." },
-              { name: "Product Pricing", path: "https://animalcare360.com/pricing", desc: "Farming, retail shop, trader, and clinic plans." },
-              { name: "Download App", path: "https://animalcare360.com/download-app", desc: "Get the AnimalCare360 Android application." }
-            ].map((journey) => (
-              <a
-                key={journey.name}
-                href={journey.path}
-                className="group block p-6 bg-[#fbfaf6] hover:bg-[#f4f7fb] border border-[rgba(16,39,122,0.08)] rounded-xl transition-all duration-200"
-              >
-                <h4 className="text-sm font-bold text-[#10277a] group-hover:text-[#071330] flex items-center gap-1.5">
-                  {journey.name} <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
-                </h4>
-                <p className="text-xs text-slate-500 mt-2 font-medium leading-relaxed">{journey.desc}</p>
-              </a>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -290,6 +254,69 @@ export function AnimalCare360Client() {
                   <p className="text-slate-800 font-bold text-xs">{ind.outcome}</p>
                 </div>
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Dedicated Product Journeys */}
+      <section className="lu-section bg-white px-6 py-24 lg:px-12">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-14 max-w-3xl">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Product Navigation</span>
+            <h2 className="text-3xl font-semibold tracking-tight text-[#071330] md:text-5xl mt-2">
+              Dedicated AnimalCare360 Product Journeys
+            </h2>
+            <p className="mt-4 text-lg text-slate-600">
+              AnimalCare360 has its own product website for livestock, feed retail, animal trading, pet hospital, and veterinary clinic workflows. Logic Unit's ecosystem page explains the platform at company level; AnimalCare360.com provides product-specific pages, pricing, resources, and app download details.
+            </p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                title: 'Livestock & Farm Management',
+                desc: 'Cattle record tracking, milk yield monitoring, feed operational syncing, and breeding log dashboards.',
+                href: 'https://animalcare360.com/cattle-management',
+              },
+              {
+                title: 'Feed Retail & FBR POS',
+                desc: 'Point-of-sale invoicing, real-time stock thresholds, credit (khata) thresholds, and FBR QR-code printing.',
+                href: 'https://animalcare360.com/feed-retail',
+              },
+              {
+                title: 'Veterinary Clinic Software',
+                desc: 'Electronic medical records (EMR), doctor scheduling calendars, clinical notes, and patient tracking workflows.',
+                href: 'https://animalcare360.com/solutions/veterinary-clinic-software',
+              },
+              {
+                title: 'CattlePro Feature Catalog',
+                desc: 'Detailed breakdown of the 16 CattlePro operating modules covering animal cycles, finance, health, and partnerships.',
+                href: 'https://animalcare360.com/cattlepro/features',
+              },
+              {
+                title: 'Product Pricing Plans',
+                desc: 'Transparent pricing subscriptions for livestock farms, retail counters, traders, and veterinary hospitals.',
+                href: 'https://animalcare360.com/pricing',
+              },
+              {
+                title: 'Download Android App',
+                desc: 'Get the native mobile application for field workers, veterinary doctors, and farm managers.',
+                href: 'https://animalcare360.com/download-app',
+              },
+            ].map((journey) => (
+              <a
+                key={journey.title}
+                href={journey.href}
+                target="_blank"
+                rel="noopener"
+                className="lu-card p-6 bg-[#fbfaf6] hover:shadow-md transition-shadow block no-underline"
+              >
+                <h3 className="text-lg font-bold text-[#10277a] mb-2">{journey.title}</h3>
+                <p className="text-sm leading-6 text-slate-600 mb-4">{journey.desc}</p>
+                <span className="text-xs font-bold text-[#7bd72f] hover:text-[#071330] inline-block">
+                  Go to AnimalCare360 &rarr;
+                </span>
+              </a>
             ))}
           </div>
         </div>
