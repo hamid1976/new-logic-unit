@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { insightsArticles } from '@/data/insights';
+import { InsightVisual } from '@/components/ui/InsightVisual';
 
 interface ArticlePageProps {
   params: {
@@ -27,6 +28,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     },
     openGraph: {
       url: `/insights/${article.slug}`,
+      images: [
+        {
+          url: `/og/insights-${article.slug}.png`,
+          width: 1200,
+          height: 630,
+          alt: article.title,
+        },
+      ],
     },
   };
 }
@@ -118,6 +127,9 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             <div className="text-lg leading-8 text-slate-800 font-medium border-b border-slate-100 pb-8 mb-8">
               {article.summary}
             </div>
+
+            {/* Hero Visual infographic */}
+            <InsightVisual slug={article.slug} />
 
             <div className="space-y-6">
               {article.sections.map((section, idx) => {
