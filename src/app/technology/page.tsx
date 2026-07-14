@@ -200,7 +200,7 @@ export default function TechnologyPage() {
               {
                 capability: 'Mobile Applications',
                 caseStudies: [
-                  { name: 'Nova Nordisk App', href: '/case-studies/nova-nordisk-sample-ordering-application' },
+                  { name: 'Novo Nordisk App', href: '/case-studies/novo-nordisk-sample-ordering-application' },
                   { name: 'Smart Salik Toll', href: '/case-studies/smart-salik-digital-toll-management' },
                   { name: 'mPay Government Payment', href: '/case-studies/mpay-government-payment-platform' },
                   { name: 'Goodments', href: '/case-studies/goodments-ethical-investing-platform' },

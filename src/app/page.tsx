@@ -78,9 +78,9 @@ const caseStudies = [
     href: '/case-studies/seagold-logistics-management-platform',
   },
   {
-    name: 'Nova Nordisk Ordering App',
+    name: 'Novo Nordisk Ordering App',
     description: 'Healthcare professional sample ordering and compliance application.',
-    href: '/case-studies/nova-nordisk-sample-ordering-application',
+    href: '/case-studies/novo-nordisk-sample-ordering-application',
   },
   {
     name: "Dunkin' Donuts Operations",

@@ -66,7 +66,7 @@ const products: Product[] = [
     description: 'Digital patient engagement platform for appointment booking, specialist discovery, patient education, notifications, and hospital dashboards.',
     internalHref: '/ecosystem/hospitello',
     relatedCaseStudies: [
-      { name: 'Nova Nordisk App', href: '/case-studies/nova-nordisk-sample-ordering-application' },
+      { name: 'Novo Nordisk App', href: '/case-studies/novo-nordisk-sample-ordering-application' },
       { name: 'AGP Drug Verifier', href: '/case-studies/agp-drug-verifier-platform' },
     ],
   },
