@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'System Integrator Partnerships | Logic Unit',
   description: 'Logic Unit works with system integrators for enterprise implementation, API deployment, and integration partnerships across industries.',
   alternates: {
-    canonical: '/partnerships/system-integrators',
+
+      canonical: '/partnerships/system-integrators',
+
+  },
+
+  openGraph: {
+
+      url: '/partnerships/system-integrators',
+
   },
 };
 

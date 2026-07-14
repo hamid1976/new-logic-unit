@@ -7,7 +7,15 @@ export const metadata: Metadata = {
   description:
     'Build strategic partnerships with Logic Unit to create innovative software solutions, expand market reach & drive long-term business growth.',
   alternates: {
-    canonical: '/partnerships',
+
+      canonical: '/partnerships',
+
+  },
+
+  openGraph: {
+
+      url: '/partnerships',
+
   },
 }
 

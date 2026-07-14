@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'KS&EW Enterprise ERP Case Study | Logic Unit',
   description: "Logic Unit contributed to KS&EW's enterprise ERP transformation across project management, procurement, engineering, and finance.",
   alternates: {
-    canonical: '/case-studies/ksew-enterprise-erp-transformation',
+
+      canonical: '/case-studies/ksew-enterprise-erp-transformation',
+
+  },
+
+  openGraph: {
+
+      url: '/case-studies/ksew-enterprise-erp-transformation',
+
   },
 };
 

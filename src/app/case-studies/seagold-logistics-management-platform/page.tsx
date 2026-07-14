@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'Seagold Logistics Platform Case Study | Logic Unit',
   description: 'See how Logic Unit built a real-time logistics and shipment tracking platform with customer self-service for Seagold.',
   alternates: {
-    canonical: '/case-studies/seagold-logistics-management-platform',
+
+      canonical: '/case-studies/seagold-logistics-management-platform',
+
+  },
+
+  openGraph: {
+
+      url: '/case-studies/seagold-logistics-management-platform',
+
   },
 };
 

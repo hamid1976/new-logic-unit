@@ -6,7 +6,15 @@ export const metadata: Metadata = {
   title: 'Industry-Specific SaaS Platforms | Logic Unit',
   description: 'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities.',
   alternates: {
-    canonical: '/industries',
+
+      canonical: '/industries',
+
+  },
+
+  openGraph: {
+
+      url: '/industries',
+
   },
 };
 

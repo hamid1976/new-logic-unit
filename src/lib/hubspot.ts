@@ -16,6 +16,15 @@ interface SubmitFormPayload {
   organization: string;
   inquiryType: string;
   message: string;
+  interest?: string;
+  landing_page_url?: string;
+  referrer_url?: string;
+  utm_source?: string;
+  utm_medium?: string;
+  utm_campaign?: string;
+  utm_content?: string;
+  cta_source?: string;
+  inquiry_page_type?: string;
 }
 
 /**
@@ -38,7 +47,15 @@ export async function submitToHubspot(payload: SubmitFormPayload): Promise<{ suc
   const lastname = nameParts.slice(1).join(' ') || '';
 
   // Combine inquiryType and message for HubSpot's message field
-  const formattedMessage = `Inquiry Type: ${payload.inquiryType}\n\nMessage:\n${payload.message}`;
+  const formattedMessage = [
+    `Inquiry Type: ${payload.inquiryType}`,
+    payload.interest ? `Interested Product/Industry: ${payload.interest}` : null,
+    payload.utm_source ? `UTM Source: ${payload.utm_source}` : null,
+    payload.utm_medium ? `UTM Medium: ${payload.utm_medium}` : null,
+    payload.utm_campaign ? `UTM Campaign: ${payload.utm_campaign}` : null,
+    payload.cta_source ? `CTA Source: ${payload.cta_source}` : null,
+    `Message:\n${payload.message}`
+  ].filter(Boolean).join('\n\n');
 
   const fields = [
     { name: 'firstname', value: firstname },

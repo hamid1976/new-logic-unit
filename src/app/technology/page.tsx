@@ -6,7 +6,15 @@ export const metadata: Metadata = {
   title: 'Technology & R&D Backbone | Logic Unit',
   description: "Explore Logic Unit's SaaS architecture, data infrastructure, mobile platforms, AI integration, IoT integration, and enterprise system experience.",
   alternates: {
-    canonical: '/technology',
+
+      canonical: '/technology',
+
+  },
+
+  openGraph: {
+
+      url: '/technology',
+
   },
   keywords: [
     'SaaS architecture',
@@ -300,6 +308,29 @@ export default function TechnologyPage() {
           >
             View Case Studies
           </Link>
+        </div>
+      </section>
+
+      {/* Playbook Gated CTA Banner */}
+      <section className="bg-[#071330] px-6 py-20 text-white lg:px-12 border-t border-white/5">
+        <div className="mx-auto max-w-7xl flex flex-col justify-between gap-8 md:flex-row md:items-center">
+          <div className="max-w-2xl">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Ecosystem Resource</span>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mt-2 mb-4">
+              Operational Infrastructure SaaS Playbook
+            </h2>
+            <p className="text-slate-300 text-sm leading-relaxed">
+              A practical guide to building and scaling software platforms for real industry operations, including product ecosystems, case study proof, technology foundations, and partnership models.
+            </p>
+          </div>
+          <div className="flex-shrink-0">
+            <Link
+              href="/contact?cta=playbook&page_type=technology"
+              className="inline-block bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e] no-underline transition-colors"
+            >
+              Download The Playbook &rarr;
+            </Link>
+          </div>
         </div>
       </section>
 

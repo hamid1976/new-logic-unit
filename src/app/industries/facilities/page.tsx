@@ -6,7 +6,15 @@ export const metadata: Metadata = {
   title: 'Facilities Software Platforms | Logic Unit',
   description: 'Logic Unit builds and operates SaaS platforms for facility maintenance, computerized work orders, and command-and-control monitoring.',
   alternates: {
-    canonical: '/industries/facilities',
+
+      canonical: '/industries/facilities',
+
+  },
+
+  openGraph: {
+
+      url: '/industries/facilities',
+
   },
 };
 

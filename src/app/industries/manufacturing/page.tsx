@@ -6,7 +6,15 @@ export const metadata: Metadata = {
   title: 'Manufacturing Software Platforms | Logic Unit',
   description: 'Logic Unit builds and operates SaaS platforms for industrial operations, maintenance management, and enterprise ERP integration.',
   alternates: {
-    canonical: '/industries/manufacturing',
+
+      canonical: '/industries/manufacturing',
+
+  },
+
+  openGraph: {
+
+      url: '/industries/manufacturing',
+
   },
 };
 

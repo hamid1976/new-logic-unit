@@ -6,7 +6,15 @@ export const metadata: Metadata = {
   title: 'Product Ecosystem | Industry SaaS Platforms By Logic Unit',
   description: "Explore Logic Unit's SaaS product ecosystem, including HULM POS, Titan CMMS, Hospitello, Bike Tour Pro, AnalyzeQuran, MFCC, and AnimalCare360.",
   alternates: {
-    canonical: '/ecosystem',
+
+      canonical: '/ecosystem',
+
+  },
+
+  openGraph: {
+
+      url: '/ecosystem',
+
   },
   keywords: [
     'product ecosystem',

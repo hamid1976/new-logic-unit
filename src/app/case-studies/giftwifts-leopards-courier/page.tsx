@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'GiftWifts by Leopards Courier | Logic Unit',
   description: 'Logic Unit helped build GiftWifts, a digital gifting and eCommerce platform powered by Leopards Courier\'s logistics network.',
   alternates: {
-    canonical: '/case-studies/giftwifts-leopards-courier',
+
+      canonical: '/case-studies/giftwifts-leopards-courier',
+
+  },
+
+  openGraph: {
+
+      url: '/case-studies/giftwifts-leopards-courier',
+
   },
 };
 

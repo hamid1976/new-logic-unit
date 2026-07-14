@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'Bike Tour Pro | White-Label Tour Operator Platform',
   description: 'Bike Tour Pro is a white-label SaaS platform for tour operators to manage bookings, customers, payments, communications, and mobile apps.',
   alternates: {
-    canonical: '/ecosystem/bike-tour-pro',
+
+      canonical: '/ecosystem/bike-tour-pro',
+
+  },
+
+  openGraph: {
+
+      url: '/ecosystem/bike-tour-pro',
+
   },
 };
 

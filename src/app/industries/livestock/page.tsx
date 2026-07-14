@@ -6,7 +6,15 @@ export const metadata: Metadata = {
   title: 'Livestock Software Platform | AnimalCare360 By Logic Unit',
   description: "AnimalCare360 is Logic Unit's livestock software platform for cattle farms, feed retailers, animal traders, pet hospitals, and veterinary clinics.",
   alternates: {
-    canonical: '/industries/livestock',
+
+      canonical: '/industries/livestock',
+
+  },
+
+  openGraph: {
+
+      url: '/industries/livestock',
+
   },
 };
 

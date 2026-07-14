@@ -6,7 +6,15 @@ export const metadata: Metadata = {
   title: 'Logistics & Transportation Software Platforms | Logic Unit',
   description: 'Logic Unit builds and operates SaaS platforms for shipment tracking, logistics coordination, and transit payment infrastructure.',
   alternates: {
-    canonical: '/industries/logistics',
+
+      canonical: '/industries/logistics',
+
+  },
+
+  openGraph: {
+
+      url: '/industries/logistics',
+
   },
 };
 

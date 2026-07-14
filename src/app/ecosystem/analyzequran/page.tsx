@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'AnalyzeQuran | AI-Powered Quranic Research Platform',
   description: 'AnalyzeQuran is an AI-powered Quran study platform for root-word analysis, thematic research, translation comparison, and intelligent search.',
   alternates: {
-    canonical: '/ecosystem/analyzequran',
+
+      canonical: '/ecosystem/analyzequran',
+
+  },
+
+  openGraph: {
+
+      url: '/ecosystem/analyzequran',
+
   },
 };
 

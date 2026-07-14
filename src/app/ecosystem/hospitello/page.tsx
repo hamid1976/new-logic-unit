@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'Hospitello | Digital Patient Engagement Platform',
   description: 'Hospitello is a healthcare engagement platform for appointment booking, specialist discovery, patient education, and hospital communication.',
   alternates: {
-    canonical: '/ecosystem/hospitello',
+
+      canonical: '/ecosystem/hospitello',
+
+  },
+
+  openGraph: {
+
+      url: '/ecosystem/hospitello',
+
   },
 };
 

@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'Goodments Ethical Investing App | Logic Unit',
   description: 'Logic Unit built Goodments, a mobile-first fintech app for ESG screening, portfolio management, and ethical investing.',
   alternates: {
-    canonical: '/case-studies/goodments-ethical-investing-platform',
+
+      canonical: '/case-studies/goodments-ethical-investing-platform',
+
+  },
+
+  openGraph: {
+
+      url: '/case-studies/goodments-ethical-investing-platform',
+
   },
 };
 

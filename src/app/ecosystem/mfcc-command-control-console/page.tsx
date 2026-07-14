@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'MFCC | Command & Control Workstation Platform',
   description: 'MFCC is a mission-critical command and control workstation for maritime, defense, surveillance, and operational monitoring environments.',
   alternates: {
-    canonical: '/ecosystem/mfcc-command-control-console',
+
+      canonical: '/ecosystem/mfcc-command-control-console',
+
+  },
+
+  openGraph: {
+
+      url: '/ecosystem/mfcc-command-control-console',
+
   },
 };
 

@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: "Dunkin' Donuts Retail Operations | Logic Unit",
   description: 'Logic Unit built a mobile-first retail operations platform giving Dunkin\' Donuts Pakistan real-time sales and branch visibility.',
   alternates: {
-    canonical: '/case-studies/dunkin-donuts-retail-operations-platform',
+
+      canonical: '/case-studies/dunkin-donuts-retail-operations-platform',
+
+  },
+
+  openGraph: {
+
+      url: '/case-studies/dunkin-donuts-retail-operations-platform',
+
   },
 };
 

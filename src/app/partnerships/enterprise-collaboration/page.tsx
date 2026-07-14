@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'Enterprise Collaboration | Logic Unit',
   description: 'Logic Unit works with enterprises on co-development, secure cloud deployments, and long-term operating partnerships for vertical SaaS.',
   alternates: {
-    canonical: '/partnerships/enterprise-collaboration',
+
+      canonical: '/partnerships/enterprise-collaboration',
+
+  },
+
+  openGraph: {
+
+      url: '/partnerships/enterprise-collaboration',
+
   },
 };
 

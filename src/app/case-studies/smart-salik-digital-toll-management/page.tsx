@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'Smart Salik Digital Toll App | Logic Unit',
   description: 'Logic Unit contributed to Smart Salik, Dubai\'s toll management app for balance, recharge, vehicles, and violation tracking.',
   alternates: {
-    canonical: '/case-studies/smart-salik-digital-toll-management',
+
+      canonical: '/case-studies/smart-salik-digital-toll-management',
+
+  },
+
+  openGraph: {
+
+      url: '/case-studies/smart-salik-digital-toll-management',
+
   },
 };
 

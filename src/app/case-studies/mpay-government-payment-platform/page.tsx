@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'mPay Government Payment App | Logic Unit',
   description: 'Logic Unit contributed to mPay, a unified mobile payment platform for Dubai Smart Government utility and service fees.',
   alternates: {
-    canonical: '/case-studies/mpay-government-payment-platform',
+
+      canonical: '/case-studies/mpay-government-payment-platform',
+
+  },
+
+  openGraph: {
+
+      url: '/case-studies/mpay-government-payment-platform',
+
   },
 };
 

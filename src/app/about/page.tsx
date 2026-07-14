@@ -6,7 +6,15 @@ export const metadata: Metadata = {
   title: 'About Logic Unit: Product Engineering Services Company',
   description: 'Logic Unit is Product Engineering Services Company building software platforms for real industries with scalable, innovative solutions.',
   alternates: {
-    canonical: '/about',
+
+      canonical: '/about',
+
+  },
+
+  openGraph: {
+
+      url: '/about',
+
   },
 }
 

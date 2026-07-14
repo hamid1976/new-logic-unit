@@ -6,7 +6,15 @@ export const metadata: Metadata = {
   title: 'Healthcare Software Platforms | Logic Unit',
   description: 'Logic Unit builds and operates industry-specific SaaS platforms for healthcare providers, patient engagement, and pharmaceutical compliance.',
   alternates: {
-    canonical: '/industries/healthcare',
+
+      canonical: '/industries/healthcare',
+
+  },
+
+  openGraph: {
+
+      url: '/industries/healthcare',
+
   },
 };
 

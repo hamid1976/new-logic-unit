@@ -6,7 +6,15 @@ export const metadata: Metadata = {
   title: 'Case Studies | Software Platforms For Real Industries',
   description: 'Explore Logic Unit case studies across logistics, healthcare, retail, government platforms, fintech, ERP, and augmented reality.',
   alternates: {
-    canonical: '/case-studies',
+
+      canonical: '/case-studies',
+
+  },
+
+  openGraph: {
+
+      url: '/case-studies',
+
   },
   keywords: [
     'Logic Unit case studies',
@@ -184,6 +192,29 @@ export default function CaseStudiesPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Case Study Pack Gated CTA */}
+      <section className="bg-[#071330] px-6 py-20 text-white lg:px-12 border-t border-white/5">
+        <div className="mx-auto max-w-7xl flex flex-col justify-between gap-8 md:flex-row md:items-center">
+          <div className="max-w-2xl">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Featured Resource</span>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mt-2 mb-4">
+              Case Study Pack: Software Platforms For Real Industries
+            </h2>
+            <p className="text-slate-300 text-sm leading-relaxed">
+              Explore in-depth technical breakdowns and workflow schemas for logistics, retail operations, healthcare, and enterprise ERP transformations.
+            </p>
+          </div>
+          <div className="flex-shrink-0">
+            <Link
+              href="/contact?cta=case-study-pack&page_type=case-studies"
+              className="inline-block bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e] no-underline transition-colors"
+            >
+              Download Case Study Pack &rarr;
+            </Link>
+          </div>
         </div>
       </section>
 

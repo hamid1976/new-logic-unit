@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'AGP Drug Verifier Platform Case Study | Logic Unit',
   description: "Logic Unit built AGP's drug authentication platform with barcode verification, scan analytics, and compliance reporting.",
   alternates: {
-    canonical: '/case-studies/agp-drug-verifier-platform',
+
+      canonical: '/case-studies/agp-drug-verifier-platform',
+
+  },
+
+  openGraph: {
+
+      url: '/case-studies/agp-drug-verifier-platform',
+
   },
 };
 

@@ -6,7 +6,15 @@ export const metadata: Metadata = {
   title: 'Retail Software Platforms | Logic Unit',
   description: 'Logic Unit builds and operates industry-specific SaaS platforms that support retail, franchise operations, and multi-location business management.',
   alternates: {
-    canonical: '/industries/retail',
+
+      canonical: '/industries/retail',
+
+  },
+
+  openGraph: {
+
+      url: '/industries/retail',
+
   },
 };
 

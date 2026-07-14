@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'HULM POS | Retail POS & Business Management Platform',
   description: 'HULM POS is a unified retail and business management platform for billing, inventory, procurement, CRM, reporting, and FBR integration.',
   alternates: {
-    canonical: '/ecosystem/hulm-pos',
+
+      canonical: '/ecosystem/hulm-pos',
+
+  },
+
+  openGraph: {
+
+      url: '/ecosystem/hulm-pos',
+
   },
 };
 

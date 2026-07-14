@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'Novo Nordisk Sample Ordering App | Logic Unit',
   description: 'Logic Unit built a secure iOS sample ordering app for healthcare professionals with compliance and education workflows.',
   alternates: {
-    canonical: '/case-studies/novo-nordisk-sample-ordering-application',
+
+      canonical: '/case-studies/novo-nordisk-sample-ordering-application',
+
+  },
+
+  openGraph: {
+
+      url: '/case-studies/novo-nordisk-sample-ordering-application',
+
   },
 };
 

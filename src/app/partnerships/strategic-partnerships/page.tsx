@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'Strategic SaaS Partnerships | Logic Unit',
   description: 'Partner with Logic Unit through strategic SaaS partnerships focused on product ecosystem collaboration, joint ventures, and industry platform growth.',
   alternates: {
-    canonical: '/partnerships/strategic-partnerships',
+
+      canonical: '/partnerships/strategic-partnerships',
+
+  },
+
+  openGraph: {
+
+      url: '/partnerships/strategic-partnerships',
+
   },
 };
 

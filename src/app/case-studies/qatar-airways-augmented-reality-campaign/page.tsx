@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   title: 'Qatar Airways AR Campaign | Logic Unit',
   description: 'Logic Unit helped create an augmented reality brand campaign for Qatar Airways with mobile interaction and analytics.',
   alternates: {
-    canonical: '/case-studies/qatar-airways-augmented-reality-campaign',
+
+      canonical: '/case-studies/qatar-airways-augmented-reality-campaign',
+
+  },
+
+  openGraph: {
+
+      url: '/case-studies/qatar-airways-augmented-reality-campaign',
+
   },
 };
 

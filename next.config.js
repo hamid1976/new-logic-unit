@@ -31,6 +31,11 @@ const nextConfig = {
       destination: '/industries/:slug',
       permanent: true,
     },
+    {
+      source: '/case-studies/nova-nordisk-sample-ordering-application',
+      destination: '/case-studies/novo-nordisk-sample-ordering-application',
+      permanent: true,
+    },
   ],
   headers: async () => [
     {
