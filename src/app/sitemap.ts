@@ -52,16 +52,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     
     // Contact
     { url: `${baseUrl}/contact`, lastModified, changeFrequency: 'yearly', priority: 0.6 },
-
-    // Insights Hub & Articles
-    { url: `${baseUrl}/insights`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/insights/what-is-operational-infrastructure-saas`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/insights/what-is-a-saas-operating-company`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/insights/product-engineering-vs-software-outsourcing`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/insights/building-industry-specific-saas-platforms`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/insights/livestock-software-platforms-animalcare360`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/insights/retail-operations-platforms-hulm-pos`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/insights/logistics-management-platforms-shipment-visibility`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/insights/strategic-saas-partnerships-product-ecosystem-growth`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
   ]
 }

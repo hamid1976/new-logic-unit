@@ -1,58 +1,25 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import { submitToHubspot, trackHubspotEvent, trackGtmEvent } from '@/lib/hubspot'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 
 const inquiryTypes = [
   'Product ecosystem inquiry',
-  'HULM POS inquiry',
-  'Titan CMMS inquiry',
+  'Case study or portfolio inquiry',
   'AnimalCare360 / livestock platform inquiry',
-  'Hospitello inquiry',
-  'Bike Tour Pro inquiry',
-  'AnalyzeQuran inquiry',
-  'MFCC inquiry',
   'Strategic SaaS partnership',
   'System integrator relationship',
   'Enterprise collaboration',
-  'Case study or portfolio discussion',
+  'Investor relations',
+  'Talent conversation',
 ]
 
 export default function ContactForm() {
-  const router = useRouter()
   const [submitted, setSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
-
-  const [tracking, setTracking] = useState({
-    landing_page_url: '',
-    referrer_url: '',
-    utm_source: '',
-    utm_medium: '',
-    utm_campaign: '',
-    utm_content: '',
-    cta_source: '',
-    inquiry_page_type: '',
-  })
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const params = new URLSearchParams(window.location.search)
-      setTracking({
-        landing_page_url: window.location.href,
-        referrer_url: document.referrer || '',
-        utm_source: params.get('utm_source') || '',
-        utm_medium: params.get('utm_medium') || '',
-        utm_campaign: params.get('utm_campaign') || '',
-        utm_content: params.get('utm_content') || '',
-        cta_source: params.get('cta') || '',
-        inquiry_page_type: params.get('page_type') || '',
-      })
-    }
-  }, [])
 
   const fieldClass =
     'w-full border border-[rgba(16,39,122,0.18)] bg-white px-4 py-3 text-[#071330] outline-none transition focus:border-[#10277a] disabled:bg-slate-50 disabled:text-slate-500'
@@ -69,9 +36,7 @@ export default function ContactForm() {
       organization: formData.get('organization') as string,
       email: formData.get('email') as string,
       inquiryType: formData.get('inquiryType') as string,
-      interest: formData.get('interest') as string,
       message: formData.get('message') as string,
-      ...tracking,
     }
 
     try {
@@ -95,8 +60,6 @@ export default function ContactForm() {
         organization: payload.organization,
         inquiryType: payload.inquiryType,
         message: payload.message,
-        interest: payload.interest,
-        ...tracking,
       })
 
       if (hubspotResult.success) {
@@ -107,7 +70,7 @@ export default function ContactForm() {
         console.error('HubSpot submission error:', hubspotResult.error)
       }
 
-      router.push('/thank-you')
+      setSubmitted(true)
     } catch (err: any) {
       setError(err.message || 'Failed to send inquiry. Please try again later.')
     } finally {
@@ -143,43 +106,26 @@ export default function ContactForm() {
             ) : (
               <div>
                 <h2 className="text-3xl font-semibold tracking-tight text-[#071330] mb-4">
-                  Choose The Right Conversation
+                  Send a corporate inquiry.
                 </h2>
-                <p className="text-slate-600 mb-6 leading-7">
-                  Logic Unit receives inquiries across product ecosystem discussions, strategic SaaS partnerships, system integrator relationships, enterprise collaboration, investor relations, talent conversations, and case study discussions. Use the inquiry type dropdown to help the team route your message to the right person. After submission, the Logic Unit team will review your inquiry and route it based on product, partnership, enterprise, or portfolio relevance.
+                <p className="text-slate-600 mb-4 leading-7">
+                  Share your inquiry type, organization, and message so the Logic Unit team can route the conversation appropriately.
                 </p>
-                <div className="bg-[#fbfaf6] border border-[rgba(16,39,122,0.1)] p-6 text-sm text-slate-600 mb-8 space-y-4 leading-relaxed">
-                  <div>
-                    <strong className="block text-[#10277a] text-xs uppercase tracking-wider mb-1">Product Ecosystem Inquiries</strong>
-                    <p className="text-xs text-slate-500">
-                      For questions about HULM POS, Titan CMMS, AnimalCare360, Hospitello, Bike Tour Pro, AnalyzeQuran, MFCC, or Logic Unit's wider product ecosystem, please include the product name and your operating context. For AnimalCare360 product usage, pricing, app download, cattle management, feed retail, animal trading, pet hospital, or veterinary clinic workflows, visit AnimalCare360.com or mention AnimalCare360 in your inquiry.
-                    </p>
-                  </div>
-                  <div>
-                    <strong className="block text-[#10277a] text-xs uppercase tracking-wider mb-1">Partnership Inquiries</strong>
-                    <p className="text-xs text-slate-500">
-                      For strategic SaaS partnerships, system integrator relationships, or enterprise collaboration, include your organization, market, partnership idea, and the platform or industry area you want to discuss.
-                    </p>
-                  </div>
-                  <div>
-                    <strong className="block text-[#10277a] text-xs uppercase tracking-wider mb-1">Case Study Or Portfolio Discussions</strong>
-                    <p className="text-xs text-slate-500">
-                      If you want to discuss a case study, mention the relevant area: logistics, healthcare, retail, government platforms, fintech, ERP, augmented reality, livestock, or operational infrastructure SaaS.
-                    </p>
-                  </div>
+                <div className="bg-[#fbfaf6] border border-[rgba(16,39,122,0.1)] p-4 text-xs text-slate-500 mb-8 space-y-2 leading-relaxed">
+                  <p>
+                    <strong>Product inquiries:</strong> Please include the product name in your message: HULM POS, Titan CMMS, AnalyzeQuran, Hospitello, Bike Tour Pro, MFCC, or AnimalCare360.
+                  </p>
+                  <p>
+                    <strong>AnimalCare360 inquiries:</strong> For AnimalCare360 product usage, pricing, app download, cattle management, feed retail, animal trading, pet hospital, or veterinary clinic workflows, visit AnimalCare360.com or mention AnimalCare360 in your inquiry.
+                  </p>
+                  <p>
+                    <strong>Case study inquiries:</strong> Please mention the relevant area: logistics, healthcare, retail, government digital services, enterprise ERP, fintech, or augmented reality.
+                  </p>
                 </div>
                 <form
                   className="grid gap-6"
                   onSubmit={handleSubmit}
                 >
-                  <input type="hidden" name="landing_page_url" value={tracking.landing_page_url} />
-                  <input type="hidden" name="referrer_url" value={tracking.referrer_url} />
-                  <input type="hidden" name="utm_source" value={tracking.utm_source} />
-                  <input type="hidden" name="utm_medium" value={tracking.utm_medium} />
-                  <input type="hidden" name="utm_campaign" value={tracking.utm_campaign} />
-                  <input type="hidden" name="utm_content" value={tracking.utm_content} />
-                  <input type="hidden" name="cta_source" value={tracking.cta_source} />
-                  <input type="hidden" name="inquiry_page_type" value={tracking.inquiry_page_type} />
                   {error && (
                     <div className="bg-red-50 border-l-4 border-red-500 p-4 text-sm text-red-700">
                       {error}
@@ -197,7 +143,7 @@ export default function ContactForm() {
                     </div>
                   </div>
 
-                  <div className="grid gap-6 md:grid-cols-3">
+                  <div className="grid gap-6 md:grid-cols-2">
                     <div>
                       <label className={labelClass} htmlFor="email">Email</label>
                       <input className={fieldClass} id="email" name="email" required type="email" disabled={isSubmitting} />
@@ -210,10 +156,6 @@ export default function ContactForm() {
                           <option key={type} value={type}>{type}</option>
                         ))}
                       </select>
-                    </div>
-                    <div>
-                      <label className={labelClass} htmlFor="interest">Interested product or industry</label>
-                      <input className={fieldClass} id="interest" name="interest" placeholder="e.g. Retail POS, Livestock" type="text" disabled={isSubmitting} />
                     </div>
                   </div>
 

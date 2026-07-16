@@ -6,21 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY || 're_mock_key_for_build')
 
 export async function POST(req: NextRequest) {
   try {
-    const {
-      name,
-      email,
-      organization,
-      inquiryType,
-      message,
-      landing_page_url,
-      referrer_url,
-      utm_source,
-      utm_medium,
-      utm_campaign,
-      utm_content,
-      cta_source,
-      inquiry_page_type
-    } = await req.json()
+    const { name, email, organization, inquiryType, message } = await req.json()
 
     // Validate inputs
     if (!name || !email || !organization || !inquiryType || !message) {
@@ -65,43 +51,7 @@ export async function POST(req: NextRequest) {
           </tr>
         </table>
         <h3 style="color: #071330; font-family: sans-serif; margin-top: 24px;">Message:</h3>
-        <div style="white-space: pre-wrap; background: #fbfaf6; border-left: 4px solid #10277a; padding: 16px; font-family: sans-serif; font-size: 14px; color: #111827; line-height: 1.6; margin-bottom: 24px;">${message}</div>
-        
-        <h3 style="color: #071330; font-family: sans-serif; margin-top: 24px; border-top: 1px solid #e5e7eb; padding-top: 16px;">Tracking Metadata</h3>
-        <table style="width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: 12px; color: #4b5563;">
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold; width: 150px;">Landing Page URL:</td>
-            <td style="padding: 4px 0;">${landing_page_url || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold;">Referrer URL:</td>
-            <td style="padding: 4px 0;">${referrer_url || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold;">UTM Source:</td>
-            <td style="padding: 4px 0;">${utm_source || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold;">UTM Medium:</td>
-            <td style="padding: 4px 0;">${utm_medium || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold;">UTM Campaign:</td>
-            <td style="padding: 4px 0;">${utm_campaign || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold;">UTM Content:</td>
-            <td style="padding: 4px 0;">${utm_content || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold;">CTA Source:</td>
-            <td style="padding: 4px 0;">${cta_source || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold;">Inquiry Page Type:</td>
-            <td style="padding: 4px 0;">${inquiry_page_type || 'N/A'}</td>
-          </tr>
-        </table>
+        <div style="white-space: pre-wrap; background: #fbfaf6; border-left: 4px solid #10277a; padding: 16px; font-family: sans-serif; font-size: 14px; color: #111827; line-height: 1.6;">${message}</div>
       `,
     })
 
