@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/case-studies',
   },
+  openGraph: {
+    url: '/case-studies',
+  },
   keywords: [
     'Logic Unit case studies',
     'software platforms for real industries',
@@ -38,9 +41,9 @@ const categories = [
     description: 'Patient engagement, clinical workflows, and pharmaceutical supply chain trust.',
     items: [
       {
-        name: 'Nova Nordisk Professional Sample Ordering Application',
+        name: 'Novo Nordisk Professional Sample Ordering Application',
         description: 'Logic Unit developed a sample ordering and tracking portal to connect pharmaceutical teams with certified healthcare professionals.',
-        href: '/case-studies/nova-nordisk-sample-ordering-application',
+        href: '/case-studies/novo-nordisk-sample-ordering-application',
       },
       {
         name: 'AGP Drug Verifier Platform',

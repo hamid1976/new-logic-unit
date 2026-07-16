@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/industries/healthcare',
   },
+  openGraph: {
+    url: '/industries/healthcare',
+  },
 };
 
 export default function HealthcarePage() {
@@ -47,21 +50,21 @@ export default function HealthcarePage() {
       ),
     },
     {
-      title: 'Case Study: Nova Nordisk Sample Ordering App',
+      title: 'Case Study: Novo Nordisk Sample Ordering App',
       body: (
         <div className="space-y-4">
           <p>
-            To modernize the distribution of medical product samples to doctors, global pharmaceutical giant Nova Nordisk collaborated with Logic Unit to design a secure mobile ordering solution. We developed a native iOS application in Swift that combines training, product information, and request tracking.
+            To modernize the distribution of medical product samples to doctors, global pharmaceutical giant Novo Nordisk collaborated with Logic Unit to design a secure mobile ordering solution. We developed a native iOS application in Swift that combines training, product information, and request tracking.
           </p>
           <p>
             By guiding healthcare professionals through interactive responsibilities modules before submitting requests, the app ensures strict adherence to corporate policy, standardizes sample distribution audits, and reduces administrative overhead.
           </p>
           <div className="pt-2">
             <Link
-              href="/case-studies/nova-nordisk-sample-ordering-application"
+              href="/case-studies/novo-nordisk-sample-ordering-application"
               className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
             >
-              Read Nova Nordisk Case Study &rarr;
+              Read Novo Nordisk Case Study &rarr;
             </Link>
           </div>
         </div>

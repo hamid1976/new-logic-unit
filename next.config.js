@@ -7,6 +7,11 @@ const nextConfig = {
   poweredByHeader: false,
   redirects: async () => [
     {
+      source: '/case-studies/nova-nordisk-sample-ordering-application',
+      destination: '/case-studies/novo-nordisk-sample-ordering-application',
+      permanent: true,
+    },
+    {
       source: '/services',
       destination: '/partnerships',
       permanent: true,

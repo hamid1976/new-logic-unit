@@ -1,8 +1,8 @@
-# nova Nordisk Case Study Website Page Copy
+# Novo Nordisk Case Study Website Page Copy
 
-Suggested URL: `/case-studies/nova-nordisk-sample-ordering-application`
+Suggested URL: `/case-studies/novo-nordisk-sample-ordering-application`
 
-SEO title: `nova Nordisk Sample Ordering App Case Study`
+SEO title: `Novo Nordisk Sample Ordering App Case Study`
 
 Meta description: `Logic Unit developed a secure iOS sample ordering application for healthcare professionals with education, compliance, and request workflows.`
 
@@ -10,11 +10,11 @@ Primary keywords: healthcare professional sample ordering application, pharmaceu
 
 ## H1
 
-nova Nordisk Healthcare Professional Sample Ordering Application
+Novo Nordisk Healthcare Professional Sample Ordering Application
 
 ## Summary
 
-nova Nordisk required a secure and compliant mobile application to modernize medical product sample distribution while educating healthcare professionals on approved procedures.
+Novo Nordisk required a secure and compliant mobile application to modernize medical product sample distribution while educating healthcare professionals on approved procedures.
 
 Logic Unit developed a native iOS application that streamlined sample requests, improved compliance adherence, and delivered a consistent digital experience for healthcare professionals.
 
