@@ -5,15 +5,7 @@ export const metadata: Metadata = {
   title: 'Logic Unit | Product Engineering & SaaS Operating Company',
   description: 'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, logistics, manufacturing, facilities, and enterprise operations.',
   alternates: {
-
-      canonical: '/',
-
-  },
-
-  openGraph: {
-
-      url: '/',
-
+    canonical: '/',
   },
   keywords: [
     'product engineering company',
@@ -86,9 +78,9 @@ const caseStudies = [
     href: '/case-studies/seagold-logistics-management-platform',
   },
   {
-    name: 'Novo Nordisk Ordering App',
+    name: 'Nova Nordisk Ordering App',
     description: 'Healthcare professional sample ordering and compliance application.',
-    href: '/case-studies/novo-nordisk-sample-ordering-application',
+    href: '/case-studies/nova-nordisk-sample-ordering-application',
   },
   {
     name: "Dunkin' Donuts Operations",

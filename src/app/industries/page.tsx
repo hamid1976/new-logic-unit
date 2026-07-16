@@ -6,15 +6,7 @@ export const metadata: Metadata = {
   title: 'Industry-Specific SaaS Platforms | Logic Unit',
   description: 'Logic Unit builds and operates industry-specific SaaS platforms for retail, healthcare, livestock, manufacturing, logistics, and facilities.',
   alternates: {
-
-      canonical: '/industries',
-
-  },
-
-  openGraph: {
-
-      url: '/industries',
-
+    canonical: '/industries',
   },
 };
 
@@ -32,12 +24,12 @@ const industries = [
   },
   {
     name: 'Healthcare Software Platforms',
-    description: "Healthcare organizations need secure, compliant, patient-facing and professional-facing digital workflows. Logic Unit's healthcare source includes Hospitello, Novo Nordisk's sample ordering application, and AGP's drug verifier platform.",
+    description: "Healthcare organizations need secure, compliant, patient-facing and professional-facing digital workflows. Logic Unit's healthcare source includes Hospitello, Nova Nordisk's sample ordering application, and AGP's drug verifier platform.",
     hubHref: '/industries/healthcare',
     links: [
       { label: 'Healthcare Industry Hub', href: '/industries/healthcare' },
       { label: 'Hospitello Product Details', href: '/ecosystem/hospitello' },
-      { label: 'Novo Nordisk Case Study', href: '/case-studies/novo-nordisk-sample-ordering-application' },
+      { label: 'Nova Nordisk Case Study', href: '/case-studies/nova-nordisk-sample-ordering-application' },
       { label: 'AGP Drug Verifier Case Study', href: '/case-studies/agp-drug-verifier-platform' },
     ],
   },

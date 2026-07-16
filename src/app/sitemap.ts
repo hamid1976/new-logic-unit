@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Case Studies
     { url: `${baseUrl}/case-studies`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/case-studies/seagold-logistics-management-platform`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/case-studies/novo-nordisk-sample-ordering-application`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/case-studies/nova-nordisk-sample-ordering-application`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/case-studies/giftwifts-leopards-courier`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/case-studies/agp-drug-verifier-platform`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/case-studies/ksew-enterprise-erp-transformation`, lastModified, changeFrequency: 'monthly', priority: 0.7 },

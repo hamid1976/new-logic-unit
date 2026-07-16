@@ -25,8 +25,8 @@ Link: `/case-studies/seagold-logistics-management-platform`
 
 ### Healthcare And Pharmaceutical Compliance
 
-Novo Nordisk Healthcare Professional Sample Ordering Application  
-Link: `/case-studies/novo-nordisk-sample-ordering-application`
+Nova Nordisk Healthcare Professional Sample Ordering Application  
+Link: `/case-studies/nova-nordisk-sample-ordering-application`
 
 AGP Drug Verifier Platform  
 Link: `/case-studies/agp-drug-verifier-platform`

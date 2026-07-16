@@ -6,15 +6,7 @@ export const metadata: Metadata = {
   title: 'Technology & R&D Backbone | Logic Unit',
   description: "Explore Logic Unit's SaaS architecture, data infrastructure, mobile platforms, AI integration, IoT integration, and enterprise system experience.",
   alternates: {
-
-      canonical: '/technology',
-
-  },
-
-  openGraph: {
-
-      url: '/technology',
-
+    canonical: '/technology',
   },
   keywords: [
     'SaaS architecture',
@@ -208,7 +200,7 @@ export default function TechnologyPage() {
               {
                 capability: 'Mobile Applications',
                 caseStudies: [
-                  { name: 'Novo Nordisk App', href: '/case-studies/novo-nordisk-sample-ordering-application' },
+                  { name: 'Nova Nordisk App', href: '/case-studies/nova-nordisk-sample-ordering-application' },
                   { name: 'Smart Salik Toll', href: '/case-studies/smart-salik-digital-toll-management' },
                   { name: 'mPay Government Payment', href: '/case-studies/mpay-government-payment-platform' },
                   { name: 'Goodments', href: '/case-studies/goodments-ethical-investing-platform' },

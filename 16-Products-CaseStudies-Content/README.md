@@ -28,7 +28,7 @@ No unsupported services, industries, metrics, awards, or claims were added. Wher
 - `/ecosystem/mfcc-command-control-console`
 - `/case-studies`
 - `/case-studies/seagold-logistics-management-platform`
-- `/case-studies/novo-nordisk-sample-ordering-application`
+- `/case-studies/nova-nordisk-sample-ordering-application`
 - `/case-studies/giftwifts-leopards-courier`
 - `/case-studies/agp-drug-verifier-platform`
 - `/case-studies/ksew-enterprise-erp-transformation`
