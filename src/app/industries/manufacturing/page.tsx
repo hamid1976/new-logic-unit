@@ -45,7 +45,7 @@ export default function ManufacturingPage() {
           </p>
           <div className="pt-2">
             <Link
-              href="/ecosystem/titan-cmms"
+              href="/ecosystem/titan-mms-maintenance-management-software"
               className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
             >
               Explore Titan CMMS Details &rarr;

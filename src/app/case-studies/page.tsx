@@ -74,7 +74,7 @@ const categories = [
       {
         name: 'HULM POS: Unified Retail & Business OS',
         description: 'A multi-tenant retail operating platform consolidating billing, inventory control, purchase/vendor tracking, CRM, and regulatory tax compliance.',
-        href: '/ecosystem/hulm-pos',
+        href: '/ecosystem/hulm-solutions',
       },
     ],
   },
@@ -116,7 +116,7 @@ const categories = [
       {
         name: 'Titan CMMS: Enterprise Asset Maintenance Management',
         description: 'Pakistan’s first locally developed enterprise-grade CMMS designed to optimize asset performance, track lifecycle costs, and manage work orders.',
-        href: '/ecosystem/titan-cmms',
+        href: '/ecosystem/titan-mms-maintenance-management-software',
       },
       {
         name: 'AnalyzeQuran: AI-Powered Quranic Research Platform',
@@ -190,13 +190,13 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      {/* Case Study Pack Gated CTA */}
+      {/* Case study discussion CTA */}
       <section className="bg-[#071330] px-6 py-20 text-white lg:px-12 border-t border-white/5">
         <div className="mx-auto max-w-7xl flex flex-col justify-between gap-8 md:flex-row md:items-center">
           <div className="max-w-2xl">
-            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Featured Resource</span>
+            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Portfolio Discussion</span>
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mt-2 mb-4">
-              Case Study Pack: Software Platforms For Real Industries
+              Discuss Logic Unit&apos;s Platform Experience
             </h2>
             <p className="text-slate-300 text-sm leading-relaxed">
               Explore in-depth technical breakdowns and workflow schemas for logistics, retail operations, healthcare, and enterprise ERP transformations.
@@ -207,7 +207,7 @@ export default function CaseStudiesPage() {
               href="/contact?cta=case-study-pack&page_type=case-studies"
               className="inline-block bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e] no-underline transition-colors"
             >
-              Download Case Study Pack &rarr;
+              Discuss Relevant Case Studies &rarr;
             </Link>
           </div>
         </div>

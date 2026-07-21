@@ -90,16 +90,16 @@ export default function InsightsPage() {
       {/* Client Filter & Grid Component */}
       <InsightsClient articles={insightsArticles} />
 
-      {/* Gated Resource Playbook CTA */}
+      {/* Insights discussion CTA */}
       <section className="bg-[#071330] px-6 py-24 text-white lg:px-12 border-t border-white/5">
         <div className="mx-auto max-w-7xl grid gap-12 lg:grid-cols-12 items-center">
           <div className="lg:col-span-7 max-w-2xl">
-            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Featured Gated Resource</span>
+            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Platform Discussion</span>
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl mt-3">
-              Operational Infrastructure SaaS Playbook
+              Discuss Your Industry SaaS Direction
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              A practical guide to building and scaling software platforms for real industry operations, including product ecosystems, case study proof, technology foundations, and partnership models.
+              Talk with Logic Unit about product ecosystems, platform readiness, operational workflows, and partnership models.
             </p>
           </div>
           <div className="lg:col-span-5 lg:text-right">
@@ -107,7 +107,7 @@ export default function InsightsPage() {
               href="/contact?cta=playbook&page_type=insights"
               className="inline-block bg-[#7bd72f] px-8 py-4 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e] shadow-lg transition-all duration-300 no-underline"
             >
-              Download The Playbook &rarr;
+              Start A Discussion &rarr;
             </Link>
           </div>
         </div>

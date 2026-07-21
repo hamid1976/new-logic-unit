@@ -7,6 +7,12 @@ const nextConfig = {
   poweredByHeader: false,
   redirects: async () => [
     {
+      source: '/:path*',
+      has: [{ type: 'host', value: 'www.logic-unit.com' }],
+      destination: 'https://logic-unit.com/:path*',
+      permanent: true,
+    },
+    {
       source: '/case-studies/nova-nordisk-sample-ordering-application',
       destination: '/case-studies/novo-nordisk-sample-ordering-application',
       permanent: true,
@@ -18,6 +24,16 @@ const nextConfig = {
     },
     {
       source: '/ecosystem/titan-mms',
+      destination: '/ecosystem/titan-mms-maintenance-management-software',
+      permanent: true,
+    },
+    {
+      source: '/ecosystem/hulm-pos',
+      destination: '/ecosystem/hulm-solutions',
+      permanent: true,
+    },
+    {
+      source: '/ecosystem/titan-cmms',
       destination: '/ecosystem/titan-mms-maintenance-management-software',
       permanent: true,
     },
@@ -34,11 +50,6 @@ const nextConfig = {
     {
       source: '/industry/:slug',
       destination: '/industries/:slug',
-      permanent: true,
-    },
-    {
-      source: '/case-studies/nova-nordisk-sample-ordering-application',
-      destination: '/case-studies/novo-nordisk-sample-ordering-application',
       permanent: true,
     },
   ],

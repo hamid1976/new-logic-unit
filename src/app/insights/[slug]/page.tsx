@@ -28,14 +28,6 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     },
     openGraph: {
       url: `/insights/${article.slug}`,
-      images: [
-        {
-          url: `/og/insights-${article.slug}.png`,
-          width: 1200,
-          height: 630,
-          alt: article.title,
-        },
-      ],
     },
   };
 }
@@ -59,31 +51,6 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     },
   };
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    'itemListElement': [
-      {
-        '@type': 'ListItem',
-        'position': 1,
-        'name': 'Home',
-        'item': 'https://logic-unit.com/',
-      },
-      {
-        '@type': 'ListItem',
-        'position': 2,
-        'name': 'Insights',
-        'item': 'https://logic-unit.com/insights',
-      },
-      {
-        '@type': 'ListItem',
-        'position': 3,
-        'name': article.title.split('|')[0].trim(),
-        'item': `https://logic-unit.com/insights/${article.slug}`,
-      },
-    ],
-  };
-
   // Find 3 other related articles
   const relatedArticles = insightsArticles
     .filter((a) => a.slug !== article.slug)
@@ -96,11 +63,6 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-
       {/* Hero Shell */}
       <section className="lu-shell relative overflow-hidden px-6 py-24 text-white lg:px-12 lg:py-32">
         <div className="lu-grid absolute inset-0 opacity-25" aria-hidden="true" />
@@ -187,10 +149,10 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
 
           {/* Sidebar */}
           <aside className="lg:col-span-4 space-y-8">
-            {/* Gated Resource Checklist CTA */}
+            {/* Readiness discussion CTA */}
             <div className="lu-card p-6 bg-white border border-[rgba(16,39,122,0.06)] shadow-sm">
-              <span className="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-2">Readiness Checklist</span>
-              <h3 className="text-lg font-bold text-[#10277a] mb-3">Industry SaaS Platform Readiness Checklist</h3>
+              <span className="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-2">Readiness Discussion</span>
+              <h3 className="text-lg font-bold text-[#10277a] mb-3">Discuss Your Industry SaaS Readiness</h3>
               <p className="text-xs text-slate-600 mb-6 leading-relaxed">
                 Assess whether your organization is ready to scale operations, implement POS, EMR, or CMMS workflows, or deploy custom digital infrastructure.
               </p>
@@ -198,7 +160,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                 href="/contact?cta=checklist&page_type=insights"
                 className="block text-center bg-[#7bd72f] px-4 py-3 text-xs font-bold text-[#071330] hover:bg-[#93e74e] no-underline shadow-sm transition-colors duration-300"
               >
-                Get The Checklist
+                Discuss Platform Readiness
               </Link>
             </div>
 

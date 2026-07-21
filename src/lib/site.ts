@@ -3,4 +3,3 @@ export const siteUrl = rawUrl.replace(/\/$/, '').replace('://www.', '://')
 
 export const logoPath = '/logic-unit-logo.png'
 export const logoUrl = `${siteUrl}${logoPath}`
-export const ogImagePath = '/og-image.png'

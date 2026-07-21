@@ -48,7 +48,7 @@ const products: Product[] = [
     name: 'HULM POS',
     category: 'Retail POS & Business OS',
     description: 'Unified retail and business management platform for POS, inventory, procurement, CRM, reporting, employee management, and FBR integration.',
-    internalHref: '/ecosystem/hulm-pos',
+    internalHref: '/ecosystem/hulm-solutions',
     relatedCaseStudies: [
       { name: "Dunkin' Donuts Pakistan", href: '/case-studies/dunkin-donuts-retail-operations-platform' },
       { name: 'GiftWifts Leopards', href: '/case-studies/giftwifts-leopards-courier' },
@@ -58,7 +58,7 @@ const products: Product[] = [
     name: 'Titan CMMS',
     category: 'Computerized Maintenance Management System',
     description: 'Enterprise-grade maintenance management platform for asset management, preventive maintenance, work orders, spare parts, and analytics.',
-    internalHref: '/ecosystem/titan-cmms',
+    internalHref: '/ecosystem/titan-mms-maintenance-management-software',
     relatedCaseStudies: [
       { name: 'KS&EW ERP', href: '/case-studies/ksew-enterprise-erp-transformation' },
     ],
