@@ -131,10 +131,10 @@ export function HulmSolutionsClient() {
             </h2>
             <div className="text-lg leading-8 text-slate-600 space-y-4">
               <p>
-                When we started Logic Unit over 15 years ago, we saw the same problem repeating itself across every industry we worked with. A shop owner in Karachi was writing sales receipts by hand. A cafe manager in Lahore had no idea how much stock was left in the kitchen. A clothing retailer in Islamabad was running three separate Excel sheets to track customers, purchases, and sales.
+                When we started Logic Unit in 2013, we saw the same problem repeating itself across every industry we worked with. A shop owner in Karachi was writing sales receipts by hand. A cafe manager in Lahore had no idea how much stock was left in the kitchen. A clothing retailer in Islamabad was running three separate Excel sheets to track customers, purchases, and sales.
               </p>
               <p>
-                That realisation drove us to build Hulm Solutions — a suite of cloud-based SaaS products designed from the ground up for Pakistani and global businesses.
+                That realisation drove us to build HULM POS — a suite of cloud-based SaaS products designed from the ground up for Pakistani and global businesses.
               </p>
             </div>
           </div>
@@ -244,7 +244,7 @@ export function HulmSolutionsClient() {
         <div className="mx-auto max-w-5xl text-center space-y-6">
           <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Logic Unit R&D</span>
           <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
-            15+ Years of Product Engineering Behind Every Line of Code
+            Product Engineering Experience Since 2013 Behind Every Line of Code
           </h2>
           <p className="text-lg leading-8 text-slate-200 max-w-4xl mx-auto">
             Logic Unit is not a startup that built a POS app over a weekend. We are a product engineering and operating company. Our engineering team has spent years in the trenches with business owners — watching how a sale is actually made, how stock is actually counted, and how a vendor dispute unfolds. As a product operating company, we continue to run, maintain, update, and scale Hulm Solutions in the cloud, delivering continuous improvement to your business.
@@ -356,7 +356,7 @@ export function HulmSolutionsClient() {
               Visit Hulm Solutions
             </a>
             <Link
-              href="/contact"
+              href="/contact?cta=product-hulm-pos&page_type=product&inquiry_type=hulm_pos&interest=hulm-pos"
               className="bg-[#10277a] px-6 py-3 text-center text-sm font-bold text-white hover:bg-[#071330] whitespace-nowrap"
             >
               Contact Logic Unit

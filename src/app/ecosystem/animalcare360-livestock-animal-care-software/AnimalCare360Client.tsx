@@ -8,7 +8,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 const faqs = [
   {
     question: 'What is AnimalCare360 and who developed it?',
-    answer: 'AnimalCare360 is a cloud-based ERP platform developed by Logic Unit, a Pakistani software engineering company with over 15 years of experience. It is built specifically for livestock farms, dairy and poultry operations, wanda feed retailers, animal traders, maweshi mandis, pet hospitals, and veterinary clinics across Pakistan. The platform covers animal records, inventory, trading, sales, FBR invoicing, and clinical management in a single integrated system.',
+    answer: 'AnimalCare360 is a cloud-based ERP platform developed by Logic Unit, a Pakistani software engineering company founded in 2013. It is built specifically for livestock farms, dairy and poultry operations, wanda feed retailers, animal traders, maweshi mandis, pet hospitals, and veterinary clinics across Pakistan. The platform covers animal records, inventory, trading, sales, FBR invoicing, and clinical management in a single integrated system.',
   },
   {
     question: 'Is AnimalCare360 compliant with FBR invoicing requirements in Pakistan?',
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: 'How does AnimalCare360 support pet hospitals and veterinary clinics?',
-    answer: 'AnimalCare360\'s Pet Hospital ERP module provides complete digital EMR for patients, multi-doctor appointment scheduling with WhatsApp reminders, surgery and lab record management, pharmacy inventory with expiry alerts, and FBR-compliant billing. Early adopter clinics reported a 40% reduction in administrative overhead after implementation.',
+    answer: 'AnimalCare360\'s Pet Hospital ERP module provides complete digital EMR for patients, multi-doctor appointment scheduling with WhatsApp reminders, surgery and lab record management, pharmacy inventory with expiry alerts, and FBR-compliant billing. Early adopter clinics reported a significant reduction in administrative overhead after implementation.',
   },
   {
     question: 'What makes AnimalCare360 different from generic ERP software?',
@@ -50,11 +50,11 @@ const modules = [
 
 // Industries served data
 const industries = [
-  { name: 'Cattle & Dairy Farms', challenge: 'No digital tag records; missed vaccinations; opaque palai partnerships', solution: 'Herd tag tracking, automated health alerts, palai ROI cost-sharing logs', outcome: 'Zero record loss, reduced mortality, dispute-free palai shares' },
+  { name: 'Cattle & Dairy Farms', challenge: 'No digital tag records; missed vaccinations; opaque palai partnerships', solution: 'Herd tag tracking, automated health alerts, palai ROI cost-sharing logs', outcome: 'Improved record retention, reduced mortality, structured palai shares' },
   { name: 'Dairy & Poultry Ops', challenge: 'Manual daily milk yields; untracked animal-wise feed consumption', solution: 'CattlePro daily yield trends, direct feed sync to animal profiles', outcome: 'Informed culling, clear cost-per-animal visibility' },
-  { name: 'Feed & Wanda Shops', challenge: 'Ghost stock; write-offs from expired bags; manual khata credit tracking', solution: 'Multi-warehouse sync, batch tracking with expiry alerts, digital khata limits', outcome: '99.9% inventory accuracy, reduced waste, improved credit collection' },
+  { name: 'Feed & Wanda Shops', challenge: 'Ghost stock; write-offs from expired bags; manual khata credit tracking', solution: 'Multi-warehouse sync, batch tracking with expiry alerts, digital khata limits', outcome: 'Improved inventory accuracy, reduced waste, structured credit collection' },
   { name: 'Trading & Mandis', challenge: 'No deal margin tracking; lost ownership transfer documents', solution: 'Deal-level cost logs (commissions, transport), digital transfer sheets', outcome: 'Clear transaction profits, faster dispute-free mandi sales' },
-  { name: 'Pet Hospitals & Vets', challenge: 'Paper EMR loss; scheduling no-shows; pharmacy billing leakage', solution: 'Digital EMR, automated WhatsApp reminders, integrated dispensary billing', outcome: '40% admin overhead reduction, higher patient throughput' },
+  { name: 'Pet Hospitals & Vets', challenge: 'Paper EMR loss; scheduling no-shows; pharmacy billing leakage', solution: 'Digital EMR, automated WhatsApp reminders, integrated dispensary billing', outcome: 'Reduced admin overhead, higher patient throughput' },
 ]
 
 // Tech Features Data
@@ -103,7 +103,7 @@ export function AnimalCare360Client() {
             AnimalCare360: Livestock & Animal Care Software
           </h1>
           <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">
-            Pakistan's #1 Cloud ERP for cattle farms, feed retailers, livestock trading, and pet clinics. Purpose-built, FBR-compliant, and WhatsApp-integrated.
+            Cloud-based ERP for cattle farms, feed retailers, livestock trading, and pet clinics. Purpose-built, FBR-compliant, and WhatsApp-integrated.
           </p>
         </div>
       </section>
@@ -118,7 +118,7 @@ export function AnimalCare360Client() {
             </h2>
             <div className="text-lg leading-8 text-slate-600 space-y-4">
               <p>
-                With over 200 million animals, the industry generates billions of rupees. Yet, most farms, wanda shops, maweshi mandis, and clinics were running entirely on paper registers, notebooks, and disconnected spreadsheets.
+                With one of the largest livestock economies in the region, the industry generates billions of rupees. Yet, most farms, wanda shops, maweshi mandis, and clinics were running entirely on paper registers, notebooks, and disconnected spreadsheets.
               </p>
               <p>
                 Logic Unit engineered AnimalCare360 from the ground up. Not as a generic software retrofit, but as a purpose-built digital ecosystem designed for Pakistan's operational realities.
@@ -209,15 +209,15 @@ export function AnimalCare360Client() {
         </div>
       </section>
 
-      {/* Testimonial Quote */}
+      {/* Capability Focus */}
       <section className="bg-[#071330] text-white px-6 py-20 lg:px-12 text-center relative overflow-hidden">
         <div className="lu-grid absolute inset-0 opacity-10" aria-hidden="true" />
         <div className="relative mx-auto max-w-4xl space-y-6">
-          <span className="text-xs font-bold text-[#7bd72f] uppercase tracking-wider block">Early Adopter Success</span>
-          <p className="text-2xl md:text-3xl font-medium italic leading-relaxed text-slate-100">
-            "AnimalCare360 has reduced our administrative overhead by 40%. We spend more time with patients and less time on paperwork."
+          <span className="text-xs font-bold text-[#7bd72f] uppercase tracking-wider block">Operational Optimization</span>
+          <p className="text-2xl md:text-3xl font-medium leading-relaxed text-slate-100">
+            Streamlining administration, patient continuity, and daily transactions for veterinary practices and agricultural farms.
           </p>
-          <span className="block text-sm font-semibold text-slate-400">— Senior Vet, Lahore Pet Clinic</span>
+          <span className="block text-sm font-semibold text-slate-400">AnimalCare360 Core Platform Focus</span>
         </div>
       </section>
 
@@ -428,7 +428,7 @@ export function AnimalCare360Client() {
               Visit AnimalCare360
             </a>
             <Link
-              href="/contact"
+              href="/contact?cta=product-animalcare360&page_type=product&inquiry_type=animalcare360&interest=animalcare360"
               className="bg-[#10277a] px-6 py-3 text-center text-sm font-bold text-white hover:bg-[#071330] whitespace-nowrap"
             >
               Contact Logic Unit

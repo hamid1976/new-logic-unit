@@ -40,6 +40,8 @@ export default function Page() {
 
   return (
     <CaseStudyPageTemplate
+      contactHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=retail&source_slug=giftwifts-leopards-courier"
+      discussionHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=retail&source_slug=giftwifts-leopards-courier"
       title="GiftWifts Case Study"
       h1="GiftWifts By Leopards Courier"
       summaryText="GiftWifts was launched as a strategic corporate gifting platform and consumer eCommerce channel for Leopards Courier, one of Pakistan's largest logistics networks. Logic Unit designed, developed, and launched the end-to-end platform, integrating eCommerce storefront capabilities, personalized gifting workflows, and automated delivery tracking directly with Leopards' existing logistics infrastructure."
@@ -47,7 +49,7 @@ export default function Page() {
       solutionText="Logic Unit engineered a custom eCommerce and gifting platform. The solution features a product catalog dashboard, an interactive gift customization engine, a secure checkout supporting online card payments, digital wallets, and Cash on Delivery, a dedicated portal for corporate clients to manage bulk recipient lists, and direct integration with Leopards' core tracking APIs to provide real-time delivery status updates."
       features={features}
       impactText="The launch of GiftWifts successfully positioned Leopards Courier in the digital gifting market, opening a new revenue channel. By combining digital commerce with their established nationwide delivery network, Leopards provided clients with a seamless experience, simplifying personal and corporate gifting while maintaining complete tracking visibility."
-      ctaText="Discuss A Commerce Platform"
+      ctaText="Discuss a Similar Retail Platform"
       schemaJson={schemaJson}
     />
   );

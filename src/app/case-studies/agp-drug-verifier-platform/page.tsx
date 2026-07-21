@@ -41,6 +41,8 @@ export default function Page() {
 
   return (
     <CaseStudyPageTemplate
+      contactHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=healthcare&source_slug=agp-drug-verifier-platform"
+      discussionHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=healthcare&source_slug=agp-drug-verifier-platform"
       title="AGP Case Study"
       h1="AGP Drug Verifier Platform"
       summaryText="AGP, a leading pharmaceutical manufacturer, partnered with Logic Unit to develop a comprehensive drug authentication ecosystem designed to combat the rising threat of counterfeit medicines and comply with evolving industry regulations. The platform enables consumers to verify medicine authenticity instantly through barcode scanning, while providing AGP with vital supply chain visibility, scan geo-location analytics, and security alerts."
@@ -48,7 +50,7 @@ export default function Page() {
       solutionText="Logic Unit designed and built a multi-layered verification ecosystem. The solution includes a unique product serialization database, a dynamic 2D barcode generator for packaging lines, a user-friendly mobile application for consumers, and a centralized manufacturer dashboard. When a consumer scans a pack, the system checks the database, validates the code, and logs the GPS location. If a duplicated or invalid code is scanned, the platform triggers an alert to AGPs security team, mapping suspected counterfeit hotspots."
       features={features}
       impactText="The platform significantly improved consumer confidence in AGP products by offering an immediate verification method. The analytics dashboard provided AGP with real-time visibility into product distribution and geolocated counterfeit attempts. This proactive monitoring strengthened brand protection and ensured the manufacturer met strict regulatory requirements for pharmaceutical traceability."
-      ctaText="Discuss A Healthcare Verification Platform"
+      ctaText="Discuss a Similar Healthcare Platform"
       schemaJson={schemaJson}
     />
   );

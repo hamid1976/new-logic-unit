@@ -13,6 +13,7 @@ const navLinks = [
   { href: '/industries', label: 'Industries' },
   { href: '/case-studies', label: 'Case Studies' },
   { href: '/partnerships', label: 'Partnerships' },
+  { href: '/insights', label: 'Insights' },
 ]
 
 export function Navigation() {

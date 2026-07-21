@@ -13,6 +13,8 @@ interface CaseStudyPageTemplateProps {
   impactText: string;
   ctaText?: string;
   schemaJson?: any;
+  contactHref?: string;
+  discussionHref?: string;
 }
 
 export function CaseStudyPageTemplate({
@@ -27,6 +29,8 @@ export function CaseStudyPageTemplate({
   impactText,
   ctaText = 'Discuss This Solution',
   schemaJson,
+  contactHref = '/contact?cta=case-study-contact&page_type=case-study',
+  discussionHref = '/contact?cta=case-study-discussion&page_type=case-study',
 }: CaseStudyPageTemplateProps) {
   return (
     <main className="min-h-screen bg-[#fbfaf6] text-[#111827]">
@@ -130,7 +134,7 @@ export function CaseStudyPageTemplate({
           </div>
           <div className="flex-shrink-0">
             <Link
-              href="/contact?cta=case-study-pack&page_type=case-study"
+              href={discussionHref}
               className="inline-block bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e] no-underline transition-colors"
             >
               Discuss This Experience &rarr;
@@ -152,7 +156,7 @@ export function CaseStudyPageTemplate({
           </div>
           <div className="flex flex-col gap-4 sm:flex-row flex-shrink-0">
             <Link
-              href="/contact"
+              href={contactHref}
               className="bg-[#10277a] px-6 py-3 text-center text-sm font-bold text-white hover:bg-[#071330] whitespace-nowrap transition-colors"
             >
               {ctaText}

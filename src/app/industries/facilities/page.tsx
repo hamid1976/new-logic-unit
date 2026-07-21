@@ -107,6 +107,8 @@ export default function FacilitiesPage() {
       ctaTitle="Discuss facilities platform collaboration."
       backText="Back to Industries"
       backHref="/industries"
+      contactHref="/contact?cta=industry-facilities-discuss&page_type=industry&interest=facilities&source_slug=facilities"
+      contactText="Discuss a Facilities Platform"
     />
   );
 }

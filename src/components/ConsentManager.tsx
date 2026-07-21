@@ -24,6 +24,15 @@ export default function ConsentManager() {
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && typeof window.sessionStorage !== 'undefined') {
+      if (!window.sessionStorage.getItem('lu_landing_page_url')) {
+        window.sessionStorage.setItem('lu_landing_page_url', window.location.href)
+      }
+      if (!window.sessionStorage.getItem('lu_referrer_url')) {
+        window.sessionStorage.setItem('lu_referrer_url', document.referrer || '')
+      }
+    }
+
     const storedChoice = window.localStorage.getItem(CONSENT_KEY)
     if (storedChoice === 'accepted' || storedChoice === 'declined') {
       updateGoogleConsent(storedChoice === 'accepted' ? 'granted' : 'denied')

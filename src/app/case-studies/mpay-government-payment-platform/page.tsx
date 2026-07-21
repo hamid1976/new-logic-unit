@@ -40,6 +40,8 @@ export default function Page() {
 
   return (
     <CaseStudyPageTemplate
+      contactHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=enterprise&source_slug=mpay-government-payment-platform"
+      discussionHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=enterprise&source_slug=mpay-government-payment-platform"
       title="mPay Case Study"
       h1="mPay: Unified Government Payment Platform"
       summaryText="Dubai Smart Government launched the mPay initiative to simplify how residents pay utility bills and public service fees. Logic Unit contributed to the development of this unified mobile payment platform, which allows citizens to pay for municipal services, electricity, water, telecom, and transit fees through a single application. The platform is a key component of Dubai's smart city digitizing strategy."
@@ -47,7 +49,7 @@ export default function Page() {
       solutionText="Logic Unit collaborated on building a secure mobile payment engine. The platform integrates with multiple government and enterprise API gateways, facilitating unified transactions. Key features include a smart payment dashboard, stored credentials for fast checkout, voice-driven payment actions, automatic due date alerts, and bilingual (English/Arabic) support. The technical setup features secure transaction tokens, encryption standards, and cloud-native databases."
       features={features}
       impactText="The mPay platform achieved high adoption among citizens, significantly reducing visits to physical government service offices. It increased digital transaction volume and accelerated fee collections for public services. By centralizing billing, the application improved public satisfaction and helped drive Dubai's smart government goals."
-      ctaText="Discuss A Government Payment Platform"
+      ctaText="Discuss a Similar Enterprise Platform"
       schemaJson={schemaJson}
     />
   );

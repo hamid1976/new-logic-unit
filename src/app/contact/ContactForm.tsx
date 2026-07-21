@@ -20,13 +20,38 @@ const inquiryTypes = [
   'System integrator relationship',
   'Enterprise collaboration',
   'Case study or portfolio discussion',
+  'Investor relations',
+  'Talent inquiry',
 ]
+
+const mapInquiryType = (param: string | null): string => {
+  if (!param) return ''
+  switch (param.toLowerCase()) {
+    case 'hulm_pos': return 'HULM POS inquiry'
+    case 'titan_cmms': return 'Titan CMMS inquiry'
+    case 'animalcare360': return 'AnimalCare360 / livestock platform inquiry'
+    case 'hospitello': return 'Hospitello inquiry'
+    case 'bike_tour_pro': return 'Bike Tour Pro inquiry'
+    case 'analyzequran': return 'AnalyzeQuran inquiry'
+    case 'mfcc': return 'MFCC inquiry'
+    case 'strategic_partnership': return 'Strategic SaaS partnership'
+    case 'system_integrator': return 'System integrator relationship'
+    case 'enterprise_collaboration': return 'Enterprise collaboration'
+    case 'portfolio': return 'Case study or portfolio discussion'
+    case 'investor_relations': return 'Investor relations'
+    case 'talent': return 'Talent inquiry'
+    default: return ''
+  }
+}
 
 export default function ContactForm() {
   const router = useRouter()
   const [submitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
+
+  const [selectedInquiryType, setSelectedInquiryType] = useState('')
+  const [interestValue, setInterestValue] = useState('')
 
   const [tracking, setTracking] = useState({
     landing_page_url: '',
@@ -42,9 +67,13 @@ export default function ContactForm() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search)
+      
+      const storedLanding = window.sessionStorage.getItem('lu_landing_page_url') || window.location.href
+      const storedReferrer = window.sessionStorage.getItem('lu_referrer_url') || document.referrer || ''
+
       setTracking({
-        landing_page_url: window.location.href,
-        referrer_url: document.referrer || '',
+        landing_page_url: storedLanding,
+        referrer_url: storedReferrer,
         utm_source: params.get('utm_source') || '',
         utm_medium: params.get('utm_medium') || '',
         utm_campaign: params.get('utm_campaign') || '',
@@ -52,8 +81,29 @@ export default function ContactForm() {
         cta_source: params.get('cta') || '',
         inquiry_page_type: params.get('page_type') || '',
       })
+
+      const inqParam = params.get('inquiry_type')
+      if (inqParam) {
+        setSelectedInquiryType(mapInquiryType(inqParam))
+      }
+
+      const intParam = params.get('interest')
+      if (intParam) {
+        setInterestValue(intParam)
+      }
     }
   }, [])
+
+  const isProductInquiry = [
+    'Product ecosystem inquiry',
+    'HULM POS inquiry',
+    'Titan CMMS inquiry',
+    'AnimalCare360 / livestock platform inquiry',
+    'Hospitello inquiry',
+    'Bike Tour Pro inquiry',
+    'AnalyzeQuran inquiry',
+    'MFCC inquiry'
+  ].includes(selectedInquiryType)
 
   const fieldClass =
     'w-full border border-[rgba(16,39,122,0.18)] bg-white px-4 py-3 text-[#071330] outline-none transition focus:border-[#10277a] disabled:bg-slate-50 disabled:text-slate-500'
@@ -92,11 +142,16 @@ export default function ContactForm() {
 
       // Count only a lead accepted by HubSpot; neutral honeypot responses are ignored.
       if (isTrackableLeadResult(result)) {
-        trackGtmEvent('generate_lead', {
-          form_name: 'contact',
-          inquiry_type: payload.inquiryType,
-          lead_id: result.leadId,
-        })
+        const trackedLeads = JSON.parse(window.sessionStorage.getItem('lu_tracked_leads') || '[]')
+        if (!trackedLeads.includes(result.leadId)) {
+          trackGtmEvent('generate_lead', {
+            form_name: 'contact',
+            inquiry_type: payload.inquiryType,
+            lead_id: result.leadId,
+          })
+          trackedLeads.push(result.leadId)
+          window.sessionStorage.setItem('lu_tracked_leads', JSON.stringify(trackedLeads))
+        }
       }
       router.push('/thank-you')
     } catch (err: any) {
@@ -199,7 +254,15 @@ export default function ContactForm() {
                     </div>
                     <div>
                       <label className={labelClass} htmlFor="inquiryType">Inquiry type</label>
-                      <select className={fieldClass} id="inquiryType" name="inquiryType" required defaultValue="" disabled={isSubmitting}>
+                      <select
+                        className={fieldClass}
+                        id="inquiryType"
+                        name="inquiryType"
+                        required
+                        value={selectedInquiryType}
+                        onChange={(e) => setSelectedInquiryType(e.target.value)}
+                        disabled={isSubmitting}
+                      >
                         <option value="" disabled>Select one</option>
                         {inquiryTypes.map((type) => (
                           <option key={type} value={type}>{type}</option>
@@ -207,14 +270,29 @@ export default function ContactForm() {
                       </select>
                     </div>
                     <div>
-                      <label className={labelClass} htmlFor="interest">Interested product or industry</label>
-                      <input className={fieldClass} id="interest" name="interest" placeholder="e.g. Retail POS, Livestock" type="text" disabled={isSubmitting} />
+                      <label className={labelClass} htmlFor="interest">
+                        Interested product or industry {isProductInquiry && <span className="text-red-500">*</span>}
+                      </label>
+                      <input
+                        className={fieldClass}
+                        id="interest"
+                        name="interest"
+                        placeholder="e.g. Retail POS, Livestock"
+                        type="text"
+                        value={interestValue}
+                        onChange={(e) => setInterestValue(e.target.value)}
+                        required={isProductInquiry}
+                        disabled={isSubmitting}
+                      />
                     </div>
                   </div>
 
                   <div>
                     <label className={labelClass} htmlFor="message">Message</label>
                     <textarea className={fieldClass} id="message" name="message" required rows={6} disabled={isSubmitting} />
+                    <p className="mt-1.5 text-xs text-slate-500">
+                      Please explain your operational context, such as retail branches, fleet sizing, veterinary clinic count, or target industry areas.
+                    </p>
                   </div>
 
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center">

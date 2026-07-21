@@ -12,6 +12,7 @@ export interface InsightArticle {
   readTime: string;
   summary: string;
   sections: InsightSection[];
+  relatedSlugs: string[];
   cta: {
     heading: string;
     copy: string;
@@ -75,11 +76,13 @@ export const insightsArticles: InsightArticle[] = [
         content: 'Operational infrastructure SaaS should be evaluated by how well it supports real workflows, not only by feature lists. The strongest platforms connect data, users, reporting, integrations, and decisions inside the same operating environment.'
       }
     ],
+    relatedSlugs: ['what-is-a-saas-operating-company', 'product-engineering-vs-software-outsourcing', 'building-industry-specific-saas-platforms'],
+    
     cta: {
       heading: 'Build Operational Infrastructure For A Real Industry',
       copy: 'Talk to Logic Unit about product ecosystem growth, strategic SaaS partnerships, system integrator relationships, or enterprise collaboration.',
       btnText: 'Contact Logic Unit',
-      btnHref: '/contact'
+      btnHref: '/contact?cta=insights-infrastructure-cta&page_type=insights&inquiry_type=strategic_partnership'
     }
   },
   {
@@ -140,6 +143,8 @@ export const insightsArticles: InsightArticle[] = [
         content: 'If a business depends on software for operations, the question is not only whether the software can be built. The better question is whether it can be operated, improved, and scaled over time.'
       }
     ],
+    relatedSlugs: ['what-is-operational-infrastructure-saas', 'product-engineering-vs-software-outsourcing', 'strategic-saas-partnerships-product-ecosystem-growth'],
+    
     cta: {
       heading: 'Explore Logic Unit’s Product Ecosystem',
       copy: 'Discover how our SaaS operating model delivers long-term software infrastructure for real operational industries.',
@@ -201,11 +206,13 @@ export const insightsArticles: InsightArticle[] = [
         content: 'Choose outsourcing when the goal is a narrow execution task. Choose product engineering when the goal is to build a platform that must keep improving, operating, and supporting business outcomes.'
       }
     ],
+    relatedSlugs: ['what-is-operational-infrastructure-saas', 'what-is-a-saas-operating-company', 'building-industry-specific-saas-platforms'],
+    
     cta: {
       heading: 'Discuss Product Engineering With Logic Unit',
       copy: 'Partner with a software engineering team that understands how to construct long-term platform value.',
       btnText: 'Discuss Product Engineering With Logic Unit',
-      btnHref: '/contact'
+      btnHref: '/contact?cta=insights-engineering-cta&page_type=insights&inquiry_type=strategic_partnership'
     }
   },
   {
@@ -258,16 +265,18 @@ export const insightsArticles: InsightArticle[] = [
         content: 'Industry-specific SaaS works best when product engineering, domain workflows, data visibility, and long-term operation are designed together.'
       }
     ],
+    relatedSlugs: ['what-is-operational-infrastructure-saas', 'livestock-software-platforms-animalcare360', 'retail-operations-platforms-hulm-pos'],
+    
     cta: {
       heading: 'Discuss An Industry SaaS Platform',
       copy: 'Talk to our team about deploying, adapting, or scaling a SaaS platform tailored for your operational sector.',
       btnText: 'Discuss An Industry SaaS Platform',
-      btnHref: '/contact'
+      btnHref: '/contact?cta=insights-platforms-cta&page_type=insights&inquiry_type=strategic_partnership'
     }
   },
   {
     slug: 'livestock-software-platforms-animalcare360',
-    title: 'Livestock Software Platforms And AnimalCare360 | Logic Unit',
+    title: 'Livestock Software Platforms and AnimalCare360: A Guide for Dairy Farms, Feed Retailers, Veterinary Clinics, and Maweshi Mandis across Pakistan | Logic Unit',
     description: 'AnimalCare360 shows how livestock software supports farms, feed retailers, animal traders, pet hospitals, and veterinary clinics.',
     category: 'Industry Platforms',
     publishDate: 'July 14, 2026',
@@ -311,6 +320,8 @@ export const insightsArticles: InsightArticle[] = [
         content: 'On Logic Unit, AnimalCare360 should be understood as product ecosystem proof. On AnimalCare360.com, users can explore the deeper product-specific journey.'
       }
     ],
+    relatedSlugs: ['building-industry-specific-saas-platforms', 'retail-operations-platforms-hulm-pos', 'logistics-management-platforms-shipment-visibility'],
+    
     cta: {
       heading: 'Explore AnimalCare360',
       copy: 'Visit animalcare360.com to explore cattle management, feed retail, and veterinary clinic tools, download the Android app, or see pricing details.',
@@ -320,7 +331,7 @@ export const insightsArticles: InsightArticle[] = [
   },
   {
     slug: 'retail-operations-platforms-hulm-pos',
-    title: 'Retail Operations Platforms And HULM POS | Logic Unit',
+    title: 'Retail Operations Platforms and HULM POS: A Guide for Franchise Networks, Bakeries, Pharmacies, and Multi-Location Businesses in Pakistan | Logic Unit',
     description: 'Retail operations platforms connect POS, inventory, procurement, CRM, reporting, and multi-location visibility for growing businesses.',
     category: 'Industry Platforms',
     publishDate: 'July 14, 2026',
@@ -368,16 +379,18 @@ export const insightsArticles: InsightArticle[] = [
         content: 'Retail software should help operators manage the business, not only process payments. The strongest platforms create operational visibility across sales, stock, customers, teams, and reporting.'
       }
     ],
+    relatedSlugs: ['building-industry-specific-saas-platforms', 'livestock-software-platforms-animalcare360', 'logistics-management-platforms-shipment-visibility'],
+    
     cta: {
       heading: 'Optimize Your Retail Operations',
       copy: 'Talk to Logic Unit about how HULM POS or our custom retail engineering solutions can streamline your business workflows.',
       btnText: 'Discuss A Retail Operations Platform',
-      btnHref: '/contact'
+      btnHref: '/contact?cta=insights-retail-cta&page_type=insights&inquiry_type=hulm_pos&interest=retail'
     }
   },
   {
     slug: 'logistics-management-platforms-shipment-visibility',
-    title: 'Logistics Management Platforms And Shipment Visibility | Logic Unit',
+    title: 'Logistics Management Platforms and Shipment Visibility: A Guide for Freight Forwarders, Courier Services, and Supply Chain Networks | Logic Unit',
     description: 'Logistics management platforms improve shipment visibility, customer self-service, document control, notifications, and coordination.',
     category: 'Industry Platforms',
     publishDate: 'July 14, 2026',
@@ -425,16 +438,18 @@ export const insightsArticles: InsightArticle[] = [
         content: 'Logistics software should reduce manual coordination and improve visibility. The strongest platforms create a shared source of truth for customers, documents, operations, and reporting.'
       }
     ],
+    relatedSlugs: ['building-industry-specific-saas-platforms', 'livestock-software-platforms-animalcare360', 'retail-operations-platforms-hulm-pos'],
+    
     cta: {
       heading: 'Streamline Your Logistics Operations',
       copy: 'Discuss how Logic Unit\'s product engineering team can construct customer tracking portals, CRM integrations, or transactional mobile apps for your logistics business.',
       btnText: 'Discuss A Logistics Platform',
-      btnHref: '/contact'
+      btnHref: '/contact?cta=insights-logistics-cta&page_type=insights&inquiry_type=portfolio&interest=logistics'
     }
   },
   {
     slug: 'strategic-saas-partnerships-product-ecosystem-growth',
-    title: 'Strategic SaaS Partnerships For Product Ecosystem Growth | Logic Unit',
+    title: 'Strategic SaaS Partnerships for Product Ecosystem Growth: A Guide for Software Integrators, Enterprise Co-Development, and Tech Alliances | Logic Unit',
     description: 'Strategic SaaS partnerships help product ecosystems expand through collaboration, integrations, enterprise relationships, and market access.',
     category: 'Partnerships',
     publishDate: 'July 14, 2026',
@@ -482,11 +497,13 @@ export const insightsArticles: InsightArticle[] = [
         content: 'The strongest partnerships are not vague networking relationships. They are structured around platform fit, market need, implementation capacity, and long-term value.'
       }
     ],
+    relatedSlugs: ['what-is-a-saas-operating-company', 'product-engineering-vs-software-outsourcing', 'building-industry-specific-saas-platforms'],
+    
     cta: {
       heading: 'Become A SaaS Partner',
       copy: 'Connect with Logic Unit to discuss strategic partnerships, system integrator relationships, or enterprise digital platform development.',
       btnText: 'Start A Strategic Partnership Conversation',
-      btnHref: '/contact'
+      btnHref: '/contact?cta=insights-partnerships-cta&page_type=insights&inquiry_type=strategic_partnership'
     }
   }
 ];

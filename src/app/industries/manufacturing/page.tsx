@@ -107,6 +107,8 @@ export default function ManufacturingPage() {
       ctaTitle="Discuss manufacturing platform collaboration."
       backText="Back to Industries"
       backHref="/industries"
+      contactHref="/contact?cta=industry-manufacturing-discuss&page_type=industry&interest=manufacturing&source_slug=manufacturing"
+      contactText="Discuss a Manufacturing Platform"
     />
   );
 }

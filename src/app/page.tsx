@@ -155,7 +155,7 @@ export default function HomePage() {
               <Link href="/ecosystem" className="bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e] no-underline">
                 Explore Ecosystem
               </Link>
-              <Link href="/contact" className="border border-white/35 px-6 py-3 text-center text-sm font-semibold text-white hover:border-[#7bd72f] no-underline">
+              <Link href="/contact?cta=home-partner&page_type=home&inquiry_type=strategic_partnership" className="border border-white/35 px-6 py-3 text-center text-sm font-semibold text-white hover:border-[#7bd72f] no-underline">
                 Partner With Us
               </Link>
             </div>
@@ -425,7 +425,7 @@ export default function HomePage() {
           </div>
           <div className="flex-shrink-0">
             <Link
-              href="/contact?cta=playbook&page_type=home"
+              href="/contact?cta=home-ecosystem-discussion&page_type=home&inquiry_type=ecosystem"
               className="inline-block bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e] no-underline transition-colors"
             >
               Start The Discussion &rarr;
@@ -448,7 +448,7 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col gap-4 sm:flex-row flex-shrink-0">
             <Link
-              href="/contact"
+              href="/contact?cta=home-footer-discuss&page_type=home&inquiry_type=strategic_partnership"
               className="bg-[#10277a] px-6 py-3 text-center text-sm font-bold text-white hover:bg-[#071330] no-underline transition-colors"
             >
               Contact Logic Unit

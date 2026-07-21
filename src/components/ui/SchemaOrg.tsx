@@ -19,8 +19,8 @@ export function SchemaOrg() {
     ],
     areaServed: ['PK', 'AE'],
     owns: [
-      { '@type': 'Organization', name: 'Hulm Solutions' },
-      { '@type': 'Organization', name: 'Titan MMS' },
+      { '@type': 'Organization', name: 'HULM POS' },
+      { '@type': 'Organization', name: 'Titan CMMS' },
       { '@type': 'Organization', name: 'AnimalCare360' },
     ],
     knowsAbout: [

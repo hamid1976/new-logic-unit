@@ -40,6 +40,8 @@ export default function Page() {
 
   return (
     <CaseStudyPageTemplate
+      contactHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=logistics&source_slug=qatar-airways-augmented-reality-campaign"
+      discussionHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=logistics&source_slug=qatar-airways-augmented-reality-campaign"
       title="Qatar Airways AR Case Study"
       h1="Qatar Airways Augmented Reality Campaign"
       summaryText="Qatar Airways sought an innovative, memorable method to engage travelers in Saudi Arabia through interactive marketing. Logic Unit partnered on an augmented reality campaign providing immersive AR brand engagement and detailed campaign analytics, transforming traditional advertising posters into digital experiences accessible instantly through smartphones."
@@ -47,7 +49,7 @@ export default function Page() {
       solutionText="Logic Unit collaborated on building the mobile AR campaign platform. Users scan physical display billboards to launch web-based AR animations without installing dedicated applications. The platform displays interactive flight route maps, video showcases, and promotional booking links. The system incorporates mobile web camera scanning, high-performance 3D graphics rendering, and a campaign analytics dashboard tracking user conversions."
       features={features}
       impactText="The campaign successfully increased user interaction rates and strengthened brand recall. The analytics modules provided marketing teams with insights into scanner demographics, location performance, and booking clicks, demonstrating how augmented reality can connect physical and digital advertising to deliver measurable results."
-      ctaText="Discuss An AR Engagement Platform"
+      ctaText="Discuss a Similar Logistics Platform"
       schemaJson={schemaJson}
     />
   );

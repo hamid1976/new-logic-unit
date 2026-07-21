@@ -102,6 +102,8 @@ export default function HealthcarePage() {
       ctaTitle="Discuss healthcare platform collaboration."
       backText="Back to Industries"
       backHref="/industries"
+      contactHref="/contact?cta=industry-healthcare-discuss&page_type=industry&interest=healthcare&source_slug=healthcare"
+      contactText="Discuss a Healthcare Platform"
     />
   );
 }

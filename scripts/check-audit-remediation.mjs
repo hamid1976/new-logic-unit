@@ -46,4 +46,16 @@ assert(!/Download The Playbook|Download Case Study Pack|Get The Checklist/.test(
 assert(fs.existsSync(path.join(root, 'src/app/opengraph-image.tsx')), 'Root OG image route must exist.')
 assert(fs.existsSync(path.join(root, 'src/app/insights/[slug]/opengraph-image.tsx')), 'Insight OG image route must exist.')
 
+const insightsData = read('src/data/insights.ts')
+const hubspotServer = read('src/lib/hubspot-server.ts')
+
+assert(contact.includes("'Investor relations'") && contact.includes("'Talent inquiry'"), 'ContactForm must have Investor relations and Talent inquiry options.')
+assert(contact.includes('required={isProductInquiry}'), 'ContactForm interest field must be conditionally required on product inquiries.')
+assert(insightsData.includes('relatedSlugs:'), 'insights.ts must contain explicit relatedSlugs maps instead of dynamic array slicing.')
+assert(!insights.includes('cta=checklist'), 'Insights page should not promise checklist downloads.')
+assert(hubspotServer.includes("name: 'lu_landing_page_url'"), 'HubSpot payload must map lu_landing_page_url.')
+assert(hubspotServer.includes("name: 'lu_referrer_url'"), 'HubSpot payload must map lu_referrer_url.')
+assert(contact.includes('trackedLeads.includes'), 'Lead submission tracking must include deduplication logic.')
+assert(!contact.includes("email: payload.email") || !contact.includes("trackGtmEvent('generate_lead', { email"), 'GTM analytics events must not contain PII like email addresses.')
+
 console.log('Audit-remediation source checks passed.')

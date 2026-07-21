@@ -40,6 +40,8 @@ export default function Page() {
 
   return (
     <CaseStudyPageTemplate
+      contactHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=logistics&source_slug=smart-salik-digital-toll-management"
+      discussionHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=logistics&source_slug=smart-salik-digital-toll-management"
       title="Smart Salik Case Study"
       h1="Smart Salik: Digital Toll Management Platform"
       summaryText="As part of Dubai's Smart City vision, the Roads and Transport Authority (RTA) sought to improve how motorists interact with the Salik electronic toll system. Logic Unit collaborated on the development of the Smart Salik mobile application, providing comprehensive toll account management, vehicle coordination, real-time recharge services, trip history, and violation management. The app transformed an administrative process into a convenient self-service mobile experience."
@@ -47,7 +49,7 @@ export default function Page() {
       solutionText="Logic Unit contributed to the design and development of the Smart Salik mobile applications for iOS and Android. The platform integrates directly with government databases, allowing users to recharge balances securely using credit cards or online vouchers. Key modules include vehicle profile updates, optical character recognition (OCR) for tag scanning, interactive crossing history logs, and instant push notifications to alert drivers of low balances or violations."
       features={features}
       impactText="The application achieved high digital adoption, surpassing 1 million downloads on mobile stores. By providing a convenient, 24/7 self-service channel, the RTA reduced customer service center visits, shortened call center queue times, and improved overall motorist satisfaction. The real-time notification system significantly lowered outstanding toll violations across the emirate."
-      ctaText="Discuss A Government Digital Platform"
+      ctaText="Discuss a Similar Logistics Platform"
       schemaJson={schemaJson}
     />
   );

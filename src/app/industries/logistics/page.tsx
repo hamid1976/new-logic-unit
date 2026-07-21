@@ -118,6 +118,8 @@ export default function LogisticsPage() {
       ctaTitle="Discuss logistics platform collaboration."
       backText="Back to Industries"
       backHref="/industries"
+      contactHref="/contact?cta=industry-logistics-discuss&page_type=industry&interest=logistics&source_slug=logistics"
+      contactText="Discuss a Logistics Platform"
     />
   );
 }

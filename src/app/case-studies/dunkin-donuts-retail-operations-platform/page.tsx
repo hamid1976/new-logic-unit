@@ -40,6 +40,8 @@ export default function Page() {
 
   return (
     <CaseStudyPageTemplate
+      contactHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=retail&source_slug=dunkin-donuts-retail-operations-platform"
+      discussionHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=retail&source_slug=dunkin-donuts-retail-operations-platform"
       title="Dunkin' Donuts Case Study"
       h1="Dunkin' Donuts Pakistan Retail Operations & Sales Platform"
       summaryText="Dunkin' Donuts Pakistan partnered with Logic Unit to build a mobile-first sales management platform and task management ecosystem, designed to give franchise management real-time visibility into store sales, operational checklists, inventory audits, and branch performance across multiple retail locations. The application standardizes daily store operations and connects branch managers directly with corporate administration."
@@ -47,7 +49,7 @@ export default function Page() {
       solutionText="Logic Unit designed and developed a hybrid mobile application built with Ionic and Angular. The platform integrates a daily sales reporting module, an operations control dashboard, a task management workflow engine, and an internal communication hub. Branch managers submit daily revenues, track equipment maintenance requests, and complete opening/closing checklists, while corporate managers monitor performance, track task completion, and resolve operational issues through a centralized web portal."
       features={features}
       impactText="The platform modernized Dunkin' Donuts' retail operations by streamlining reporting cycles and eliminating manual data entry. Real-time dashboards provided corporate management with immediate visibility into sales trends, branch compliance, and operational bottlenecks. The task management workflows increased store-level accountability, leading to improved branch coordination and overall operational efficiency."
-      ctaText="Discuss A Retail Operations Platform"
+      ctaText="Discuss a Similar Retail Platform"
       schemaJson={schemaJson}
     />
   );

@@ -135,7 +135,7 @@ export default function PartnershipsPage() {
           </div>
           <div className="mt-12 text-center">
             <Link
-              href="/contact"
+              href="/contact?cta=partnership-hub&page_type=partnership&inquiry_type=strategic_partnership"
               className="inline-block bg-[#10277a] px-8 py-3 text-sm font-bold text-white hover:bg-[#071330] no-underline"
             >
               Discuss Enterprise Collaboration
@@ -151,7 +151,7 @@ export default function PartnershipsPage() {
             Start with a corporate partnership inquiry.
           </h2>
           <Link
-            href="/contact"
+            href="/contact?cta=partnership-hub&page_type=partnership&inquiry_type=strategic_partnership"
             className="bg-[#10277a] px-6 py-3 text-center text-sm font-bold text-white hover:bg-[#071330] whitespace-nowrap"
           >
             Contact Logic Unit

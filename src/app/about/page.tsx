@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'About Logic Unit: Product Engineering Services Company',
-  description: 'Logic Unit is Product Engineering Services Company building software platforms for real industries with scalable, innovative solutions.',
+  title: 'About Logic Unit | Product Engineering & SaaS Operating Company',
+  description: 'Logic Unit is a product engineering and SaaS operating company that builds and runs software platforms for real industries.',
   alternates: {
 
       canonical: '/about',
@@ -114,7 +114,7 @@ export default function AboutPage() {
               Explore Partnerships
             </Link>
             <Link
-              href="/contact"
+              href="/contact?cta=about-partner&page_type=about&inquiry_type=strategic_partnership"
               className="border border-white/40 px-6 py-3 text-center text-sm font-semibold text-white hover:border-[#7bd72f] whitespace-nowrap"
             >
               Corporate Inquiry

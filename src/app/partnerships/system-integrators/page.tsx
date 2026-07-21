@@ -86,6 +86,8 @@ export default function SystemIntegratorsPage() {
       ctaTitle="Start a system integrator conversation."
       backText="Back to Partnerships"
       backHref="/partnerships"
+      contactHref="/contact?cta=partnership-integrator&page_type=partnership&inquiry_type=system_integrator"
+      contactText="Discuss System Integrator Partnerships"
     />
   );
 }

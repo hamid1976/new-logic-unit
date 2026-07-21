@@ -40,11 +40,20 @@ export const metadata: Metadata = {
     siteName: 'Logic Unit',
     title: 'SaaS Operating & Product Engineering Company',
     description: 'A SaaS operating & product engineering company founded in 2013.',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Logic Unit — Product engineering and SaaS operating company',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'SaaS Operating & Product Engineering Company',
     description: 'A SaaS operating & product engineering company founded in 2013.',
+    images: ['/opengraph-image'],
   },
   robots: {
     index: true,

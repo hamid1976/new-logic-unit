@@ -169,6 +169,8 @@ export default function LivestockPage() {
       backHref="/industries"
       externalHref="https://animalcare360.com"
       externalText="Visit AnimalCare360"
+      contactHref="/contact?cta=industry-livestock-discuss&page_type=industry&interest=livestock&source_slug=livestock"
+      contactText="Discuss a Livestock Platform"
     />
   );
 }

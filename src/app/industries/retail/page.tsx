@@ -107,6 +107,8 @@ export default function RetailPage() {
       ctaTitle="Discuss retail platform collaboration."
       backText="Back to Industries"
       backHref="/industries"
+      contactHref="/contact?cta=industry-retail-discuss&page_type=industry&interest=retail&source_slug=retail"
+      contactText="Discuss a Retail Platform"
     />
   );
 }

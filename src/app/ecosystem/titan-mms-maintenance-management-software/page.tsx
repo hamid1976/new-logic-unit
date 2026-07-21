@@ -2,18 +2,13 @@ import type { Metadata } from 'next'
 import { TitanMmsClient } from './TitanMmsClient'
 
 export const metadata: Metadata = {
-  title: 'TitanMMS: CMMS & Asset Management Software by Logic Unit',
-  description: 'Titan MMS by Logic Unit is computerized maintenance management software (CMMS) that helps industries automate maintenance operations.',
+  title: 'Titan CMMS: Asset Management Software | Logic Unit',
+  description: 'Discover Titan CMMS by Logic Unit — a computerized maintenance management software (CMMS) that helps industries automate maintenance workflows.',
   alternates: {
-
-      canonical: '/ecosystem/titan-mms-maintenance-management-software',
-
+    canonical: '/ecosystem/titan-mms-maintenance-management-software',
   },
-
   openGraph: {
-
-      url: '/ecosystem/titan-mms-maintenance-management-software',
-
+    url: '/ecosystem/titan-mms-maintenance-management-software',
   },
 }
 

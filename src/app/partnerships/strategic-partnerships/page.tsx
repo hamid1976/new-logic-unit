@@ -84,6 +84,8 @@ export default function StrategicPartnershipsPage() {
       ctaTitle="Start a strategic partnership conversation."
       backText="Back to Partnerships"
       backHref="/partnerships"
+      contactHref="/contact?cta=partnership-strategic&page_type=partnership&inquiry_type=strategic_partnership"
+      contactText="Discuss Strategic Partnerships"
     />
   );
 }

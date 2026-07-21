@@ -41,6 +41,8 @@ export default function Page() {
 
   return (
     <CaseStudyPageTemplate
+      contactHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=enterprise&source_slug=goodments-ethical-investing-platform"
+      discussionHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=enterprise&source_slug=goodments-ethical-investing-platform"
       title="Goodments Case Study"
       h1="Goodments: Ethical Investing Platform For The Next Generation"
       summaryText="Logic Unit partnered with the Goodments founders in Australia to design and build a mobile-first fintech mobile platform. The application combines ESG environmental, social, and governance screening, financial market integrations, portfolio management tools, and personalized investment research into a user-friendly experience designed for the next generation of conscious investors."
@@ -48,7 +50,7 @@ export default function Page() {
       solutionText="Logic Unit built cross-platform iOS and Android mobile applications. The platform features an ESG screening engine that filters companies by environmental impact, diversity, and social responsibility. To support beginners, we implemented a simulated practice portfolio workspace. The technology stack includes real-time financial market API integrations, ESG data aggregation pipelines, secure multi-factor authentication, and responsive data visualization graphs."
       features={features}
       impactText="Goodments successfully launched in the competitive Australian fintech market, acquiring a growing user base of socially conscious investors. The platform's clean design and transparent ESG metrics received national media coverage. The project's commercial success and technological scalability contributed to Goodments' acquisition by Australian digital banking platform Douugh Ltd."
-      ctaText="Discuss A Fintech Platform"
+      ctaText="Discuss a Similar Enterprise Platform"
       schemaJson={schemaJson}
     />
   );

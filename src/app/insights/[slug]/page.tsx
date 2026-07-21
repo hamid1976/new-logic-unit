@@ -51,10 +51,10 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     },
   };
 
-  // Find 3 other related articles
-  const relatedArticles = insightsArticles
-    .filter((a) => a.slug !== article.slug)
-    .slice(0, 3);
+  // Find explicit related articles
+  const relatedArticles = article.relatedSlugs
+    .map((slug) => insightsArticles.find((a) => a.slug === slug))
+    .filter((a): a is NonNullable<typeof a> => !!a);
 
   return (
     <main className="min-h-screen bg-[#fbfaf6] text-[#111827]">
@@ -157,7 +157,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                 Assess whether your organization is ready to scale operations, implement POS, EMR, or CMMS workflows, or deploy custom digital infrastructure.
               </p>
               <Link
-                href="/contact?cta=checklist&page_type=insights"
+                href="/contact?cta=insights-readiness-discuss&page_type=insights&inquiry_type=portfolio"
                 className="block text-center bg-[#7bd72f] px-4 py-3 text-xs font-bold text-[#071330] hover:bg-[#93e74e] no-underline shadow-sm transition-colors duration-300"
               >
                 Discuss Platform Readiness

@@ -7,44 +7,44 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 // FAQs Data
 const faqs = [
   {
-    question: 'What is Titan MMS and who developed it?',
+    question: 'What is Titan CMMS and who developed it?',
     answer:
-      'Titan MMS is a cloud-based Maintenance Management Software (CMMS) and Asset Management platform developed and engineered by Logic Unit. It is designed to help organizations across multiple industries streamline maintenance operations, manage asset lifecycles, reduce downtime, and improve regulatory compliance.',
+      'Titan CMMS is a cloud-based Maintenance Management Software (CMMS) and Asset Management platform developed and engineered by Logic Unit. It is designed to help organizations across multiple industries streamline maintenance operations, manage asset lifecycles, reduce downtime, and improve regulatory compliance.',
   },
   {
-    question: 'What industries does Titan MMS serve?',
+    question: 'What industries does Titan CMMS serve?',
     answer:
-      'Titan MMS is built for organizations across manufacturing, healthcare, hospitality, construction, education, warehousing, commercial facilities, utilities, retail, and logistics. The platform\'s flexible architecture allows it to be configured for the specific operational requirements of each sector.',
+      'Titan CMMS is built for organizations across manufacturing, healthcare, hospitality, construction, education, warehousing, commercial facilities, utilities, retail, and logistics. The platform\'s flexible architecture allows it to be configured for the specific operational requirements of each sector.',
   },
   {
     question: 'What is the difference between CMMS software and EAM software?',
     answer:
-      'CMMS (Computerized Maintenance Management System) software focuses on managing maintenance work orders, scheduling, and technician coordination. EAM (Enterprise Asset Management) software extends this to include the full asset lifecycle, including procurement, depreciation, and retirement. Titan MMS combines both capabilities in a single platform.',
+      'CMMS (Computerized Maintenance Management System) software focuses on managing maintenance work orders, scheduling, and technician coordination. EAM (Enterprise Asset Management) software extends this to include the full asset lifecycle, including procurement, depreciation, and retirement. Titan CMMS combines both capabilities in a single platform.',
   },
   {
-    question: 'Is Titan MMS available as a cloud-based solution?',
+    question: 'Is Titan CMMS available as a cloud-based solution?',
     answer:
-      'Yes. Titan MMS is delivered as a true SaaS platform hosted on cloud infrastructure. Organizations access the platform through a web browser or mobile application, with no local server installation required. Updates and new features are deployed continuously without operational disruption.',
+      'Yes. Titan CMMS is delivered as a true SaaS platform hosted on cloud infrastructure. Organizations access the platform through a web browser or mobile application, with no local server installation required. Updates and new features are deployed continuously without operational disruption.',
   },
   {
-    question: 'Can Titan MMS support multiple sites or locations?',
+    question: 'Can Titan CMMS support multiple sites or locations?',
     answer:
-      'Yes. Titan MMS is specifically designed for multi-site operations. Organizations can manage assets, maintenance schedules, work orders, and reporting across multiple facilities, warehouses, or geographic locations from a single platform with consolidated and site-level reporting views.',
+      'Yes. Titan CMMS is specifically designed for multi-site operations. Organizations can manage assets, maintenance schedules, work orders, and reporting across multiple facilities, warehouses, or geographic locations from a single platform with consolidated and site-level reporting views.',
   },
   {
-    question: 'How does Titan MMS help with preventive maintenance compliance?',
+    question: 'How does Titan CMMS help with preventive maintenance compliance?',
     answer:
-      'Titan MMS automates PM scheduling based on calendar intervals, meter readings, or operational triggers. When maintenance is performed, technicians complete digital checklists and submit photographic evidence through the mobile app — creating a complete, auditable compliance record that is always accessible for regulatory inspections.',
+      'Titan CMMS automates PM scheduling based on calendar intervals, meter readings, or operational triggers. When maintenance is performed, technicians complete digital checklists and submit photographic evidence through the mobile app — creating a complete, auditable compliance record that is always accessible for regulatory inspections.',
   },
   {
-    question: 'What are the integration capabilities of Titan MMS?',
+    question: 'What are the integration capabilities of Titan CMMS?',
     answer:
-      'Titan MMS is built with an open API architecture that enables integration with ERP platforms, financial systems, procurement tools, IoT sensor networks, and building management systems. The Logic Unit engineering team works directly with enterprise customers to design and implement integration solutions.',
+      'Titan CMMS is built with an open API architecture that enables integration with ERP platforms, financial systems, procurement tools, IoT sensor networks, and building management systems. The Logic Unit engineering team works directly with enterprise customers to design and implement integration solutions.',
   },
   {
-    question: 'What future capabilities are planned for Titan MMS?',
+    question: 'What future capabilities are planned for Titan CMMS?',
     answer:
-      'Logic Unit\'s product roadmap for Titan MMS includes AI-powered predictive maintenance, IoT asset health monitoring, advanced analytics and benchmarking, expanded enterprise workflow automation, and deeper ERP ecosystem integrations. These capabilities are being developed in direct response to feedback from Titan MMS customers.',
+      'Logic Unit\'s product roadmap for Titan CMMS includes AI-powered predictive maintenance, IoT asset health monitoring, advanced analytics and benchmarking, expanded enterprise workflow automation, and deeper ERP ecosystem integrations. These capabilities are being developed in direct response to feedback from Titan CMMS customers.',
   },
 ]
 
@@ -114,7 +114,7 @@ export function TitanMmsClient() {
             Ecosystem Product
           </p>
           <h1 className="max-w-5xl text-5xl font-semibold leading-[1.08] tracking-tight md:text-7xl">
-            Titan MMS: Enterprise Maintenance Management Software
+            Titan CMMS: Enterprise Maintenance Management Software
           </h1>
           <p className="mt-8 max-w-3xl text-xl leading-8 text-slate-200">
             A cloud-based CMMS and Asset Management platform built for organizations that can no longer afford to run their operations on spreadsheets, paper-based work orders, and disconnected maintenance tools.
@@ -135,7 +135,7 @@ export function TitanMmsClient() {
                 There is lost production, a scramble to reassign technicians, frustrated customers, and a compliance log that now has a gap nobody can explain. Multiply that by hundreds of assets across multiple facilities, and reactive maintenance becomes a serious drag on profitability.
               </p>
               <p>
-                Drawing on 15+ years of software product engineering, Logic Unit built Titan MMS to give maintenance teams the visibility, control, and automation they need to operate at peak efficiency.
+                Drawing on software product engineering experience since 2013, Logic Unit built Titan CMMS to give maintenance teams the visibility, control, and automation they need to operate at peak efficiency.
               </p>
             </div>
           </div>
@@ -170,7 +170,7 @@ export function TitanMmsClient() {
           <div className="bg-[#f4f7fb] border border-[rgba(16,39,122,0.08)] p-8 md:p-12">
             <h3 className="text-2xl font-bold text-[#071330] mb-4">The Market Gap We Identified</h3>
             <p className="text-slate-600 leading-7 max-w-5xl">
-              Despite the clear operational cost of poor maintenance management, a large number of mid-market and enterprise organizations were still running their maintenance operations on tools that were never designed for the job — using Excel sheets, paper logs, and legacy systems that required expensive on-premises servers. Titan MMS was engineered to fill this gap, combining enterprise-grade capabilities with modern cloud usability.
+              Despite the clear operational cost of poor maintenance management, a large number of mid-market and enterprise organizations were still running their maintenance operations on tools that were never designed for the job — using Excel sheets, paper logs, and legacy systems that required expensive on-premises servers. Titan CMMS was engineered to fill this gap, combining enterprise-grade capabilities with modern cloud usability.
             </p>
           </div>
         </div>
@@ -208,7 +208,7 @@ export function TitanMmsClient() {
               Technically Engineered to Scale
             </h2>
             <p className="mt-6 text-lg text-slate-600 leading-8">
-              Titan MMS is architected with modern software design principles, ensuring reliability under heavy enterprise transaction loads and native integration readiness.
+              Titan CMMS is architected with modern software design principles, ensuring reliability under heavy enterprise transaction loads and native integration readiness.
             </p>
           </div>
           <div className="lg:col-span-7 grid gap-6 sm:grid-cols-2">
@@ -257,7 +257,7 @@ export function TitanMmsClient() {
               Configured for Diverse Sectors
             </h2>
             <p className="mt-4 text-lg text-slate-600">
-              Titan MMS adapts its workflows to match the compliance, reporting, and operational requirements of each sector.
+              Titan CMMS adapts its workflows to match the compliance, reporting, and operational requirements of each sector.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -271,7 +271,7 @@ export function TitanMmsClient() {
                       <p className="text-slate-700">{ind.challenge}</p>
                     </div>
                     <div>
-                      <span className="font-semibold text-[#10277a] block uppercase tracking-wider text-[10px]">Titan MMS Solution</span>
+                      <span className="font-semibold text-[#10277a] block uppercase tracking-wider text-[10px]">Titan CMMS Solution</span>
                       <p className="text-slate-800 font-medium">{ind.solution}</p>
                     </div>
                   </div>
@@ -291,10 +291,10 @@ export function TitanMmsClient() {
         <div className="mx-auto max-w-5xl text-center space-y-6">
           <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Product Philosophy</span>
           <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
-            Why Logic Unit Built Titan MMS
+            Why Logic Unit Built Titan CMMS
           </h2>
           <p className="text-lg leading-8 text-slate-200 max-w-4xl mx-auto">
-            The decision to develop Titan MMS came from years of conversations with operations managers, maintenance supervisors, and facility directors. They had ERP systems for finance and HR, but maintenance management was left as an afterthought. We believed that maintenance operations deserved the same software craftsmanship and engineering quality as enterprise financial platforms.
+            The decision to develop Titan CMMS came from years of conversations with operations managers, maintenance supervisors, and facility directors. They had ERP systems for finance and HR, but maintenance management was left as an afterthought. We believed that maintenance operations deserved the same software craftsmanship and engineering quality as enterprise financial platforms.
           </p>
         </div>
       </section>
@@ -308,7 +308,7 @@ export function TitanMmsClient() {
               Future Roadmap
             </h2>
             <p className="mt-4 text-slate-600 leading-7">
-              Maintenance management is undergoing a transformation. Titan MMS keeps organizations at the forefront of what is operationally possible.
+              Maintenance management is undergoing a transformation. Titan CMMS keeps organizations at the forefront of what is operationally possible.
             </p>
           </div>
           <div className="space-y-6">
@@ -373,7 +373,7 @@ export function TitanMmsClient() {
               Ready to Optimize Your Maintenance Workflows?
             </h2>
             <p className="mt-4 text-lg leading-7 text-slate-600">
-              Explore Titan MMS, visit the product website, or contact the Logic Unit team to discuss how this platform can be configured for your specific industry assets and scale.
+              Explore Titan CMMS, visit the product website, or contact the Logic Unit team to discuss how this platform can be configured for your specific industry assets and scale.
             </p>
           </div>
           <div className="flex flex-col gap-4 sm:flex-row flex-shrink-0">
@@ -389,10 +389,10 @@ export function TitanMmsClient() {
               rel="noopener noreferrer"
               className="bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e] whitespace-nowrap no-underline"
             >
-              Visit Titan MMS
+              Visit Titan CMMS
             </a>
             <Link
-              href="/contact"
+              href="/contact?cta=product-titan-cmms&page_type=product&inquiry_type=titan_cmms&interest=titan-cmms"
               className="bg-[#10277a] px-6 py-3 text-center text-sm font-bold text-white hover:bg-[#071330] whitespace-nowrap"
             >
               Contact Logic Unit

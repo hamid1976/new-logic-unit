@@ -86,6 +86,8 @@ export default function EnterpriseCollaborationPage() {
       ctaTitle="Start an enterprise collaboration inquiry."
       backText="Back to Partnerships"
       backHref="/partnerships"
+      contactHref="/contact?cta=partnership-enterprise&page_type=partnership&inquiry_type=enterprise_collaboration"
+      contactText="Discuss Enterprise Collaboration"
     />
   );
 }

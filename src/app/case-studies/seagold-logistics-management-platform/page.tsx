@@ -40,6 +40,8 @@ export default function Page() {
 
   return (
     <CaseStudyPageTemplate
+      contactHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=logistics&source_slug=seagold-logistics-management-platform"
+      discussionHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=logistics&source_slug=seagold-logistics-management-platform"
       title="Seagold Case Study"
       h1="Seagold Logistics Management & Shipment Tracking Platform"
       summaryText="Seagold (Private) Limited, a prominent freight forwarding and maritime logistics enterprise, needed a centralized logistics management platform with a customer self-service portal to digitize shipment tracking, streamline complex transit operations, and improve real-time visibility for international clients and internal teams. Logic Unit designed and developed a web-based logistics platform that consolidated fragmented shipment data, cargo documentation, customer communication, and operational workflows into a single high-availability environment."
@@ -47,7 +49,7 @@ export default function Page() {
       solutionText="Logic Unit built a centralized, web-based platform tailored for freight forwarding and transport operations. The system features secure customer portals with a tracking engine, internal dashboards for operations managers, a structured document repository, and automated alert engines. The technology backbone incorporates a cloud-hosted deployment for regional availability, role-based access controls, an API-ready architecture for carrier sync, scalable database design, mobile-responsive interface, secure document storage, and a trigger-based email and SMS notification engine that updates users instantly as containers cross ports."
       features={features}
       impactText="The platform transformed Seagolds customer experience and operational model. By introducing automated self-service, Seagold reduced tracking support inquiries, streamlined internal workflows, and secured documentation in a central repository. This digital transformation established a scalable operational framework that allowed Seagold to handle larger shipment volumes and strengthen its standing in the global freight forwarding industry."
-      ctaText="Discuss A Logistics Platform"
+      ctaText="Discuss a Similar Logistics Platform"
       schemaJson={schemaJson}
     />
   );

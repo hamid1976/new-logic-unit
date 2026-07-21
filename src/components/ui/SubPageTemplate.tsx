@@ -17,6 +17,8 @@ interface SubPageTemplateProps {
   backHref: string
   externalHref?: string
   externalText?: string
+  contactHref?: string
+  contactText?: string
 }
 
 export function SubPageTemplate({
@@ -29,6 +31,8 @@ export function SubPageTemplate({
   backHref,
   externalHref,
   externalText,
+  contactHref = '/contact',
+  contactText = 'Contact Logic Unit',
 }: SubPageTemplateProps) {
   return (
     <main className="min-h-screen bg-[#fbfaf6] text-[#111827]">
@@ -82,10 +86,10 @@ export function SubPageTemplate({
               </a>
             )}
             <Link
-              href="/contact"
+              href={contactHref}
               className="bg-[#10277a] px-6 py-3 text-center text-sm font-bold text-white hover:bg-[#071330] whitespace-nowrap"
             >
-              Contact Logic Unit
+              {contactText}
             </Link>
           </div>
         </div>

@@ -39,6 +39,8 @@ export default function Page() {
 
   return (
     <CaseStudyPageTemplate
+      contactHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=facilities&source_slug=ksew-enterprise-erp-transformation"
+      discussionHref="/contact?cta=case-study-discussion&page_type=case-study&inquiry_type=portfolio&interest=facilities&source_slug=ksew-enterprise-erp-transformation"
       title="KS&EW Case Study"
       h1="KS&EW Enterprise ERP Transformation"
       summaryText="Karachi Shipyard & Engineering Works (KS&EW) embarked on an enterprise-wide digital transformation to modernize shipbuilding, engineering, procurement, manufacturing, and financial operations. Logic Unit participated in implementing a comprehensive ERP platform based on IFS Applications, designed to unify disconnected divisions, improve resource scheduling, and provide real-time project management controls."
@@ -46,7 +48,7 @@ export default function Page() {
       solutionText="Logic Unit contributed to the deployment of the IFS Applications ERP system. The unified database integrates CAD engineering design workflows, automated RFQs, inventory tracking for heavy raw materials (steel, machinery), project milestone budgeting, contract retention trackers, and project accounting systems. Built with dashboard reports and workflow automations, the platform provides a single source of truth for shipyard operators."
       features={features}
       impactText="The ERP implementation modernized KS&EWs industrial operations. The platform broke down information silos, allowing cross-departmental data flow and improving project tracking. Shipyard management gained precise control over budgets and variations, while the automated purchasing modules streamlined supply chain logistics, positioning KS&EW for scalable operations."
-      ctaText="Discuss Enterprise Collaboration"
+      ctaText="Discuss a Similar Facilities Platform"
       schemaJson={schemaJson}
     />
   );

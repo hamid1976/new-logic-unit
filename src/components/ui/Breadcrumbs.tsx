@@ -21,7 +21,7 @@ const segmentLabelMap: Record<string, string> = {
   'system-integrators': 'System Integrators',
   'enterprise-collaboration': 'Enterprise Collaboration',
   'hulm-solutions': 'Hulm Solutions',
-  'titan-mms-maintenance-management-software': 'Titan MMS',
+  'titan-mms-maintenance-management-software': 'Titan CMMS',
   'animalcare360-livestock-animal-care-software': 'AnimalCare360',
   'hulm-pos': 'HULM POS',
   'titan-cmms': 'Titan CMMS',
