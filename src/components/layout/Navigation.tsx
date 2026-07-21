@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { LogicUnitLogo } from '@/components/brand/LogicUnitLogo'
@@ -19,6 +19,8 @@ export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
+  const menuButtonRef = useRef<HTMLButtonElement>(null)
+  const firstMobileLinkRef = useRef<HTMLAnchorElement>(null)
 
   useEffect(() => {
     setMobileOpen(false)
@@ -36,6 +38,20 @@ export function Navigation() {
     handleScroll()
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  useEffect(() => {
+    if (!mobileOpen) return
+
+    firstMobileLinkRef.current?.focus()
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setMobileOpen(false)
+        requestAnimationFrame(() => menuButtonRef.current?.focus())
+      }
+    }
+    document.addEventListener('keydown', handleEscape)
+    return () => document.removeEventListener('keydown', handleEscape)
+  }, [mobileOpen])
 
   return (
     <>
@@ -62,9 +78,13 @@ export function Navigation() {
           </Link>
 
           <button
+            aria-controls="mobile-navigation"
+            aria-expanded={mobileOpen}
+            aria-haspopup="true"
             aria-label="Toggle menu"
             className="border border-[rgba(16,39,122,0.18)] px-4 py-2 text-sm font-semibold text-[#10277a] md:hidden"
             onClick={() => setMobileOpen((open) => !open)}
+            ref={menuButtonRef}
             type="button"
           >
             Menu
@@ -73,10 +93,15 @@ export function Navigation() {
       </header>
 
       {mobileOpen && (
-        <div className="fixed inset-0 z-40 bg-white px-6 pt-24 md:hidden">
-          <div className="flex flex-col gap-6 text-2xl font-semibold">
-            {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="text-slate-950 no-underline">
+        <div className="fixed inset-0 z-40 bg-white px-6 pt-24 md:hidden" id="mobile-navigation">
+          <nav aria-label="Mobile navigation" className="flex flex-col gap-6 text-2xl font-semibold">
+            {navLinks.map((link, index) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-slate-950 no-underline"
+                ref={index === 0 ? firstMobileLinkRef : undefined}
+              >
                 {link.label}
               </Link>
             ))}
@@ -87,7 +112,7 @@ export function Navigation() {
             >
               Partner With Us
             </Link>
-          </div>
+          </nav>
         </div>
       )}
 

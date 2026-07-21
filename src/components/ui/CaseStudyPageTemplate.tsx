@@ -116,13 +116,13 @@ export function CaseStudyPageTemplate({
         </div>
       </section>
 
-      {/* Case Study Pack Gated CTA */}
+      {/* Case study discussion CTA */}
       <section className="bg-[#071330] px-6 py-20 text-white lg:px-12 border-t border-white/5">
         <div className="mx-auto max-w-7xl flex flex-col justify-between gap-8 md:flex-row md:items-center">
           <div className="max-w-2xl">
-            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Case Studies Resource</span>
+            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Portfolio Discussion</span>
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mt-2 mb-4">
-              Case Study Pack: Software Platforms For Real Industries
+              Discuss A Relevant Logic Unit Case Study
             </h2>
             <p className="text-slate-300 text-sm leading-relaxed">
               Explore in-depth technical breakdowns and workflow schemas for logistics, retail operations, healthcare, and enterprise ERP transformations.
@@ -133,7 +133,7 @@ export function CaseStudyPageTemplate({
               href="/contact?cta=case-study-pack&page_type=case-study"
               className="inline-block bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e] no-underline transition-colors"
             >
-              Download Case Study Pack &rarr;
+              Discuss This Experience &rarr;
             </Link>
           </div>
         </div>

@@ -20,7 +20,7 @@ const industries = [
     hubHref: '/industries/retail',
     links: [
       { label: 'Retail Industry Hub', href: '/industries/retail' },
-      { label: 'HULM POS Product Details', href: '/ecosystem/hulm-pos' },
+      { label: 'HULM POS Product Details', href: '/ecosystem/hulm-solutions' },
       { label: "Dunkin' Donuts Case Study", href: '/case-studies/dunkin-donuts-retail-operations-platform' },
       { label: 'GiftWifts Leopards Case Study', href: '/case-studies/giftwifts-leopards-courier' },
     ],
@@ -53,7 +53,7 @@ const industries = [
     hubHref: '/industries/manufacturing',
     links: [
       { label: 'Manufacturing Industry Hub', href: '/industries/manufacturing' },
-      { label: 'Titan CMMS Product Details', href: '/ecosystem/titan-cmms' },
+      { label: 'Titan CMMS Product Details', href: '/ecosystem/titan-mms-maintenance-management-software' },
       { label: 'KS&EW ERP Case Study', href: '/case-studies/ksew-enterprise-erp-transformation' },
     ],
   },
@@ -63,7 +63,7 @@ const industries = [
     hubHref: '/industries/facilities',
     links: [
       { label: 'Facilities Industry Hub', href: '/industries/facilities' },
-      { label: 'Titan CMMS Product Details', href: '/ecosystem/titan-cmms' },
+      { label: 'Titan CMMS Product Details', href: '/ecosystem/titan-mms-maintenance-management-software' },
       { label: 'MFCC Workstation Details', href: '/ecosystem/mfcc-command-control-console' },
     ],
   },

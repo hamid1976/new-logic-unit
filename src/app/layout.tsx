@@ -5,8 +5,8 @@ import '../styles/globals.css'
 import { SchemaOrg } from '@/components/ui/SchemaOrg'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
-import { ogImagePath, siteUrl } from '@/lib/site'
-import HubSpotProvider from '@/components/HubSpotProvider'
+import { siteUrl } from '@/lib/site'
+import ConsentManager from '@/components/ConsentManager'
 
 const barlow = Barlow({
   subsets: ['latin'],
@@ -40,7 +40,6 @@ export const metadata: Metadata = {
     siteName: 'Logic Unit',
     title: 'SaaS Operating & Product Engineering Company',
     description: 'A SaaS operating & product engineering company founded in 2013.',
-    images: [{ url: ogImagePath, width: 1200, height: 630, alt: 'Logic Unit' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -57,55 +56,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${barlow.variable} ${barlowCondensed.variable}`}>
       <head>
-      </head>
-      <body className="relative">
-        {/* Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-N7BGVDFD"
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
-
-        {/* Google Tag Manager */}
-        <Script id="google-tag-manager" strategy="afterInteractive">
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-N7BGVDFD');
-          `}
-        </Script>
-
-        {/* Microsoft Clarity */}
-        <Script id="microsoft-clarity" strategy="afterInteractive">
-          {`
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "wtmr1y1fq7");
-          `}
-        </Script>
-
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-H2G5X82RJM"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-consent-default" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-H2G5X82RJM');
+            window.gtag = window.gtag || gtag;
+            window.gtag('consent', 'default', {
+              analytics_storage: 'denied',
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied',
+              personalization_storage: 'denied',
+              functionality_storage: 'granted',
+              security_storage: 'granted',
+              wait_for_update: 500
+            });
           `}
         </Script>
-
-        <HubSpotProvider />
+      </head>
+      <body className="relative">
+        <ConsentManager />
         <SchemaOrg />
         <Navigation />
         {children}

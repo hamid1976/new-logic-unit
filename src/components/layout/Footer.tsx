@@ -14,8 +14,8 @@ const groups = [
   {
     title: 'Ecosystem',
     links: [
-      { href: '/ecosystem/hulm-pos', label: 'HULM POS' },
-      { href: '/ecosystem/titan-cmms', label: 'Titan CMMS' },
+      { href: '/ecosystem/hulm-solutions', label: 'HULM POS' },
+      { href: '/ecosystem/titan-mms-maintenance-management-software', label: 'Titan CMMS' },
       { href: '/ecosystem/animalcare360-livestock-animal-care-software', label: 'AnimalCare360' },
       { href: '/ecosystem', label: 'View All Products' },
     ],

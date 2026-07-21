@@ -1,127 +1,104 @@
+import { randomUUID } from 'node:crypto'
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
+import { submitLeadToHubSpot } from '@/lib/hubspot-server'
 
-// Initialize Resend with key or fallback for validation
-const resend = new Resend(process.env.RESEND_API_KEY || 're_mock_key_for_build')
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+const normalize = (value: unknown, maxLength: number) =>
+  typeof value === 'string' ? value.trim().slice(0, maxLength) : ''
+
+const escapeHtml = (value: string) =>
+  value.replace(/[&<>'"]/g, (character) => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    "'": '&#39;',
+    '"': '&quot;',
+  }[character] || character))
 
 export async function POST(req: NextRequest) {
   try {
-    const {
-      name,
-      email,
-      organization,
-      inquiryType,
-      message,
-      landing_page_url,
-      referrer_url,
-      utm_source,
-      utm_medium,
-      utm_campaign,
-      utm_content,
-      cta_source,
-      inquiry_page_type
-    } = await req.json()
+    const body = await req.json()
+    const honeypot = normalize(body.website, 200)
 
-    // Validate inputs
-    if (!name || !email || !organization || !inquiryType || !message) {
-      return NextResponse.json(
-        { error: 'All fields are required.' },
-        { status: 400 }
-      )
+    // Do not reveal honeypot behavior to automated submitters.
+    if (honeypot) {
+      return NextResponse.json({ success: true, ignored: true }, { status: 200 })
     }
 
-    // Fallback if API key is not configured (e.g. local build or environment setup)
-    if (!process.env.RESEND_API_KEY) {
-      console.warn('RESEND_API_KEY is not defined. Simulating email send.')
-      return NextResponse.json(
-        { success: true, message: 'Simulated email sent successfully.' },
-        { status: 200 }
-      )
+    const lead = {
+      leadId: randomUUID(),
+      name: normalize(body.name, 120),
+      email: normalize(body.email, 254).toLowerCase(),
+      organization: normalize(body.organization, 160),
+      inquiryType: normalize(body.inquiryType, 160),
+      interest: normalize(body.interest, 200),
+      message: normalize(body.message, 5000),
+      landingPageUrl: normalize(body.landing_page_url, 1000),
+      referrerUrl: normalize(body.referrer_url, 1000),
+      utmSource: normalize(body.utm_source, 200),
+      utmMedium: normalize(body.utm_medium, 200),
+      utmCampaign: normalize(body.utm_campaign, 200),
+      utmContent: normalize(body.utm_content, 200),
+      ctaSource: normalize(body.cta_source, 200),
+      inquiryPageType: normalize(body.inquiry_page_type, 200),
+      hubspotUtk: normalize(body.hubspotutk, 200),
     }
 
-    // Send email using Resend
-    const data = await resend.emails.send({
-      from: 'Logic Unit Contact <onboarding@resend.dev>', // Default sender for Resend free tier/onboarding
-      to: 'info@logic-unit.com',
-      subject: `New Corporate Inquiry: ${inquiryType}`,
-      html: `
-        <h2 style="color: #071330; font-family: sans-serif;">New Corporate Inquiry Received</h2>
-        <table style="width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #111827;">
-          <tr>
-            <td style="padding: 8px 0; font-weight: bold; width: 150px;">Name:</td>
-            <td style="padding: 8px 0;">${name}</td>
-          </tr>
-          <tr>
-            <td style="padding: 8px 0; font-weight: bold;">Organization:</td>
-            <td style="padding: 8px 0;">${organization}</td>
-          </tr>
-          <tr>
-            <td style="padding: 8px 0; font-weight: bold;">Email:</td>
-            <td style="padding: 8px 0;"><a href="mailto:${email}">${email}</a></td>
-          </tr>
-          <tr>
-            <td style="padding: 8px 0; font-weight: bold;">Inquiry Type:</td>
-            <td style="padding: 8px 0;">${inquiryType}</td>
-          </tr>
-        </table>
-        <h3 style="color: #071330; font-family: sans-serif; margin-top: 24px;">Message:</h3>
-        <div style="white-space: pre-wrap; background: #fbfaf6; border-left: 4px solid #10277a; padding: 16px; font-family: sans-serif; font-size: 14px; color: #111827; line-height: 1.6; margin-bottom: 24px;">${message}</div>
-        
-        <h3 style="color: #071330; font-family: sans-serif; margin-top: 24px; border-top: 1px solid #e5e7eb; padding-top: 16px;">Tracking Metadata</h3>
-        <table style="width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: 12px; color: #4b5563;">
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold; width: 150px;">Landing Page URL:</td>
-            <td style="padding: 4px 0;">${landing_page_url || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold;">Referrer URL:</td>
-            <td style="padding: 4px 0;">${referrer_url || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold;">UTM Source:</td>
-            <td style="padding: 4px 0;">${utm_source || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold;">UTM Medium:</td>
-            <td style="padding: 4px 0;">${utm_medium || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold;">UTM Campaign:</td>
-            <td style="padding: 4px 0;">${utm_campaign || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold;">UTM Content:</td>
-            <td style="padding: 4px 0;">${utm_content || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold;">CTA Source:</td>
-            <td style="padding: 4px 0;">${cta_source || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 4px 0; font-weight: bold;">Inquiry Page Type:</td>
-            <td style="padding: 4px 0;">${inquiry_page_type || 'N/A'}</td>
-          </tr>
-        </table>
-      `,
-    })
+    if (!lead.name || !lead.email || !lead.organization || !lead.inquiryType || !lead.message) {
+      return NextResponse.json({ error: 'Please complete all required fields.' }, { status: 400 })
+    }
 
-    if (data.error) {
-      console.error('Resend API Error:', data.error)
-      return NextResponse.json(
-        { error: data.error.message || 'Failed to send email.' },
-        { status: 500 }
-      )
+    if (!emailPattern.test(lead.email)) {
+      return NextResponse.json({ error: 'Please provide a valid email address.' }, { status: 400 })
+    }
+
+    // HubSpot is the authoritative lead system. Do not show success unless it accepts the lead.
+    await submitLeadToHubSpot(lead)
+
+    let emailNotification: 'sent' | 'failed' | 'not_configured' = 'not_configured'
+    if (process.env.RESEND_API_KEY) {
+      try {
+        const resend = new Resend(process.env.RESEND_API_KEY)
+        const result = await resend.emails.send({
+          from: process.env.CONTACT_FROM_EMAIL || 'Logic Unit Contact <onboarding@resend.dev>',
+          to: process.env.CONTACT_TO_EMAIL || 'info@logic-unit.com',
+          subject: `New Corporate Inquiry: ${lead.inquiryType} [${lead.leadId}]`,
+          html: `
+            <h2>New Corporate Inquiry</h2>
+            <p><strong>Lead ID:</strong> ${escapeHtml(lead.leadId)}</p>
+            <p><strong>Name:</strong> ${escapeHtml(lead.name)}</p>
+            <p><strong>Organization:</strong> ${escapeHtml(lead.organization)}</p>
+            <p><strong>Email:</strong> ${escapeHtml(lead.email)}</p>
+            <p><strong>Inquiry type:</strong> ${escapeHtml(lead.inquiryType)}</p>
+            <p><strong>Interest:</strong> ${escapeHtml(lead.interest || 'N/A')}</p>
+            <h3>Message</h3>
+            <p style="white-space:pre-wrap">${escapeHtml(lead.message)}</p>
+            <h3>Attribution</h3>
+            <p><strong>Landing page:</strong> ${escapeHtml(lead.landingPageUrl || 'N/A')}</p>
+            <p><strong>Referrer:</strong> ${escapeHtml(lead.referrerUrl || 'N/A')}</p>
+            <p><strong>UTM:</strong> ${escapeHtml([lead.utmSource, lead.utmMedium, lead.utmCampaign, lead.utmContent].filter(Boolean).join(' / ') || 'N/A')}</p>
+            <p><strong>CTA source:</strong> ${escapeHtml(lead.ctaSource || 'N/A')}</p>
+          `,
+        })
+        emailNotification = result.error ? 'failed' : 'sent'
+        if (result.error) console.error('Secondary email notification failed:', result.error)
+      } catch (error) {
+        emailNotification = 'failed'
+        console.error('Secondary email notification failed:', error)
+      }
     }
 
     return NextResponse.json(
-      { success: true, id: data.data?.id },
-      { status: 200 }
+      { success: true, leadId: lead.leadId, emailNotification },
+      { status: 200 },
     )
-  } catch (error: any) {
+  } catch (error) {
     console.error('Contact API error:', error)
     return NextResponse.json(
-      { error: error.message || 'Internal server error.' },
-      { status: 500 }
+      { error: 'We could not record your inquiry. Please try again.' },
+      { status: 502 },
     )
   }
 }

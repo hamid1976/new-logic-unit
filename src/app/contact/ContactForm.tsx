@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { submitToHubspot, trackHubspotEvent, trackGtmEvent } from '@/lib/hubspot'
+import { trackGtmEvent } from '@/lib/hubspot'
+import { isTrackableLeadResult } from '@/lib/lead-analytics'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 
 const inquiryTypes = [
@@ -23,7 +24,7 @@ const inquiryTypes = [
 
 export default function ContactForm() {
   const router = useRouter()
-  const [submitted, setSubmitted] = useState(false)
+  const [submitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
@@ -71,6 +72,7 @@ export default function ContactForm() {
       inquiryType: formData.get('inquiryType') as string,
       interest: formData.get('interest') as string,
       message: formData.get('message') as string,
+      website: formData.get('website') as string,
       ...tracking,
     }
 
@@ -88,25 +90,14 @@ export default function ContactForm() {
         throw new Error(result.error || 'Something went wrong. Please try again.')
       }
 
-      // 2. Submit to HubSpot Forms API
-      const hubspotResult = await submitToHubspot({
-        name: payload.name,
-        email: payload.email,
-        organization: payload.organization,
-        inquiryType: payload.inquiryType,
-        message: payload.message,
-        interest: payload.interest,
-        ...tracking,
-      })
-
-      if (hubspotResult.success) {
-        // Trigger HubSpot custom event & push to GTM dataLayer
-        trackHubspotEvent('contact_form_submitted')
-        trackGtmEvent('hubspot_form_submission')
-      } else {
-        console.error('HubSpot submission error:', hubspotResult.error)
+      // Count only a lead accepted by HubSpot; neutral honeypot responses are ignored.
+      if (isTrackableLeadResult(result)) {
+        trackGtmEvent('generate_lead', {
+          form_name: 'contact',
+          inquiry_type: payload.inquiryType,
+          lead_id: result.leadId,
+        })
       }
-
       router.push('/thank-you')
     } catch (err: any) {
       setError(err.message || 'Failed to send inquiry. Please try again later.')
@@ -172,6 +163,10 @@ export default function ContactForm() {
                   className="grid gap-6"
                   onSubmit={handleSubmit}
                 >
+                  <div aria-hidden="true" className="absolute -left-[10000px] h-px w-px overflow-hidden">
+                    <label htmlFor="website">Website</label>
+                    <input autoComplete="off" id="website" name="website" tabIndex={-1} type="text" />
+                  </div>
                   <input type="hidden" name="landing_page_url" value={tracking.landing_page_url} />
                   <input type="hidden" name="referrer_url" value={tracking.referrer_url} />
                   <input type="hidden" name="utm_source" value={tracking.utm_source} />
@@ -234,6 +229,9 @@ export default function ContactForm() {
                       Back to Partnerships
                     </Link>
                   </div>
+                  <p className="text-xs leading-5 text-slate-500">
+                    Your inquiry is sent to Logic Unit&apos;s HubSpot CRM for follow-up. Email is used only as a secondary team notification.
+                  </p>
                 </form>
               </div>
             )}

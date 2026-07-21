@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   description: 'Titan CMMS is an enterprise-grade maintenance management platform for asset management, preventive maintenance, work orders, and analytics.',
   alternates: {
 
-      canonical: '/ecosystem/titan-cmms',
+      canonical: '/ecosystem/titan-mms-maintenance-management-software',
 
   },
 
   openGraph: {
 
-      url: '/ecosystem/titan-cmms',
+      url: '/ecosystem/titan-mms-maintenance-management-software',
 
   },
 };

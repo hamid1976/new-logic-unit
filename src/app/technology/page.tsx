@@ -214,7 +214,7 @@ export default function TechnologyPage() {
               {
                 capability: 'Inventory & POS Systems',
                 caseStudies: [
-                  { name: 'HULM Retail POS', href: '/ecosystem/hulm-pos' },
+                  { name: 'HULM Retail POS', href: '/ecosystem/hulm-solutions' },
                   { name: 'AnimalCare360 Wanda POS', href: 'https://animalcare360.com/feed-retail' }
                 ]
               },
@@ -231,7 +231,7 @@ export default function TechnologyPage() {
                 capability: 'ERP & Enterprise Integration',
                 caseStudies: [
                   { name: 'KS&EW ERP Transformation', href: '/case-studies/ksew-enterprise-erp-transformation' },
-                  { name: 'Titan CMMS', href: '/ecosystem/titan-cmms' }
+                  { name: 'Titan CMMS', href: '/ecosystem/titan-mms-maintenance-management-software' }
                 ]
               },
               {
@@ -306,16 +306,16 @@ export default function TechnologyPage() {
         </div>
       </section>
 
-      {/* Playbook Gated CTA Banner */}
+      {/* Technology discussion CTA */}
       <section className="bg-[#071330] px-6 py-20 text-white lg:px-12 border-t border-white/5">
         <div className="mx-auto max-w-7xl flex flex-col justify-between gap-8 md:flex-row md:items-center">
           <div className="max-w-2xl">
-            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Ecosystem Resource</span>
+            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Technology Discussion</span>
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mt-2 mb-4">
-              Operational Infrastructure SaaS Playbook
+              Discuss Your Platform Architecture
             </h2>
             <p className="text-slate-300 text-sm leading-relaxed">
-              A practical guide to building and scaling software platforms for real industry operations, including product ecosystems, case study proof, technology foundations, and partnership models.
+              Talk with Logic Unit about platform architecture, data infrastructure, integration requirements, and operational workflows.
             </p>
           </div>
           <div className="flex-shrink-0">
@@ -323,7 +323,7 @@ export default function TechnologyPage() {
               href="/contact?cta=playbook&page_type=technology"
               className="inline-block bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e] no-underline transition-colors"
             >
-              Download The Playbook &rarr;
+              Discuss Your Requirements &rarr;
             </Link>
           </div>
         </div>

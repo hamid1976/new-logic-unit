@@ -45,7 +45,7 @@ export default function RetailPage() {
           </p>
           <div className="pt-2">
             <Link
-              href="/ecosystem/hulm-pos"
+              href="/ecosystem/hulm-solutions"
               className="text-sm font-bold text-[#10277a] hover:text-[#071330] no-underline"
             >
               Explore HULM POS Details &rarr;

@@ -27,15 +27,15 @@ const ecosystem = [
     name: 'HULM POS',
     category: 'Retail POS & Business Platform',
     description: 'Retail POS and business management platform for sales, inventory, procurement, CRM, reporting, and FBR integration.',
-    internalHref: '/ecosystem/hulm-pos',
-    href: '/ecosystem/hulm-pos',
+    internalHref: '/ecosystem/hulm-solutions',
+    href: '/ecosystem/hulm-solutions',
   },
   {
     name: 'Titan CMMS',
     category: 'Maintenance Management Platform',
     description: 'Maintenance management platform for assets, work orders, preventive maintenance, spare parts, and analytics.',
-    internalHref: '/ecosystem/titan-cmms',
-    href: '/ecosystem/titan-cmms',
+    internalHref: '/ecosystem/titan-mms-maintenance-management-software',
+    href: '/ecosystem/titan-mms-maintenance-management-software',
   },
   {
     name: 'Hospitello',
@@ -200,7 +200,7 @@ export default function HomePage() {
               </svg>
 
               {/* Orbiting Platforms */}
-              <Link href="/ecosystem/hulm-pos" className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/3 group cursor-pointer no-underline block">
+              <Link href="/ecosystem/hulm-solutions" className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/3 group cursor-pointer no-underline block">
                 <div className="flex flex-col items-center">
                   <div className="bg-[#071330] border border-white/10 group-hover:border-[#7bd72f] p-3 shadow-lg rounded-xl transition-all duration-300">
                     <span className="text-xs font-bold text-slate-400 group-hover:text-white uppercase tracking-wider block text-center">HULM POS</span>
@@ -210,7 +210,7 @@ export default function HomePage() {
                 </div>
               </Link>
 
-              <Link href="/ecosystem/titan-cmms" className="absolute bottom-[10%] left-0 -translate-x-1/4 group cursor-pointer no-underline block">
+              <Link href="/ecosystem/titan-mms-maintenance-management-software" className="absolute bottom-[10%] left-0 -translate-x-1/4 group cursor-pointer no-underline block">
                 <div className="flex flex-col items-center">
                   <div className="bg-[#071330] border border-white/10 group-hover:border-[#7bd72f] p-3 shadow-lg rounded-xl transition-all duration-300">
                     <span className="text-xs font-bold text-slate-400 group-hover:text-white uppercase tracking-wider block text-center">Titan CMMS</span>
@@ -411,16 +411,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Playbook Gated CTA Banner */}
+      {/* Product ecosystem discussion CTA */}
       <section className="bg-[#071330] px-6 py-20 text-white lg:px-12 border-t border-white/5">
         <div className="mx-auto max-w-7xl flex flex-col justify-between gap-8 md:flex-row md:items-center">
           <div className="max-w-2xl">
-            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Ecosystem Resource</span>
+            <span className="text-xs font-extrabold uppercase tracking-wider text-[#7bd72f]">Ecosystem Discussion</span>
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mt-2 mb-4">
-              Operational Infrastructure SaaS Playbook
+              Discuss Your Product Ecosystem Direction
             </h2>
             <p className="text-slate-300 text-sm leading-relaxed">
-              A practical guide to building and scaling software platforms for real industry operations, including product ecosystems, case study proof, technology foundations, and partnership models.
+              Talk with Logic Unit about product ecosystems, technology foundations, proof requirements, and partnership models for real industry operations.
             </p>
           </div>
           <div className="flex-shrink-0">
@@ -428,7 +428,7 @@ export default function HomePage() {
               href="/contact?cta=playbook&page_type=home"
               className="inline-block bg-[#7bd72f] px-6 py-3 text-center text-sm font-bold text-[#071330] hover:bg-[#93e74e] no-underline transition-colors"
             >
-              Download The Playbook &rarr;
+              Start The Discussion &rarr;
             </Link>
           </div>
         </div>
